@@ -15,7 +15,7 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'equipe-5' ) ); ?>">
 				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
+				/* translators: %s: CMS name, i.e. WordPress. :) */
 				printf( esc_html__( 'Proudly powered by %s', 'equipe-5' ), 'WordPress' );
 				?>
 			</a>
