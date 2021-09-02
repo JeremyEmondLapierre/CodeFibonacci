@@ -9,6 +9,7 @@
  * @package equipe-5
  */
 
+ /*OWO*/ 
 ?>
 
 	<footer id="colophon" class="site-footer">
