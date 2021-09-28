@@ -56,4 +56,18 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+
+		<div class="conteneur-logo">
+			<div class="logo" >
+				<img src="wp-content/uploads/2021/09/logo-tim-2" alt="">
+				<h1>Techniques d'intégration multimédia</h1>
+
+			</div>
+			<img class="fond-logo" src="wp-content/uploads/2021/09/background-logo.svg" alt="">
+		</div>
+
+		<!-- <svg class="background">
+			<use href="wp-content/uploads/2021/09/background-1.svg"> </use>
+		</svg> -->
+		<img src="wp-content/uploads/2021/09/background-1.svg" alt="">
 	</header><!-- #masthead -->

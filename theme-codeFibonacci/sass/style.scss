@@ -23,12 +23,15 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+/* Local/accueil
+--------------------------------------------- */
+@import "local/accueil";
 
-/* footer
+/* Local/footer
 --------------------------------------------- */
 @import "local/footer";
 
-/* Old
+/* Local/Old
 --------------------------------------------- */
 @import "local/old";
 
