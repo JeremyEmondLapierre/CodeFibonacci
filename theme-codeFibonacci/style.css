@@ -22,13 +22,60 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-/* footer
+/* Local/accueil
+--------------------------------------------- */
+.conteneur-logo {
+  position: relative;
+}
+
+.conteneur-logo .logo {
+  float: right;
+  padding: 15% 15% 0 0;
+}
+
+.conteneur-logo .logo img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.conteneur-logo .logo h1 {
+  font-weight: 200;
+  color: #0B132B;
+}
+
+.conteneur-logo .fond-logo {
+  position: absolute;
+  right: 7%;
+  z-index: -1;
+  width: 40%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(#B0F6DE, #B9DEA4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D3FFBA;
+  border-radius: 50px;
+  box-shadow: 0px 1px 13px 1px #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7BB8A1;
+}
+
+/* Local/footer
 --------------------------------------------- */
 footer {
   background-color: red;
 }
 
-/* Old
+/* Local/Old
 --------------------------------------------- */
 /*!
 Theme Name: equipe-5
