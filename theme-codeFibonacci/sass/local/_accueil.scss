@@ -25,11 +25,93 @@
     }
 }
 
+/*--------------------------------------------
+  La section Cours
+----------------------------------------------*/
+
+.accueil-cours {
+    width: 100%;
+
+    h1 {
+        text-align: center;
+    }
+
+    .accueil-cours-contenant {
+        width: 80%;
+        margin: 0 auto;
+
+        .icon {
+            fill : #B7E8D7;
+            transition: .3s all;
+            width: 100%;
+    
+            &:hover {
+                fill: #7BB8A1;
+                cursor: pointer;
+            }
+    
+            &:active {
+                fill: #D7EEE6;
+            }
+        }
+
+        .accueil-cours-gauche {
+            width: 100%;
+
+            .cours-contenu {
+                float: left;
+                margin-top: 10%;
+
+                .accueil-cours-texte {
+                    text-align: right;
+                    padding-right: 8%;
+                }
+            }
+        }
+
+        .accueil-cours-droite {
+            width: 100%;
+            margin-top: 15%;
+
+            .cours-contenu {
+                float: right;
+                margin-bottom: 10%;
+
+                .accueil-cours-texte {
+                    text-align: left;
+                    padding-left: 8%;
+                }    
+            }
+        }
+
+        .cours-contenu {
+            display: flex;
+            width: 40%;
+            background-color: #86A6A6;
+            border-radius: 25px;
+            padding: 2% 3%;
+
+            .accueil-cours-texte {
+                text-align: right;
+                padding-right: 8%;
+
+                h2 {
+                    margin-top: 0;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
 
 // ScrollBar
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
     
 }
 
