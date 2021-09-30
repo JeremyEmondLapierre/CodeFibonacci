@@ -1,7 +1,21 @@
 #accueil-prof{
-    background-color: aqua;
     img{
-        weight: 200px;
-        height: 300px;
+        weight: 100px;
+        height: 200px;
+        float: left;
+        opacity: 0.2;
+    }
+    img:hover{
+        opacity: 1;
+    }
+
+   #prof-tim{
+       float: right;
+       padding-right: 10%;
+   }
+   #prof-tim2{
+    float: right;
+    padding-left: 55%;
+    padding-right: 10%;
     }
 }
