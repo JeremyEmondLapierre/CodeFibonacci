@@ -45,25 +45,28 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+		<div class="premierViewport">
+			<nav id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
 
-		<div class="conteneur-logo">
-			<div class="logo" >
-				<img src="wp-content/uploads/2021/09/logo-tim-2.svg" alt="">
-				<h1>Techniques d'intégration multimédia</h1>
-
+			<div class="conteneur-logo">
+				
+				<img class="fond-logo" src="wp-content/uploads/2021/09/background-logo.svg" alt="">
+				<div class="logo" >
+					<img src="wp-content/uploads/2021/09/logo-tim-2" alt="">
+					<h1>Techniques d'intégration multimédia</h1>
+				</div>
 			</div>
-			<img class="fond-logo" src="wp-content/uploads/2021/09/background-logo.svg" alt="">
 		</div>
 			
 		<!-- <svg class="background">

@@ -1,32 +1,39 @@
 /// Page d'accueil
+body{
+    overflow-x: hidden;
+    background-color: #3d634f !important;
+}
+
 body.custom-background {
     background-size: cover !important;
     background-repeat: no-repeat !important;
 }
 
-.conteneur-logo {
-    position: relative;
+.premierViewport{
+    display: flex;
+    height: 60vh;
+}
 
-    .logo {
-        float: right;
-        padding: 15% 15% 0 0; 
+.conteneur-logo {
+    margin-top: 14vh;
+    margin-right: 30vh;
     
-        img {
-            width: 80%;
-            margin: 0 auto;
-        }
+    img {
+        width: 80%;
+        margin: 0 auto;
+    }
     
-        h1 {
-            font-weight: 200;
-            color: #0B132B; // Couleur temporaire. Il faudra les ajouter au fichier variables.sccs
-        }
+    h1 {
+        font-weight: 200;
+        color: #0B132B; // Couleur temporaire. Il faudra les ajouter au fichier variables.sccs
     }
     
     .fond-logo {
         position: absolute;
-        right: 7%;
+        right: 5%;
         z-index: -1;
-        width: 40%;
+        width: 80vh;
+        top: 10%;
     }
 }
 
@@ -126,10 +133,10 @@ body.custom-background {
 
 ::-webkit-scrollbar-thumb {
     background: #D3FFBA;
-    border-radius: 50px;
+    border-radius: 51px;
     box-shadow: 0px 1px 13px 1px #000000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #7BB8A1;
+    background: #7BB8A1;   
 }
