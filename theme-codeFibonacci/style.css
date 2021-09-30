@@ -24,6 +24,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /* Local/accueil
 --------------------------------------------- */
+body.custom-background {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
 .conteneur-logo {
   position: relative;
 }
