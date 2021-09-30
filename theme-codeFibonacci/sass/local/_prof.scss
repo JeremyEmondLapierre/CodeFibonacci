@@ -3,7 +3,7 @@
         weight: 100px;
         height: 200px;
         float: left;
-        opacity: 0.2;
+        opacity: 0.2; 
     }
     img:hover{
         opacity: 1;
@@ -12,10 +12,16 @@
    #prof-tim{
        float: right;
        padding-right: 10%;
+       margin-top: -180px;
    }
    #prof-tim2{
     float: right;
     padding-left: 55%;
     padding-right: 10%;
+    margin-top: -120px;
+    }
+
+    .exp{
+        
     }
 }

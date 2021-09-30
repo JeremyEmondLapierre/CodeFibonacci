@@ -12,8 +12,10 @@
     <h1 class="exp">25 +</h1>
     <h1 class="exp">Ans</h1>
     <h2 class="exp">d'exprérience</h2>
+
     <h1 id="prof-tim">Qu'est ce que le TIM ?</h1>
     <p id="prof-tim2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
     <div class="accueil-img-prof">
         <div class="prof-1">
         <img src="wp-content/uploads/photo-prof2/Prof-2.jpg">

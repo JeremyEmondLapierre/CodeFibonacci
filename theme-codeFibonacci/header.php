@@ -63,7 +63,7 @@
 				
 				<img class="fond-logo" src="wp-content/uploads/2021/09/background-logo.svg" alt="">
 				<div class="logo" >
-					<img src="wp-content/uploads/2021/09/logo-tim-2" alt="">
+					<img src="wp-content/uploads/2021/09/logo-tim-2.svg" alt="">
 					<h1>Techniques d'intégration multimédia</h1>
 				</div>
 			</div>
