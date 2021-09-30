@@ -8,7 +8,7 @@
  */
 
 ?>
-<div class="accueil-prof">
+<div id="accueil-prof">
     <h1>Prof</h1>
     <div class="accueil-img-prof">
         <div class="prof-1">
