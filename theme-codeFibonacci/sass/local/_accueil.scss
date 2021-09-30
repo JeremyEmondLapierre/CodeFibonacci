@@ -1,10 +1,15 @@
 /// Page d'accueil
+body.custom-background {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
 .conteneur-logo {
     position: relative;
 
     .logo {
         float: right;
-        padding: 15% 15% 0 0;
+        padding: 15% 15% 0 0; 
     
         img {
             width: 80%;
