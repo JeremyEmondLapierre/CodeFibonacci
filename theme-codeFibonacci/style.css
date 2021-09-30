@@ -1103,4 +1103,15 @@ textarea {
   margin-left: auto;
   margin-bottom: 1.5em;
 }
+
+/* Local/prof
+--------------------------------------------- */
+#accueil-prof {
+  background-color: aqua;
+}
+
+#accueil-prof img {
+  weight: 200px;
+  height: 300px;
+}
 /*# sourceMappingURL=style.css.map */

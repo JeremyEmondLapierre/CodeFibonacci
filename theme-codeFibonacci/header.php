@@ -72,6 +72,11 @@
 		<img src="wp-content/uploads/2021/09/background-1.svg" alt="">
 		
 		<?php
+			get_template_part( 'template-parts/content', 'prof' );
+		?> 
+		
+		<?php
 			get_template_part( 'template-parts/content', 'cours' );
 		?> 
+		
 	</header><!-- #masthead -->
