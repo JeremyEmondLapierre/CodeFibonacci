@@ -1106,12 +1106,25 @@ textarea {
 
 /* Local/prof
 --------------------------------------------- */
-#accueil-prof {
-  background-color: aqua;
+#accueil-prof img {
+  weight: 100px;
+  height: 200px;
+  float: left;
+  opacity: 0.2;
 }
 
-#accueil-prof img {
-  weight: 200px;
-  height: 300px;
+#accueil-prof img:hover {
+  opacity: 1;
+}
+
+#accueil-prof #prof-tim {
+  float: right;
+  padding-right: 10%;
+}
+
+#accueil-prof #prof-tim2 {
+  float: right;
+  padding-left: 55%;
+  padding-right: 10%;
 }
 /*# sourceMappingURL=style.css.map */
