@@ -15,6 +15,7 @@
 get_header();
 ?>
 
+
 	<main id="primary" class="site-main">
 
 		<?php
@@ -27,6 +28,13 @@ get_header();
 				</header>
 				<?php
 			endif;
+
+			?>
+
+             <h1>front-page</h1>
+
+			<?php
+			 
 
 			/* Start the Loop */
 			while ( have_posts() ) :
