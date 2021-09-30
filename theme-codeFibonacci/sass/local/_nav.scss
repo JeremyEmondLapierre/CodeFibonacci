@@ -1,0 +1,14 @@
+#primary-menu{
+    border: 2px solid aqua;
+    padding: 0 !important;
+    width: 15%;
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        background-color: rgb(240, 184, 184);
+        border-radius: 50%;
+    }
+    
+}

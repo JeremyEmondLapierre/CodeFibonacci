@@ -24,30 +24,37 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /* Local/accueil
 --------------------------------------------- */
+body {
+  overflow-x: hidden;
+  background-color: #3d634f !important;
+}
+
+.premierViewport {
+  display: flex;
+  height: 60vh;
+}
+
 .conteneur-logo {
-  position: relative;
+  margin-top: 14vh;
+  margin-right: 30vh;
 }
 
-.conteneur-logo .logo {
-  float: right;
-  padding: 15% 15% 0 0;
-}
-
-.conteneur-logo .logo img {
+.conteneur-logo img {
   width: 80%;
   margin: 0 auto;
 }
 
-.conteneur-logo .logo h1 {
+.conteneur-logo h1 {
   font-weight: 200;
   color: #0B132B;
 }
 
 .conteneur-logo .fond-logo {
   position: absolute;
-  right: 7%;
+  right: 5%;
   z-index: -1;
-  width: 40%;
+  width: 80vh;
+  top: 10%;
 }
 
 /*--------------------------------------------
@@ -153,7 +160,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Local/footer
 --------------------------------------------- */
 footer {
-  background-color: red;
+  margin-top: 200vh;
 }
 
 /* Local/general
@@ -854,6 +861,7 @@ textarea {
   }
   .main-navigation ul {
     display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1097,5 +1105,22 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 1.5em;
+}
+
+/* Local/nav
+--------------------------------------------- */
+#primary-menu {
+  border: 2px solid aqua;
+  padding: 0 !important;
+  width: 15%;
+}
+
+#primary-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  background-color: #f0b8b8;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

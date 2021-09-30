@@ -1,27 +1,34 @@
 /// Page d'accueil
-.conteneur-logo {
-    position: relative;
+body{
+    overflow-x: hidden;
+    background-color: #3d634f !important;
+}
 
-    .logo {
-        float: right;
-        padding: 15% 15% 0 0;
+.premierViewport{
+    display: flex;
+    height: 60vh;
+}
+
+.conteneur-logo {
+    margin-top: 14vh;
+    margin-right: 30vh;
     
-        img {
-            width: 80%;
-            margin: 0 auto;
-        }
+    img {
+        width: 80%;
+        margin: 0 auto;
+    }
     
-        h1 {
-            font-weight: 200;
-            color: #0B132B; // Couleur temporaire. Il faudra les ajouter au fichier variables.sccs
-        }
+    h1 {
+        font-weight: 200;
+        color: #0B132B; // Couleur temporaire. Il faudra les ajouter au fichier variables.sccs
     }
     
     .fond-logo {
         position: absolute;
-        right: 7%;
+        right: 5%;
         z-index: -1;
-        width: 40%;
+        width: 80vh;
+        top: 10%;
     }
 }
 
