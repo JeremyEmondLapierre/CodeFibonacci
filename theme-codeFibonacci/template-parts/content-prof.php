@@ -9,42 +9,46 @@
 
 ?>
 <div id="accueil-prof">
-    <h1>Prof</h1>
+    <h1 class="exp">25 +</h1>
+    <h1 class="exp">Ans</h1>
+    <h2 class="exp">d'exprérience</h2>
+    <h1 id="prof-tim">Qu'est ce que le TIM ?</h1>
+    <p id="prof-tim2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
     <div class="accueil-img-prof">
         <div class="prof-1">
-        <img src="wp-content/uploads/photo-prof/Prof-2.jpg">
+        <img src="wp-content/uploads/photo-prof2/Prof-2.jpg">
         </div>
         <div class="prof-2">
-        <img src="wp-content/uploads/photo-prof/Prof-3.jpg">
+        <img src="wp-content/uploads/photo-prof2/Prof-3.jpg">
         </div>
         <div class="prof-3">
-        <img src="wp-content/uploads/photo-prof/Prof-4.jpg">
+        <img src="wp-content/uploads/photo-prof2/Prof-4.jpg">
         </div>
         <div class="prof-4">
-        <img src="wp-content/uploads/photo-prof/Prof-5.jpg">
+        <img src="wp-content/uploads/photo-prof2/Prof-5.jpg">
         </div>
         <div class="prof-5">
-        <img src="wp-content/uploads/photo-prof/Prof-6.jpg">
+        <img src="wp-content/uploads/photo-prof2/Prof-6.jpg">
         </div>
         <div class="prof-6">
-        <img src="wp-content/uploads/photo-prof/Prof-7.jpg">
+        <img src="wp-content/uploads/photo-prof2/Prof-7.jpg">
         </div>
         <div class="prof-7">
-        <img src="wp-content/uploads/photo-prof/Prof-8.jpg">
+        <img src="wp-content/uploads/photo-prof2/Prof-8.jpg">
         </div>
         <div class="prof-8">
-        <img src="wp-content/uploads/photo-prof/Prof-9.jpg">
+        <img src="wp-content/uploads/photo-prof2/Prof-9.jpg">
         </div>
         <div class="prof-9">
-        <img src="wp-content/uploads/photo-prof/Prof-10.png">
+        <img src="wp-content/uploads/photo-prof2/Prof-10.png">
         </div>
         <div class="prof-10">
-        <img src="wp-content/uploads/photo-prof/Prof-11.jpg">
+        <img src="wp-content/uploads/photo-prof2/Prof-11.jpg">
         </div>
         <div class="prof-11">
-        <img src="wp-content/uploads/photo-prof/Prof-12.png">
+        <img src="wp-content/uploads/photo-prof2/Prof-12.png">
         </div>
         <div class="prof-12">
-        <img src="wp-content/uploads/photo-prof/Manon.jpg">
+        <img src="wp-content/uploads/photo-prof2/Manon.jpg">
         </div>
     </div>
