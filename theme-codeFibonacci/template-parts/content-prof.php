@@ -9,10 +9,11 @@
 
 ?>
 <div id="accueil-prof">
-    <h1 class="exp">25 +</h1>
-    <h1 class="exp">Ans</h1>
-    <h2 class="exp">d'exprérience</h2>
-
+    <div class="exp">
+    <h1>25 +</h1>
+    <h1>Ans</h1>
+    <h2>d'exprérience</h2>
+    </div>
     <h1 id="prof-tim">Qu'est ce que le TIM ?</h1>
     <p id="prof-tim2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 

@@ -1,12 +1,14 @@
 #accueil-prof{
     img{
-        weight: 100px;
-        height: 200px;
+        height: 60%;
         float: left;
         opacity: 0.2; 
     }
+
     img:hover{
         opacity: 1;
+        filter: hue-rotate(15deg);
+        background: #EBEFF7;
     }
 
    #prof-tim{
@@ -22,6 +24,6 @@
     }
 
     .exp{
-        
+        padding-left: 80px;
     }
 }
