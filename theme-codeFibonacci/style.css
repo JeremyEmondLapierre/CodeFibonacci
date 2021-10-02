@@ -1115,14 +1115,15 @@ textarea {
 /* Local/prof
 --------------------------------------------- */
 #accueil-prof img {
-  weight: 100px;
-  height: 200px;
+  height: 60%;
   float: left;
   opacity: 0.2;
 }
 
 #accueil-prof img:hover {
   opacity: 1;
+  filter: hue-rotate(15deg);
+  background: #EBEFF7;
 }
 
 #accueil-prof #prof-tim {
@@ -1136,6 +1137,10 @@ textarea {
   padding-left: 55%;
   padding-right: 10%;
   margin-top: -120px;
+}
+
+#accueil-prof .exp {
+  padding-left: 80px;
 }
 
 /* Local/nav
