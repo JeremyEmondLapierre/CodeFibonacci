@@ -26,7 +26,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 body {
   overflow-x: hidden;
-  background-color: #3d634f !important;
+  background: #005b30 !important;
+  background: linear-gradient(0deg, #005b30 0%, #66bf95 50%, #66bf95 100%) !important;
 }
 
 body.custom-background {
@@ -36,12 +37,12 @@ body.custom-background {
 
 .premierViewport {
   display: flex;
-  height: 60vh;
+  height: 70vh;
 }
 
 .conteneur-logo {
-  margin-top: 14vh;
-  margin-right: 30vh;
+  margin-top: 35vh;
+  margin-right: 35vh;
 }
 
 .conteneur-logo img {
@@ -1118,6 +1119,18 @@ textarea {
   height: 60%;
   float: left;
   opacity: 0.2;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#accueil-prof .accueil-img-prof {
+  margin-top: 50px;
+  display: flex;
+}
+
+#accueil-prof .accueil-img-prof div {
+  width: 200px;
+  transform: scale(1.3);
 }
 
 #accueil-prof img:hover {
@@ -1146,7 +1159,6 @@ textarea {
 /* Local/nav
 --------------------------------------------- */
 #primary-menu {
-  border: 2px solid aqua;
   padding: 0 !important;
   width: 15%;
 }
@@ -1156,7 +1168,8 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 60px;
-  background-color: #f0b8b8;
-  border-radius: 50%;
+  background: #0b5d08;
+  background: radial-gradient(circle, #b0eeae 0%, #226d3b 100%);
+  border-radius: 31% 69% 62% 38% / 40% 50% 50% 60%;
 }
 /*# sourceMappingURL=style.css.map */

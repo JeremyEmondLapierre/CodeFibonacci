@@ -1,5 +1,4 @@
 #primary-menu{
-    border: 2px solid aqua;
     padding: 0 !important;
     width: 15%;
     li{
@@ -7,8 +6,9 @@
         justify-content: center;
         align-items: center;
         padding: 60px;
-        background-color: rgb(240, 184, 184);
-        border-radius: 50%;
+        background: rgb(11, 93, 8);
+        background: radial-gradient(circle, rgb(176, 238, 174) 0%, rgb(34, 109, 59) 100%);
+        border-radius: 31% 69% 62% 38% / 40% 50% 50% 60% ;
     }
     
 }

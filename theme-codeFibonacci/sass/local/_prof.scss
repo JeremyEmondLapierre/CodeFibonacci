@@ -3,6 +3,16 @@
         height: 60%;
         float: left;
         opacity: 0.2; 
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .accueil-img-prof{
+        margin-top: 50px;
+        display: flex;
+        div{
+            width: 200px;
+            transform: scale(1.3);
+        }
     }
 
     img:hover{

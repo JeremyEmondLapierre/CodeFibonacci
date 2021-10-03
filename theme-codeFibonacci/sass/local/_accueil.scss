@@ -1,7 +1,8 @@
 /// Page d'accueil
 body{
     overflow-x: hidden;
-    background-color: #3d634f !important;
+    background: rgb(0,91,48) !important;
+    background: linear-gradient(0deg, rgba(0,91,48,1) 0%, rgba(102,191,149,1) 50%, rgba(102,191,149,1) 100%) !important;
 }
 
 body.custom-background {
@@ -11,12 +12,13 @@ body.custom-background {
 
 .premierViewport{
     display: flex;
-    height: 60vh;
+    height: 70vh;
+
 }
 
 .conteneur-logo {
-    margin-top: 14vh;
-    margin-right: 30vh;
+    margin-top: 35vh;
+    margin-right: 35vh;
     
     img {
         width: 80%;
