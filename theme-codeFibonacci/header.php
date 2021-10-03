@@ -31,17 +31,17 @@
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				
 				<?php
 			else :
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				
 				<?php
 			endif;
 			$equipe_5_description = get_bloginfo( 'description', 'display' );
 			if ( $equipe_5_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $equipe_5_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
@@ -64,7 +64,14 @@
 				<img class="fond-logo" src="wp-content/uploads/2021/09/background-logo.svg" alt="">
 				<div class="logo" >
 					<img src="wp-content/uploads/2021/09/logo-tim-2.svg" alt="">
-					<h1>Techniques d'intégration multimédia</h1>
+					<?php
+						if ( is_home() && is_front_page() ) :
+					?>
+						<h1>Techniques d'intégration multimédia</h1>
+					<?php
+						endif;
+					?>
+					
 				</div>
 			</div>
 		</div>
@@ -73,10 +80,6 @@
 			<use href="wp-content/uploads/2021/09/background-1.svg"> </use>
 		</svg> -->
 		<img src="wp-content/uploads/2021/09/background-1.svg" alt="">
-		
-		<?php
-			get_template_part( 'template-parts/content', 'prof' );
-		?> 
 		
 		
 		
