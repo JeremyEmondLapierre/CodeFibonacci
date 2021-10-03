@@ -78,8 +78,6 @@
 			get_template_part( 'template-parts/content', 'prof' );
 		?> 
 		
-		<?php
-			get_template_part( 'template-parts/content', 'cours' );
-		?> 
+		
 		
 	</header><!-- #masthead -->
