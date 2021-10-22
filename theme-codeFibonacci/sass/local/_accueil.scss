@@ -101,7 +101,7 @@ body.custom-background {
         .cours-contenu {
             display: flex;
             width: 40%;
-            background-color: #86A6A6;
+            backdrop-filter: blur(50px);
             border-radius: 25px;
             padding: 2% 3%;
 
