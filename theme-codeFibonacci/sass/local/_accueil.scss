@@ -1,14 +1,5 @@
 /// Page d'accueil
-body{
-    overflow-x: hidden;
-    background: rgb(0,91,48) !important;
-    background: linear-gradient(0deg, rgba(0,91,48,1) 0%, rgba(102,191,149,1) 50%, rgba(102,191,149,1) 100%) !important;
-}
 
-body.custom-background {
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-}
 
 .premierViewport{
     display: flex;
@@ -45,6 +36,7 @@ body.custom-background {
 
 .accueil-cours {
     width: 100%;
+    position: relative;
 
     h1 {
         text-align: center;
@@ -53,6 +45,9 @@ body.custom-background {
     .accueil-cours-contenant {
         width: 80%;
         margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
         .icon {
             fill : #B7E8D7;
@@ -69,55 +64,62 @@ body.custom-background {
             }
         }
 
-        .accueil-cours-gauche {
-            width: 100%;
+        .accueil-cours-item {
+            width: 40%;
+            margin: 50px;
 
             .cours-contenu {
-                float: left;
-                margin-top: 10%;
-
+                display: flex;
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(20px);
+                border-radius: 25px;
+                padding: 2% 3%;
+                align-items: center;
+    
                 .accueil-cours-texte {
                     text-align: right;
                     padding-right: 8%;
+    
+                    h2 {
+                        margin-top: 0;
+                        font-weight: 400;
+                    }
+    
+                    p {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
-
-        .accueil-cours-droite {
-            width: 100%;
-            margin-top: 15%;
+        
+        // Pour chaque item de cours qui sont pairs
+        .accueil-cours-item:nth-child(even) {
+            margin-top: 20vh;
 
             .cours-contenu {
-                float: right;
-                margin-bottom: 10%;
+                flex-direction: row-reverse;
 
                 .accueil-cours-texte {
                     text-align: left;
                     padding-left: 8%;
-                }    
-            }
-        }
 
-        .cours-contenu {
-            display: flex;
-            width: 40%;
-            backdrop-filter: blur(50px);
-            border-radius: 25px;
-            padding: 2% 3%;
-
-            .accueil-cours-texte {
-                text-align: right;
-                padding-right: 8%;
-
-                h2 {
-                    margin-top: 0;
                 }
 
-                p {
-                    margin-bottom: 0;
+                .accueil-cours-icon {
+                    width: 20vw;
+                    margin: 5%;
                 }
             }
         }
+    }
+
+    // Image d'arrière plan
+    .bg-cours-1 {
+        position: absolute;
+        width: 100%;
+        z-index: -10;
+        top: 0;
+        object-fit: cover;
     }
 }
 

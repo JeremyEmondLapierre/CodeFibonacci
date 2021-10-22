@@ -1,5 +1,5 @@
 #accueil-prof{
-    img{
+    .img-prof {
         height: 60%;
         float: left;
         opacity: 0.2; 
@@ -15,7 +15,7 @@
         }
     }
 
-    img:hover{
+    .img-prof:hover {
         opacity: 1;
         filter: hue-rotate(15deg);
         background: #EBEFF7;
