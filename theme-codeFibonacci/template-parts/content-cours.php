@@ -137,14 +137,19 @@
                             <h2><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h2>
                             <p> <?php the_content(); ?> </p>
                         </div>
-                        <a href="https://eddym12.sg-host.com/cours">
-                            <?php the_post_thumbnail( 'thumbnail' ); ?>
-                        </a>
+                        <div class="accueil-cours-icon">
+                            <a href="https://eddym12.sg-host.com/cours">
+                                <?php the_post_thumbnail( 'thumbnail' ); ?>
+                            </a>
+                        </div>  
                     </div>
                 </div>
-                <div class="filtre"></div>
-                <!-- </div> -->
                 <?php endwhile; ?>
         </section>
     <?php endif; ?>
+
+    <img class="bg-cours-1" src="wp-content/uploads/bg-cours-1.svg"></img>
 </div>
+
+
+

@@ -24,17 +24,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /* Local/accueil
 --------------------------------------------- */
-body {
-  overflow-x: hidden;
-  background: #005b30 !important;
-  background: linear-gradient(0deg, #005b30 0%, #66bf95 50%, #66bf95 100%) !important;
-}
-
-body.custom-background {
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-}
-
 .premierViewport {
   display: flex;
   height: 70vh;
@@ -68,6 +57,7 @@ body.custom-background {
 ----------------------------------------------*/
 .accueil-cours {
   width: 100%;
+  position: relative;
 }
 
 .accueil-cours h1 {
@@ -77,6 +67,9 @@ body.custom-background {
 .accueil-cours .accueil-cours-contenant {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .accueil-cours .accueil-cours-contenant .icon {
@@ -94,54 +87,58 @@ body.custom-background {
   fill: #D7EEE6;
 }
 
-.accueil-cours .accueil-cours-contenant .accueil-cours-gauche {
-  width: 100%;
+.accueil-cours .accueil-cours-contenant .accueil-cours-item {
+  width: 40%;
+  margin: 50px;
 }
 
-.accueil-cours .accueil-cours-contenant .accueil-cours-gauche .cours-contenu {
-  float: left;
-  margin-top: 10%;
+.accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu {
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  padding: 2% 3%;
+  align-items: center;
 }
 
-.accueil-cours .accueil-cours-contenant .accueil-cours-gauche .cours-contenu .accueil-cours-texte {
+.accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-texte {
   text-align: right;
   padding-right: 8%;
 }
 
-.accueil-cours .accueil-cours-contenant .accueil-cours-droite {
-  width: 100%;
-  margin-top: 15%;
+.accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-texte h2 {
+  margin-top: 0;
+  font-weight: 400;
 }
 
-.accueil-cours .accueil-cours-contenant .accueil-cours-droite .cours-contenu {
-  float: right;
-  margin-bottom: 10%;
+.accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-texte p {
+  margin-bottom: 0;
 }
 
-.accueil-cours .accueil-cours-contenant .accueil-cours-droite .cours-contenu .accueil-cours-texte {
+.accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) {
+  margin-top: 20vh;
+}
+
+.accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) .cours-contenu {
+  flex-direction: row-reverse;
+}
+
+.accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) .cours-contenu .accueil-cours-texte {
   text-align: left;
   padding-left: 8%;
 }
 
-.accueil-cours .accueil-cours-contenant .cours-contenu {
-  display: flex;
-  width: 40%;
-  backdrop-filter: blur(50px);
-  border-radius: 25px;
-  padding: 2% 3%;
+.accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) .cours-contenu .accueil-cours-icon {
+  width: 20vw;
+  margin: 5%;
 }
 
-.accueil-cours .accueil-cours-contenant .cours-contenu .accueil-cours-texte {
-  text-align: right;
-  padding-right: 8%;
-}
-
-.accueil-cours .accueil-cours-contenant .cours-contenu .accueil-cours-texte h2 {
-  margin-top: 0;
-}
-
-.accueil-cours .accueil-cours-contenant .cours-contenu .accueil-cours-texte p {
-  margin-bottom: 0;
+.accueil-cours .bg-cours-1 {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  top: 0;
+  object-fit: cover;
 }
 
 /* width */
@@ -171,6 +168,24 @@ footer {
 
 /* Local/general
 --------------------------------------------- */
+body {
+  overflow-x: hidden;
+  background: #91B87B !important;
+}
+
+body.custom-background {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+  color: #0B132B;
+}
+
 /* Local/Old
 --------------------------------------------- */
 /*!
@@ -692,10 +707,6 @@ table {
 
 /* Links
 --------------------------------------------- */
-a {
-  color: #4169e1;
-}
-
 a:visited {
   color: #800080;
 }
@@ -1115,7 +1126,7 @@ textarea {
 
 /* Local/prof
 --------------------------------------------- */
-#accueil-prof img {
+#accueil-prof .img-prof {
   height: 60%;
   float: left;
   opacity: 0.2;
@@ -1133,7 +1144,7 @@ textarea {
   transform: scale(1.3);
 }
 
-#accueil-prof img:hover {
+#accueil-prof .img-prof:hover {
   opacity: 1;
   filter: hue-rotate(15deg);
   background: #EBEFF7;

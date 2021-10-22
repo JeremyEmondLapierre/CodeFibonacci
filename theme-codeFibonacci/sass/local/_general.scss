@@ -1,0 +1,18 @@
+body{
+    overflow-x: hidden;
+    background: #91B87B !important;
+    //background: linear-gradient(0deg, rgba(0,91,48,1) 0%, rgba(102,191,149,1) 50%, rgba(102,191,149,1) 100%) !important;
+}
+
+body.custom-background {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+    color: #0B132B;
+}
