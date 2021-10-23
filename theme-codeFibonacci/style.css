@@ -22,6 +22,12 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+/* Abstracts/abstracts
+-------------------------------------------- */
+/*@import "variables/colors";
+@import "variables/typography";
+@import "variables/structure";
+@import "variables/columns";*/
 /* Local/accueil
 --------------------------------------------- */
 .premierViewport {
@@ -65,11 +71,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .accueil-cours .accueil-cours-contenant {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .accueil-cours .accueil-cours-contenant {
+    width: 80%;
+  }
 }
 
 .accueil-cours .accueil-cours-contenant .icon {
@@ -88,8 +100,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item {
-  width: 40%;
+  width: 100%;
   margin: 50px;
+}
+
+@media (min-width: 1200px) {
+  .accueil-cours .accueil-cours-contenant .accueil-cours-item {
+    width: 40%;
+  }
 }
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu {
@@ -101,11 +119,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   align-items: center;
 }
 
-.accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-texte {
-  text-align: right;
-  padding-right: 8%;
-}
-
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-texte h2 {
   margin-top: 0;
   font-weight: 400;
@@ -115,8 +128,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   margin-bottom: 0;
 }
 
-.accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) {
-  margin-top: 20vh;
+.accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon {
+  width: 50vw;
+  margin: 5%;
+}
+
+@media (min-width: 1200px) {
+  .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) {
+    margin-top: 20vh;
+  }
 }
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) .cours-contenu {
@@ -128,9 +154,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   padding-left: 8%;
 }
 
-.accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) .cours-contenu .accueil-cours-icon {
-  width: 20vw;
-  margin: 5%;
+.accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(odd) .cours-contenu {
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 1200px) {
+  .accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(odd) .cours-contenu {
+    flex-direction: row;
+  }
+}
+
+.accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(odd) .cours-contenu .accueil-cours-texte {
+  text-align: right;
+  padding-right: 8%;
 }
 
 .accueil-cours .bg-cours-1 {
