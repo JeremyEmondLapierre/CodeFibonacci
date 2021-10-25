@@ -135,14 +135,23 @@
                 if(get_field('type-article') == "accueil-cours"):
                 ?>
                 
-                    <div class="accueil-cours-item">
+                    <div class="accueil-cours-item" >
+
                         <div class="cours-contenu">
                             <div class="accueil-cours-texte">
-                                <h2><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h2>
+                                <h2>
+                                    <a href="<?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo "http://";} else {echo "https://";}?><?php echo $_SERVER['HTTP_HOST']; ?><?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo $_SERVER['REQUEST_URI'];}?>/cours/">
+                                    <?php the_title() ?>
+                                    </a>
+                                </h2>
                                 <p> <?php the_content(); ?> </p>
                             </div>
                             <div class="accueil-cours-icon">
-                                <a href="https://eddym12.sg-host.com/cours">
+                                <!-- Selon si on est en ligne ou en local, on change la pathing pour qu'on se fasse bien envoyer
+                                sur la page de cours -->
+                                <a href="<?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo "http://";} else {echo "https://";}?><?php echo $_SERVER['HTTP_HOST']; ?><?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo $_SERVER['REQUEST_URI'];}?>/cours/">
+                            
+                                <?php  ?>
                                     <?php the_post_thumbnail( 'thumbnail' ); ?>
                                 </a>
                             </div>  
