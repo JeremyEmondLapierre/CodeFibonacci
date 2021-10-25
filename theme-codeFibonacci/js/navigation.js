@@ -97,3 +97,33 @@
 		}
 	}
 }() );
+
+var swiper = new Swiper(".mySwiper", {
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	
+	// Default parameters
+	slidesPerView: 1,
+	spaceBetween: 10,
+	// Responsive breakpoints
+	breakpoints: {
+		// when window width is >= 600px
+		600: {
+		slidesPerView: 3,
+		},
+		// when window width is >= 800px
+		800: {
+		slidesPerView: 5,
+		},
+		// when window width is >= 1200px
+		1200: {
+		slidesPerView: 10,
+		}
+	}
+	 
+
+  });
+
+  
