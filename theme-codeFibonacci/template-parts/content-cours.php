@@ -125,26 +125,33 @@
 
 <div class="accueil-cours">
     <?php if ( have_posts() ) : ?>
-
+        <h1>Nos cours</h1>
         <section class="accueil-cours-contenant">
+        
             <?php
             /* Start the Loop */
             while ( have_posts() ) :
-                the_post(); ?>
-                <div class="accueil-cours-item">
-                    <div class="cours-contenu">
-                        <div class="accueil-cours-texte">
-                            <h2><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h2>
-                            <p> <?php the_content(); ?> </p>
+                the_post(); 
+                if(get_field('type-article') == "accueil-cours"):
+                ?>
+                
+                    <div class="accueil-cours-item">
+                        <div class="cours-contenu">
+                            <div class="accueil-cours-texte">
+                                <h2><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h2>
+                                <p> <?php the_content(); ?> </p>
+                            </div>
+                            <div class="accueil-cours-icon">
+                                <a href="https://eddym12.sg-host.com/cours">
+                                    <?php the_post_thumbnail( 'thumbnail' ); ?>
+                                </a>
+                            </div>  
                         </div>
-                        <div class="accueil-cours-icon">
-                            <a href="https://eddym12.sg-host.com/cours">
-                                <?php the_post_thumbnail( 'thumbnail' ); ?>
-                            </a>
-                        </div>  
                     </div>
-                </div>
-                <?php endwhile; ?>
+
+                <?php 
+                endif;
+                endwhile; ?>
         </section>
     <?php endif; ?>
 
