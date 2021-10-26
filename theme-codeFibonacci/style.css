@@ -177,6 +177,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   object-fit: cover;
 }
 
+.accueil-cours .bg-cours-2 {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  top: 60%;
+  object-fit: cover;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;

@@ -142,12 +142,20 @@
         }
     }
 
-    // Image d'arrière plan
+    // Images d'arrière plan
     .bg-cours-1 {
         position: absolute;
         width: 100%;
         z-index: -10;
         top: 0;
+        object-fit: cover;
+    }
+
+    .bg-cours-2 {
+        position: absolute;
+        width: 100%;
+        z-index: -10;
+        top: 60%;
         object-fit: cover;
     }
 }
