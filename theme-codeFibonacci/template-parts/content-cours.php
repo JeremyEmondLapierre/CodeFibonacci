@@ -165,6 +165,7 @@
     <?php endif; ?>
 
     <img class="bg-cours-1" src="wp-content/uploads/bg-cours-1.svg"></img>
+    <img class="bg-cours-2" src="wp-content/uploads/bg-cours-2.svg"></img>
 </div>
 
 
