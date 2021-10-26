@@ -28,6 +28,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "variables/typography";
 @import "variables/structure";
 @import "variables/columns";*/
+/* -----------------
+	Les couleurs
+-------------------- */
 /* Local/accueil
 --------------------------------------------- */
 .premierViewport {
@@ -68,6 +71,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .accueil-cours h1 {
   text-align: center;
+  font-size: 4rem;
+  color: #FFFAB2;
 }
 
 .accueil-cours .accueil-cours-contenant {
@@ -76,12 +81,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-@media (min-width: 1200px) {
-  .accueil-cours .accueil-cours-contenant {
-    width: 80%;
-  }
+  /*@include desktop {
+            width: 80%;
+        }*/
 }
 
 .accueil-cours .accueil-cours-contenant .icon {
@@ -139,6 +141,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 }
 
+.accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) {
+  margin-top: 0;
+}
+
 @media (min-width: 1200px) {
   .accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) {
     margin-top: 20vh;
@@ -154,6 +160,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   padding-left: 8%;
 }
 
+@media (min-width: 1200px) {
+  .accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(even) .cours-contenu .accueil-cours-texte {
+    padding-left: 0;
+  }
+}
+
 .accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(odd) .cours-contenu {
   flex-direction: row-reverse;
 }
@@ -165,8 +177,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(odd) .cours-contenu .accueil-cours-texte {
-  text-align: right;
-  padding-right: 8%;
+  text-align: left;
+  padding-left: 8%;
+}
+
+@media (min-width: 1200px) {
+  .accueil-cours .accueil-cours-contenant .accueil-cours-item:nth-child(odd) .cours-contenu .accueil-cours-texte {
+    text-align: right;
+    padding-right: 8%;
+  }
 }
 
 .accueil-cours .bg-cours-1 {
