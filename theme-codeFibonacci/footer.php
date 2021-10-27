@@ -14,11 +14,20 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-				<?php
+				
+		</div><!-- .site-info -->
+
+		<div id="footer-tag">
+			
+			<a>Site départemental du TIM © 2021. Tout droits réservés</a>
+
+			<a>Conception et intégration du site par <?php
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( 'Thème: %1$s', 'equipe-5' ), 'Code Fibonacci.');
-				?>
-		</div><!-- .site-info -->
+				?></a>
+
+		
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
