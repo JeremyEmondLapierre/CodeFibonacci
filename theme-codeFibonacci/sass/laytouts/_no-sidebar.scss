@@ -1,0 +1,79 @@
+body{
+	overflow-x: hidden;
+	background-color: #F1FAEE; //cnahgement de la couleur du background du body html
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+
+.no-sidebar {
+
+	/*
+	.site {
+		display: grid;
+		grid-template-columns: auto;
+
+
+		grid-template-areas:
+			"header"
+			"main"
+			"widget"
+			"footer";
+			
+
+	}
+ */
+
+ .site {
+	display: grid;
+	grid-template-columns: auto;
+	
+      /*
+	    grid-template-areas:
+		"header header"
+		"main main"
+		"footer footer";
+    */
+		@include desktop{
+	
+			
+		/*	grid-template-areas:
+			"header header"
+			"main main"
+			"widget widget"
+			"footer footer";
+		*/
+		
+	}
+}
+
+
+}
+
+/*
+    #page - .site
+	    #masthead - .site-header
+		   .site-branding
+		      .site-title
+			  .site-description
+		   #site-navigation - .main-navigation	
+        #primary - .site-main
+		#secondary - widget-area
+		#colophon - .site-footer
+
+
+*/
+
+.site-branding, #primary, #colophon {
+	display: flex;
+	//margin: 0;
+		//padding: 0;
+	justify-content: center;
+	@include tablette{
+		
+		margin: 0;
+		padding: 0;
+	}
+}
