@@ -5,19 +5,9 @@
 	grid-template-areas:
 		"header header"
 		"main main"
-		"sidebar sidebar"
 		"footer footer";
 
-		@include desktop{
-	
-			grid-template-columns: 80% 20%;
-			grid-template-areas:
-			"header header"
-			"main sidebar"
-			"footer footer";
 		
-		
-	}
 }
 
 /*------------------------side bar desktop-----------------------*/
@@ -35,8 +25,7 @@
 
 .widget-area {
 	grid-area: sidebar;
-	background-color: #75a5cc;
-      color: #F1FAEE;
+	
 }
 
 .site-footer {
