@@ -206,33 +206,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background: #7BB8A1;
 }
 
-/* Local/footer
---------------------------------------------- */
-footer {
-  height: 20vh;
-  width: 100%;
-  background-color: #457B77;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-footer div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-  margin: 1rem;
-}
-
-footer #footer-tag {
-  align-items: bottom;
-}
-
-footer #footer-tag a {
-  font-size: 13px;
-}
-
 /* Local/general
 --------------------------------------------- */
 body {
@@ -1064,38 +1037,40 @@ textarea {
   width: 100%;
 }
 
+/*
 .gallery-columns-2 {
-  grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .gallery-columns-3 {
-  grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .gallery-columns-4 {
-  grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .gallery-columns-5 {
-  grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 }
 
 .gallery-columns-6 {
-  grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 }
 
 .gallery-columns-7 {
-  grid-template-columns: repeat(7, 1fr);
+	grid-template-columns: repeat(7, 1fr);
 }
 
 .gallery-columns-8 {
-  grid-template-columns: repeat(8, 1fr);
+	grid-template-columns: repeat(8, 1fr);
 }
 
 .gallery-columns-9 {
-  grid-template-columns: repeat(9, 1fr);
+	grid-template-columns: repeat(9, 1fr);
 }
 
+*/
 .gallery-caption {
   display: block;
 }
@@ -1253,5 +1228,41 @@ body {
 .menu-item-29 {
   display: flex;
   flex-direction: column;
+}
+
+/* Local/footer
+--------------------------------------------- */
+footer {
+  margin-top: 40vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+footer .bg-footer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  z-index: -10;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer #footer-tag {
+  width: 90%;
+  border-top: 1px solid #D7EEE6;
+  padding-top: 20px;
+}
+
+footer #footer-tag a {
+  color: #D7EEE6;
+  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */
