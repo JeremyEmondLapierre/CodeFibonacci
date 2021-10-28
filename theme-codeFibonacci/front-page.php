@@ -28,32 +28,18 @@ get_header();
 				</header>
 				<?php
 			endif;
+
+			?>
+
+
+			<?php
 			 
+
 		endif;
 		// Afficher la section de cours et de prof sur l'accueil
-
 		get_template_part( 'template-parts/content', 'prof' );
+		get_template_part( 'template-parts/content', 'cours' );
 		?>
-
-		
-		<div class="accueil-cours">
-			<h1>Nos cours</h1>
-			<section class="accueil-cours-contenant">
-				<?php
-				while ( have_posts() ) :
-					the_post(); 
-					
-					if(get_field('type-article') == "accueil-cours"):
-						get_template_part( 'template-parts/content', 'cours' );
-					endif;
-					
-				endwhile; 
-				?>
-			</section>
-			<img class="bg-cours-1" src="wp-content/uploads/bg-cours-1.svg"></img>
-			<img class="bg-cours-2" src="wp-content/uploads/bg-cours-2.svg"></img>
-		</div>
-
 		
 
 	</main><!-- #main -->
