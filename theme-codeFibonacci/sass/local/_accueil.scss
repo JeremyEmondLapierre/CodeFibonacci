@@ -40,6 +40,8 @@
 
     h1 {
         text-align: center;
+        font-size: 4rem;
+        color: $couleur1;
     }
 
     .accueil-cours-contenant {
@@ -49,9 +51,9 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        @include desktop {
+        /*@include desktop {
             width: 80%;
-        }
+        }*/
 
         .icon {
             fill : #B7E8D7;
@@ -109,6 +111,7 @@
         
         // Pour chaque item de cours qui sont pairs
         .accueil-cours-item:nth-child(even) {
+            margin-top: 0;
 
             @include desktop {
                 margin-top: 20vh;
@@ -120,6 +123,10 @@
                 .accueil-cours-texte {
                     text-align: left;
                     padding-left: 8%;
+
+                    @include desktop {
+                        padding-left: 0;
+                    }
                 }
             }
         }
@@ -135,8 +142,13 @@
                 }
 
                 .accueil-cours-texte {
-                    text-align: right;
-                    padding-right: 8%;
+                    text-align: left;
+                    padding-left: 8%;
+
+                    @include desktop {
+                        text-align: right;
+                        padding-right: 8%;
+                    }
                 }
             }
         }
