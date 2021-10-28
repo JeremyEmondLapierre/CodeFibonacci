@@ -28,11 +28,15 @@ get_header();
 				</header>
 				<?php
 			endif;
+
+			?>
+
+
+			<?php
 			 
 
 		endif;
 		// Afficher la section de cours et de prof sur l'accueil
-
 		get_template_part( 'template-parts/content', 'prof' );
 		?>
 
