@@ -125,11 +125,14 @@
 
 <div class="accueil-cours">
     <?php if ( have_posts() ) : ?>
-        
+        <h1>Nos cours</h1>
+        <section class="accueil-cours-contenant">
         
             <?php
             /* Start the Loop */
-            
+            while ( have_posts() ) :
+                the_post(); 
+                if(get_field('type-article') == "accueil-cours"):
                 ?>
                 
                     <div class="accueil-cours-item" >
@@ -155,8 +158,10 @@
                         </div>
                     </div>
 
-                
-        
+                <?php 
+                endif;
+                endwhile; ?>
+        </section>
     <?php endif; ?>
 
     <img class="bg-cours-1" src="wp-content/uploads/bg-cours-1.svg"></img>
