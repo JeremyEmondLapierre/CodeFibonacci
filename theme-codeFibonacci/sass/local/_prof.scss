@@ -9,7 +9,6 @@ body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  
   color: #000;
   margin: 0;
   padding: 0;
@@ -55,20 +54,19 @@ body {
 }
 
 
-
-@media screen and (max-width: 799px) {
-  .swiper-slide img {
-    padding-left: 70px;
-  }
-  
-}
-
 @media screen and (max-width: 1199px) {
   .swiper-slide img {
-    padding-left: 70px;
+    padding-left: 60px;
   }
   
 }
 
+#accueil-prof{
+  text-align: center;
+  p{
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
 
 

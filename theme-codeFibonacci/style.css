@@ -1220,16 +1220,19 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 1199px) {
   .swiper-slide img {
-    padding-left: 70px;
+    padding-left: 60px;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .swiper-slide img {
-    padding-left: 70px;
-  }
+#accueil-prof {
+  text-align: center;
+}
+
+#accueil-prof p {
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 /* Local/nav
