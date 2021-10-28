@@ -9,7 +9,6 @@ body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  text-align: center !important;
   
   color: #000;
   margin: 0;
@@ -55,10 +54,7 @@ body {
  opacity: 1;
 }
 
-p{
-  padding-left: 200px;
-  padding-right: 200px;
-}
+
 
 @media screen and (max-width: 799px) {
   .swiper-slide img {
