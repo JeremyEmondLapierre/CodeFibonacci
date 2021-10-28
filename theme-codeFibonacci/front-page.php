@@ -29,7 +29,6 @@ get_header();
 				<?php
 			endif;
 			 
-
 		endif;
 		// Afficher la section de cours et de prof sur l'accueil
 

@@ -8,10 +8,11 @@
  */
 
 ?>
-
             <?php
             /* Start the Loop */
-            
+            while ( have_posts() ) :
+                the_post(); 
+                if(get_field('type-article') == "accueil-cours"):
                 ?>
                 
                     <div class="accueil-cours-item" >
@@ -37,7 +38,6 @@
                         </div>
                     </div>
 
-                
 
     
     
