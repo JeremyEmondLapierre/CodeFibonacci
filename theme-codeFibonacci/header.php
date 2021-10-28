@@ -29,15 +29,6 @@
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				
-				<?php
-			else :
-				?>
-				
-				<?php
-			endif;
 			$equipe_5_description = get_bloginfo( 'description', 'display' );
 			if ( $equipe_5_description || is_customize_preview() ) :
 				?>
@@ -58,6 +49,7 @@
 				);
 				?>
 			</nav><!-- #site-navigation -->
+			<h1>20 ans d'expérience</h1>
 
 			<div class="conteneur-logo">
 				
