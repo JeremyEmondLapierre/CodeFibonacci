@@ -1,3 +1,31 @@
 footer{
-    margin-top:200vh;
+    
+    height: 20vh;
+    width:100%;
+    background-color: #457B77;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div{
+        
+        display: flex;
+        flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 1rem;
+       
+
+        
+    }
+
+    #footer-tag{
+        align-items: bottom;
+        a{ 
+            font-size: 13px;
+        }
+    }
+    
 }

@@ -27,6 +27,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 -------------------------------------------- */
 @import "local/abstracts/abstracts";
 
+/* layouts
+--------------------------------------------- */
+//@import "layouts/_no-sidebar";
+
 /* Local/accueil
 --------------------------------------------- */
 @import "local/accueil";
@@ -50,6 +54,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Local/nav
 --------------------------------------------- */
 @import "local/nav";
+
+
 
 
 
