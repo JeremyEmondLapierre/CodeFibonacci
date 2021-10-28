@@ -29,6 +29,8 @@ get_header();
 				<?php
 			endif;
 
+
+
 			?>
 
 
@@ -37,10 +39,26 @@ get_header();
 
 		endif;
 		// Afficher la section de cours et de prof sur l'accueil
-		get_template_part( 'template-parts/content', 'prof' );
-		get_template_part( 'template-parts/content', 'cours' );
+
+		//get_template_part( 'template-parts/content', 'prof' );
 		?>
-		
+
+		<h1>Nos cours</h1>
+        <section class="accueil-cours-contenant">
+		<?php
+		while ( have_posts() ) :
+			the_post(); 
+			
+			if(get_field('type-article') == "accueil-cours"):
+			
+
+				get_template_part( 'template-parts/content', 'cours' );
+
+			endif;
+			
+		endwhile; 
+		?>
+		</section>
 
 	</main><!-- #main -->
 
