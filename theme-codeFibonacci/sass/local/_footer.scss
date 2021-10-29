@@ -12,30 +12,94 @@ footer{
         bottom: 0;
         z-index: -10;
     }
-    
 
-    div{
-        
-        display: flex;
-        flex-direction: row;
-    justify-content: space-between;
-     
     
-    }
+   
 
     #footer-tag{
         
         width: 90%;
         border-top: 1px solid #D7EEE6 ;
         padding-top: 20px;
+        color:#D7EEE6;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
         
        
     
-        a{ 
-            color:#D7EEE6;
-            //padding: 10px;
-            font-size: 13px;
+        #div-texte-footer{ 
+            
+           
         }
+
+        #div-texte-logo{
+
+            display: flex;
+            align-items: center;
+           
+           img{
+               margin-right: 20px;
+           
+        }
+
+        
+        }
+
+
+
+    }
+
+    .global-footer{
+        width: 90%;
+        
+        
+        display: flex;
+
+       justify-content: space-between;
+
+        .site-info{
+
+            #site-info-titre{
+                color: #A2CC8A;
+                font-size: 1.5rem;
+            }
+            
+            
+            display: flex;
+            flex-direction: column;
+            p{
+                margin: 0;
+                padding: 5px;
+                color:#B7E8D7;
+            }
+        }
+
+    }
+
+    
+
+
+    .logos-footers{
+
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer-logo{
+
+        width: 150px;
+        opacity: 45%;
+        
+    }
+
+    #logo-FiboFooter{
+        width: 50px;
+        
     }
     
 }
