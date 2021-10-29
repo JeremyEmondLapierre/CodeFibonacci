@@ -13,12 +13,22 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+
+	<img class="bg-footer" src="wp-content/uploads/back-footer.svg"></img>
+
 		<div class="site-info">
 				
 		</div><!-- .site-info -->
 
+
+	<div class="liens-rapide">
+
+	
+	</div>
+
 		<div id="footer-tag">
-			
+
+		
 			<a>Site départemental du TIM © 2021. Tout droits réservés</a>
 
 			<a>Conception et intégration du site par <?php
