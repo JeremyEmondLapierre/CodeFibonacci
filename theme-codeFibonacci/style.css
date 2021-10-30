@@ -225,12 +225,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   transition: all 0.3s ease-in-out;
 }
 
-.accueil-vie .swiper-wrapper .swiper-slide .accueil-vie-img {
+.accueil-vie .swiper-wrapper .swiper-slide img {
   border-radius: 30px;
   width: 70%;
 }
 
-.accueil-vie .swiper-wrapper .swiper-slide-active .accueil-vie-img {
+.accueil-vie .swiper-wrapper .swiper-slide-active img {
   box-shadow: 0px 0px 24px 9px #fff;
   width: 100%;
 }
