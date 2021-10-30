@@ -48,9 +48,10 @@
 				
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
+		<?php if(is_home() && is_front_page()) :?>
 		<div class="premierViewport">
 			<nav id="site-navigation" class="main-navigation">
+				
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
 				<?php
 				wp_nav_menu(
@@ -60,7 +61,18 @@
 						
 					)
 				);
-				?>
+		endif;
+		?>
+		<?php if(!is_front_page()) : ?>
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location' => 'menu-2',
+				
+			)
+		);
+		endif; ?>
+		
 			</nav><!-- #site-navigation -->
 
 			<div class="conteneur-logo">
