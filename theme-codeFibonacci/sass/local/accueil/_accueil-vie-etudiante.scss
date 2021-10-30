@@ -5,8 +5,6 @@
 .accueil-vie {
 
     h1 {
-        text-align: center;
-        font-size: 4rem;
         color: $couleur-turquoise-1;   
     }
     
@@ -44,8 +42,12 @@
                 -webkit-box-shadow: 0px 0px 24px 9px #fff; 
                 box-shadow: 0px 0px 24px 9px #fff;
                 width: 100%;
-                height: 50em;
+                height: 20em;
                 object-fit: cover;
+
+                @include desktop {
+                    height: 50em;
+                }
             }
         }
 
@@ -53,42 +55,34 @@
         .swiper-slide-prev {
             justify-content: flex-end;
 
-            img {
-                height: 30em;
-                object-fit: cover;
-            }
         }
 
         // La slide d'après
         .swiper-slide-next {
             justify-content: flex-start;
 
-            img {
-                height: 30em;
-                object-fit: cover;
-            }
         }
 
-       
-    }
+        .swiper-slide-prev, .swiper-slide-next {
 
+            img {
+                height: 10em;
+                object-fit: cover;
+    
+                @include desktop {
+                    height: 30em;
+                }
+            }
+        }
+    }
+    
     // La pagination au pied du carrousel 
-    .swiper-pagination-bullet-active{
-        background-color: $couleur2 !important;
-    }
-
     .swiper-pagination-bullet {
         height: 1em;
         width: 1em;
     }
 
     // Les boutons de navigation
-    .swiper-button-next, .swiper-button-prev {
-        font-size: 15rem;
-        color: $couleur2;
-        top: 70%;
-    }
-
     .swiper-button-next {
         right: 0;
 
@@ -103,15 +97,5 @@
         @include tablet {
             left: 30%;
         }
-    }
-
-    .swiper-button-prev::after {
-        font-weight: 900;
-        font-size: 4rem;
-    }
-
-    .swiper-button-next::after {
-        font-weight: 900;
-        font-size: 4rem;
     }
 }

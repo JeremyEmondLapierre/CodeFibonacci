@@ -1,23 +1,29 @@
 footer{
-    margin-top: 40vh;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center; 
     padding-bottom: 40px;
+
+    @include tablet {
+        margin-top: 40vh;
+    }
+
     .bg-footer{
         width: 100%;
-        height: auto;
+        height: 85vh;
         position: absolute;
         bottom: 0;
         z-index: -10;
+        object-fit: cover;
+
+        @include tablet {
+            height: auto;
+        }
     }
 
-    
-   
-
     #footer-tag{
-        
         width: 90%;
         border-top: 1px solid #D7EEE6 ;
         padding-top: 20px;
@@ -26,10 +32,6 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        
-        
-       
     
         #div-texte-footer{ 
             
@@ -37,14 +39,12 @@ footer{
         }
 
         #div-texte-logo{
-
             display: flex;
             align-items: center;
            
            img{
                margin-right: 20px;
-           
-        }
+            }
 
         
         }
@@ -54,14 +54,21 @@ footer{
     }
 
     .global-footer{
-        width: 90%;
-        
-        
         display: flex;
+        justify-content: space-between;
+        flex-direction: column;
 
-       justify-content: space-between;
+        @include tablet {
+            width: 90%;
+            flex-direction: row;
+        }
 
         .site-info{
+            text-align: center;
+
+            @include tablet {
+                text-align: left;
+            }
 
             #site-info-titre{
                 color: #A2CC8A;
@@ -80,21 +87,20 @@ footer{
 
     }
 
-    
-
-
     .logos-footers{
-
         width: 90%;
         display: flex;
         justify-content: space-between;
     }
 
     #footer-logo{
-
         width: 150px;
         opacity: 45%;
+        margin: 0 auto;
         
+        @include desktop {
+            margin: 0 0;
+        }
     }
 
     #logo-FiboFooter{

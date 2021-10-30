@@ -6,13 +6,11 @@
 .accueil-cours {
     width: 100%;
     position: relative;
-    padding-bottom: 10em;
+    padding-bottom: 5em;
 
-
-    h1 {
-        text-align: center;
-        font-size: 4rem;
-        color: $couleur1;
+    @include desktop {
+        padding-bottom: 10em;
+        
     }
 
     .accueil-cours-contenant {
@@ -43,7 +41,7 @@
 
         .accueil-cours-item {
             width: 100%;
-            margin: 50px;
+            margin: 15px 30px;
 
             @include desktop {
                 width: 40%;
@@ -54,8 +52,12 @@
                 background: rgba(255, 255, 255, 0.15);
                 backdrop-filter: blur(20px);
                 border-radius: 25px;
-                padding: 2% 3%;
+                padding: 3% 4% 3% 0;
                 align-items: center;
+
+                @include desktop {
+                    padding: 2% 3%;
+                }
     
                 .accueil-cours-texte {
     
@@ -82,7 +84,6 @@
         
         // Pour chaque item de cours qui sont pairs
         .accueil-cours-item:nth-child(even) {
-            margin-top: 0;
 
             @include desktop {
                 margin-top: 20vh;

@@ -1,3 +1,17 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     overflow-x: hidden;
     background: #91B87B !important;
@@ -19,6 +33,20 @@ p, h1, h2, h3, h4, h5, h6, a {
 
 /// Page d'accueil
 
+.site-main {
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $couleur1;
+        padding: 0 1em;
+
+        @include desktop {
+            font-size: 4rem;
+            padding: 0;
+        }
+    } 
+}
 
 .premierViewport{
     display: flex;
@@ -48,6 +76,31 @@ p, h1, h2, h3, h4, h5, h6, a {
         top: 10%;
     }
 }
+
+ // Les boutons de navigation
+.swiper-button-next, .swiper-button-prev {
+    font-size: 15rem;
+    color: $couleur2;
+    top: 70%;
+}
+
+.swiper-button-prev::after {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.swiper-button-next::after {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+// La pagination au pied du carrousel 
+.swiper-pagination-bullet-active{
+    background-color: $couleur2 !important;
+}
+
+
+
 
 
 
