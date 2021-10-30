@@ -106,6 +106,8 @@ swiperVie = new Swiper('.accueil-vie', {
 	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
+	spaceBetween: 20,
+	centeredSlides : true,
   
 	pagination: {
 	  el: '.accueil-vie .swiper-pagination',
@@ -117,8 +119,24 @@ swiperVie = new Swiper('.accueil-vie', {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',
 	},
+
+	breakpoints: {
+		// when window width is >= 600px
+		600: {
+			slidesPerView: 1,
+		},
+		// when window width is >= 800px
+		800: {
+			slidesPerView: 3,
+		},
+		// when window width is >= 1200px
+		1200: {
+			slidesPerView: 3,
+		}
+	},
   
 });
+
 
 /*--------------------------------------------
   Le carrousel des Enseignants
@@ -137,25 +155,19 @@ var swiper = new Swiper(".mySwiper", {
 	breakpoints: {
 		// when window width is >= 600px
 		600: {
-		slidesPerView: 3,
-		spaceBetween: -40
-
+			slidesPerView: 3,
+			spaceBetween: -40
 		},
 		// when window width is >= 800px
 		800: {
-		slidesPerView: 5,
-		spaceBetween: -40
-
+			slidesPerView: 5,
+			spaceBetween: -40
 		},
 		// when window width is >= 1200px
 		1200: {
-		slidesPerView: 10,
-		spaceBetween: -40
-
-
-		}
-	}
-	 
-
+			slidesPerView: 10,
+			spaceBetween: -40
+		},
+	},
 });
 

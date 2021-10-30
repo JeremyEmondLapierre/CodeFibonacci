@@ -62,9 +62,15 @@ get_header();
 
 		<div class="accueil-vie swiper">
 			<div class="accueil-vie-contenant swiper-wrapper">
-				<div class="accueil-vie-item swiper-slide">Slide 1</div>
-				<div class="accueil-vie-item swiper-slide">Slide 2</div>
-				<div class="accueil-vie-item swiper-slide">Slide 3</div>
+				<div class="accueil-vie-item swiper-slide">
+					<img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
+				</div>
+				<div class="accueil-vie-item swiper-slide">
+					<img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
+				</div>
+				<div class="accueil-vie-item swiper-slide">
+					<img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
+				</div>
 			</div>
 			<div class="swiper-pagination"></div>
 
