@@ -12,13 +12,5 @@
 <!-- Ca c'est comme "l'item" du carrousel. -->
 <div class="accueil-vie-item swiper-slide">
     <!-- Les images dynamiques rentrent ici -->
-    <img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
-</div>
-
-<div class="accueil-vie-item swiper-slide">
-    <img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
-</div>
-
-<div class="accueil-vie-item swiper-slide">
-    <img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
+    <?php the_post_thumbnail( 'thumbnail' ); ?>
 </div>

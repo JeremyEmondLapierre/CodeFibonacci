@@ -84,7 +84,12 @@ get_header();
 			<div class="accueil-vie-contenant swiper-wrapper">
 				<?php
 					// Ici il y a les slides individuelles
-					get_template_part( 'template-parts/content', 'vie' );
+					while ( have_posts() ) :
+						the_post();
+						if(get_field('type-article') == "Vie-etudiante"): 
+							get_template_part( 'template-parts/content', 'vie' );
+						endif;
+					endwhile; 
 				?> 
 			</div>
 
