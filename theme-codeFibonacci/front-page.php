@@ -60,30 +60,22 @@ get_header();
 			<img class="bg-cours-2" src="wp-content/uploads/bg-cours-2.svg"></img>
 		</div>
 
-		<!-- Slider main container -->
-		<div class="swiper accueil-vie">
-		<!-- Additional required wrapper -->
-		<div class="swiper-wrapper accueil-vie-contenant">
-			<!-- Slides -->
-			<div class="swiper-slide accueil-vie-item">Slide 1</div>
-			<div class="swiper-slide accueil-vie-item">Slide 2</div>
-			<div class="swiper-slide accueil-vie-item">Slide 3</div>
-		</div>
-		<!-- If we need pagination -->
-		<div class="swiper-pagination"></div>
+		<div class="accueil-vie swiper">
+			<div class="accueil-vie-contenant swiper-wrapper">
+				<div class="accueil-vie-item swiper-slide">Slide 1</div>
+				<div class="accueil-vie-item swiper-slide">Slide 2</div>
+				<div class="accueil-vie-item swiper-slide">Slide 3</div>
+			</div>
+			<div class="swiper-pagination"></div>
 
-		<!-- If we need navigation buttons -->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
-
-		<!-- If we need scrollbar -->
-		<div class="swiper-scrollbar"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
 		</div>
 
 
 		
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	</main><!-- #main -->
+
 
 <?php
 get_sidebar();
