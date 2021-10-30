@@ -12,10 +12,10 @@
 
     <!-- Swiper -->
         <div class="swiper-slide">
-        <div class="prof">
-        <?php the_post_thumbnail( 'thumbnail' ); ?>
-            
-        </div>
+            <div class="prof">
+                <?php the_post_thumbnail( 'thumbnail' ); ?>
+                
+            </div>
         </div>
 
         

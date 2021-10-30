@@ -184,25 +184,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 //Fonction pour extraire les cours de la page d'accueil
 function extraire_article_accueil($query) {
 
-    if(  !is_admin() && $query->is_front_page()) {
-        $query->set('category_name', 'accueil-cours');
-        $query->set('post_per_page', -1);
-    }  
-
-}
-
-//Fonction pour extraire les profs
-function extraire_prof($query) {
-
-    if(  !is_admin() && $query->is_front_page() ) {
-        $query->set('category_name', 'Prof');
-        $query->set('post_per_page', -1);
+    if($query->is_front_page() && $query->is_main_query()) {
+		$query->set('category_name', 'accueil');
+		$query->set('post_per_page', -1);
+        
+        
     }  
 
 }
 
 
-add_action( "pre_get_posts", "extraire_prof" );
-add_action( "pre_get_posts", "extraire_article_accueil" );
+
+
+add_action( 'pre_get_posts', 'extraire_article_accueil' );
 
 
