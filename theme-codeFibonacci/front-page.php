@@ -61,6 +61,7 @@ get_header();
 		</div>
 
 		<div class="accueil-vie swiper">
+			<h1>Vie étudiante</h1>
 			<div class="accueil-vie-contenant swiper-wrapper">
 				<div class="accueil-vie-item swiper-slide">
 					<img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
@@ -72,6 +73,7 @@ get_header();
 					<img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
 				</div>
 			</div>
+
 			<div class="swiper-pagination"></div>
 
 			<div class="swiper-button-prev"></div>
