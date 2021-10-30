@@ -16,3 +16,77 @@ a {
 p, h1, h2, h3, h4, h5, h6, a {
     color: #0B132B; 
 }
+
+/// Page d'accueil
+
+
+.premierViewport{
+    display: flex;
+    height: 70vh;
+
+}
+
+.conteneur-logo {
+    margin-top: 35vh;
+    margin-right: 35vh;
+    
+    img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-weight: 200;
+        color: $couleur-bleu-marin; 
+    }
+    
+    .fond-logo {
+        position: absolute;
+        right: 5%;
+        z-index: -1;
+        width: 80vh;
+        top: 10%;
+    }
+}
+
+
+
+
+
+// ScrollBar
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    
+}
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(#B0F6DE, #B9DEA4);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D3FFBA;
+    border-radius: 51px;
+    box-shadow: 0px 1px 13px 1px #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7BB8A1;    
+}
+
+// Images d'arrière plan
+.bg-cours-1 {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    top: -50%;
+    object-fit: cover;
+}
+
+.bg-cours-2 {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    top: 60%;
+    object-fit: cover;
+}

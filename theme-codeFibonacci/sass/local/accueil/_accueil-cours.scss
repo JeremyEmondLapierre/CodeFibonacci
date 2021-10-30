@@ -1,0 +1,129 @@
+
+/*--------------------------------------------
+  La section Cours
+----------------------------------------------*/
+
+.accueil-cours {
+    width: 100%;
+    position: relative;
+    padding-bottom: 10em;
+
+
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+        color: $couleur1;
+    }
+
+    .accueil-cours-contenant {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        /*@include desktop {
+            width: 80%;
+        }*/
+
+        .icon {
+            fill : #B7E8D7;
+            transition: .3s all;
+            width: 100%;
+    
+            &:hover {
+                fill: #7BB8A1;
+                cursor: pointer;
+            }
+    
+            &:active {
+                fill: #D7EEE6;
+            }
+        }
+
+        .accueil-cours-item {
+            width: 100%;
+            margin: 50px;
+
+            @include desktop {
+                width: 40%;
+            }
+
+            .cours-contenu {
+                display: flex;
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(20px);
+                border-radius: 25px;
+                padding: 2% 3%;
+                align-items: center;
+    
+                .accueil-cours-texte {
+    
+                    h2 {
+                        margin-top: 0;
+                        font-weight: 400;
+                    }
+    
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .accueil-cours-icon {
+                    width: 50vw;
+                    margin: 5%;
+
+                    @include desktop {
+                        width: 30vw;
+                    }
+                }
+            }
+        }
+        
+        // Pour chaque item de cours qui sont pairs
+        .accueil-cours-item:nth-child(even) {
+            margin-top: 0;
+
+            @include desktop {
+                margin-top: 20vh;
+            } 
+
+            .cours-contenu {
+                flex-direction: row-reverse;
+
+                .accueil-cours-texte {
+                    text-align: left;
+                    padding-left: 8%;
+
+                    @include desktop {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        // Pour chaque item de cours qui sont impairs
+        .accueil-cours-item:nth-child(odd) {
+
+            .cours-contenu {
+                flex-direction: row-reverse;
+
+                @include desktop {
+                    flex-direction: row;
+                }
+
+                .accueil-cours-texte {
+                    text-align: left;
+                    padding-left: 8%;
+
+                    @include desktop {
+                        text-align: right;
+                        padding-right: 8%;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

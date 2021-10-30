@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: codeFibonacci
 Theme URI: http://underscores.me/
@@ -35,40 +36,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 /* Local/accueil
 --------------------------------------------- */
-.premierViewport {
-  display: flex;
-  height: 70vh;
-}
-
-.conteneur-logo {
-  margin-top: 35vh;
-  margin-right: 35vh;
-}
-
-.conteneur-logo img {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.conteneur-logo h1 {
-  font-weight: 200;
-  color: #0B132B;
-}
-
-.conteneur-logo .fond-logo {
-  position: absolute;
-  right: 5%;
-  z-index: -1;
-  width: 80vh;
-  top: 10%;
-}
-
 /*--------------------------------------------
   La section Cours
 ----------------------------------------------*/
 .accueil-cours {
   width: 100%;
   position: relative;
+  padding-bottom: 10em;
 }
 
 .accueil-cours h1 {
@@ -190,22 +164,85 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 }
 
-.accueil-cours .bg-cours-1 {
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.mySwiper .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0 !important;
+}
+
+.mySwiper .swiper-slide img {
+  display: block;
+  width: 12em;
+  height: 15em;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+.mySwiper .swiper-slide img:hover {
+  opacity: 1;
+}
+
+#accueil-prof {
+  text-align: center;
+  position: relative;
+  padding-bottom: 15em;
+}
+
+#accueil-prof h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #FFFAB2;
+}
+
+#accueil-prof p {
+  text-align: center;
+  color: #FFF;
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding: 0 1em;
+}
+
+@media (min-width: 1200px) {
+  #accueil-prof p {
+    padding: 0 10em 10em 10em;
+  }
+}
+
+.bg-prof {
   position: absolute;
   width: 100%;
-  z-index: -10;
+  z-index: -3;
+  object-fit: cover;
+  left: 0;
   top: 0;
-  object-fit: cover;
 }
 
-.accueil-cours .bg-cours-2 {
-  position: absolute;
-  width: 100%;
-  z-index: -10;
-  top: 60%;
-  object-fit: cover;
-}
-
+/*--------------------------------------------
+  La section Vie étudiante
+----------------------------------------------*/
 .accueil-vie h1 {
   text-align: center;
   font-size: 4rem;
@@ -300,6 +337,54 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   font-size: 4rem;
 }
 
+/* Local/general
+--------------------------------------------- */
+body {
+  overflow-x: hidden;
+  background: #91B87B !important;
+}
+
+body.custom-background {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+  color: #0B132B;
+}
+
+.premierViewport {
+  display: flex;
+  height: 70vh;
+}
+
+.conteneur-logo {
+  margin-top: 35vh;
+  margin-right: 35vh;
+}
+
+.conteneur-logo img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.conteneur-logo h1 {
+  font-weight: 200;
+  color: #0B132B;
+}
+
+.conteneur-logo .fond-logo {
+  position: absolute;
+  right: 5%;
+  z-index: -1;
+  width: 80vh;
+  top: 10%;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -319,24 +404,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background: #7BB8A1;
 }
 
-/* Local/general
---------------------------------------------- */
-body {
-  overflow-x: hidden;
-  background: #91B87B !important;
+.bg-cours-1 {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  top: -50%;
+  object-fit: cover;
 }
 
-body.custom-background {
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-}
-
-a {
-  text-decoration: none;
-}
-
-p, h1, h2, h3, h4, h5, h6, a {
-  color: #0B132B;
+.bg-cours-2 {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  top: 60%;
+  object-fit: cover;
 }
 
 /* Local/Old
@@ -1272,56 +1353,6 @@ textarea {
 
 /* Local/prof
 --------------------------------------------- */
-html, body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.mySwiper .swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.mySwiper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0 !important;
-}
-
-.mySwiper .swiper-slide img {
-  display: block;
-  width: 12em;
-  height: 15em;
-  opacity: 0.7;
-  object-fit: cover;
-}
-
-.mySwiper .swiper-slide img:hover {
-  opacity: 1;
-}
-
-#accueil-prof {
-  text-align: center;
-}
-
-#accueil-prof p {
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
 /* Local/nav
 --------------------------------------------- */
 #primary-menu {
