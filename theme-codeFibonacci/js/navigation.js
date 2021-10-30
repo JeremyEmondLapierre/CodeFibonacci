@@ -98,6 +98,32 @@
 	}
 }() );
 
+/*--------------------------------------------
+  Le carrousel de la Vie étudiante
+----------------------------------------------*/
+
+swiperVie = new Swiper('.accueil-vie', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+  
+	pagination: {
+	  el: '.accueil-vie .swiper-pagination',
+	  type: 'bullets',
+	},
+  
+	// Les boutons de navigation
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  
+});
+
+/*--------------------------------------------
+  Le carrousel des Enseignants
+----------------------------------------------*/
+
 var swiper = new Swiper(".mySwiper", {
 	navigation: {
 	  nextEl: ".swiper-button-next",
@@ -131,6 +157,5 @@ var swiper = new Swiper(".mySwiper", {
 	}
 	 
 
-  });
+});
 
-  

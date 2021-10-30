@@ -206,6 +206,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   object-fit: cover;
 }
 
+.accueil-vie .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.accueil-vie .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
