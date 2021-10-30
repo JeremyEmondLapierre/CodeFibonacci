@@ -36,10 +36,29 @@ get_header();
 			 
 
 		endif;
-		// Afficher la section de cours et de prof sur l'accueil
-		get_template_part( 'template-parts/content', 'prof' );
+		
 		?>
+		<div id="accueil-prof">
+    		<h1 id="prof-tim">Qu'est ce que le TIM ?</h1>
+    		<p id="prof-tim2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		</div>
 
+			<!-- Swiper -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">   
+					<?php
+					while ( have_posts() ) :
+						the_post();
+						if(get_field('type-article') == "Professeur"):  
+							get_template_part( 'template-parts/content', 'prof' );
+						endif;
+					endwhile; 
+					?>
+				</div>
+				<div class="swiper-button-next"></div>
+      			<div class="swiper-button-prev"></div>
+			</div>
+			
 		
 		<div class="accueil-cours">
 			<h1>Nos cours</h1>
@@ -51,8 +70,6 @@ get_header();
 					if(get_field('type-article') == "accueil-cours"):
 						get_template_part( 'template-parts/content', 'cours' );
 					endif;
-					
-					
 				endwhile; 
 				?>
 			</section>
