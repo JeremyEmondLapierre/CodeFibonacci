@@ -12,5 +12,5 @@
 <!-- Ca c'est comme "l'item" du carrousel. -->
 <div class="accueil-vie-item swiper-slide">
     <!-- Les images dynamiques rentrent ici -->
-    <?php the_post_thumbnail( 'thumbnail' ); ?>
+    <?php the_post_thumbnail( 'large' ); ?>
 </div>

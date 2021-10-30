@@ -1287,25 +1287,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 0 !important;
 }
 
 .mySwiper .swiper-slide img {
-  padding-left: 40px;
   display: block;
-  width: 50%;
-  height: 60%;
+  width: 12em;
+  height: 15em;
   opacity: 0.7;
   object-fit: cover;
 }
 
 .mySwiper .swiper-slide img:hover {
   opacity: 1;
-}
-
-@media screen and (max-width: 1199px) {
-  .mySwiper .swiper-slide img {
-    padding-left: 60px;
-  }
 }
 
 #accueil-prof {
