@@ -113,6 +113,7 @@ swiperVie = new Swiper('.accueil-vie', {
 	pagination: {
 	  el: '.accueil-vie .swiper-pagination',
 	  type: 'bullets',
+	  clickable: true,
 	},
   
 	// Les boutons de navigation
@@ -144,20 +145,23 @@ swiperVie = new Swiper('.accueil-vie', {
 ----------------------------------------------*/
 
 var swiper = new Swiper(".mySwiper", {
+
 	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
 	},
 	
-	// Default parameters
-	slidesPerView: 1,
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		dynamicBullets: true,
+		clickable: true,
+	},
+	  
+	slidesPerView: 4,
 	spaceBetween: 10,
 	// Responsive breakpoints
 	breakpoints: {
-		// when window width is >= 600px
-		600: {
-			slidesPerView: 3,
-		},
 		// when window width is >= 800px
 		800: {
 			slidesPerView: 5,
