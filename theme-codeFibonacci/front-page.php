@@ -60,20 +60,18 @@ get_header();
 			<img class="bg-cours-2" src="wp-content/uploads/bg-cours-2.svg"></img>
 		</div>
 
+		<!-- Le contant du swiper au complet -->
 		<div class="accueil-vie swiper">
 			<h1>Vie étudiante</h1>
+			<!-- Le contenant du carrousel des images UNIQUEMENT, pas de ses composantes -->
 			<div class="accueil-vie-contenant swiper-wrapper">
-				<div class="accueil-vie-item swiper-slide">
-					<img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
-				</div>
-				<div class="accueil-vie-item swiper-slide">
-					<img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
-				</div>
-				<div class="accueil-vie-item swiper-slide">
-					<img class="accueil-vie-img" src="wp-content/uploads/img-defaut.png" alt="">
-				</div>
+				<?php
+					// Ici il y a les slides individuelles
+					get_template_part( 'template-parts/content', 'vie' );
+				?> 
 			</div>
 
+			<!-- Ci-dessous se trouvent les composantes du swiper -->
 			<div class="swiper-pagination"></div>
 
 			<div class="swiper-button-prev"></div>

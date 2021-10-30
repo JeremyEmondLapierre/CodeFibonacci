@@ -108,6 +108,7 @@ swiperVie = new Swiper('.accueil-vie', {
 	loop: true,
 	spaceBetween: 20,
 	centeredSlides : true,
+	speed: 700,
   
 	pagination: {
 	  el: '.accueil-vie .swiper-pagination',
