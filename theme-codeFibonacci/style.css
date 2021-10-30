@@ -206,6 +206,88 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   object-fit: cover;
 }
 
+.accueil-vie h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #DFFFFD;
+}
+
+.accueil-vie .swiper-wrapper {
+  padding: 3% 0;
+  align-items: flex-end;
+}
+
+.accueil-vie .swiper-wrapper .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.accueil-vie .swiper-wrapper .swiper-slide .accueil-vie-img {
+  border-radius: 30px;
+  width: 70%;
+}
+
+.accueil-vie .swiper-wrapper .swiper-slide-active .accueil-vie-img {
+  box-shadow: 0px 0px 24px 9px #fff;
+  width: 100%;
+}
+
+.accueil-vie .swiper-wrapper .swiper-slide-prev {
+  justify-content: flex-end;
+}
+
+.accueil-vie .swiper-wrapper .swiper-slide-next {
+  justify-content: flex-start;
+}
+
+.accueil-vie .swiper-pagination-bullet-active {
+  background-color: #FFC857 !important;
+}
+
+.accueil-vie .swiper-pagination-bullet {
+  height: 1em;
+  width: 1em;
+}
+
+.accueil-vie .swiper-button-next, .accueil-vie .swiper-button-prev {
+  font-size: 15rem;
+  color: #FFC857;
+  top: 70%;
+}
+
+.accueil-vie .swiper-button-next {
+  right: 0;
+}
+
+@media (min-width: 800px) {
+  .accueil-vie .swiper-button-next {
+    right: 30%;
+  }
+}
+
+.accueil-vie .swiper-button-prev {
+  left: 0;
+}
+
+@media (min-width: 800px) {
+  .accueil-vie .swiper-button-prev {
+    left: 30%;
+  }
+}
+
+.accueil-vie .swiper-button-prev::after {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.accueil-vie .swiper-button-next::after {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;

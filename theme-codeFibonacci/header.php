@@ -17,10 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="icon" type="image/png" href="wp-content/uploads/favicon.png">
-	<link
-		rel="stylesheet"
-		href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-	/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
 	
 	

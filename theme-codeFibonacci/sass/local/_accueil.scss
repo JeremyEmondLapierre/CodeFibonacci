@@ -18,7 +18,7 @@
     
     h1 {
         font-weight: 200;
-        color: #0B132B; // Couleur temporaire. Il faudra les ajouter au fichier variables.sccs
+        color: $couleur-bleu-marin; 
     }
     
     .fond-logo {
@@ -169,6 +169,108 @@
         z-index: -10;
         top: 60%;
         object-fit: cover;
+    }
+}
+
+.accueil-vie {
+
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+        color: $couleur-turquoise-1;   
+    }
+    
+
+    .swiper-wrapper {
+        padding: 3% 0;
+        align-items: flex-end;
+
+        .swiper-slide {
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+
+            .accueil-vie-img {
+                border-radius: 30px;
+                width: 70%;
+            }
+        }
+
+        // La slide du milieu
+        .swiper-slide-active {
+
+            .accueil-vie-img {
+                -webkit-box-shadow: 0px 0px 24px 9px #fff; 
+                box-shadow: 0px 0px 24px 9px #fff;
+                width: 100%;
+            }
+        }
+
+        // La slide d'avant
+        .swiper-slide-prev {
+            justify-content: flex-end;
+        }
+
+        // La slide d'après
+        .swiper-slide-next {
+            justify-content: flex-start;
+        }
+
+       
+    }
+
+    // La pagination au pied du carrousel 
+    .swiper-pagination-bullet-active{
+        background-color: $couleur2 !important;
+    }
+
+    .swiper-pagination-bullet {
+        height: 1em;
+        width: 1em;
+    }
+
+    // Les boutons de navigation
+    .swiper-button-next, .swiper-button-prev {
+        font-size: 15rem;
+        color: $couleur2;
+        top: 70%;
+    }
+
+    .swiper-button-next {
+        right: 0;
+
+        @include tablet {
+            right: 30%;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+
+        @include tablet {
+            left: 30%;
+        }
+    }
+
+    .swiper-button-prev::after {
+        font-weight: 900;
+        font-size: 4rem;
+    }
+
+    .swiper-button-next::after {
+        font-weight: 900;
+        font-size: 4rem;
     }
 }
 
