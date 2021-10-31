@@ -1183,7 +1183,7 @@ textarea {
 }
 
 .main-navigation ul {
-  display: none;
+  display: flex;
   list-style: none;
   margin: 0;
   padding-right: 0;
@@ -1221,7 +1221,7 @@ textarea {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block;
+  display: none;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -1483,13 +1483,43 @@ textarea {
 #primary-menu {
   padding: 0 !important;
   width: 100px;
+  flex-direction: row;
+}
+
+@media (min-width: 1200px) {
+  #primary-menu {
+    flex-direction: column;
+  }
+}
+
+#primary-menu .sub-menu {
+  flex-direction: column;
+}
+
+#primary-menu .sub-menu li {
+  margin: 0;
+  padding: 60px;
 }
 
 #primary-menu li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px;
+  padding: 20px;
+}
+
+@media (min-width: 800px) {
+  #primary-menu li {
+    margin: 10px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #primary-menu li {
+    margin: 0;
+    padding: 60px;
+  }
 }
 
 #primary-menu li:nth-child(1) {
