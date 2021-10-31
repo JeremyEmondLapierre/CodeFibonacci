@@ -9,7 +9,7 @@ footer{
     @include tablet {
         margin-top: 40vh;
     }
-
+/*--------------------------------- style du background footer svg -----------------------------*/
     .bg-footer{
         width: 100%;
         height: 85vh;
@@ -22,7 +22,7 @@ footer{
             height: auto;
         }
     }
-
+/*----------------------------- parti au bas du footer ----------------*/
     #footer-tag{
         width: 90%;
         border-top: 1px solid #D7EEE6 ;
@@ -53,6 +53,7 @@ footer{
 
     }
 
+    /*------------style div conteneur global du footer  --------------*/
     .global-footer{
         display: flex;
         justify-content: space-between;
@@ -62,6 +63,8 @@ footer{
             width: 90%;
             flex-direction: row;
         }
+
+        
 
         .site-info{
             text-align: center;
@@ -85,7 +88,28 @@ footer{
             }
         }
 
+
+        /*---------div site liens important ----------------*/
+        .liens-rapide{
+
+            .menu{
+                list-style: none;
+            }
+
+            h3{
+                color: #A2CC8A;
+                font-size: 1.5rem;
+            }
+
+            .footer-navigation{
+                
+            }
+
+        }
+
     }
+
+    /*------------style logo footer --------------*/
 
     .logos-footers{
         width: 90%;

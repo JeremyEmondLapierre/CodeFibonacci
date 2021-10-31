@@ -35,7 +35,22 @@
 
 	 <div class="liens-rapide">
 
-	    
+	 <h3 id="liens-rapide-titre">Liens Rapide</h3>
+
+			<nav  class="footer-navigation">
+				
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						
+					)
+				);
+		
+		?>
+
+
+     	
 	
 	 </div>
 
