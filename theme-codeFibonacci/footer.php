@@ -33,10 +33,30 @@
 	 </div><!-- .site-info -->
 
 
-	 <div class="liens-rapide">
+	 <div class="liens-rapides">
 
-	    
+	 <h3 id="liens-rapides-titre">Liens Rapides</h3>
+
+			<nav  class="footer-navigation">
+				
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-2',
+						
+					)
+				);
+		
+		?>
+
+
+     	
 	
+	 </div>
+
+
+	 <div class="google-map">
+	 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d22346.240668199367!2d-73.566623110933!3d45.56480596253174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scegep%20maisonneuve%20%C3%A0%20proximit%C3%A9%20de%20Rue%20Sherbrooke%20Est%2C%20Qu%C3%A9bec!5e0!3m2!1sfr!2sca!4v1635702843327!5m2!1sfr!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	 </div>
 
  </div>

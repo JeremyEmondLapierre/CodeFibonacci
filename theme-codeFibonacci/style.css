@@ -1526,6 +1526,10 @@ footer {
   position: relative;
   align-items: center;
   padding-bottom: 40px;
+  /*--------------------------------- style du background footer svg -----------------------------*/
+  /*----------------------------- parti au bas du footer ----------------*/
+  /*------------style div conteneur global du footer  --------------*/
+  /*------------style logo footer --------------*/
 }
 
 @media (min-width: 800px) {
@@ -1545,7 +1549,13 @@ footer .bg-footer {
 
 @media (min-width: 800px) {
   footer .bg-footer {
-    height: auto;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer .bg-footer {
+    height: 50vh;
   }
 }
 
@@ -1571,8 +1581,11 @@ footer #footer-tag #div-texte-logo img {
 
 footer .global-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-bottom: 1.5rem;
   flex-direction: column;
+  /*---------div site liens important ----------------*/
+  /*---------div google map ----------------*/
 }
 
 @media (min-width: 800px) {
@@ -1603,6 +1616,74 @@ footer .global-footer .site-info p {
   margin: 0;
   padding: 5px;
   color: #B7E8D7;
+}
+
+footer .global-footer .liens-rapides {
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  footer .global-footer .liens-rapides {
+    margin: 1px;
+  }
+}
+
+footer .global-footer .liens-rapides ul {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+footer .global-footer .liens-rapides ul li {
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  footer .global-footer .liens-rapides ul li {
+    text-align: left;
+  }
+}
+
+@media (min-width: 800px) {
+  footer .global-footer .liens-rapides ul li {
+    text-align: left;
+  }
+}
+
+footer .global-footer .liens-rapides .menu {
+  list-style: none;
+}
+
+footer .global-footer .liens-rapides h3 {
+  color: #A2CC8A;
+  font-size: 1.5rem;
+}
+
+footer .global-footer .liens-rapides .footer-navigation ul {
+  padding: 0;
+}
+
+footer .global-footer .liens-rapides .footer-navigation a {
+  color: #B7E8D7;
+}
+
+footer .global-footer .google-map {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  footer .global-footer .google-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .global-footer .google-map iframe {
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 80%;
+    opacity: 60%;
+  }
 }
 
 footer .logos-footers {
