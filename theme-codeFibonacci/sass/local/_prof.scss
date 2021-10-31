@@ -65,4 +65,11 @@ body {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+
+  .swiper-slide img {
+    height: 20em !important;
+  }
+}
+
 
