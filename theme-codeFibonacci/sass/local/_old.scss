@@ -653,7 +653,8 @@ textarea {
 }
 
 .main-navigation ul {
-	display: none;
+	//display: none;
+	display: flex;
 	list-style: none;
 	margin: 0;
 	padding-right: 0;
@@ -697,7 +698,7 @@ textarea {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: none;
 }
 
 @media screen and (min-width: 37.5em) {
