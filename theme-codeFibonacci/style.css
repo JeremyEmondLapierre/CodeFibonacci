@@ -1498,7 +1498,6 @@ textarea {
 
 #primary-menu .sub-menu li {
   margin: 0;
-  padding: 60px;
 }
 
 #primary-menu li {
@@ -1506,6 +1505,7 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 800px) {
@@ -1518,8 +1518,18 @@ textarea {
 @media (min-width: 1200px) {
   #primary-menu li {
     margin: 0;
-    padding: 60px;
+    padding: 70px;
   }
+}
+
+#primary-menu li a:visited {
+  color: #527B88;
+}
+
+#primary-menu li a:hover,
+#primary-menu li a:focus,
+#primary-menu li a:active {
+  color: #FFFAB2;
 }
 
 #primary-menu li:nth-child(1) {
