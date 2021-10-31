@@ -19,7 +19,11 @@ footer{
         object-fit: cover;
 
         @include tablet {
-            height: auto;
+            height: 50vh;
+        }
+
+        @include desktop {
+            height: 50vh;
         }
     }
 /*----------------------------- parti au bas du footer ----------------*/
@@ -56,7 +60,10 @@ footer{
     /*------------style div conteneur global du footer  --------------*/
     .global-footer{
         display: flex;
-        justify-content: space-between;
+       justify-content: space-around;
+       padding-bottom: 1.5rem;
+       
+        
         flex-direction: column; 
 
         @include tablet {
@@ -68,6 +75,8 @@ footer{
 
         .site-info{
             text-align: center;
+            display: flex;
+            flex-direction: column;
 
             @include tablet {
                 text-align: left;
@@ -77,10 +86,7 @@ footer{
                 color: #A2CC8A;
                 font-size: 1.5rem;
             }
-            
-            
-            display: flex;
-            flex-direction: column;
+
             p{
                 margin: 0;
                 padding: 5px;
@@ -90,7 +96,41 @@ footer{
 
 
         /*---------div site liens important ----------------*/
-        .liens-rapide{
+        .liens-rapides{
+
+            //align-items: center;
+            margin: 0 auto;
+
+            @include desktop{
+                margin: 1px;
+            }
+
+            ul{
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                
+                li{
+                    text-align: center;
+                    width: 100%;
+
+                    @include desktop{
+
+                        text-align: left;
+        
+                    }
+
+                    @include tablet{
+
+                        text-align: left;
+        
+                    }
+
+                }
+
+            }
+
+            
 
             .menu{
                 list-style: none;
@@ -102,9 +142,38 @@ footer{
             }
 
             .footer-navigation{
-                
+
+                ul{
+                    padding: 0;
+                }
+
+                a{
+                    color: #B7E8D7;
+                }
             }
 
+        }
+        /*---------div google map ----------------*/
+        .google-map{
+
+            display: none;
+
+            @include desktop{
+                display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            iframe{
+                margin: 0 auto;
+                border-radius: 15px;
+                width: 80%;
+                opacity: 60%;
+            }
+            
+         }
+            
+           
         }
 
     }
