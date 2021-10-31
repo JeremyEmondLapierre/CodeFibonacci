@@ -38,10 +38,10 @@ get_header();
 		endif;
 		
 		?>
+
 		<div id="accueil-prof">
-    		<h1 id="prof-tim">Qu'est ce que le TIM ?</h1>
-    		<p id="prof-tim2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-		</div>
+    		<h1>Qu'est ce que le TIM ?</h1>
+    		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 
 			<!-- Swiper -->
 			<div class="swiper mySwiper">
@@ -55,9 +55,15 @@ get_header();
 					endwhile; 
 					?>
 				</div>
+
+				<div class="swiper-pagination"></div>
+				
 				<div class="swiper-button-next"></div>
-      			<div class="swiper-button-prev"></div>
+				<div class="swiper-button-prev"></div>
+				
+
 			</div>
+		</div>
 			
 		
 		<div class="accueil-cours">
@@ -73,7 +79,7 @@ get_header();
 				endwhile; 
 				?>
 			</section>
-			<img class="bg-cours-1" src="wp-content/uploads/bg-cours-1.svg"></img>
+			<img class="bg-cours-1" src="wp-content/uploads/bg-cours-3.svg"></img>
 			<img class="bg-cours-2" src="wp-content/uploads/bg-cours-2.svg"></img>
 		</div>
 

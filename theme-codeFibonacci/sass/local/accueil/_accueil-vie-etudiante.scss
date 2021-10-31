@@ -1,0 +1,101 @@
+/*--------------------------------------------
+  La section Vie étudiante
+----------------------------------------------*/
+
+.accueil-vie {
+
+    h1 {
+        color: $couleur-turquoise-1;   
+    }
+    
+
+    .swiper-wrapper {
+        padding: 3% 0;
+        align-items: flex-end;
+
+        .swiper-slide {
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+
+            img {
+                border-radius: 30px;
+                width: 70%;
+            }
+        }
+
+        // La slide du milieu
+        .swiper-slide-active {
+
+            img {
+                -webkit-box-shadow: 0px 0px 24px 9px #fff; 
+                box-shadow: 0px 0px 24px 9px #fff;
+                width: 100%;
+                height: 20em;
+                object-fit: cover;
+
+                @include desktop {
+                    height: 50em;
+                }
+            }
+        }
+
+        // La slide d'avant
+        .swiper-slide-prev {
+            justify-content: flex-end;
+
+        }
+
+        // La slide d'après
+        .swiper-slide-next {
+            justify-content: flex-start;
+
+        }
+
+        .swiper-slide-prev, .swiper-slide-next {
+
+            img {
+                height: 10em;
+                object-fit: cover;
+    
+                @include desktop {
+                    height: 30em;
+                }
+            }
+        }
+    }
+    
+    // La pagination au pied du carrousel 
+    .swiper-pagination-bullet {
+        height: 1em;
+        width: 1em;
+    }
+
+    // Les boutons de navigation
+    .swiper-button-next {
+        right: 0;
+
+        @include tablet {
+            right: 30%;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+
+        @include tablet {
+            left: 30%;
+        }
+    }
+}
