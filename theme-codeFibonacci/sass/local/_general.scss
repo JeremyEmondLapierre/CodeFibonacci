@@ -64,7 +64,23 @@ p, h1, h2, h3, h4, h5, h6, a {
 
 .premierViewport{
     display: flex;
-    height: 70vh;
+    height: 100vh;
+    position: relative;
+
+    .banniere-avant-accueil {
+        width: 100%;
+        position: absolute;
+        top: 80vh;
+    }
+
+    .banniere-accueil {
+        position: absolute;
+        height: 110vh;
+        width: 100%;
+        top: 0;
+        object-fit: cover;
+    }
+
 
 }
 

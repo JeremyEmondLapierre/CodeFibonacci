@@ -31,3 +31,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.banniere-accueil {
+    position: absolute;
+    z-index: -10;
+}
