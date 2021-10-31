@@ -33,9 +33,9 @@
 	 </div><!-- .site-info -->
 
 
-	 <div class="liens-rapide">
+	 <div class="liens-rapides">
 
-	 <h3 id="liens-rapide-titre">Liens Rapide</h3>
+	 <h3 id="liens-rapides-titre">Liens Rapides</h3>
 
 			<nav  class="footer-navigation">
 				

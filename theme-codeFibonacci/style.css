@@ -1425,8 +1425,6 @@ textarea {
   margin-bottom: 1.5em;
 }
 
-/* Local/prof
---------------------------------------------- */
 /* Local/nav
 --------------------------------------------- */
 #primary-menu {
@@ -1475,6 +1473,10 @@ footer {
   position: relative;
   align-items: center;
   padding-bottom: 40px;
+  /*--------------------------------- style du background footer svg -----------------------------*/
+  /*----------------------------- parti au bas du footer ----------------*/
+  /*------------style div conteneur global du footer  --------------*/
+  /*------------style logo footer --------------*/
 }
 
 @media (min-width: 800px) {
@@ -1522,6 +1524,7 @@ footer .global-footer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  /*---------div site liens important ----------------*/
 }
 
 @media (min-width: 800px) {
@@ -1552,6 +1555,15 @@ footer .global-footer .site-info p {
   margin: 0;
   padding: 5px;
   color: #B7E8D7;
+}
+
+footer .global-footer .liens-rapides .menu {
+  list-style: none;
+}
+
+footer .global-footer .liens-rapides h3 {
+  color: #A2CC8A;
+  font-size: 1.5rem;
 }
 
 footer .logos-footers {
