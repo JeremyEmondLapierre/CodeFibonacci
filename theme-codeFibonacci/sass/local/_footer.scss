@@ -56,7 +56,7 @@ footer{
     .global-footer{
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
+        flex-direction: column; 
 
         @include tablet {
             width: 90%;
