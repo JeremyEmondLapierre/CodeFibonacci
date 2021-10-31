@@ -32,6 +32,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* -----------------
 	Les couleurs
 -------------------- */
+@import url(https://use.typekit.net/ilj7zlw.css);
 /* layouts
 --------------------------------------------- */
 /* Local/accueil
@@ -107,11 +108,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-texte h2 {
   margin-top: 0;
+}
+
+.accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-texte h2 a {
   font-weight: 400;
+  font-size: 1.5em;
 }
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-texte p {
   margin-bottom: 0;
+  font-size: 1.3em;
 }
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon {
@@ -209,17 +215,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 }
 
+#accueil-prof h1 {
+  font-weight: 500;
+}
+
 #accueil-prof p {
   text-align: center;
   color: #FFF;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 100;
   padding: 0 2em;
 }
 
 @media (min-width: 1200px) {
   #accueil-prof p {
-    padding: 0 10em 10em 10em;
+    padding: 0 7em 10em 7em;
   }
 }
 
@@ -331,11 +341,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html, body {
   position: relative;
   height: 100%;
+  font-family: futura-pt, sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
   background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 'Futura PT', sans-serif !important;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -365,6 +378,9 @@ p, h1, h2, h3, h4, h5, h6, a {
   font-size: 2.5rem;
   color: #FFFAB2;
   padding: 0 1em;
+  font-family: futura-pt,sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @media (min-width: 1200px) {
@@ -372,6 +388,12 @@ p, h1, h2, h3, h4, h5, h6, a {
     font-size: 4rem;
     padding: 0;
   }
+}
+
+.site-main p {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .premierViewport {
