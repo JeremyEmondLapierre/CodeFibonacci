@@ -1,0 +1,84 @@
+
+.premierViewport{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+    }
+
+    .main-navigation {
+        width: 30%;
+
+        @include tablet {
+            width: 53em;
+        }
+
+        @include desktop {
+            width: 60%;
+        }
+    }
+
+
+    .banniere-avant-accueil {
+        width: 100%;
+        position: absolute;
+        top: 80vh;
+    }
+
+    .banniere-accueil {
+        position: absolute;
+        height: 107vh;
+        width: 100%;
+        top: -190px;
+        object-fit: cover;
+        z-index: -7;
+
+        @include desktop {
+            top: 0;
+        }
+    }
+}
+
+.conteneur-logo {
+    
+    img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-weight: 400;
+        color: $couleur-bleu-marin; 
+        width: 90%;
+        margin-top: 13em;
+        text-align: right;
+        font-size: 1.4em;
+
+        @include tablet {
+            margin-top: -4em;
+            font-size: 2em;
+        }
+
+        @include desktop {
+            width: 100%;
+            margin-top: 18em;
+        }
+    }
+    
+    .fond-logo {
+        position: absolute;
+        right: 7%;
+        z-index: -1;
+        width: 40vh;
+        top: 15%;
+
+        @include desktop {
+            width: 80vh;
+            right: 5%;
+            top: 10%;
+        }
+    }
+}
