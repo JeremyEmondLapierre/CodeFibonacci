@@ -37,6 +37,102 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 /* Local/accueil
 --------------------------------------------- */
+/* Accueil/Accueil-bannière
+--------------------------------------------- */
+.premierViewport {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .premierViewport {
+    flex-direction: row;
+  }
+}
+
+.premierViewport .main-navigation {
+  width: 30%;
+}
+
+@media (min-width: 800px) {
+  .premierViewport .main-navigation {
+    width: 53em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .premierViewport .main-navigation {
+    width: 60%;
+  }
+}
+
+.premierViewport .banniere-avant-accueil {
+  width: 100%;
+  position: absolute;
+  top: 80vh;
+}
+
+.premierViewport .banniere-accueil {
+  position: absolute;
+  height: 107vh;
+  width: 100%;
+  top: -190px;
+  object-fit: cover;
+  z-index: -7;
+}
+
+@media (min-width: 1200px) {
+  .premierViewport .banniere-accueil {
+    top: 0;
+  }
+}
+
+.conteneur-logo img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.conteneur-logo h1 {
+  font-weight: 400;
+  color: #0B132B;
+  width: 90%;
+  margin-top: 13em;
+  text-align: right;
+  font-size: 1.4em;
+}
+
+@media (min-width: 800px) {
+  .conteneur-logo h1 {
+    margin-top: -4em;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .conteneur-logo h1 {
+    width: 100%;
+    margin-top: 18em;
+  }
+}
+
+.conteneur-logo .fond-logo {
+  position: absolute;
+  right: 7%;
+  z-index: -1;
+  width: 40vh;
+  top: 15%;
+}
+
+@media (min-width: 1200px) {
+  .conteneur-logo .fond-logo {
+    width: 80vh;
+    right: 5%;
+    top: 10%;
+  }
+}
+
 /* Accueil/Accueil-cours
 --------------------------------------------- */
 /*--------------------------------------------
@@ -394,49 +490,6 @@ p, h1, h2, h3, h4, h5, h6, a {
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-style: normal;
-}
-
-.premierViewport {
-  display: flex;
-  height: 100vh;
-  position: relative;
-}
-
-.premierViewport .banniere-avant-accueil {
-  width: 100%;
-  position: absolute;
-  top: 80vh;
-}
-
-.premierViewport .banniere-accueil {
-  position: absolute;
-  height: 110vh;
-  width: 100%;
-  top: 0;
-  object-fit: cover;
-}
-
-.conteneur-logo {
-  margin-top: 35vh;
-  margin-right: 35vh;
-}
-
-.conteneur-logo img {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.conteneur-logo h1 {
-  font-weight: 200;
-  color: #0B132B;
-}
-
-.conteneur-logo .fond-logo {
-  position: absolute;
-  right: 5%;
-  z-index: -1;
-  width: 80vh;
-  top: 10%;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -1016,13 +1069,13 @@ table {
 /* Links
 --------------------------------------------- */
 a:visited {
-  color: #800080;
+  color: #FFC857;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #191970;
+  color: #DFFFFD;
 }
 
 a:focus {

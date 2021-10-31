@@ -62,51 +62,6 @@ p, h1, h2, h3, h4, h5, h6, a {
     }
 }
 
-.premierViewport{
-    display: flex;
-    height: 100vh;
-    position: relative;
-
-    .banniere-avant-accueil {
-        width: 100%;
-        position: absolute;
-        top: 80vh;
-    }
-
-    .banniere-accueil {
-        position: absolute;
-        height: 110vh;
-        width: 100%;
-        top: 0;
-        object-fit: cover;
-    }
-
-
-}
-
-.conteneur-logo {
-    margin-top: 35vh;
-    margin-right: 35vh;
-    
-    img {
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    h1 {
-        font-weight: 200;
-        color: $couleur-bleu-marin; 
-    }
-    
-    .fond-logo {
-        position: absolute;
-        right: 5%;
-        z-index: -1;
-        width: 80vh;
-        top: 10%;
-    }
-}
-
  // Les boutons de navigation
 .swiper-button-next, .swiper-button-prev {
     font-size: 15rem;
