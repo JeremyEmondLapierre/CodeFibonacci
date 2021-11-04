@@ -12,11 +12,10 @@
  /*OWO*/ 
 ?>
 
-<footer id="colophon" class="site-footer">
+<footer id="colophon" class="site-footer" 
+style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/footer-bg.png';?>');">
 
-	  <img class="bg-footer" src="wp-content/uploads/back-footer.svg"></img>
-
- <div class="global-footer">
+ <div class="global-footer" >
 
 	 <img id="footer-logo" src="wp-content/uploads/footer-Logo.svg"></img>
 

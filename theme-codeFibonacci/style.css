@@ -138,6 +138,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   La section Cours
 ----------------------------------------------*/
 .accueil-cours {
+  background-repeat: no-repeat;
   width: 100%;
   position: relative;
   padding-bottom: 5em;
@@ -352,6 +353,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------
   La section Vie étudiante
 ----------------------------------------------*/
+.accueil-vie {
+  background-repeat: no-repeat;
+}
+
 .accueil-vie h1 {
   color: #DFFFFD;
 }
@@ -1583,7 +1588,8 @@ footer {
   flex-direction: column;
   position: relative;
   align-items: center;
-  padding-bottom: 40px;
+  padding: 18vh 0 1.5vh 0;
+  background-size: cover;
   /*--------------------------------- style du background footer svg -----------------------------*/
   /*----------------------------- parti au bas du footer ----------------*/
   /*------------style div conteneur global du footer  --------------*/

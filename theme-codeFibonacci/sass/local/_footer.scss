@@ -1,10 +1,11 @@
-footer{
+footer {
     margin-top: 15vh;
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center; 
-    padding-bottom: 40px;
+    padding: 18vh 0 1.5vh 0;
+    background-size: cover;
 
     @include tablet {
         margin-top: 40vh;

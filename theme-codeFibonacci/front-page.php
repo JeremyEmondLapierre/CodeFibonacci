@@ -66,7 +66,7 @@ get_header();
 		</div>
 			
 		
-		<div class="accueil-cours">
+		<div class="accueil-cours" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/accueil-bg-2.png';?>');">
 			<h1>Nos cours</h1>
 			<section class="accueil-cours-contenant">
 				<?php
@@ -79,12 +79,10 @@ get_header();
 				endwhile; 
 				?>
 			</section>
-			<img class="bg-cours-1" src="wp-content/uploads/bg-cours-3.svg"></img>
-			<img class="bg-cours-2" src="wp-content/uploads/bg-cours-2.svg"></img>
 		</div>
 
 		<!-- Le contant du swiper au complet -->
-		<div class="accueil-vie swiper">
+		<div class="accueil-vie swiper" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/accueil-bg-3.png';?>');">
 			<h1>Vie étudiante</h1>
 			<!-- Le contenant du carrousel des images UNIQUEMENT, pas de ses composantes -->
 			<div class="accueil-vie-contenant swiper-wrapper">
