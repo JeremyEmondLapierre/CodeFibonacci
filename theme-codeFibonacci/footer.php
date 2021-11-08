@@ -17,7 +17,11 @@ style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11
 
  <div class="global-footer" >
 
-	 <img id="footer-logo" src="wp-content/uploads/footer-Logo.svg"></img>
+	 
+
+     <img id="footer-logo" src='<?php echo site_url().'/wp-content/uploads/2021/11/footer-Logo.svg';?>';>
+
+
 
 	 <div class="site-info">
 
@@ -68,7 +72,10 @@ style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11
 
 		 
 
-		<div id="div-texte-logo"> <img id="logo-FiboFooter" src="wp-content/uploads/petit-logo-Fibonacci.svg"></img>
+		<div id="div-texte-logo"> 
+			
+		
+		<img id="logo-FiboFooter" src='<?php echo site_url().'/wp-content/uploads/2021/11/petit-logo-Fibonacci.png';?>';>
 
 			Conception et intégration du site par <?php
 				/* translators: 1: Theme name, 2: Theme author. */

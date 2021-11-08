@@ -84,6 +84,7 @@ get_header();
 		<!-- Le contant du swiper au complet -->
 		<div class="accueil-vie swiper" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/accueil-bg-3.png';?>');">
 			<h1>Vie étudiante</h1>
+			
 			<!-- Le contenant du carrousel des images UNIQUEMENT, pas de ses composantes -->
 			<div class="accueil-vie-contenant swiper-wrapper">
 				<?php
