@@ -9,18 +9,18 @@
 
 get_header();
 ?>
-	///PAGE STAGE
 	<main id="primary" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
+			<header class="page-header stage">
 				<h1>Stage</h1>
 			</header><!-- .page-header -->
+			<div class="filtre">
+				
+				<button id="boutonATE"><h2>ATE</h2></button>
+				<h2>-</h2>
+				<button id="boutonFin"><h2>Fin d'étude</h2></button>
+			</div>
 
 			<?php
 			/* Start the Loop */
@@ -37,12 +37,6 @@ get_header();
 			endwhile;
 
 			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
 		?>
 
 	</main><!-- #main -->
@@ -50,3 +44,19 @@ get_header();
 <?php
 get_sidebar();
 get_footer();
+?>
+
+<script>
+
+	document.getElementById("boutonATE").addEventListener("click", function() {
+		console.log("Stage ATE");
+		document.getElementById("boutonATE").classList.add("actif");
+		document.getElementById("boutonFin").classList.remove("actif");
+	});
+
+	document.getElementById("boutonFin").addEventListener("click", function() {
+		console.log("Fin d'étude");
+		document.getElementById("boutonFin").classList.add("actif");
+		document.getElementById("boutonATE").classList.remove("actif");
+	});
+</script>
