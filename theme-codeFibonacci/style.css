@@ -1772,4 +1772,20 @@ footer #logo-FiboFooter {
   width: 50px;
   opacity: 45%;
 }
+
+/* Local/stage
+--------------------------------------------- */
+.stage h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.filtre {
+  display: flex;
+  justify-content: center;
+}
+
+.actif {
+  background-color: red;
+}
 /*# sourceMappingURL=style.css.map */
