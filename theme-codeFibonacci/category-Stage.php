@@ -19,6 +19,7 @@ get_header();
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
+				<h1>Stage</h1>
 			</header><!-- .page-header -->
 
 			<?php
