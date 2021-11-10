@@ -132,10 +132,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 }
 
-.page-header h1 {
-  font-family: 'Titillium Web', sans-serif !important;
-}
-
 /* Accueil/Accueil-cours
 --------------------------------------------- */
 /*--------------------------------------------
@@ -1588,6 +1584,18 @@ textarea {
   z-index: -10;
 }
 
+/* Local/vie 
+--------------------------------------------- */
+.gallerie-projets, .concours {
+  display: flex;
+  justify-content: center;
+}
+
+.gallerie-projets h3, .concours h3 {
+  color: #ECFEF8;
+  font-size: 2rem;
+}
+
 /* Local/footer
 --------------------------------------------- */
 footer {
@@ -1779,5 +1787,21 @@ footer #footer-logo {
 footer #logo-FiboFooter {
   width: 50px;
   opacity: 45%;
+}
+
+/* Local/stage
+--------------------------------------------- */
+.stage h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.filtre {
+  display: flex;
+  justify-content: center;
+}
+
+.actif {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */

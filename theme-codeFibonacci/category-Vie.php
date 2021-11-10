@@ -9,17 +9,38 @@
 
 get_header();
 ?>
-	///PAGE VIE ETUDIANTE
+	
 	<main id="primary" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+	
 
 			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
+				<h1>Vie Étudiante</h1>
 			</header><!-- .page-header -->
+
+			<section class="gallerie-projets">
+
+			<h3>Projets Étudiants</h3>
+
+			  <div class="lesProjets">
+
+			  
+			  </div>
+
+
+			</section>
+
+
+			<section class="concours">
+
+			<h3>Concours du programme</h3>
+
+
+			</section>
+
+
+
+
 
 			<?php
 			/* Start the Loop */
@@ -37,11 +58,7 @@ get_header();
 
 			the_posts_navigation();
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
+		
 		?>
 
 	</main><!-- #main -->
