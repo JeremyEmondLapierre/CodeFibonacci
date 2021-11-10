@@ -10,38 +10,34 @@
 get_header();
 ?>
 	////PAGE COURS
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main integre">
+		<header class="page-header">
+			<h1>Nos cours</h1>
+		</header><!-- .page-header -->
 
-		<?php if ( have_posts() ) : ?>
+		<div class="contenant-cheminement">
+			<div class="contenant-tableau-cheminement">
+				<div class="liste-cours">
+					<div class="item-cours">
+						<h6>Session 1</h6>
+						<div class="contenant-cours">
+							<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
+							<p>Mise en page Web</p>
+						</div>
+					</div>
+					<div class="item-cours"></div>
+					<div class="item-cours"></div>
+					<div class="item-cours"></div>
+					<div class="item-cours"></div>
+					<div class="item-cours"></div>
+				</div>
+			</div>
+		</div>
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+		<?php
+		/* Start the Loop */
+		
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
 		?>
 
 	</main><!-- #main -->
