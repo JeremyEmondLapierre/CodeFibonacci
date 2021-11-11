@@ -11,9 +11,7 @@ get_header();
 ?>
 	////PAGE COURS
 	<main id="primary" class="site-main integre" >
-		<header class="page-header">
-			<h1>Nos cours</h1>
-		</header><!-- .page-header -->
+		<h1>Nos cours</h1>
 
 		<div class="contenant-cheminement">
 			<div class="contenant-tableau-cheminement">
