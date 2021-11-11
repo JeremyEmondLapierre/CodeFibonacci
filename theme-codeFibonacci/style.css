@@ -1787,17 +1787,62 @@ footer #logo-FiboFooter {
 
 /* Local/stage
 --------------------------------------------- */
-.stage h1 {
+.pageStage .stage {
   margin: 0;
-  padding: 0;
 }
 
-.filtre {
+.pageStage .filtre {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.actif {
-  background-color: red;
+.pageStage button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.pageStage .btnActif h2 {
+  color: #e9c41f;
+}
+
+.pageStage .Actif {
+  display: block;
+}
+
+.pageStage .PasActif {
+  display: none;
+}
+
+.pageStage .texteResume {
+  padding: 2rem;
+  text-align: justify;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+  background-color: #bce99b;
+}
+
+.Exp .signetExp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.Exp .signetExp img {
+  background-color: #DAFFBE;
+  padding: 2rem;
+  border-radius: 60%;
+}
+
+.Exp .signetExp h3 {
+  flex-grow: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DAFFBE;
+  padding: 2rem;
+  margin-left: -10px;
 }
 /*# sourceMappingURL=style.css.map */

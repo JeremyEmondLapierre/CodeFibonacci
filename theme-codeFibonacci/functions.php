@@ -185,18 +185,24 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 //Fonction pour extraire les cours de la page d'accueil
 function extraire_article_accueil($query) {
 
-    if($query->is_front_page() && $query->is_main_query()) {
+    if(!is_admin() && $query->is_front_page() && $query->is_main_query()) {
 		$query->set('category_name', 'accueil');
 		$query->set('post_per_page', -1);
-        
-        
+   
     }  
-
 }
 
 
+function extraire_article_stage($query) {
+
+    if(!is_admin() && $query->is_main_query() && is_category('Stage')) {
+		$query->set('category_name', 'Stage');
+		$query->set('post_per_page', -1);
+    }  
+}
 
 
+add_action( 'pre_get_posts', 'extraire_article_stage' );
 add_action( 'pre_get_posts', 'extraire_article_accueil' );
 
 
