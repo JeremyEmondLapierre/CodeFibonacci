@@ -460,17 +460,14 @@ html, body {
 }
 
 body {
-  background: #eee;
   font: 'Futura PT', sans-serif !important;
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
-}
-
-body {
   overflow-x: hidden;
-  background: #91B87B !important;
+  background: #91B87B;
+  background-repeat: no-repeat;
 }
 
 body.custom-background {
@@ -1024,10 +1021,6 @@ big {
 
 /* Elements
 --------------------------------------------- */
-body {
-  background: #fff;
-}
-
 hr {
   background-color: #ccc;
   border: 0;
