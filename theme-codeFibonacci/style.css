@@ -39,6 +39,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 /* Accueil/Accueil-bannière
 --------------------------------------------- */
+/*--------------------------------------------
+  La bannière principale
+----------------------------------------------*/
 .premierViewport {
   height: 100vh;
   display: flex;
@@ -272,6 +275,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Accueil/Accueil-prof
 --------------------------------------------- */
+/*--------------------------------------------
+  La section Professeurs
+----------------------------------------------*/
 .mySwiper .swiper {
   width: 100%;
   height: 100%;
@@ -446,18 +452,22 @@ html, body {
   font-style: normal;
 }
 
+.integre .page-header h1 {
+  font-family: 'Titillium Web', sans-serif !important;
+  text-align: left;
+  margin: 0 6rem;
+  font-size: 6em;
+}
+
 body {
-  background: #eee;
   font: 'Futura PT', sans-serif !important;
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
-}
-
-body {
   overflow-x: hidden;
-  background: #91B87B !important;
+  background: #91B87B;
+  background-repeat: no-repeat;
 }
 
 body.custom-background {
@@ -1011,10 +1021,6 @@ big {
 
 /* Elements
 --------------------------------------------- */
-body {
-  background: #fff;
-}
-
 hr {
   background-color: #ccc;
   border: 0;
@@ -1799,5 +1805,53 @@ footer #logo-FiboFooter {
 
 .actif {
   background-color: red;
+}
+
+/* Local/stage
+--------------------------------------------- */
+/*--------------------------------------------
+  La page Cours
+----------------------------------------------*/
+.contenant-cheminement {
+  margin: 0 auto;
+  width: 85vw;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement {
+  background-color: #A2CC8A;
+  border-radius: 25px;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours {
+  padding: 2rem;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours {
+  display: flex;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-right: 55px;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours {
+  background-color: #C1E8AA;
+  padding: 20px 20px;
+  border-radius: 25px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .logo-cours {
+  width: 2.5rem;
+  margin-right: 5rem;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours p {
+  font-weight: 400;
+  font-size: 1.7em;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

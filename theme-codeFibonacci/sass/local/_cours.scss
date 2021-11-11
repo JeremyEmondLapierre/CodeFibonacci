@@ -1,0 +1,46 @@
+/*--------------------------------------------
+  La page Cours
+----------------------------------------------*/
+
+.contenant-cheminement {
+    margin: 0 auto;
+    width: 85vw;
+
+    .contenant-tableau-cheminement {
+        background-color: #A2CC8A;
+        border-radius: 25px;
+
+        .liste-cours {
+            padding: 2rem;
+
+            .item-cours {
+                display: flex;
+
+                h6 {
+                    font-weight: 500;
+                    font-size: 1.5em;
+                    margin-right: 55px;
+                }
+
+                .contenant-cours {
+                    background-color: #C1E8AA;
+                    padding: 20px 20px;
+                    border-radius: 25px;
+                    display: flex;
+                    flex-grow: 1;
+
+                    .logo-cours {
+                        width: 2.5rem;
+                        margin-right: 5rem;
+                    }
+                    
+                    p {
+                        font-weight: 400;
+                        font-size: 1.7em;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

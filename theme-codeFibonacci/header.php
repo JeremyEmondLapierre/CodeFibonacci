@@ -18,12 +18,14 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="icon" type="image/png" href="wp-content/uploads/favicon.png">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
 	
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> <?php if(!is_front_page()) : ?> style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/bg-header-integre.png';?>');" <?php endif ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'equipe-5' ); ?></a>

@@ -50,7 +50,7 @@ get_header();
 					while ( have_posts() ) :
 						the_post();
 						if(get_field('type-article') == "Professeur"):  
-							get_template_part( 'template-parts/content', 'prof' );
+							get_template_part( 'template-parts/content', 'accueil-prof' );
 						endif;
 					endwhile; 
 					?>
@@ -74,7 +74,7 @@ get_header();
 					the_post(); 
 					
 					if(get_field('type-article') == "accueil-cours"):
-						get_template_part( 'template-parts/content', 'cours' );
+						get_template_part( 'template-parts/content', 'accueil-cours' );
 					endif;
 				endwhile; 
 				?>
@@ -92,7 +92,7 @@ get_header();
 					while ( have_posts() ) :
 						the_post();
 						if(get_field('type-article') == "Vie-etudiante"): 
-							get_template_part( 'template-parts/content', 'vie' );
+							get_template_part( 'template-parts/content', 'accueil-vie' );
 						endif;
 					endwhile; 
 				?> 
