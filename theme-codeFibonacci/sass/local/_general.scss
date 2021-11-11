@@ -11,7 +11,7 @@ html, body {
     h1 {
         font-family: 'Titillium Web', sans-serif !important;
         margin: 0 6rem;
-        font-size: 6em;
+        font-size: 7em !important;
         text-align: center;
 
         @include desktop {
