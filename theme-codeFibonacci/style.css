@@ -1582,6 +1582,25 @@ textarea {
 
 /* Local/vie 
 --------------------------------------------- */
+.page-header {
+  width: 100%;
+}
+
+.page-header div {
+  width: 33%;
+}
+
+.page-header div h1 {
+  align-items: center;
+  margin: 0 auto;
+}
+
+.page-header div h4 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .gallerie-projets, .concours {
   display: flex;
   justify-content: center;
