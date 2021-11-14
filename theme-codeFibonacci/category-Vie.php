@@ -15,7 +15,12 @@ get_header();
 	
 
 			<header class="page-header">
+				<div>
 				<h1>Vie Étudiante</h1>
+				<h4>Accueil</h4>
+				<h4>Vie Étudiante</h4>
+				</div>
+				
 			</header><!-- .page-header -->
 
 			<section class="gallerie-projets">
