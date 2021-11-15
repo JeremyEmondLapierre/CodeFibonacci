@@ -1,17 +1,65 @@
-.stage{
 
-    h1{
-        margin: 0;
-        padding: 0;
-        
-    } 
+.pageStage{
+    .stage{
+            margin: 0;
+    }
+    .filtre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    button{
+        background-color: rgba(0,0,0,0);
+        border: none;
+    }
+    
+    .btnActif{
+        h2{
+            color: rgb(233, 196, 31);
+        }
+    }
+
+    .Actif{
+        display: block;
+    }
+    .PasActif{
+        display: none;
+    }
+
+    .texteResume{
+        padding: 2rem;
+        text-align: justify;
+        border-radius: 10px;
+        width: 60%;
+        margin: auto;
+        background-color: #bce99b;
+    }
 
 }
-.filtre{
-    display: flex;
-    justify-content: center;
-}
 
-.actif{
-    background-color: red;
+.Exp{
+    
+    .signetExp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+
+        img{
+            background-color: #DAFFBE;
+            padding: 2rem;
+            border-radius: 60%;
+        }
+        h3{
+            flex-grow: 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #DAFFBE;
+            padding: 2rem;
+            margin-left: -10px;
+        }
+    }
+    
 }

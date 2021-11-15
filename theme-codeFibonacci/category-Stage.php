@@ -9,35 +9,57 @@
 
 get_header();
 ?>
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main pageStage">
 
 
-			<header class="page-header stage">
-				<h1>Stage</h1>
-			</header><!-- .page-header -->
+			<h1 class="stage">Stage</h1>
 			<div class="filtre">
-				
-				<button id="boutonATE"><h2>ATE</h2></button>
+				<button id="boutonATE" class="btnActif"><h2>ATE</h2></button>
 				<h2>-</h2>
-				<button id="boutonFin"><h2>Fin d'étude</h2></button>
+				<button id="boutonFin" class=""><h2>Fin d'étude</h2></button>
+			</div>
+
+			
+
+		<div id="ATE" class="Actif">
+			<div class="texteResume">
+				<p>L’ATE est une approche de formation adaptée aux besoins changeants du marché du
+				travail, où l’apprentissage intègre des séquences en classe et en entreprise. Les
+				étudiants participent à au moins deux stages en entreprise, qui représentent au moins
+				20% de la durée totale du programme d’études.</p>
 			</div>
 
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
+				if(get_field('type_de_stage') == "ATE"):
+					get_template_part( 'template-parts/content', 'Stage' );
+				endif;
 			endwhile;
-
-			the_posts_navigation();
 		?>
+			
+			
+		</div>
+
+		<div id="FIN" class="PasActif">
+			<div class="texteResume">
+				<p>Ce stage a pour but de placer l’étudiant dans une entreprise dans le but d’intégrer un emploi à plus long terme. Ce stage est très intéressant, car l’étudiant est à la fin de son parcours scolaire. Il a donc déjà développé la plupart des compétences qu’il devait acquérir à la suite de ses études. Ces stages sont plus communs en formation collégiale et professionnelle</p>
+			</div>
+			<?php
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
+				if(get_field('type_de_stage') == "Fin"):
+					get_template_part( 'template-parts/content', 'Stage' );
+				endif;
+			endwhile;
+		?>
+
+			
+
+		</div>
+		
 
 	</main><!-- #main -->
 
@@ -50,13 +72,26 @@ get_footer();
 
 	document.getElementById("boutonATE").addEventListener("click", function() {
 		console.log("Stage ATE");
-		document.getElementById("boutonATE").classList.add("actif");
-		document.getElementById("boutonFin").classList.remove("actif");
+		//Gestion des boutons
+		document.getElementById("boutonATE").classList.add("btnActif");
+		document.getElementById("boutonFin").classList.remove("btnActif");
+		//Gestion des éléments
+		document.getElementById("ATE").classList.add("Actif");
+		document.getElementById("ATE").classList.remove("PasActif");
+		document.getElementById("FIN").classList.add("PasActif");
+		document.getElementById("FIN").classList.remove("Actif");
+
 	});
 
 	document.getElementById("boutonFin").addEventListener("click", function() {
 		console.log("Fin d'étude");
-		document.getElementById("boutonFin").classList.add("actif");
-		document.getElementById("boutonATE").classList.remove("actif");
+		//Gestion des boutons
+		document.getElementById("boutonFin").classList.add("btnActif");
+		document.getElementById("boutonATE").classList.remove("btnActif");
+		//Gestion des éléments
+		document.getElementById("ATE").classList.add("PasActif");
+		document.getElementById("ATE").classList.remove("Actif");
+		document.getElementById("FIN").classList.add("Actif");
+		document.getElementById("FIN").classList.remove("PasActif");
 	});
 </script>

@@ -1588,6 +1588,25 @@ textarea {
 
 /* Local/vie 
 --------------------------------------------- */
+.page-header {
+  width: 100%;
+}
+
+.page-header div {
+  width: 33%;
+}
+
+.page-header div h1 {
+  align-items: center;
+  margin: 0 auto;
+}
+
+.page-header div h4 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .gallerie-projets, .concours {
   display: flex;
   justify-content: center;
@@ -1793,18 +1812,63 @@ footer #logo-FiboFooter {
 
 /* Local/stage
 --------------------------------------------- */
-.stage h1 {
+.pageStage .stage {
   margin: 0;
-  padding: 0;
 }
 
-.filtre {
+.pageStage .filtre {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.actif {
-  background-color: red;
+.pageStage button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.pageStage .btnActif h2 {
+  color: #e9c41f;
+}
+
+.pageStage .Actif {
+  display: block;
+}
+
+.pageStage .PasActif {
+  display: none;
+}
+
+.pageStage .texteResume {
+  padding: 2rem;
+  text-align: justify;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+  background-color: #bce99b;
+}
+
+.Exp .signetExp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.Exp .signetExp img {
+  background-color: #DAFFBE;
+  padding: 2rem;
+  border-radius: 60%;
+}
+
+.Exp .signetExp h3 {
+  flex-grow: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DAFFBE;
+  padding: 2rem;
+  margin-left: -10px;
 }
 
 /* Local/stage
@@ -1857,7 +1921,27 @@ footer #logo-FiboFooter {
 
 /* Local/prof
 --------------------------------------------- */
-.dropbtn {
+.prof-logi {
+  margin-top: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.logique {
+  /*prof*/
+  /* The container must be positioned relative: */
+  /* Style the arrow inside the select element: */
+  /* Point the arrow upwards when the select box is open (active): */
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+
+.logique h2 {
+  text-align: center;
+}
+
+.logique .dropbtn {
   background-color: #4CAF50;
   color: white;
   padding: 16px;
@@ -1866,60 +1950,61 @@ footer #logo-FiboFooter {
   cursor: pointer;
 }
 
-.dropdown {
+.logique .dropdown {
   position: relative;
   display: inline-block;
+  padding-left: 200px;
 }
 
-.dropdown-content {
+.logique .dropdown-content {
   display: none;
   position: absolute;
   background-color: #09a7e1;
   font-size: large;
   min-width: 90px;
-  left: 80px;
+  left: 280px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-content a {
+.logique .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 20px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {
+.logique .dropdown-content a:hover {
   background-color: #da088d;
   color: white;
 }
 
-.dropdown:hover .dropdown-content {
+.logique .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
+.logique .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
 
-/*prof*/
-/* The container must be positioned relative: */
-.custom-select {
+.logique .custom-select {
   position: relative;
   font-family: Arial;
   margin-top: 10px;
 }
 
-.custom-select select {
+.logique .custom-select select {
   display: none;
   /*hide original SELECT element: */
 }
 
-.select-selected {
+.logique .select-selected {
   background-color: #0c7235;
+  margin-top: 30px;
+  height: 50px;
+  font-size: x-large;
 }
 
-/* Style the arrow inside the select element: */
-.select-selected:after {
+.logique .select-selected:after {
   position: absolute;
   content: "";
   top: 14px;
@@ -1930,14 +2015,12 @@ footer #logo-FiboFooter {
   border-color: #fff transparent transparent transparent;
 }
 
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
+.logique .select-selected.select-arrow-active:after {
   border-color: transparent transparent #fff transparent;
   top: 7px;
 }
 
-/* style the items (options), including the selected item: */
-.select-items div, .select-selected {
+.logique .select-items div, .logique .select-selected {
   color: #ffffff;
   padding: 8px 16px;
   border: 1px solid transparent;
@@ -1945,8 +2028,7 @@ footer #logo-FiboFooter {
   cursor: pointer;
 }
 
-/* Style items (options): */
-.select-items {
+.logique .select-items {
   position: absolute;
   background-color: DodgerBlue;
   top: 100%;
@@ -1955,18 +2037,11 @@ footer #logo-FiboFooter {
   z-index: 99;
 }
 
-/* Hide the items when the select box is closed: */
-.select-hide {
+.logique .select-hide {
   display: none;
 }
 
-.select-items div:hover, .same-as-selected {
+.logique .select-items div:hover, .logique .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.prof-logi {
-  margin-top: 80px;
-  padding-left: 200px;
-  padding-right: 200px;
 }
 /*# sourceMappingURL=style.css.map */
