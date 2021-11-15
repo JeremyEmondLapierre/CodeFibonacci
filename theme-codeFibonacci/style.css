@@ -1846,19 +1846,23 @@ footer #logo-FiboFooter {
   width: 60%;
   margin: auto;
   background-color: #bce99b;
+  margin-bottom: 20px;
 }
 
 .Exp .signetExp {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  margin-left: 12%;
 }
 
 .Exp .signetExp img {
   background-color: #DAFFBE;
   padding: 2rem;
   border-radius: 60%;
+  height: 15em;
+  width: 11em;
+  object-fit: cover;
 }
 
 .Exp .signetExp h3 {
@@ -1869,6 +1873,19 @@ footer #logo-FiboFooter {
   background-color: #DAFFBE;
   padding: 2rem;
   margin-left: -10px;
+}
+
+.Exp .contenantTexteExp {
+  width: 100%;
+}
+
+.Exp .contenantTexteExp .texteExp {
+  display: flex;
+  width: 70%;
+  background-color: red;
+  padding: 1rem;
+  border-radius: 10px;
+  right: 0;
 }
 
 /* Local/stage
