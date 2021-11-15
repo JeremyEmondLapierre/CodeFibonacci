@@ -15,7 +15,18 @@ get_header();
 
 		<div class="contenant-cheminement">
 			<h2>Grille de cheminement</h2>
-
+			<form>
+				<label for="filtre-cours">Filtrer par : </label>
+				<select class="filtre-cours" name="filtre-cours">
+					<option value="web">Web</option>
+					<option value="3d">3D</option>
+					<option value="monde-professionnel">Monde Professionnel</option>
+					<option value="jeu-video">Jeu-Vidéo</option>
+					<option value="Design">Design</option>
+					<option value="video">Vidéo</option>
+				</select>
+				<input type="submit">
+			</form>
 			<div class="contenant-tableau-cheminement">
 				<div class="liste-cours">
 					<div class="item-cours">

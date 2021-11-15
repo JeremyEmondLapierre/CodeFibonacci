@@ -13,6 +13,52 @@
         font-size: 5.4em;
         margin: 0;
     }
+
+    form {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #ECFEF8;
+        padding: 1em 0;
+
+        .filtre-cours {
+            background: none;
+            border: none;
+            color: #FBF057;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 1.5rem;
+    
+            option {
+                background-color: #D7EEE6;
+                color: $couleur-bleu-marin;
+    
+                &:hover {
+                    background-color: #9BC284;
+                }
+            }
+        }
+
+        input {
+            border: 3px solid #FBF057;
+            border-radius: 10px;
+            background-color: #FBF057;
+            color: $couleur-bleu-marin;
+            font-family: futura-pt, sans-serif;
+            font-weight: 400;
+            transition: 0.3s all ease;
+
+            &:hover {
+                background-color: $couleur2;
+                border: 3px solid $couleur2;
+            }
+
+            &:active {
+                border-color: $couleur-bleu-marin;
+            }
+        }
+    }
+
+
     .contenant-tableau-cheminement {
         background-color: #A2CC8A;
         border-radius: 25px;

@@ -1895,6 +1895,50 @@ footer #logo-FiboFooter {
   margin: 0;
 }
 
+.contenant-cheminement form {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #ECFEF8;
+  padding: 1em 0;
+}
+
+.contenant-cheminement form .filtre-cours {
+  background: none;
+  border: none;
+  color: #FBF057;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.contenant-cheminement form .filtre-cours option {
+  background-color: #D7EEE6;
+  color: #0B132B;
+}
+
+.contenant-cheminement form .filtre-cours option:hover {
+  background-color: #9BC284;
+}
+
+.contenant-cheminement form input {
+  border: 3px solid #FBF057;
+  border-radius: 10px;
+  background-color: #FBF057;
+  color: #0B132B;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  transition: 0.3s all ease;
+}
+
+.contenant-cheminement form input:hover {
+  background-color: #FFC857;
+  border: 3px solid #FFC857;
+}
+
+.contenant-cheminement form input:active {
+  border-color: #0B132B;
+}
+
 .contenant-cheminement .contenant-tableau-cheminement {
   background-color: #A2CC8A;
   border-radius: 25px;
