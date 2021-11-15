@@ -10,7 +10,7 @@
 get_header();
 ?>
 	
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main integre">
 
 	
 	        <h1>Vie Étudiante</h1>
