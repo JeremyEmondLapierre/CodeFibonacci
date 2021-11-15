@@ -1969,13 +1969,18 @@ footer #logo-FiboFooter {
   background-color: #C1E8AA;
   border-radius: 20px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   flex-grow: 1;
   padding: 1em 2em;
   position: relative;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::before, .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::after {
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours {
+  display: flex;
+  align-items: center;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours::before, .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours::after {
   position: absolute;
   content: '';
   right: 0;
@@ -1985,14 +1990,14 @@ footer #logo-FiboFooter {
   border-radius: 2px;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::before {
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours::before {
   width: 9px;
   right: 52px;
   top: 27%;
   bottom: 27%;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::after {
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours::after {
   top: 44%;
   bottom: 40%;
   right: 40.5px;
@@ -2000,15 +2005,19 @@ footer #logo-FiboFooter {
   height: 9px;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .logo-cours {
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours .logo-cours {
   width: 2.5rem;
   margin-right: 5rem;
   filter: saturate(200%) brightness(70%);
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours p {
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours p {
   font-weight: 400;
   font-size: 1.7em;
   margin: 0;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .description-cours {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

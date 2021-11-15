@@ -86,52 +86,58 @@
                     background-color: #C1E8AA;
                     border-radius: 20px;
                     display: flex;
-                    align-items: center;
+                    flex-direction: column;
                     flex-grow: 1;
                     padding: 1em 2em;
                     position: relative;
 
+                    .titre-cours {
+                        display: flex;
+                        align-items: center;
 
-                    &::before, &::after {
-                        position: absolute;
-                        content: '';
-                        right: 0;
-                        //left: 90%;
-                        top: 0;
-                        bottom: 0;
-                        background-color: #9BC284;
-                        border-radius: 2px;
-                    } 
+                        &::before, &::after {
+                            position: absolute;
+                            content: '';
+                            right: 0;
+                            //left: 90%;
+                            top: 0;
+                            bottom: 0;
+                            background-color: #9BC284;
+                            border-radius: 2px;
+                        } 
+    
+                        &::before {
+                            width: 9px;
+                            //left: 92%;
+                            right: 52px;
+                            top: 27%;
+                            bottom: 27%;
+                        }
+    
+                        &::after {
+                            top: 44%;
+                            bottom: 40%;
+                            //right: 5%;
+                            right: 40.5px;
+                            width: 32px;
+                            height: 9px;
+                        }
 
-                    &::before {
-                        width: 9px;
-                        //left: 92%;
-                        right: 52px;
-                        top: 27%;
-                        bottom: 27%;
-                    }
-
-                    &::after {
-                        top: 44%;
-                        bottom: 40%;
-                        //right: 5%;
-                        right: 40.5px;
-                        width: 32px;
-                        height: 9px;
-                    }
-
-                    .logo-cours {
-                        width: 2.5rem;
-                        margin-right: 5rem;
-                        filter: saturate(200%) brightness(70%);
-                    }
-                    
-                    p {
-                        font-weight: 400;
-                        font-size: 1.7em;
-                        margin: 0;
-
+                        .logo-cours {
+                            width: 2.5rem;
+                            margin-right: 5rem;
+                            filter: saturate(200%) brightness(70%);
+                        }
                         
+                        p {
+                            font-weight: 400;
+                            font-size: 1.7em;
+                            margin: 0;
+                        }
+                    }
+
+                    .description-cours {
+                        display: none;
                     }
                 }
             }

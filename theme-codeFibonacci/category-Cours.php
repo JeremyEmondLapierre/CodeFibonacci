@@ -9,12 +9,12 @@
 
 get_header();
 ?>
-	////PAGE COURS
 	<main id="primary" class="site-main integre" >
 		<h1>Nos cours</h1>
 
 		<div class="contenant-cheminement">
 			<h2>Grille de cheminement</h2>
+			<!-- Filtre statique pour le sprint 3 -->
 			<form>
 				<label for="filtre-cours">Filtrer par : </label>
 				<select class="filtre-cours" name="filtre-cours">
@@ -46,8 +46,13 @@ get_header();
 					<div class="item-cours">
 						<h6>Session 3</h6>
 						<div class="contenant-cours">
-							<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-							<p>Création de site Web dynamiques</p>
+							<div class="titre-cours">
+								<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
+								<p>Création de site Web dynamiques</p>
+							</div>
+							<div class="description-cours">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae in expedita ullam velit officiis optio fuga cumque, vel ducimus voluptate aperiam dignissimos, ipsa debitis at quia asperiores quam eligendi consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, iure reprehenderit. Eum facilis possimus eius a, odio ipsam quidem perferendis reiciendis. Quod voluptates tempora atque ad? Temporibus maxime magnam omnis!</p>
+							</div>
 						</div>
 					</div>
 					<div class="item-cours">
