@@ -1925,6 +1925,8 @@ footer #logo-FiboFooter {
   margin-top: 80px;
   padding-left: 200px;
   padding-right: 200px;
+  background-color: 30px 30px red;
+  background-size: 50% auto;
 }
 
 .logique {
@@ -1998,21 +2000,21 @@ footer #logo-FiboFooter {
 }
 
 .logique .select-selected {
-  background-color: #0c7235;
+  background-color: #C1E8AA;
   margin-top: 30px;
-  height: 50px;
-  font-size: x-large;
+  height: 70px;
+  font-size: xx-large;
 }
 
 .logique .select-selected:after {
   position: absolute;
   content: "";
-  top: 14px;
-  right: 10px;
+  top: 25px;
+  right: 50px;
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+  border-color: #a4a4a4 transparent transparent transparent;
 }
 
 .logique .select-selected.select-arrow-active:after {
@@ -2021,7 +2023,7 @@ footer #logo-FiboFooter {
 }
 
 .logique .select-items div, .logique .select-selected {
-  color: #ffffff;
+  color: #000000;
   padding: 8px 16px;
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -2030,7 +2032,7 @@ footer #logo-FiboFooter {
 
 .logique .select-items {
   position: absolute;
-  background-color: DodgerBlue;
+  background-color: #a2e978;
   top: 100%;
   left: 0;
   right: 0;

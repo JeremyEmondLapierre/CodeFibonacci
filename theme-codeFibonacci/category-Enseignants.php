@@ -26,7 +26,16 @@ get_header();
 <div class="custom-select">
 <select>
 <option value="0">Martin Eddy</option>
-<option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada quam eros, pulvinar tempor justo mollis quis. Donec fringilla viverra orci. Quisque ornare in urna sed pharetra. Cras tellus sapien, mollis nec mauris et, porttitor lobortis risus. Donec pulvinar magna quis dolor pretium, et vulputate ipsum tincidunt. Donec nec arcu eros. Aliquam erat volutpat. Donec sodales vitae velit eu elementum. Duis pulvinar convallis odio, eu commodo tortor ornare eget. Integer in arcu eu purus euismod tincidunt sed sed velit. Donec consectetur nisi velit, fringilla fermentum mi aliquam nec.</option>
+<option value="1">
+Des études en mathématiques informatiques (B.Sc) et une maîtrise en traitement d'images à l'UQAM m'ont amené à m'intéresser plus particulièrement à la programmation Web.
+
+J'ai côtoyé l'industrie pendant plusieurs années comme programmeur analyste pour finalement trouvé ma vocation en enseignement au Collège de maisonneuve.
+
+Les sujets qui m'intéressent touchent directement la création de sites Web adaptatifs du côté client et serveur.
+
+J'enseigne au département TIM depuis 2001.
+
+</option>
 
 </select>
 </div>
@@ -34,7 +43,7 @@ get_header();
 <div class="custom-select">
 <select>
 <option value="0">Caroline Martin</option>
-<option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada quam eros, pulvinar tempor justo mollis quis. Donec fringilla viverra orci. Quisque ornare in urna sed pharetra. Cras tellus sapien, mollis nec mauris et, porttitor lobortis risus. Donec pulvinar magna quis dolor pretium, et vulputate ipsum tincidunt. Donec nec arcu eros. Aliquam erat volutpat. Donec sodales vitae velit eu elementum. Duis pulvinar convallis odio, eu commodo tortor ornare eget. Integer in arcu eu purus euismod tincidunt sed sed velit. Donec consectetur nisi velit, fringilla fermentum mi aliquam nec.</option>
+<option value="1">On me traite de Geek car je programme en PHP depuis pratiquement sa création et bien avant sa réelle utilisation dans les sites Web. J'aime, voire, je suis passionnée par la programmation informatique. Je joue à D&D mais je ne suis pas que cela !</option>
 
 </select>
 </div>
@@ -42,7 +51,10 @@ get_header();
 <div class="custom-select">
 <select>
 <option value="0">Camille Semaan</option>
-<option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada quam eros, pulvinar tempor justo mollis quis. Donec fringilla viverra orci. Quisque ornare in urna sed pharetra. Cras tellus sapien, mollis nec mauris et, porttitor lobortis risus. Donec pulvinar magna quis dolor pretium, et vulputate ipsum tincidunt. Donec nec arcu eros. Aliquam erat volutpat. Donec sodales vitae velit eu elementum. Duis pulvinar convallis odio, eu commodo tortor ornare eget. Integer in arcu eu purus euismod tincidunt sed sed velit. Donec consectetur nisi velit, fringilla fermentum mi aliquam nec.</option>
+<option value="1">Ma vocation : communiquer connaissances et savoir-faire.
+                  Ma devise : «Comprendre et ne pas juger» (Georges Simenon)
+                  On a tout notre temps.
+</option>
 
 </select>
 </div>
@@ -50,7 +62,9 @@ get_header();
 <div class="custom-select">
 <select>
 <option value="0">Mathieu Dionne</option>
-<option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada quam eros, pulvinar tempor justo mollis quis. Donec fringilla viverra orci. Quisque ornare in urna sed pharetra. Cras tellus sapien, mollis nec mauris et, porttitor lobortis risus. Donec pulvinar magna quis dolor pretium, et vulputate ipsum tincidunt. Donec nec arcu eros. Aliquam erat volutpat. Donec sodales vitae velit eu elementum. Duis pulvinar convallis odio, eu commodo tortor ornare eget. Integer in arcu eu purus euismod tincidunt sed sed velit. Donec consectetur nisi velit, fringilla fermentum mi aliquam nec.</option>
+<option value="1">Prof « Made in Maisonneuve ! » Je hante ces corridors depuis si longtemps… Eh oui…j’ai fait mes études collégiales ici même ! J’y suis revenu après mes études universitaires à l’UQAM, en communication, concentration multimédia interactive.
+J’enseigne la création de jeux vidéo et l’environnement sonore aux étudiants du programme TIM depuis 2002. Du point de vue professionnel, mes réalisations incluent notamment la mise au point du cours «Développement de l’enfant et de l’adolescent», pour le compte du Cégep @ distance, qui a remporté le prix de l’excellence en conception pédagogique de l’ACED en 2003, le site Web de Kid A, un groupe hommage à Radiohead, et bien d’autres encore.
+</option>
 
 </select>
 </div>
@@ -58,7 +72,12 @@ get_header();
 <div class="custom-select">
 <select>
 <option value="0">Vagharshak 'Vahik' Toroussian</option>
-<option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada quam eros, pulvinar tempor justo mollis quis. Donec fringilla viverra orci. Quisque ornare in urna sed pharetra. Cras tellus sapien, mollis nec mauris et, porttitor lobortis risus. Donec pulvinar magna quis dolor pretium, et vulputate ipsum tincidunt. Donec nec arcu eros. Aliquam erat volutpat. Donec sodales vitae velit eu elementum. Duis pulvinar convallis odio, eu commodo tortor ornare eget. Integer in arcu eu purus euismod tincidunt sed sed velit. Donec consectetur nisi velit, fringilla fermentum mi aliquam nec.</option>
+<option value="1">J’enseigne au Collège de Maisonneuve depuis 10 ans où j’occupe d’ailleurs le rôle de coordonnateur du programme des Techniques d’intégration multimédia.
+J’ai fait mes études à l’Université de Montréal et obtenu une maîtrise en traitement de l’image. Ma spécialité est en programmation sur support et j’entends vous faire apprécier l’incroyable potentiel de ce volet multimédia.
+
+Ce qui vous attend : des travaux pratiques sous forme de jeux (casse-tête, quêtes, etc.) et la création de prototypes de jeux avec Virtools. Message à ceux qui aiment bien équilibrer travail et activité physique : je suis toujours disponible pour une partie de soccer… à bon entendeur salut!
+
+</option>
 
 </select>
 </div>
@@ -66,7 +85,14 @@ get_header();
 <div class="custom-select">
 <select>
 <option value="0">Johanne Massé</option>
-<option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada quam eros, pulvinar tempor justo mollis quis. Donec fringilla viverra orci. Quisque ornare in urna sed pharetra. Cras tellus sapien, mollis nec mauris et, porttitor lobortis risus. Donec pulvinar magna quis dolor pretium, et vulputate ipsum tincidunt. Donec nec arcu eros. Aliquam erat volutpat. Donec sodales vitae velit eu elementum. Duis pulvinar convallis odio, eu commodo tortor ornare eget. Integer in arcu eu purus euismod tincidunt sed sed velit. Donec consectetur nisi velit, fringilla fermentum mi aliquam nec.</option>
+<option value="1">
+Je suis gestionnaire de projet et architecte-paysagiste de formation mais, paradoxalement, passionnée depuis toujours par les 0 et les 1... J'ai cofondé à la fin des années 80 une entreprise spécialisée dans le développement de logiciels pour l'aménagement du territoire.
+
+À l'aube du nouveau millénaire, j'ai fait le grand saut et réorienté ma carrière en multimédia. J’ai fait mes débuts à titre de consultante et j'exerce la profession d'enseignante depuis 2001. Vous devinerez par la maxime d'introduction que j'ai un petit faible pour la gestion de projets multimédias.
+
+Mais ce n'est pas mon seul dada, je me passionne aussi pour les logiciels-auteurs et la programmation, notamment Flash et ActionScript. Parallèlement à mes activités d'enseignante, je poursuis également une maîtrise en pédagogie.
+
+</option>
 
 </select>
 </div>
@@ -74,7 +100,8 @@ get_header();
 <div class="custom-select">
 <select>
 <option value="0">Vincent Leblanc</option>
-<option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada quam eros, pulvinar tempor justo mollis quis. Donec fringilla viverra orci. Quisque ornare in urna sed pharetra. Cras tellus sapien, mollis nec mauris et, porttitor lobortis risus. Donec pulvinar magna quis dolor pretium, et vulputate ipsum tincidunt. Donec nec arcu eros. Aliquam erat volutpat. Donec sodales vitae velit eu elementum. Duis pulvinar convallis odio, eu commodo tortor ornare eget. Integer in arcu eu purus euismod tincidunt sed sed velit. Donec consectetur nisi velit, fringilla fermentum mi aliquam nec.</option>
+<option value="1">Mon séjour au Collège de Maisonneuve a débuté à l’automne 2001. J’ai donné mes premiers cours au Département TIM à l’hiver 2002. J’ai été formé à l’École de Technologie Supérieure (génie), à l’Université de Montréal (communication) et à l’Université Bishops (arts visuels).
+Ces dernières années, j’ai surtout donné les cours de création Web de 1ère année du programme de TIM , ainsi que le cours Production artistique et arts médiatiques, en 3ème session du  programme Science, Lettres et Arts. Je suis aussi un des représentants à la coordination départementale depuis la session d’automne 2018. Durant mes temps libres, j’aime faire plusieurs choses, mais je préfère par-dessus tout : dormir!</option>
 
 </select>
 </div>
