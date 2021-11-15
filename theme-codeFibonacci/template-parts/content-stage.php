@@ -15,11 +15,11 @@
             <h3><?php the_title() ?></h3>
             
         </div>
-        <div class="contenantTexteExp">
-            <div class="texteExp">
-                <p> <?php the_content(); ?> </p>
-            </div>
+
+        <div class="texteExp">
+            <p> <?php the_content(); ?> </p>
         </div>
+
 		
         			
 	</div>
