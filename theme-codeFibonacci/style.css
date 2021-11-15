@@ -1590,6 +1590,7 @@ textarea {
 --------------------------------------------- */
 .page-header {
   width: 100%;
+  /*-------Stule global titre section gallerie et concours------*/
 }
 
 .page-header div {
@@ -1607,14 +1608,97 @@ textarea {
   justify-content: center;
 }
 
+.page-header .gallerie-projets .lesProjets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . top-box ." ". . top-box ." ". . . ." "bottom-box bottom-box . .";
+}
+
+.page-header .gallerie-projets .bottom-box {
+  grid-area: bottom-box;
+}
+
+.page-header .gallerie-projets .top-box {
+  grid-area: top-box;
+}
+
 .gallerie-projets, .concours {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .gallerie-projets h3, .concours h3 {
+  display: inline-flex;
+  align-items: center;
   color: #ECFEF8;
   font-size: 2rem;
+  font-weight: 500;
+}
+
+.gallerie-projets h3 div, .concours h3 div {
+  color: #FFC857;
+}
+
+.concours h3 {
+  font-style: italic;
+}
+
+.concours .lesConcours {
+  margin: 0 auto;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /*--------------------Style card Concours------------------------*/
+}
+
+.concours .lesConcours .gameJam, .concours .lesConcours .jour {
+  width: 450px;
+  height: 400px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(0px);
+}
+
+.concours .lesConcours .gameJam h4, .concours .lesConcours .jour h4 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+
+.concours .lesConcours .gameJam p, .concours .lesConcours .jour p {
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+}
+
+.concours .lesConcours .gameJam .logo-concours {
+  margin: 20px;
+  color: black;
+  filter: saturate(200%) brightness(70%);
+  width: 70px;
+}
+
+.concours .lesConcours .jour .logo-concours {
+  margin: 20px;
+  color: black;
+  filter: saturate(200%) brightness(70%);
+  width: 65px;
 }
 
 /* Local/footer

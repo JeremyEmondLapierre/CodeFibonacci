@@ -13,10 +13,10 @@ get_header();
 	<main id="primary" class="site-main">
 
 	
-
+	        <h1>Vie Étudiante</h1>
 			<header class="page-header">
 				<div>
-				<h1>Vie Étudiante</h1>
+				
 				<h4>Accueil</h4>
 				<h4>Vie Étudiante</h4>
 				</div>
@@ -25,11 +25,13 @@ get_header();
 
 			<section class="gallerie-projets">
 
-			<h3>Projets Étudiants</h3>
+			<h3>Projets Étudiants</h3> 
 
 			  <div class="lesProjets">
 
-			  
+              <div class="bottom-box"></div>
+              <div class="top-box"></div>
+              
 			  </div>
 
 
@@ -38,7 +40,31 @@ get_header();
 
 			<section class="concours">
 
-			<h3>Concours du programme</h3>
+			<h3> <div>Concours&nbsp;</div> du programme</h3>
+
+			<div class="lesConcours"> 
+
+			  <div class="gameJam">
+
+			  <img class="logo-concours" src='<?php echo site_url().'/wp-content/uploads/2021/10/unity.svg';?>';>
+
+			    <h4>Game Jam</h4>
+
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corrupti necessitatibus provident error, eos aut impedit magni quae tenetur vero quis soluta, rerum blanditiis neque quas ratione expedita cumque dolorem?</p>
+
+			  </div>
+
+			  <div class="jour">
+
+			  <img class="logo-concours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
+
+			    <h4>Jour de la terre</h4>
+
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti, illo officia odit laboriosam placeat ea natus ullam, vitae provident nesciunt sunt! Neque reiciendis ut deleniti veniam necessitatibus quaerat reprehenderit?</p>
+
+			  </div>
+
+			</div>
 
 
 			</section>
