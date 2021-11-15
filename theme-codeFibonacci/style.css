@@ -452,11 +452,17 @@ html, body {
   font-style: normal;
 }
 
-.integre .page-header h1 {
+.integre h1 {
   font-family: 'Titillium Web', sans-serif !important;
-  text-align: left;
   margin: 0 6rem;
-  font-size: 6em;
+  font-size: 7em !important;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .integre h1 {
+    text-align: left !important;
+  }
 }
 
 body {
@@ -1965,36 +1971,79 @@ footer #logo-FiboFooter {
   width: 85vw;
 }
 
+.contenant-cheminement h2 {
+  font-weight: 500;
+  text-align: center;
+  color: #ECFEF8;
+  font-size: 5.4em;
+  margin: 0;
+}
+
 .contenant-cheminement .contenant-tableau-cheminement {
   background-color: #A2CC8A;
   border-radius: 25px;
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours {
   display: flex;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours:hover {
+  background-color: #ADD795;
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
   font-weight: 500;
   font-size: 1.5em;
   margin-right: 55px;
+  line-height: 0;
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours {
   background-color: #C1E8AA;
-  padding: 20px 20px;
-  border-radius: 25px;
+  border-radius: 20px;
   display: flex;
+  align-items: center;
   flex-grow: 1;
+  padding: 1em 2em;
+  position: relative;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::before, .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #9BC284;
+  border-radius: 2px;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::before {
+  width: 9px;
+  right: 52px;
+  top: 27%;
+  bottom: 27%;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::after {
+  top: 44%;
+  bottom: 40%;
+  right: 40.5px;
+  width: 32px;
+  height: 9px;
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .logo-cours {
   width: 2.5rem;
   margin-right: 5rem;
+  filter: saturate(200%) brightness(70%);
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours p {
