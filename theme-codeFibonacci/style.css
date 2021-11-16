@@ -454,14 +454,22 @@ html, body {
 
 .integre h1 {
   font-family: 'Titillium Web', sans-serif !important;
-  margin: 0 6rem;
-  font-size: 7em !important;
+  font-size: 4em !important;
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  .integre h1 {
+    padding: 0;
+    font-size: 7em !important;
+    margin: 0 6rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .integre h1 {
     text-align: left !important;
+    padding: 0 1em;
   }
 }
 
@@ -493,7 +501,6 @@ p, h1, h2, h3, h4, h5, h6, a {
   text-align: center;
   font-size: 2.5rem;
   color: #FFFAB2;
-  padding: 0 1em;
   font-family: futura-pt,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1891,8 +1898,21 @@ footer #logo-FiboFooter {
   font-weight: 500;
   text-align: center;
   color: #ECFEF8;
-  font-size: 5.4em;
+  font-size: 3.4em;
   margin: 0;
+  line-height: 1;
+}
+
+@media (min-width: 700px) {
+  .contenant-cheminement h2 {
+    font-size: 4.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenant-cheminement h2 {
+    font-size: 5.4em;
+  }
 }
 
 .contenant-cheminement form {
@@ -1951,7 +1971,15 @@ footer #logo-FiboFooter {
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours {
   display: flex;
   align-items: center;
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours {
+    flex-direction: row;
+    padding: 0.5em 2em;
+  }
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours:hover {
@@ -1961,27 +1989,59 @@ footer #logo-FiboFooter {
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
   font-weight: 500;
   font-size: 1.5em;
-  margin-right: 55px;
   line-height: 0;
   align-self: flex-start;
+  width: 100%;
+  text-align: center;
+  margin: 1em 0;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours {
+@media (min-width: 700px) {
+  .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
+    width: 20%;
+    margin-right: 55px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
+    width: 5em;
+  }
+}
+
+.contenant-liste-cours {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .contenant-liste-cours {
+    width: 90%;
+  }
+}
+
+.contenant-liste-cours .contenant-cours {
   background-color: #C1E8AA;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  padding: 1em 2em;
+  padding: 1em;
+  margin: 1em 0;
   position: relative;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours {
+@media (min-width: 700px) {
+  .contenant-liste-cours .contenant-cours {
+    padding: 1em 2em;
+  }
+}
+
+.contenant-liste-cours .contenant-cours .titre-cours {
   display: flex;
   align-items: center;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours::before, .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours::after {
+.contenant-liste-cours .contenant-cours .titre-cours::before, .contenant-liste-cours .contenant-cours .titre-cours::after {
   position: absolute;
   content: '';
   right: 0;
@@ -1991,14 +2051,14 @@ footer #logo-FiboFooter {
   border-radius: 2px;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours::before {
+.contenant-liste-cours .contenant-cours .titre-cours::before {
   width: 9px;
   right: 52px;
   top: 27%;
   bottom: 27%;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours::after {
+.contenant-liste-cours .contenant-cours .titre-cours::after {
   top: 44%;
   bottom: 40%;
   right: 40.5px;
@@ -2006,24 +2066,50 @@ footer #logo-FiboFooter {
   height: 9px;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours .logo-cours {
+.contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
   width: 2.5rem;
-  margin-right: 5rem;
+  margin-right: 1em;
   filter: saturate(200%) brightness(70%);
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .titre-cours p {
-  font-weight: 400;
-  font-size: 1.7em;
-  margin: 0;
+@media (min-width: 700px) {
+  .contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
+    margin-right: 2em;
+  }
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .description-cours {
+@media (min-width: 1200px) {
+  .contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
+    margin-right: 5em;
+  }
+}
+
+.contenant-liste-cours .contenant-cours .titre-cours p {
+  font-weight: 400;
+  font-size: 1.3em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+@media (min-width: 700px) {
+  .contenant-liste-cours .contenant-cours .titre-cours p {
+    width: 62%;
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 800px) {
+  .contenant-liste-cours .contenant-cours .titre-cours p {
+    width: auto;
+  }
+}
+
+.contenant-liste-cours .contenant-cours .description-cours {
   display: none;
   transition: 0.3s all ease;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .description-cours p {
+.contenant-liste-cours .contenant-cours .description-cours p {
   color: #457B77;
   line-height: 1.4;
   font-weight: 400;
