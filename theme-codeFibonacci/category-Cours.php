@@ -43,9 +43,9 @@ get_header();
 							<p>Animation et interactivité Web</p>
 						</div>
 					</div>
-					<div class="item-cours">
+					<div id="item-cours" class="item-cours">
 						<h6>Session 3</h6>
-						<div class="contenant-cours">
+						<div id="contenant-cours" class="contenant-cours">
 							<div class="titre-cours">
 								<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
 								<p>Création de site Web dynamiques</p>
@@ -110,6 +110,51 @@ get_footer();
 		element.classList.add("cours-actif");
 	})*/
 
+
+	/*(function() {
+		let contenant = document.querySelectorAll(".contenant-cours");
+
+		for (var i = 0; i < contenant.length; i++) {
+			contenant[i].addEventListener("click", function() {	
+				contenant.classList.add("actif-cours");
+				console.log("ca a écouté");
+			});
+
+		};
+	});*/
+	
+	/*const parentCours = document.querySelectorAll("#item-cours")
+	const cours = parentCours.querySelectorAll("#contenant-cours")
+	for (const button of cours) {
+		button.addEventListener('click', function(event) {
+			cours.classList.add("actif-cours");
+			console.log("ca a écouté");
+		})
+	}*/
+
+	const cours = document.querySelectorAll('#contenant-cours');
+		for (var i = 0; i < cours.length; i++) {
+	    cours[i].addEventListener('click', function() {
+			cours.classList.add("actif-cours");
+			console.log("ca a écouté");
+		});
+	}
+
+	document.addEventListener("click", fonctionAjoutClasseCours);
+
+	function fonctionAjoutClasseCours() {
+		//document.getElementById("item-cours").classList.add("actif-cours");
+		console.log("ca a écouté");
+	};
+
+	document.getElementById("contenant-cours").addEventListener("click", displayDate);
+
+
+	const element = document.querySelector(".contenant-cours");
+	element.addEventListener("click", () => {
+		console.log("clicked element");
+	});
+	
 </script>
 
 
