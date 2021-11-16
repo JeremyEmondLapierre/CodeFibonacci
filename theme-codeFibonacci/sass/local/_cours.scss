@@ -69,7 +69,7 @@
             .item-cours {
                 display: flex;
                 align-items: center;
-                padding: 0 2em;
+                padding: 0.5em 2em;
 
                 &:hover {
                     background-color: #ADD795;
@@ -80,14 +80,16 @@
                     font-size: 1.5em;
                     margin-right: 55px;
                     line-height: 0;
+                    align-self: flex-start;
                 }
 
                 .contenant-cours {
                     background-color: #C1E8AA;
-                    border-radius: 20px;
+                    border-radius: 25px;
                     display: flex;
                     flex-direction: column;
-                    flex-grow: 1;
+                    //flex-grow: 1;
+                    width: 90%;
                     padding: 1em 2em;
                     position: relative;
 
@@ -138,6 +140,12 @@
 
                     .description-cours {
                         display: none;
+
+                        p {
+                            color: #457B77;
+                            line-height: 1.4;
+                            font-weight: 400;
+                        }
                     }
                 }
             }
@@ -145,8 +153,22 @@
     }
 }
 
+
+/// Note pour moi-même (Sami) : Trouver le moyen de réduire les !important.
 .actif-cours {
+
+    .titre-cours {
+        
+        &::before {
+            background: none !important;
+        }
+
+        &::after {
+            top: 16% !important;
+        }
+    }
+
     .description-cours {
-        display: block;
+        display: block !important;
     }
 }

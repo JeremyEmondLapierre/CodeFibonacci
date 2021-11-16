@@ -32,48 +32,79 @@ get_header();
 					<div class="item-cours">
 						<h6>Session 1</h6>
 						<div class="contenant-cours">
-							<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-							<p>Mise en page Web</p>
+							<div class="titre-cours">
+								<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
+								<p>Mise en page Web</p>
+							</div>
+							<div class="description-cours">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
+								</p>
+							</div>
 						</div>
 					</div>
 					<div class="item-cours">
 						<h6>Session 2</h6>
 						<div class="contenant-cours">
-							<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-							<p>Animation et interactivité Web</p>
+							<div class="titre-cours">
+								<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
+								<p>Animation et interactivité Web</p>
+							</div>
+							<div class="description-cours">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
+								</p>
+							</div>
 						</div>
 					</div>
 					<div id="item-cours" class="item-cours">
 						<h6>Session 3</h6>
-						<div id="contenant-cours" class="contenant-cours">
+						<div id="contenant-cours" class="contenant-cours actif-cours">
 							<div class="titre-cours">
 								<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
 								<p>Création de site Web dynamiques</p>
 							</div>
 							<div class="description-cours">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae in expedita ullam velit officiis optio fuga cumque, vel ducimus voluptate aperiam dignissimos, ipsa debitis at quia asperiores quam eligendi consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, iure reprehenderit. Eum facilis possimus eius a, odio ipsam quidem perferendis reiciendis. Quod voluptates tempora atque ad? Temporibus maxime magnam omnis!</p>
+								<p>Dans ce cours, l’étudiant poursuit son apprentissage de l’intégration de sites Web dynamiques à l’aide d’un gestionnaire de contenu. L’étudiant apprend à développer par programmation des thèmes personnalisés pour répondre aux besoins spécifiques du design d’interfaces des sites Web. L’étudiant apprend aussi les fonctionnalités avancées du gestionnaire de contenu, lui permettant entre autres de programmer des extensions servant les fonctionnalités des sites Web à développer. De plus, l’étudiant est initié à l’utilisation et à l’intégration par programmation des bases de données. Ce cours couvre également l’intégration et l'interface entre le langage utilisé du côté du serveur et les technologies utilisées du côté client. Enfin, l’étudiant poursuit son apprentissage des techniques de test pour contrôler la qualité d’un site Web et valider sa conformité en regard des normes et des standards en vigueur.
+								</p>
 							</div>
 						</div>
 					</div>
 					<div class="item-cours">
 						<h6>Session 4</h6>
 						<div class="contenant-cours">
-							<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/database.svg';?>';>
-							<p>Conception d'interface et développement Web</p>
+							<div class="titre-cours">
+								<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/database.svg';?>';>
+								<p>Conception d'interface et développement Web</p>
+							</div>
+							<div class="description-cours">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
+								</p>
+							</div>
 						</div>
 					</div>
 					<div class="item-cours">
 						<h6>Session 5</h6>
 						<div class="contenant-cours">
-							<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-							<p>Projet Web en équipe</p>
+							<div class="titre-cours">
+								<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
+								<p>Projet Web en équipe</p>
+							</div>
+							<div class="description-cours">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
+								</p>
+							</div>
 						</div>
 					</div>
 					<div class="item-cours">
 						<h6>Session 6</h6>
 						<div class="contenant-cours">
-							<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-							<p>Aucun cours prévu</p>
+							<div class="titre-cours">
+								<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
+								<p>Aucun cours prévu</p>
+							</div>
+							<div class="description-cours">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -1951,7 +1951,7 @@ footer #logo-FiboFooter {
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours {
   display: flex;
   align-items: center;
-  padding: 0 2em;
+  padding: 0.5em 2em;
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours:hover {
@@ -1963,14 +1963,15 @@ footer #logo-FiboFooter {
   font-size: 1.5em;
   margin-right: 55px;
   line-height: 0;
+  align-self: flex-start;
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours {
   background-color: #C1E8AA;
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  width: 90%;
   padding: 1em 2em;
   position: relative;
 }
@@ -2021,7 +2022,21 @@ footer #logo-FiboFooter {
   display: none;
 }
 
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .description-cours p {
+  color: #457B77;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.actif-cours .titre-cours::before {
+  background: none !important;
+}
+
+.actif-cours .titre-cours::after {
+  top: 16% !important;
+}
+
 .actif-cours .description-cours {
-  display: block;
+  display: block !important;
 }
 /*# sourceMappingURL=style.css.map */
