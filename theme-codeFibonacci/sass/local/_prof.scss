@@ -1,10 +1,7 @@
 
-  .prof-logi{
-      margin-top: 80px;
-      padding-left: 200px;
-      padding-right: 200px;
-      background-color: 30px 30px red;
-      background-size: 50% auto;
+  .img-prof{
+    height: 80px;
+    width: 70px;
   }
 
   .logique{
@@ -24,7 +21,7 @@
   .dropdown {
       position: relative;
       display: inline-block;
-      padding-left: 200px;
+      padding-left: 350px;
   }
   
   .dropdown-content {
@@ -33,7 +30,7 @@
       background-color: rgb(9, 167, 225);
       font-size: large;
       min-width: 90px;
-      left: 280px;
+      left: 430px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       
   }
@@ -56,69 +53,55 @@
   }
   
   
-  /*prof*/
-  
-  /* The container must be positioned relative: */
-  .custom-select {
-      position: relative;
-      font-family: Arial;
-      margin-top: 10px;
-    }
-    
-    .custom-select select {
-      display: none; /*hide original SELECT element: */
-    }
-    
-    .select-selected {
-      background-color: #C1E8AA;
-      margin-top: 30px;
-      height: 70px;
-      font-size: xx-large;
-    }
-    
-    /* Style the arrow inside the select element: */
-    .select-selected:after {
-      position: absolute;
-      content: "";
-      top: 25px;
-      right: 50px;
-      width: 0;
-      height: 0;
-      border: 6px solid transparent;
-      border-color: rgb(164, 164, 164) transparent transparent transparent;
-    }
-    
-    /* Point the arrow upwards when the select box is open (active): */
-    .select-selected.select-arrow-active:after {
-      border-color: transparent transparent #fff transparent;
-      top: 7px;
-    }
-    
-    /* style the items (options), including the selected item: */
-    .select-items div,.select-selected {
-      color: #000000;
-      padding: 8px 16px;
-      border: 1px solid transparent;
-      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-      cursor: pointer;
-    }
-    
-    /* Style items (options): */
-    .select-items {
-      position: absolute;
-      background-color: #a2e978;
-      top: 100%;
-      left: 0;
-      right: 0;
-      z-index: 99;
-    }
-    
-    /* Hide the items when the select box is closed: */
-    .select-hide {
-      display: none;
-    }
-    
-    .select-items div:hover, .same-as-selected {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
+/*prof*/
+
+  .accordion {
+    width: 800px;
+    margin: 90px auto;
+    color: black;
+    background-color:#A2CC8A;
+    border-radius: 10%;
+    padding: 45px 45px;
   }
+  .accordion .container {
+    position: relative;
+    margin: 10px 10px;
+  }
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 3%;
+  }
+  .accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  .accordion .content {
+    position: relative;
+    background: white;
+    height:0;
+    font-size: medium;
+    text-align: justify;
+    width: 690px;
+    overflow: hidden;
+    transition: 1s;
+  }
+  
+  .accordion .container.active .content {
+  height: auto;
+  }
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+}
