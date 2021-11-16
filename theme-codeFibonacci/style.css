@@ -2020,6 +2020,7 @@ footer #logo-FiboFooter {
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .description-cours {
   display: none;
+  transition: 0.3s all ease;
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .description-cours p {

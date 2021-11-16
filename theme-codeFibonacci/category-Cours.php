@@ -128,6 +128,8 @@ get_footer();
 <script>
 	document.querySelector(".contenant-cours").addEventListener("click", function() {
 		console.log('ca fonctionne avec querySelector');
+		document.querySelector(".contenant-cours").classList.toggle("actif-cours");
+		
 	});
 	document.querySelectorAll(".contenant-cours").addEventListener("click", function() {
 		console.log('ca fonctionne avec querySelectorAll');
