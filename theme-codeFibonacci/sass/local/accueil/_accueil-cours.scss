@@ -25,20 +25,6 @@
             width: 80%;
         }*/
 
-        .icon {
-            fill : #B7E8D7;
-            transition: .3s all;
-            width: 100%;
-    
-            &:hover {
-                fill: #7BB8A1;
-                cursor: pointer;
-            }
-    
-            &:active {
-                fill: #D7EEE6;
-            }
-        }
 
         .accueil-cours-item {
             width: 100%;
@@ -80,11 +66,18 @@
                 .accueil-cours-icon {
                     width: 50vw;
                     margin: 5%;
+                    transition: .1s all;
+
 
                     @include desktop {
                         width: 30vw;
                     }
-                }
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: saturate(195%) brightness(130%) hue-rotate(-99deg)
+                    }
+                }    
             }
         }
         
