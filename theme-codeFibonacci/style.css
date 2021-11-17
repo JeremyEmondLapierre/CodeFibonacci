@@ -177,7 +177,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu {
   display: flex;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(20px);
   border-radius: 25px;
   padding: 3% 4% 3% 0;
@@ -302,12 +302,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   padding-bottom: 5em;
 }
 
-@media (min-width: 1200px) {
-  #accueil-prof {
-    padding-bottom: 15em;
-  }
-}
-
 #accueil-prof h1 {
   font-weight: 500;
 }
@@ -318,11 +312,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   font-size: 2rem;
   font-weight: 100;
   padding: 0 2em;
+  text-align: justify;
 }
 
 @media (min-width: 1200px) {
   #accueil-prof p {
-    padding: 0 7em 10em 7em;
+    padding: 0 7em;
   }
 }
 
