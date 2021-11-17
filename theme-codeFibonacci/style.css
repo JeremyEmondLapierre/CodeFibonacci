@@ -1599,6 +1599,30 @@ textarea {
   z-index: -10;
 }
 
+/*----------------------------------
+    Navigation des pages intègres
+------------------------------------*/
+.site-header .menu-menu-site-container .menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2rem;
+  padding-top: 1em;
+}
+
+.site-header .menu-menu-site-container .menu li {
+  margin: 0 1em;
+}
+
+.site-header .menu-menu-site-container .menu li a {
+  color: #FFFAB2;
+}
+
+.site-header .menu-menu-site-container .menu li a:hover {
+  color: #B7E8D7;
+}
+
 /* Local/vie 
 --------------------------------------------- */
 .page-header {
