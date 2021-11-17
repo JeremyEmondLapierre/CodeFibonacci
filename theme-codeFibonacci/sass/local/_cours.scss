@@ -10,9 +10,64 @@
         font-weight: 500;
         text-align: center;
         color: #ECFEF8;
-        font-size: 5.4em;
+        font-size: 3.4em;
         margin: 0;
+        line-height: 1;
+
+        @include small_tablet {
+            font-size: 4.4em;
+        }
+
+        @include desktop {
+            font-size: 5.4em;
+        }
     }
+
+    form {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #ECFEF8;
+        padding: 1em 0;
+
+        .filtre-cours {
+            background: none;
+            border: none;
+            color: #FBF057;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 1.5rem;
+    
+            option {
+                background-color: #D7EEE6;
+                color: $couleur-bleu-marin;
+    
+                &:hover {
+                    background-color: #9BC284;
+                }
+            }
+        }
+
+        input {
+            border: 3px solid #FBF057;
+            border-radius: 10px;
+            background-color: #FBF057;
+            color: $couleur-bleu-marin;
+            font-family: futura-pt, sans-serif;
+            font-weight: 400;
+            transition: 0.3s all ease;
+
+            &:hover {
+                background-color: $couleur2;
+                border: 3px solid $couleur2;
+            }
+
+            &:active {
+                border-color: $couleur-bleu-marin;
+            }
+        }
+    }
+
+
     .contenant-tableau-cheminement {
         background-color: #A2CC8A;
         border-radius: 25px;
@@ -23,7 +78,14 @@
             .item-cours {
                 display: flex;
                 align-items: center;
-                padding: 0 2em;
+                padding: 0.5em 1em;
+                flex-direction: column;
+
+                @include small_tablet {
+                    flex-direction: row;
+                    padding: 0.5em 2em;
+
+                }
 
                 &:hover {
                     background-color: #ADD795;
@@ -32,63 +94,141 @@
                 h6 {
                     font-weight: 500;
                     font-size: 1.5em;
-                    margin-right: 55px;
                     line-height: 0;
-                }
+                    align-self: flex-start;
+                    width: 100%;
+                    text-align: center;
+                    margin: 1em 0;
 
-                .contenant-cours {
-                    background-color: #C1E8AA;
-                    border-radius: 20px;
-                    display: flex;
-                    align-items: center;
-                    flex-grow: 1;
-                    padding: 1em 2em;
-                    position: relative;
-
-
-                    &::before, &::after {
-                        position: absolute;
-                        content: '';
-                        right: 0;
-                        //left: 90%;
-                        top: 0;
-                        bottom: 0;
-                        background-color: #9BC284;
-                        border-radius: 2px;
-                    } 
-
-                    &::before {
-                        width: 9px;
-                        //left: 92%;
-                        right: 52px;
-                        top: 27%;
-                        bottom: 27%;
+                    @include small_tablet {
+                        width: 20%;
+                        margin-right: 55px;
+                        text-align: left;
                     }
 
-                    &::after {
-                        top: 44%;
-                        bottom: 40%;
-                        //right: 5%;
-                        right: 40.5px;
-                        width: 32px;
-                        height: 9px;
-                    }
-
-                    .logo-cours {
-                        width: 2.5rem;
-                        margin-right: 5rem;
-                        filter: saturate(200%) brightness(70%);
-                    }
-                    
-                    p {
-                        font-weight: 400;
-                        font-size: 1.7em;
-                        margin: 0;
-
-                        
+                    @include desktop {
+                        width: 5em;
                     }
                 }
             }
         }
+    }
+}
+
+.contenant-liste-cours {
+    width: 100%;
+
+    @include small_tablet {
+        width: 90%;
+
+    }
+                    
+    .contenant-cours {
+        background-color: #C1E8AA;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        //flex-grow: 1;
+        padding: 1em;
+        margin: 1em 0;
+        position: relative;
+
+        @include small_tablet {
+            padding: 1em 2em;
+        }
+
+        .titre-cours {
+            display: flex;
+            align-items: center;
+
+            &::before, &::after {
+                position: absolute;
+                content: '';
+                right: 0;
+                //left: 90%;
+                top: 0;
+                bottom: 0;
+                background-color: #9BC284;
+                border-radius: 2px;
+            } 
+
+            &::before {
+                width: 9px;
+                //left: 92%;
+                right: 52px;
+                top: 27%;
+                bottom: 27%;
+            }
+
+            &::after {
+                top: 44%;
+                bottom: 40%;
+                //right: 5%;
+                right: 40.5px;
+                width: 32px;
+                height: 9px;
+            }
+
+            .logo-cours {
+                width: 2.5rem;
+                margin-right: 1em;
+                filter: saturate(200%) brightness(70%);
+
+                @include small_tablet {
+                    margin-right: 2em;
+                }
+
+                @include desktop {
+                    margin-right: 5em;
+                }
+            }
+            
+            // Titre du cours
+            p {
+                font-weight: 400;
+                font-size: 1.3em;
+                margin: 0;
+                line-height: 1.2;
+
+                @include small_tablet {
+                    width: 62%;
+                    font-size: 1.7em;
+                }
+
+                @include tablet {
+                    width: auto;
+                }
+            }
+        }
+
+        .description-cours {
+            display: none;
+            transition: 0.3s all ease;
+
+            p {
+                color: #457B77;
+                line-height: 1.4;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+/// Note pour moi-même (Sami) : Trouver le moyen de réduire les !important.
+.actif-cours {
+
+    .titre-cours {
+        
+        &::before {
+            background: none !important;
+        }
+
+        &::after {
+            top: 16% !important;
+        }
+    }
+
+    .description-cours {
+        display: block !important;
     }
 }

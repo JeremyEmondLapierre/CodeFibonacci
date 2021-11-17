@@ -164,21 +164,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         }*/
 }
 
-.accueil-cours .accueil-cours-contenant .icon {
-  fill: #B7E8D7;
-  transition: .3s all;
-  width: 100%;
-}
-
-.accueil-cours .accueil-cours-contenant .icon:hover {
-  fill: #7BB8A1;
-  cursor: pointer;
-}
-
-.accueil-cours .accueil-cours-contenant .icon:active {
-  fill: #D7EEE6;
-}
-
 .accueil-cours .accueil-cours-contenant .accueil-cours-item {
   width: 100%;
   margin: 15px 30px;
@@ -192,7 +177,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu {
   display: flex;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(20px);
   border-radius: 25px;
   padding: 3% 4% 3% 0;
@@ -222,12 +207,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon {
   width: 50vw;
   margin: 5%;
+  transition: .1s all;
 }
 
 @media (min-width: 1200px) {
   .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon {
     width: 30vw;
   }
+}
+
+.accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon:hover {
+  cursor: pointer;
+  filter: saturate(195%) brightness(130%) hue-rotate(-99deg);
 }
 
 @media (min-width: 1200px) {
@@ -311,12 +302,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   padding-bottom: 5em;
 }
 
-@media (min-width: 1200px) {
-  #accueil-prof {
-    padding-bottom: 15em;
-  }
-}
-
 #accueil-prof h1 {
   font-weight: 500;
 }
@@ -327,11 +312,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   font-size: 2rem;
   font-weight: 100;
   padding: 0 2em;
+  text-align: justify;
 }
 
 @media (min-width: 1200px) {
   #accueil-prof p {
-    padding: 0 7em 10em 7em;
+    padding: 0 7em;
   }
 }
 
@@ -454,14 +440,22 @@ html, body {
 
 .integre h1 {
   font-family: 'Titillium Web', sans-serif !important;
-  margin: 0 6rem;
-  font-size: 7em !important;
+  font-size: 4em !important;
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  .integre h1 {
+    padding: 0;
+    font-size: 7em !important;
+    margin: 0 6rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .integre h1 {
     text-align: left !important;
+    padding: 0 1em;
   }
 }
 
@@ -493,7 +487,6 @@ p, h1, h2, h3, h4, h5, h6, a {
   text-align: center;
   font-size: 2.5rem;
   color: #FFFAB2;
-  padding: 0 1em;
   font-family: futura-pt,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1592,6 +1585,30 @@ textarea {
   z-index: -10;
 }
 
+/*----------------------------------
+    Navigation des pages intègres
+------------------------------------*/
+.site-header .menu-menu-site-container .menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2rem;
+  padding-top: 1em;
+}
+
+.site-header .menu-menu-site-container .menu li {
+  margin: 0 1em;
+}
+
+.site-header .menu-menu-site-container .menu li a {
+  color: #FFFAB2;
+}
+
+.site-header .menu-menu-site-container .menu li a:hover {
+  color: #B7E8D7;
+}
+
 /* Local/vie 
 --------------------------------------------- */
 /*-------Style section projets GRID ------*/
@@ -1982,8 +1999,65 @@ footer #logo-FiboFooter {
   font-weight: 500;
   text-align: center;
   color: #ECFEF8;
-  font-size: 5.4em;
+  font-size: 3.4em;
   margin: 0;
+  line-height: 1;
+}
+
+@media (min-width: 700px) {
+  .contenant-cheminement h2 {
+    font-size: 4.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenant-cheminement h2 {
+    font-size: 5.4em;
+  }
+}
+
+.contenant-cheminement form {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #ECFEF8;
+  padding: 1em 0;
+}
+
+.contenant-cheminement form .filtre-cours {
+  background: none;
+  border: none;
+  color: #FBF057;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.contenant-cheminement form .filtre-cours option {
+  background-color: #D7EEE6;
+  color: #0B132B;
+}
+
+.contenant-cheminement form .filtre-cours option:hover {
+  background-color: #9BC284;
+}
+
+.contenant-cheminement form input {
+  border: 3px solid #FBF057;
+  border-radius: 10px;
+  background-color: #FBF057;
+  color: #0B132B;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  transition: 0.3s all ease;
+}
+
+.contenant-cheminement form input:hover {
+  background-color: #FFC857;
+  border: 3px solid #FFC857;
+}
+
+.contenant-cheminement form input:active {
+  border-color: #0B132B;
 }
 
 .contenant-cheminement .contenant-tableau-cheminement {
@@ -1998,7 +2072,15 @@ footer #logo-FiboFooter {
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours {
   display: flex;
   align-items: center;
-  padding: 0 2em;
+  padding: 0.5em 1em;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours {
+    flex-direction: row;
+    padding: 0.5em 2em;
+  }
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours:hover {
@@ -2008,21 +2090,59 @@ footer #logo-FiboFooter {
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
   font-weight: 500;
   font-size: 1.5em;
-  margin-right: 55px;
   line-height: 0;
+  align-self: flex-start;
+  width: 100%;
+  text-align: center;
+  margin: 1em 0;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours {
+@media (min-width: 700px) {
+  .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
+    width: 20%;
+    margin-right: 55px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
+    width: 5em;
+  }
+}
+
+.contenant-liste-cours {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .contenant-liste-cours {
+    width: 90%;
+  }
+}
+
+.contenant-liste-cours .contenant-cours {
   background-color: #C1E8AA;
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
-  align-items: center;
-  flex-grow: 1;
-  padding: 1em 2em;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em 0;
   position: relative;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::before, .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::after {
+@media (min-width: 700px) {
+  .contenant-liste-cours .contenant-cours {
+    padding: 1em 2em;
+  }
+}
+
+.contenant-liste-cours .contenant-cours .titre-cours {
+  display: flex;
+  align-items: center;
+}
+
+.contenant-liste-cours .contenant-cours .titre-cours::before, .contenant-liste-cours .contenant-cours .titre-cours::after {
   position: absolute;
   content: '';
   right: 0;
@@ -2032,14 +2152,14 @@ footer #logo-FiboFooter {
   border-radius: 2px;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::before {
+.contenant-liste-cours .contenant-cours .titre-cours::before {
   width: 9px;
   right: 52px;
   top: 27%;
   bottom: 27%;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours::after {
+.contenant-liste-cours .contenant-cours .titre-cours::after {
   top: 44%;
   bottom: 40%;
   right: 40.5px;
@@ -2047,15 +2167,64 @@ footer #logo-FiboFooter {
   height: 9px;
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours .logo-cours {
+.contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
   width: 2.5rem;
-  margin-right: 5rem;
+  margin-right: 1em;
   filter: saturate(200%) brightness(70%);
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours .contenant-cours p {
+@media (min-width: 700px) {
+  .contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
+    margin-right: 5em;
+  }
+}
+
+.contenant-liste-cours .contenant-cours .titre-cours p {
   font-weight: 400;
-  font-size: 1.7em;
+  font-size: 1.3em;
   margin: 0;
+  line-height: 1.2;
+}
+
+@media (min-width: 700px) {
+  .contenant-liste-cours .contenant-cours .titre-cours p {
+    width: 62%;
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 800px) {
+  .contenant-liste-cours .contenant-cours .titre-cours p {
+    width: auto;
+  }
+}
+
+.contenant-liste-cours .contenant-cours .description-cours {
+  display: none;
+  transition: 0.3s all ease;
+}
+
+.contenant-liste-cours .contenant-cours .description-cours p {
+  color: #457B77;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.actif-cours .titre-cours::before {
+  background: none !important;
+}
+
+.actif-cours .titre-cours::after {
+  top: 16% !important;
+}
+
+.actif-cours .description-cours {
+  display: block !important;
 }
 /*# sourceMappingURL=style.css.map */

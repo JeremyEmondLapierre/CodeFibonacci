@@ -6,9 +6,6 @@
     @include desktop {
         flex-direction: column;
     }
-
-   
-    
     
     .sub-menu {
         flex-direction: column;
@@ -16,10 +13,9 @@
         li {
             margin: 0;
 
-            &:nth-of-child(last) {
-            }
         }
     }
+
     li{
         display: flex;
         justify-content: center;
@@ -91,4 +87,38 @@
 .banniere-accueil {
     position: absolute;
     z-index: -10;
+}
+
+
+/*----------------------------------
+    Navigation des pages intègres
+------------------------------------*/
+
+// En effet le nom de classe est étrange, mais unique.
+
+.site-header {
+
+    .menu-menu-site-container {
+
+        .menu {
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 2rem;
+            padding-top: 1em;
+    
+            li {
+                margin: 0 1em;
+    
+                a {
+                    color: $couleur1;
+    
+                    &:hover {
+                        color: #B7E8D7;
+                    }
+                }
+            }
+        }
+    }
 }
