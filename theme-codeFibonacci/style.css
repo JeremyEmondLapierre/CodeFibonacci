@@ -1594,43 +1594,48 @@ textarea {
 
 /* Local/vie 
 --------------------------------------------- */
-.page-header {
-  width: 100%;
-  /*-------Stule global titre section gallerie et concours------*/
+/*-------Style section projets GRID ------*/
+.gallerie-projets {
+  /*
+      .bottom { grid-area: bottom; }
+      
+      .Mid-top { grid-area: Mid-top; }
+      
+      .midle { grid-area: midle; }
+      */
 }
 
-.page-header div {
-  width: 33%;
-}
-
-.page-header div h1 {
-  align-items: center;
-  margin: 0 auto;
-}
-
-.page-header div h4 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.page-header .gallerie-projets .lesProjets {
+.gallerie-projets .lesProjets {
+  margin: 1rem 4rem 4rem 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
+  grid-auto-rows: 1fr;
+  gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . top-box ." ". . top-box ." ". . . ." "bottom-box bottom-box . .";
+  grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
 }
 
-.page-header .gallerie-projets .bottom-box {
-  grid-area: bottom-box;
+.gallerie-projets .lesProjets div, .gallerie-projets .lesProjets img {
+  border-radius: 20px;
 }
 
-.page-header .gallerie-projets .top-box {
-  grid-area: top-box;
+.gallerie-projets .top-midle {
+  grid-area: top-midle;
+  background-color: #FFC857;
 }
 
+.gallerie-projets .midle {
+  grid-area: midle;
+  background-color: #57caff;
+}
+
+.gallerie-projets .bottom {
+  grid-area: bottom;
+  background-color: #dd57ff;
+}
+
+/*-------Style global titre section gallerie et concours------*/
 .gallerie-projets, .concours {
   text-align: center;
   align-items: center;
@@ -1638,9 +1643,11 @@ textarea {
 
 .gallerie-projets h3, .concours h3 {
   display: inline-flex;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
   align-items: center;
   color: #ECFEF8;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
