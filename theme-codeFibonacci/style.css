@@ -164,21 +164,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         }*/
 }
 
-.accueil-cours .accueil-cours-contenant .icon {
-  fill: #B7E8D7;
-  transition: .3s all;
-  width: 100%;
-}
-
-.accueil-cours .accueil-cours-contenant .icon:hover {
-  fill: #7BB8A1;
-  cursor: pointer;
-}
-
-.accueil-cours .accueil-cours-contenant .icon:active {
-  fill: #D7EEE6;
-}
-
 .accueil-cours .accueil-cours-contenant .accueil-cours-item {
   width: 100%;
   margin: 15px 30px;
@@ -192,7 +177,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu {
   display: flex;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(20px);
   border-radius: 25px;
   padding: 3% 4% 3% 0;
@@ -222,12 +207,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon {
   width: 50vw;
   margin: 5%;
+  transition: .1s all;
 }
 
 @media (min-width: 1200px) {
   .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon {
     width: 30vw;
   }
+}
+
+.accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon:hover {
+  cursor: pointer;
+  filter: saturate(195%) brightness(130%) hue-rotate(-99deg);
 }
 
 @media (min-width: 1200px) {
@@ -311,12 +302,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   padding-bottom: 5em;
 }
 
-@media (min-width: 1200px) {
-  #accueil-prof {
-    padding-bottom: 15em;
-  }
-}
-
 #accueil-prof h1 {
   font-weight: 500;
 }
@@ -327,11 +312,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   font-size: 2rem;
   font-weight: 100;
   padding: 0 2em;
+  text-align: justify;
 }
 
 @media (min-width: 1200px) {
   #accueil-prof p {
-    padding: 0 7em 10em 7em;
+    padding: 0 7em;
   }
 }
 
@@ -1597,6 +1583,30 @@ textarea {
 .banniere-accueil {
   position: absolute;
   z-index: -10;
+}
+
+/*----------------------------------
+    Navigation des pages intègres
+------------------------------------*/
+.site-header .menu-menu-site-container .menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2rem;
+  padding-top: 1em;
+}
+
+.site-header .menu-menu-site-container .menu li {
+  margin: 0 1em;
+}
+
+.site-header .menu-menu-site-container .menu li a {
+  color: #FFFAB2;
+}
+
+.site-header .menu-menu-site-container .menu li a:hover {
+  color: #B7E8D7;
 }
 
 /* Local/vie 
