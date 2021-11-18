@@ -21,7 +21,8 @@
     
     .btnActif{
         h2{
-            color: rgb(233, 196, 31);
+            color: rgb(233, 196, 31);;
+            animation: texteCouleur 1s ease-in-out;
         }
     }
 
@@ -46,8 +47,10 @@
         background-size: 400% 400%;
         animation: Gradient 15s ease infinite;
         
+        
         p{
             font-weight: 600;
+            color: #27532A;
         }
     }
 
@@ -111,7 +114,10 @@
             width: 20vw;
             min-width: 150px;
             min-height: 150px;
-            z-index: 999;
+            z-index: -10;
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	        transform: translatey(0px);
+	        animation: float 6s ease-in-out infinite;
             @include desktop{
                 height: 15em;
                 width: 15em;
@@ -129,7 +135,7 @@
             align-items: center;
             background-color: #D9F2CA;
             padding: 2rem;
-            color:#27532A ;
+            color:#0B132B ;
         }
         
     }
@@ -141,6 +147,7 @@
         padding: 1rem;
         border-radius: 10px;
         background-color: #D9F2CA;
+        color: #0B132B;
         p{
             font-weight:500;
         }
@@ -160,4 +167,28 @@
       background-position: 0% 50%;
     }
   }
+/* Animate float */
+  @keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-4px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
 
+/* Animate text */
+@keyframes texteCouleur{
+    from  {
+		color: #0B132B;
+	}
+    to  {
+        color: rgb(233, 196, 31);
+	}
+}

@@ -1943,6 +1943,7 @@ footer #logo-FiboFooter {
 
 .pageStage .btnActif h2 {
   color: #e9c41f;
+  animation: texteCouleur 1s ease-in-out;
 }
 
 .pageStage .Actif {
@@ -1972,6 +1973,7 @@ footer #logo-FiboFooter {
 
 .pageStage .texteResume p {
   font-weight: 600;
+  color: #27532A;
 }
 
 .Exp {
@@ -2039,7 +2041,10 @@ footer #logo-FiboFooter {
   width: 20vw;
   min-width: 150px;
   min-height: 150px;
-  z-index: 999;
+  z-index: -10;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
   object-fit: scale-down;
 }
 
@@ -2058,7 +2063,7 @@ footer #logo-FiboFooter {
   align-items: center;
   background-color: #D9F2CA;
   padding: 2rem;
-  color: #27532A;
+  color: #0B132B;
 }
 
 @media (min-width: 1200px) {
@@ -2076,6 +2081,7 @@ footer #logo-FiboFooter {
   padding: 1rem;
   border-radius: 10px;
   background-color: #D9F2CA;
+  color: #0B132B;
 }
 
 .Exp .texteExp p {
@@ -2092,6 +2098,32 @@ footer #logo-FiboFooter {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* Animate float */
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-4px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+/* Animate text */
+@keyframes texteCouleur {
+  from {
+    color: #0B132B;
+  }
+  to {
+    color: #e9c41f;
   }
 }
 
