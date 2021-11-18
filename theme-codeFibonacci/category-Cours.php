@@ -35,7 +35,13 @@ get_header();
 							<div class="contenant-cours">
 								<div class="titre-cours">
 									<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-									<p>Mise en page Web</p>
+									<div class="contenu-titre-cours">
+										<p>Mise en page Web</p>
+										<div class="contenant-icone-cours">
+											<i class="fas fa-times"></i>
+											<i class="fas fa-minus"></i>
+										</div>
+									</div>
 								</div>
 								<div class="description-cours">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.

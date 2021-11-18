@@ -95,6 +95,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .conteneur-logo img {
   width: 80%;
   margin: 0 auto;
+  animation-name: Banniere;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .conteneur-logo h1 {
@@ -132,6 +135,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     width: 80vh;
     right: 5%;
     top: 10%;
+  }
+}
+
+/* Animate Background*/
+@keyframes Banniere {
+  0% {
+    filter: hue-rotate(0deg) saturate(100%) contrast(100%);
+    transform: scale(100%);
+  }
+  50% {
+    filter: hue-rotate(10deg) saturate(150%) contrast(120%);
+    transform: scale(101%);
+  }
+  100% {
+    filter: hue-rotate(0deg) saturate(100%) contrast(100%);
+    transform: scale(100%);
   }
 }
 
@@ -2153,7 +2172,7 @@ footer #logo-FiboFooter {
 @media (min-width: 700px) {
   .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
     width: 20%;
-    margin-right: 55px;
+    margin: 55px 55px 0 0;
     text-align: left;
   }
 }
@@ -2186,38 +2205,41 @@ footer #logo-FiboFooter {
 
 @media (min-width: 700px) {
   .contenant-liste-cours .contenant-cours {
-    padding: 1em 2em;
+    padding: 0.8em 2em;
   }
 }
 
 .contenant-liste-cours .contenant-cours .titre-cours {
   display: flex;
   align-items: center;
-}
+  /*
+            &::before, &::after {
+                position: absolute;
+                content: '';
+                right: 0;
+                //left: 90%;
+                top: 0;
+                bottom: 0;
+                background-color: #9BC284;
+                border-radius: 2px;
+            } 
 
-.contenant-liste-cours .contenant-cours .titre-cours::before, .contenant-liste-cours .contenant-cours .titre-cours::after {
-  position: absolute;
-  content: '';
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #9BC284;
-  border-radius: 2px;
-}
+            &::before {
+                width: 9px;
+                //left: 92%;
+                right: 52px;
+                top: 27%;
+                bottom: 27%;
+            }
 
-.contenant-liste-cours .contenant-cours .titre-cours::before {
-  width: 9px;
-  right: 52px;
-  top: 27%;
-  bottom: 27%;
-}
-
-.contenant-liste-cours .contenant-cours .titre-cours::after {
-  top: 44%;
-  bottom: 40%;
-  right: 40.5px;
-  width: 32px;
-  height: 9px;
+            &::after {
+                top: 44%;
+                bottom: 40%;
+                //right: 5%;
+                right: 40.5px;
+                width: 32px;
+                height: 9px;
+            }*/
 }
 
 .contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
@@ -2236,6 +2258,28 @@ footer #logo-FiboFooter {
   .contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
     margin-right: 5em;
   }
+}
+
+.contenant-liste-cours .contenant-cours .titre-cours .contenu-titre-cours {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenant-liste-cours .contenant-cours .titre-cours .contenu-titre-cours .contenant-icone-cours {
+  font-size: 3rem;
+  line-height: 0;
+}
+
+.contenant-liste-cours .contenant-cours .titre-cours .contenu-titre-cours .contenant-icone-cours .fa-times {
+  transform: rotate(45deg);
+  color: #9BC284;
+}
+
+.contenant-liste-cours .contenant-cours .titre-cours .contenu-titre-cours .contenant-icone-cours .fa-minus {
+  display: none;
+  color: #9BC284;
 }
 
 .contenant-liste-cours .contenant-cours .titre-cours p {
@@ -2277,7 +2321,31 @@ footer #logo-FiboFooter {
   top: 16% !important;
 }
 
+.actif-cours .titre-cours .fa-minus {
+  display: block !important;
+}
+
+.actif-cours .titre-cours .fa-times {
+  animation-name: Croix;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 .actif-cours .description-cours {
   display: block !important;
+}
+
+/* Animation de la croix*/
+@keyframes Croix {
+  0% {
+    transform: rotate(45deg);
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    transform: rotate(135deg);
+    opacity: 0;
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

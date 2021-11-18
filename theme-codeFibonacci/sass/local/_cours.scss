@@ -102,7 +102,7 @@
 
                     @include small_tablet {
                         width: 20%;
-                        margin-right: 55px;
+                        margin: 55px 55px 0 0;
                         text-align: left;
                     }
 
@@ -134,13 +134,13 @@
         position: relative;
 
         @include small_tablet {
-            padding: 1em 2em;
+            padding: 0.8em 2em;
         }
 
         .titre-cours {
             display: flex;
             align-items: center;
-
+/*
             &::before, &::after {
                 position: absolute;
                 content: '';
@@ -167,7 +167,7 @@
                 right: 40.5px;
                 width: 32px;
                 height: 9px;
-            }
+            }*/
 
             .logo-cours {
                 width: 2.5rem;
@@ -180,6 +180,28 @@
 
                 @include desktop {
                     margin-right: 5em;
+                }
+            }
+
+            .contenu-titre-cours {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .contenant-icone-cours {
+                    font-size: 3rem;
+                    line-height: 0;
+
+                    .fa-times {
+                        transform: rotate(45deg);
+                        color: #9BC284;
+                    }
+
+                    .fa-minus {
+                        display: none;
+                        color: #9BC284;
+                    }
                 }
             }
             
@@ -226,9 +248,37 @@
         &::after {
             top: 16% !important;
         }
+
+        .fa-minus {
+            display: block !important;
+        }
+
+        .fa-times {
+            animation-name: Croix;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
     }
 
     .description-cours {
         display: block !important;
+    }
+}
+
+
+/* Animation de la croix*/
+
+@keyframes Croix {
+
+    0% {
+      transform: rotate(45deg);
+      opacity: 1;
+      display: block;
+    }
+
+    100% {
+        transform: rotate(135deg);
+        opacity: 0;
+        display: none;
     }
 }
