@@ -1611,61 +1611,101 @@ textarea {
 
 /* Local/vie 
 --------------------------------------------- */
-/*-------Style section projets GRID ------*/
-.gallerie-projets {
-  /*
-      .bottom { grid-area: bottom; }
-      
-      .Mid-top { grid-area: Mid-top; }
-      
-      .midle { grid-area: midle; }
-      */
-}
-
+/*-------Style section projets GRID desktop ------*/
 .gallerie-projets .lesProjets {
-  margin: 1rem 4rem 4rem 4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+  grid-template-areas: ". . " ". . ";
+}
+
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets {
+    margin: 1rem 4rem 4rem 4rem;
+  }
 }
 
 .gallerie-projets .lesProjets div, .gallerie-projets .lesProjets img {
   border-radius: 20px;
 }
 
-.gallerie-projets .top-midle {
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+  }
+}
+
+.gallerie-projets .lesProjets .top-midle {
+  display: none;
   grid-area: top-midle;
   background-color: #FFC857;
 }
 
-.gallerie-projets .midle {
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets .top-midle {
+    display: block;
+  }
+}
+
+.gallerie-projets .lesProjets .midle {
+  display: none;
   grid-area: midle;
   background-color: #57caff;
 }
 
-.gallerie-projets .bottom {
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets .midle {
+    display: block;
+  }
+}
+
+.gallerie-projets .lesProjets .bottom {
+  display: none;
   grid-area: bottom;
   background-color: #dd57ff;
+}
+
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets .bottom {
+    display: block;
+  }
 }
 
 /*-------Style global titre section gallerie et concours------*/
 .gallerie-projets, .concours {
   text-align: center;
   align-items: center;
+  margin: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+  .gallerie-projets, .concours {
+    margin: 1rem;
+  }
 }
 
 .gallerie-projets h3, .concours h3 {
-  display: inline-flex;
-  margin-top: 5rem;
   margin-bottom: 2rem;
   align-items: center;
   color: #ECFEF8;
-  font-size: 3rem;
+  font-size: clamp(1rem, 7.458vw, 3rem);
   font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  .gallerie-projets h3, .concours h3 {
+    display: inline-flex;
+    margin-top: 5rem;
+  }
 }
 
 .gallerie-projets h3 div, .concours h3 div {
@@ -1677,30 +1717,56 @@ textarea {
 }
 
 .concours .lesConcours {
+  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
-  align-items: center;
-  width: 80%;
   height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
+  border-radius: 45px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   /*--------------------Style card Concours------------------------*/
 }
 
+@media (min-width: 1200px) {
+  .concours .lesConcours {
+    width: 80%;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
 .concours .lesConcours .gameJam, .concours .lesConcours .jour {
-  width: 450px;
-  height: 400px;
+  flex-direction: column;
+  margin: 5% auto;
+  padding: 50px;
+  width: 90%;
+  height: auto;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin: 2rem;
+  border: none;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(0px);
+}
+
+@media (min-width: 1200px) {
+  .concours .lesConcours .gameJam, .concours .lesConcours .jour {
+    width: 450px;
+    margin: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+
+.concours .lesConcours .gameJam .suite, .concours .lesConcours .jour .suite {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .concours .lesConcours .gameJam .suite, .concours .lesConcours .jour .suite {
+    display: block;
+  }
 }
 
 .concours .lesConcours .gameJam h4, .concours .lesConcours .jour h4 {
@@ -1718,14 +1784,14 @@ textarea {
 }
 
 .concours .lesConcours .gameJam .logo-concours {
-  margin: 20px;
+  margin: 10px;
   color: black;
   filter: saturate(200%) brightness(70%);
   width: 70px;
 }
 
 .concours .lesConcours .jour .logo-concours {
-  margin: 20px;
+  margin: 10px;
   color: black;
   filter: saturate(200%) brightness(70%);
   width: 65px;
@@ -1875,6 +1941,10 @@ footer .global-footer .liens-rapides .footer-navigation ul {
 
 footer .global-footer .liens-rapides .footer-navigation a {
   color: #B7E8D7;
+}
+
+footer .global-footer .liens-rapides .footer-navigation a:hover {
+  color: #e9c41f;
 }
 
 footer .global-footer .google-map {

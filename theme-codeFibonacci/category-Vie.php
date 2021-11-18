@@ -73,7 +73,7 @@ get_header();
 			</section>
 
 
-			<section class="concours">
+			<section class="concours"> 
 
 			<h3> <div>Concours&nbsp;</div> du programme</h3>
 
