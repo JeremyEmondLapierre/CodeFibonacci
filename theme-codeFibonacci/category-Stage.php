@@ -22,6 +22,7 @@ get_header();
 			
 
 		<div id="ATE" class="Actif">
+			<h2 class="benef">Les bénifices d'un stage ATE</h2>
 			<div class="texteResume">
 				<p>L’ATE est une approche de formation adaptée aux besoins changeants du marché du
 				travail, où l’apprentissage intègre des séquences en classe et en entreprise. Les
@@ -43,6 +44,7 @@ get_header();
 		</div>
 
 		<div id="FIN" class="PasActif">
+			<h2 class="benef">Les bénifices d'un stage de fin d'étude</h2>
 			<div class="texteResume">
 				<p>Ce stage a pour but de placer l’étudiant dans une entreprise dans le but d’intégrer un emploi à plus long terme. Ce stage est très intéressant, car l’étudiant est à la fin de son parcours scolaire. Il a donc déjà développé la plupart des compétences qu’il devait acquérir à la suite de ses études. Ces stages sont plus communs en formation collégiale et professionnelle</p>
 			</div>
