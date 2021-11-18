@@ -1925,7 +1925,7 @@ footer #logo-FiboFooter {
 }
 
 .pageStage .benef {
-  color: wheat;
+  color: #fffbf5;
   display: flex;
   justify-content: center;
 }
@@ -1955,12 +1955,19 @@ footer #logo-FiboFooter {
 
 .pageStage .texteResume {
   padding: 2rem;
-  text-align: justify;
   border-radius: 10px;
   width: 60%;
   margin: auto;
-  background-color: #bce99b;
-  margin-bottom: 20px;
+  font-size: clamp(0.2rem, 7.458vw, 1.2rem);
+  background: linear-gradient(132deg, #c3ebd0, #dcebc3, #aaf1c2);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+@media (min-width: 1200px) {
+  .pageStage .texteResume {
+    text-align: justify;
+  }
 }
 
 .pageStage .texteResume p {
@@ -1971,12 +1978,20 @@ footer #logo-FiboFooter {
   margin-bottom: 10px;
 }
 
-.Exp:nth-child(even) .signetExp {
-  margin-left: 12%;
+@media (min-width: 1200px) {
+  .Exp:nth-child(even) .signetExp {
+    margin-left: 12%;
+  }
 }
 
 .Exp:nth-child(even) h3 {
-  margin-left: -15px;
+  margin-left: -25px;
+}
+
+@media (min-width: 1200px) {
+  .Exp:nth-child(even) h3 {
+    margin-left: -15px;
+  }
 }
 
 .Exp:nth-child(even) .texteExp {
@@ -1986,11 +2001,22 @@ footer #logo-FiboFooter {
 
 .Exp:nth-child(odd) .signetExp {
   flex-direction: row-reverse;
-  margin-right: 12%;
+}
+
+@media (min-width: 1200px) {
+  .Exp:nth-child(odd) .signetExp {
+    margin-right: 12%;
+  }
 }
 
 .Exp:nth-child(odd) h3 {
-  margin-right: -15px;
+  margin-right: -40px;
+}
+
+@media (min-width: 1200px) {
+  .Exp:nth-child(odd) h3 {
+    margin-right: -15px;
+  }
 }
 
 .Exp:nth-child(odd) .texteExp {
@@ -2002,25 +2028,43 @@ footer #logo-FiboFooter {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .Exp .signetExp img {
   background-color: #D9F2CA;
   padding: 2rem;
   border-radius: 60%;
-  height: 15em;
-  width: 15em;
+  height: 20vw;
+  width: 20vw;
+  min-width: 150px;
+  min-height: 150px;
+  z-index: 999;
   object-fit: scale-down;
+}
+
+@media (min-width: 1200px) {
+  .Exp .signetExp img {
+    height: 15em;
+    width: 15em;
+  }
 }
 
 .Exp .signetExp h3 {
   flex-grow: 4;
-  font-size: 2vw;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #D9F2CA;
   padding: 2rem;
+  color: #27532A;
+}
+
+@media (min-width: 1200px) {
+  .Exp .signetExp h3 {
+    font-size: 1.8rem;
+  }
 }
 
 .Exp .contenantTexteExp {
@@ -2029,13 +2073,26 @@ footer #logo-FiboFooter {
 
 .Exp .texteExp {
   width: 70%;
-  background-color: #DAFFBE;
   padding: 1rem;
   border-radius: 10px;
+  background-color: #D9F2CA;
 }
 
 .Exp .texteExp p {
   font-weight: 500;
+}
+
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Local/stage

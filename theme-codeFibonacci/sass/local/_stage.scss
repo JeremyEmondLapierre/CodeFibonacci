@@ -4,7 +4,7 @@
             margin: 0;
     }
     .benef{
-        color: wheat;
+        color: rgb(255, 251, 245);
         display: flex;
         justify-content: center;
     }
@@ -34,12 +34,18 @@
 
     .texteResume{
         padding: 2rem;
-        text-align: justify;
+        @include desktop {
+            text-align: justify;
+        }
         border-radius: 10px;
         width: 60%;
         margin: auto;
-        background-color: #bce99b;
-        margin-bottom: 20px;
+        font-size: clamp(0.2rem, -0.875vw + 8.333vw, 1.2rem);
+        //background-color: #bce99b;
+        background: linear-gradient(132deg, #c3ebd0, #dcebc3, #aaf1c2);
+        background-size: 400% 400%;
+        animation: Gradient 15s ease infinite;
+        
         p{
             font-weight: 600;
         }
@@ -53,10 +59,16 @@
     //Pour les éléments pairs, mettre l'éléments à droite
     &:nth-child(even){
         .signetExp{
-            margin-left: 12%;
+            @include desktop{
+                margin-left: 12%;
+            }
+            
         }
         h3{
-            margin-left: -15px;
+            @include desktop{
+                margin-left: -15px;
+            }
+            margin-left: -25px;
         }
         .texteExp{
             margin-left: auto; 
@@ -67,10 +79,16 @@
     &:nth-child(odd){
         .signetExp{
         flex-direction: row-reverse;
-        margin-right: 12%;
+        @include desktop{
+            margin-right: 12%;
+        }
         }
         h3{
-            margin-right: -15px;
+            @include desktop{
+                margin-right: -15px;
+            }
+            margin-right: -40px;
+            
         }
         .texteExp{
             margin-left: 0; 
@@ -82,24 +100,36 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
     
         
         img{
             background-color: #D9F2CA;
             padding: 2rem;
             border-radius: 60%;
-            height: 15em;
-            width: 15em;
+            height: 20vw;
+            width: 20vw;
+            min-width: 150px;
+            min-height: 150px;
+            z-index: 999;
+            @include desktop{
+                height: 15em;
+                width: 15em;
+            }
             object-fit: scale-down;
         }
         h3{
             flex-grow: 4;
-            font-size: 2vw;
+            @include desktop{
+                font-size: 1.8rem;
+            }
+            font-size: 1.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #D9F2CA;
             padding: 2rem;
+            color:#27532A ;
         }
         
     }
@@ -108,13 +138,26 @@
     }
     .texteExp{
         width: 70%;
-        background-color: #DAFFBE;
         padding: 1rem;
         border-radius: 10px;
+        background-color: #D9F2CA;
         p{
             font-weight:500;
         }
     }
 }   
 
+
+/* Animate Background*/
+@keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 

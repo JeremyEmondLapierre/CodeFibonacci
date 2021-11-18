@@ -168,7 +168,7 @@ var swiper = new Swiper(".mySwiper", {
 		},
 		// when window width is >= 1200px
 		1200: {
-			slidesPerView: 12,
+			slidesPerView: 11,
 		},
 	},
 });
