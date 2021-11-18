@@ -4,6 +4,7 @@
     width: 60px;
     padding: 0px;
     margin: 0px;
+    border-radius: 7px;
   }
 
   .logique{
@@ -79,7 +80,7 @@
   }
   
   .dropdown:hover .dropbtn {
-      background-color: #73AF88;
+      background-color: #4E9291;
   }
   
   
@@ -91,7 +92,7 @@
     font-size: 1rem;
     line-height: 1.5;
     background-color:#A2CC8A ;
-    border-radius: 10%;
+    border-radius: 25px;
     padding: 45px 45px;
     margin-top: 50px;
     a{
@@ -105,15 +106,15 @@
   }
   .accordion .label {
     position: relative;
-    padding: 10px 10px;
+    padding: 20px 27px;
     line-height: 1.2;
     font-size: 30px;
     color: black;
     cursor: pointer;
     background-color: #C1E8AA;
     align-items: center;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-radius: 25px;
+    display: flex;
   }
   .accordion .label::before {
     content: '+';
@@ -130,25 +131,28 @@
     background: #C1E8AA;
     color: #457B77;
     height:0;
-    font-size: medium;
+    font-size: large;
     text-align: justify; 
     overflow: hidden;
     //transition: 1s;
+    width: auto;
     border-radius: 2%;
     margin-top: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   
   .accordion .container.active .content {
   height: auto;
-  border-radius: 2%;
+  border-radius: 1%;
   margin-top: -15px;
   }
   
   .accordion .container.active .label::before {
     content: '-';
     right: 20px;
-    font-size:100px;
-    border-radius: 2%;
+    font-size: 100px;
+    border-radius: 1%;
   }
 }
 
@@ -159,17 +163,14 @@
       font-size: 7em !important;
     }
     .dropdown{
-      padding-left: 350px;
+      padding-left: 150px;
     }
     .dropdown-content {
-      left: 430px;
+      left: 230px;
     }
     /*prof*/
     .accordion{
-      width: 800px;
-    }
-    .accordion .content{
-      width: 690px;
+      width: 80%;
     }
   }
 }
