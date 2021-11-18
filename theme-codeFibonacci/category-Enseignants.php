@@ -14,6 +14,9 @@ get_header();
 
 <div class="logique">
 <h1>ENSEIGNANTS</h1>	
+
+
+<div class="accordion-body" id="logique">
 <h2>Aspect <a>Logique</a></h2>
 
 <div class="dropdown">
@@ -23,7 +26,6 @@ get_header();
   </div>
 </div>
 
-<div class="accordion-body" id="logique">
   <div class="accordion">
     
 
@@ -103,6 +105,9 @@ J'enseigne au département TIM depuis 2001.</div>
 
 
   <div class="accordion-body-pasActif" id="creatif">
+  <h2>Aspect <a>creatif</a></h2>
+  
+</div>
 
   <div class="accordion">
 
@@ -197,5 +202,5 @@ document.getElementById("boutonLogique").addEventListener("click", function() {
 		document.getElementById("logique").classList.remove("accordion-body");
 		document.getElementById("creatif").classList.add("accordion-body");
 		document.getElementById("creatif").classList.remove("accordion-body-pasActif");
-
+	});
 </script>
