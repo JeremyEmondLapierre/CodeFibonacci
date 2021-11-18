@@ -17,13 +17,13 @@ get_header();
 <h2>Aspect <a>Logique</a></h2>
 
 <div class="dropdown">
-  <button class="dropbtn">Filtrer par : <a>Logique</a></button>
+  <button class="dropbtn" id="boutonLogique">Filtrer par : <a>Logique</a></button>
   <div class="dropdown-content">
-    <a href="Créatif">Créatif</a>  
+    <button id="boutonCreatif" class="">Créatif</button>  
   </div>
 </div>
 
-<div class="accordion-body">
+<div class="accordion-body" id="logique">
   <div class="accordion">
     
 
@@ -101,17 +101,28 @@ J'enseigne au département TIM depuis 2001.</div>
   </div>
   </div>
 
-<script>
 
-const accordion = document.getElementsByClassName('container');
+  <div class="accordion-body-pasActif" id="creatif">
 
-for (i=0; i<accordion.length; i++) {
-  accordion[i].addEventListener('click', function () {
-    this.classList.toggle('active')
-  })
-}
+  <div class="accordion">
 
-</script>
+  <div class="container">
+      <div class="label"><img class="img-prof" src='<?php echo site_url().'/wp-content/uploads/2021/12/8.png';?>';><a>Martin Eddy2</a></div>
+      <div class="content">études en mathématiques informatiques (B.Sc) et une maîtrise en traitement d'images à l'UQAM m'ont amené à m'intéresser plus particulièrement à la programmation Web.<br>
+	  <br>
+J'ai côtoyé l'industrie pendant plusieurs années comme programmeur analyste pour finalement trouvé ma vocation en enseignement au Collège de maisonneuve.<br>
+<br>
+Les sujets qui m'intéressent touchent directement la création de sites Web adaptatifs du côté client et serveur.<br>
+<br>
+J'enseigne au département TIM depuis 2001.</div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -151,3 +162,40 @@ for (i=0; i<accordion.length; i++) {
 <?php
 get_sidebar();
 get_footer();
+?>
+
+<script>
+
+const accordion = document.getElementsByClassName('container');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
+
+document.getElementById("boutonLogique").addEventListener("click", function() {
+		console.log("Logique");
+		//Gestion des boutons
+		document.getElementById("boutonLogique").classList.add("dropbtn");
+		document.getElementById("boutonCreatif").classList.remove("dropbtn");
+		//Gestion des éléments
+		document.getElementById("logique").classList.add("accordion-body");
+		document.getElementById("logique").classList.remove("accordion-body-pasActif");
+		document.getElementById("creatif").classList.add("accordion-body-pasActif");
+		document.getElementById("creatif").classList.remove("accordion-body");
+
+	});
+
+	document.getElementById("boutonCreatif").addEventListener("click", function() {
+		console.log("creatif");
+		//Gestion des boutons
+		document.getElementById("boutonCreatif").classList.add("dropbtn");
+		document.getElementById("boutonLogique").classList.remove("dropbtn");
+		//Gestion des éléments
+		document.getElementById("logique").classList.add("accordion-body-pasActif");
+		document.getElementById("logique").classList.remove("accordion-body");
+		document.getElementById("creatif").classList.add("accordion-body");
+		document.getElementById("creatif").classList.remove("accordion-body-pasActif");
+
+</script>
