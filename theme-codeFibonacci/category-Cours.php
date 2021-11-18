@@ -159,67 +159,7 @@ get_footer();
 ?>
 
 <script>
-	document.querySelector(".contenant-cours").addEventListener("click", function() {
-		console.log('ca fonctionne avec querySelector');
-		document.querySelector(".contenant-cours").classList.toggle("actif-cours");
-		
-	});
-	document.querySelectorAll(".contenant-cours").addEventListener("click", function() {
-		console.log('ca fonctionne avec querySelectorAll');
-	});
-	document.getElementsByClassName("contenant-cours").addEventListener("click", function() {
-		console.log('ca fonctionne avec getElementsByClassName');
-	});
-	/*
-	document.querySelectorAll(".item-cours").addEventListener("click", function() {
-		console.log("beep");
-		element.classList.add("cours-actif");
-	})*/
 
-
-	/*(function() {
-		let contenant = document.querySelectorAll(".contenant-cours");
-
-		for (var i = 0; i < contenant.length; i++) {
-			contenant[i].addEventListener("click", function() {	
-				contenant.classList.add("actif-cours");
-				console.log("ca a écouté");
-			});
-
-		};
-	});*/
-	
-	/*const parentCours = document.querySelectorAll("#item-cours")
-	const cours = parentCours.querySelectorAll("#contenant-cours")
-	for (const button of cours) {
-		button.addEventListener('click', function(event) {
-			cours.classList.add("actif-cours");
-			console.log("ca a écouté");
-		})
-	}*/
-
-	const cours = document.querySelectorAll('#contenant-cours');
-		for (var i = 0; i < cours.length; i++) {
-	    cours[i].addEventListener('click', function() {
-			cours.classList.add("actif-cours");
-			console.log("ca a écouté");
-		});
-	}
-
-	document.addEventListener("click", fonctionAjoutClasseCours);
-
-	function fonctionAjoutClasseCours() {
-		//document.getElementById("item-cours").classList.add("actif-cours");
-		console.log("ca a écouté");
-	};
-
-	document.getElementById("contenant-cours").addEventListener("click", displayDate);
-
-
-	const element = document.querySelector(".contenant-cours");
-	element.addEventListener("click", () => {
-		console.log("clicked element");
-	});
 	
 </script>
 

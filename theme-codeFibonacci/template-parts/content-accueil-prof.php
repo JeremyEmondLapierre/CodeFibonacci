@@ -8,22 +8,10 @@
  */
 
 ?>
- 
-
-    <!-- Swiper -->
-        <div class="swiper-slide">
-            <div class="prof">
-                <?php the_post_thumbnail( 'large' ); ?>
-                
-            </div>
+    <!-- Swiper des Professeurs-->
+    <div class="swiper-slide">
+        <div class="prof">
+            <?php the_post_thumbnail( 'large' ); ?>
         </div>
-
-        
-
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-   
-  
+    </div>
 </html>
