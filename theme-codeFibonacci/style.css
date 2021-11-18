@@ -1630,7 +1630,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+  grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
 }
 
 .gallerie-projets .lesProjets div, .gallerie-projets .lesProjets img {
@@ -2279,5 +2279,191 @@ footer #logo-FiboFooter {
 
 .actif-cours .description-cours {
   display: block !important;
+}
+
+/* Local/prof
+--------------------------------------------- */
+.img-prof {
+  height: 80px;
+  width: 60px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logique {
+  /*prof*/
+}
+
+.logique h1 {
+  margin: 0 6rem;
+  padding: 0;
+  font-size: 3.5rem;
+}
+
+.logique h2 {
+  font-weight: 500;
+  text-align: center;
+  color: #ECFEF8;
+  font-size: 3.4em;
+  margin: 0;
+  line-height: 1;
+}
+
+.logique h2 a {
+  color: #FFC857;
+}
+
+@media (min-width: 700px) {
+  .logique h2 {
+    font-size: 4.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logique h2 {
+    font-size: 5.4em;
+  }
+}
+
+.logique .dropbtn {
+  background-color: #9BC284;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.logique .dropdown {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.logique .dropdown a {
+  color: #FBF057;
+  font-style: italic;
+}
+
+.logique .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #C1E8AA;
+  font-size: large;
+  min-width: 90px;
+  left: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.logique .dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.logique .dropdown-content a:hover {
+  background-color: #FFC857;
+  color: white;
+}
+
+.logique .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logique .dropdown:hover .dropbtn {
+  background-color: #73AF88;
+}
+
+.logique .accordion {
+  margin: 90px auto;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #A2CC8A;
+  border-radius: 10%;
+  padding: 45px 45px;
+  margin-top: 50px;
+}
+
+.logique .accordion a {
+  padding-left: 25px;
+  color: black;
+}
+
+.logique .accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.logique .accordion .label {
+  position: relative;
+  padding: 10px 10px;
+  line-height: 1.2;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  background-color: #C1E8AA;
+  align-items: center;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.logique .accordion .label::before {
+  content: '+';
+  color: #9BC284;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 90px;
+  transform: translateY(-50%);
+}
+
+.logique .accordion .content {
+  position: relative;
+  background: #C1E8AA;
+  color: #457B77;
+  height: 0;
+  font-size: medium;
+  text-align: justify;
+  overflow: hidden;
+  border-radius: 2%;
+  margin-top: 15px;
+}
+
+.logique .accordion .container.active .content {
+  height: auto;
+  border-radius: 2%;
+  margin-top: -15px;
+}
+
+.logique .accordion .container.active .label::before {
+  content: '-';
+  right: 20px;
+  font-size: 100px;
+  border-radius: 2%;
+}
+
+@media (min-width: 800px) {
+  .logique {
+    /*prof*/
+  }
+  .logique h1 {
+    text-align: left !important;
+    font-size: 7em !important;
+  }
+  .logique .dropdown {
+    padding-left: 350px;
+  }
+  .logique .dropdown-content {
+    left: 430px;
+  }
+  .logique .accordion {
+    width: 800px;
+  }
+  .logique .accordion .content {
+    width: 690px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
