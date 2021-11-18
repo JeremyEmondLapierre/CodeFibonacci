@@ -4,7 +4,7 @@
             margin: 0;
     }
     .benef{
-        color: wheat;
+        color: rgb(255, 251, 245);
         display: flex;
         justify-content: center;
     }
@@ -21,7 +21,8 @@
     
     .btnActif{
         h2{
-            color: rgb(233, 196, 31);
+            color: rgb(233, 196, 31);;
+            animation: texteCouleur 1s ease-in-out;
         }
     }
 
@@ -34,14 +35,22 @@
 
     .texteResume{
         padding: 2rem;
-        text-align: justify;
+        @include desktop {
+            text-align: justify;
+        }
         border-radius: 10px;
         width: 60%;
         margin: auto;
-        background-color: #bce99b;
-        margin-bottom: 20px;
+        font-size: clamp(0.2rem, -0.875vw + 8.333vw, 1.2rem);
+        //background-color: #bce99b;
+        background: linear-gradient(132deg, #c3ebd0, #dcebc3, #aaf1c2);
+        background-size: 400% 400%;
+        animation: Gradient 15s ease infinite;
+        
+        
         p{
             font-weight: 600;
+            color: #27532A;
         }
     }
 
@@ -53,10 +62,16 @@
     //Pour les éléments pairs, mettre l'éléments à droite
     &:nth-child(even){
         .signetExp{
-            margin-left: 12%;
+            @include desktop{
+                margin-left: 12%;
+            }
+            
         }
         h3{
-            margin-left: -15px;
+            @include desktop{
+                margin-left: -15px;
+            }
+            margin-left: -25px;
         }
         .texteExp{
             margin-left: auto; 
@@ -67,10 +82,16 @@
     &:nth-child(odd){
         .signetExp{
         flex-direction: row-reverse;
-        margin-right: 12%;
+        @include desktop{
+            margin-right: 12%;
+        }
         }
         h3{
-            margin-right: -15px;
+            @include desktop{
+                margin-right: -15px;
+            }
+            margin-right: -40px;
+            
         }
         .texteExp{
             margin-left: 0; 
@@ -82,24 +103,39 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
     
         
         img{
             background-color: #D9F2CA;
             padding: 2rem;
             border-radius: 60%;
-            height: 15em;
-            width: 15em;
+            height: 20vw;
+            width: 20vw;
+            min-width: 150px;
+            min-height: 150px;
+            z-index: -10;
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	        transform: translatey(0px);
+	        animation: float 6s ease-in-out infinite;
+            @include desktop{
+                height: 15em;
+                width: 15em;
+            }
             object-fit: scale-down;
         }
         h3{
             flex-grow: 4;
-            font-size: 2vw;
+            @include desktop{
+                font-size: 1.8rem;
+            }
+            font-size: 1.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #D9F2CA;
             padding: 2rem;
+            color:#0B132B ;
         }
         
     }
@@ -108,9 +144,10 @@
     }
     .texteExp{
         width: 70%;
-        background-color: #DAFFBE;
         padding: 1rem;
         border-radius: 10px;
+        background-color: #D9F2CA;
+        color: #0B132B;
         p{
             font-weight:500;
         }
@@ -118,3 +155,40 @@
 }   
 
 
+/* Animate Background*/
+@keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+/* Animate float */
+  @keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-4px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+/* Animate text */
+@keyframes texteCouleur{
+    from  {
+		color: #0B132B;
+	}
+    to  {
+        color: rgb(233, 196, 31);
+	}
+}

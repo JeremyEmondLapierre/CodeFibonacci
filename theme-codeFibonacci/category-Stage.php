@@ -9,10 +9,10 @@
 
 get_header();
 ?>
-	<main id="primary" class="site-main pageStage">
+	<main id="primary" class="site-main pageStage integre">
 
 
-			<h1 class="stage">Stage</h1>
+			<h1>Stage</h1>
 			<div class="filtre">
 				<button id="boutonATE" class="btnActif"><h2>ATE</h2></button>
 				<h2>-</h2>
@@ -27,7 +27,7 @@ get_header();
 				<p>L’ATE est une approche de formation adaptée aux besoins changeants du marché du
 				travail, où l’apprentissage intègre des séquences en classe et en entreprise. Les
 				étudiants participent à au moins deux stages en entreprise, qui représentent au moins
-				20% de la durée totale du programme d’études.</p>
+				20% de la durée totale du programme d’études. La durée des stages est de 8 à 16 semaines consécutives, à raison de 28 heures par semaine en moyenne, pour un minimum de 224 heures. Les stages sont rémunérés par l’entreprise, car les heures en entreprise s’ajoutent à celles du programme d’études.</p>
 			</div>
 
 			<?php
