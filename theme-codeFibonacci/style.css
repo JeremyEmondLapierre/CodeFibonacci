@@ -1611,61 +1611,101 @@ textarea {
 
 /* Local/vie 
 --------------------------------------------- */
-/*-------Style section projets GRID ------*/
-.gallerie-projets {
-  /*
-      .bottom { grid-area: bottom; }
-      
-      .Mid-top { grid-area: Mid-top; }
-      
-      .midle { grid-area: midle; }
-      */
-}
-
+/*-------Style section projets GRID desktop ------*/
 .gallerie-projets .lesProjets {
-  margin: 1rem 4rem 4rem 4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+  grid-template-areas: ". . " ". . ";
+}
+
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets {
+    margin: 1rem 4rem 4rem 4rem;
+  }
 }
 
 .gallerie-projets .lesProjets div, .gallerie-projets .lesProjets img {
   border-radius: 20px;
 }
 
-.gallerie-projets .top-midle {
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+  }
+}
+
+.gallerie-projets .lesProjets .top-midle {
+  display: none;
   grid-area: top-midle;
   background-color: #FFC857;
 }
 
-.gallerie-projets .midle {
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets .top-midle {
+    display: block;
+  }
+}
+
+.gallerie-projets .lesProjets .midle {
+  display: none;
   grid-area: midle;
   background-color: #57caff;
 }
 
-.gallerie-projets .bottom {
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets .midle {
+    display: block;
+  }
+}
+
+.gallerie-projets .lesProjets .bottom {
+  display: none;
   grid-area: bottom;
   background-color: #dd57ff;
+}
+
+@media (min-width: 1200px) {
+  .gallerie-projets .lesProjets .bottom {
+    display: block;
+  }
 }
 
 /*-------Style global titre section gallerie et concours------*/
 .gallerie-projets, .concours {
   text-align: center;
   align-items: center;
+  margin: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+  .gallerie-projets, .concours {
+    margin: 1rem;
+  }
 }
 
 .gallerie-projets h3, .concours h3 {
-  display: inline-flex;
-  margin-top: 5rem;
   margin-bottom: 2rem;
   align-items: center;
   color: #ECFEF8;
-  font-size: 3rem;
+  font-size: clamp(1rem, 7.458vw, 3rem);
   font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  .gallerie-projets h3, .concours h3 {
+    display: inline-flex;
+    margin-top: 5rem;
+  }
 }
 
 .gallerie-projets h3 div, .concours h3 div {
@@ -1677,30 +1717,56 @@ textarea {
 }
 
 .concours .lesConcours {
+  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
-  align-items: center;
-  width: 80%;
   height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
+  border-radius: 45px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   /*--------------------Style card Concours------------------------*/
 }
 
+@media (min-width: 1200px) {
+  .concours .lesConcours {
+    width: 80%;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
 .concours .lesConcours .gameJam, .concours .lesConcours .jour {
-  width: 450px;
-  height: 400px;
+  flex-direction: column;
+  margin: 5% auto;
+  padding: 50px;
+  width: 90%;
+  height: auto;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin: 2rem;
+  border: none;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(0px);
+}
+
+@media (min-width: 1200px) {
+  .concours .lesConcours .gameJam, .concours .lesConcours .jour {
+    width: 450px;
+    margin: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+
+.concours .lesConcours .gameJam .suite, .concours .lesConcours .jour .suite {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .concours .lesConcours .gameJam .suite, .concours .lesConcours .jour .suite {
+    display: block;
+  }
 }
 
 .concours .lesConcours .gameJam h4, .concours .lesConcours .jour h4 {
@@ -1718,14 +1784,14 @@ textarea {
 }
 
 .concours .lesConcours .gameJam .logo-concours {
-  margin: 20px;
+  margin: 10px;
   color: black;
   filter: saturate(200%) brightness(70%);
   width: 70px;
 }
 
 .concours .lesConcours .jour .logo-concours {
-  margin: 20px;
+  margin: 10px;
   color: black;
   filter: saturate(200%) brightness(70%);
   width: 65px;
@@ -1875,6 +1941,10 @@ footer .global-footer .liens-rapides .footer-navigation ul {
 
 footer .global-footer .liens-rapides .footer-navigation a {
   color: #B7E8D7;
+}
+
+footer .global-footer .liens-rapides .footer-navigation a:hover {
+  color: #e9c41f;
 }
 
 footer .global-footer .google-map {
@@ -2368,5 +2438,191 @@ footer #logo-FiboFooter {
 
 .actif-cours .description-cours {
   display: block !important;
+}
+
+/* Local/prof
+--------------------------------------------- */
+.img-prof {
+  height: 80px;
+  width: 60px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logique {
+  /*prof*/
+}
+
+.logique h1 {
+  margin: 0 6rem;
+  padding: 0;
+  font-size: 3.5rem;
+}
+
+.logique h2 {
+  font-weight: 500;
+  text-align: center;
+  color: #ECFEF8;
+  font-size: 3.4em;
+  margin: 0;
+  line-height: 1;
+}
+
+.logique h2 a {
+  color: #FFC857;
+}
+
+@media (min-width: 700px) {
+  .logique h2 {
+    font-size: 4.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logique h2 {
+    font-size: 5.4em;
+  }
+}
+
+.logique .dropbtn {
+  background-color: #9BC284;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.logique .dropdown {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.logique .dropdown a {
+  color: #FBF057;
+  font-style: italic;
+}
+
+.logique .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #C1E8AA;
+  font-size: large;
+  min-width: 90px;
+  left: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.logique .dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.logique .dropdown-content a:hover {
+  background-color: #FFC857;
+  color: white;
+}
+
+.logique .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logique .dropdown:hover .dropbtn {
+  background-color: #73AF88;
+}
+
+.logique .accordion {
+  margin: 90px auto;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #A2CC8A;
+  border-radius: 10%;
+  padding: 45px 45px;
+  margin-top: 50px;
+}
+
+.logique .accordion a {
+  padding-left: 25px;
+  color: black;
+}
+
+.logique .accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.logique .accordion .label {
+  position: relative;
+  padding: 10px 10px;
+  line-height: 1.2;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  background-color: #C1E8AA;
+  align-items: center;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.logique .accordion .label::before {
+  content: '+';
+  color: #9BC284;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 90px;
+  transform: translateY(-50%);
+}
+
+.logique .accordion .content {
+  position: relative;
+  background: #C1E8AA;
+  color: #457B77;
+  height: 0;
+  font-size: medium;
+  text-align: justify;
+  overflow: hidden;
+  border-radius: 2%;
+  margin-top: 15px;
+}
+
+.logique .accordion .container.active .content {
+  height: auto;
+  border-radius: 2%;
+  margin-top: -15px;
+}
+
+.logique .accordion .container.active .label::before {
+  content: '-';
+  right: 20px;
+  font-size: 100px;
+  border-radius: 2%;
+}
+
+@media (min-width: 800px) {
+  .logique {
+    /*prof*/
+  }
+  .logique h1 {
+    text-align: left !important;
+    font-size: 7em !important;
+  }
+  .logique .dropdown {
+    padding-left: 350px;
+  }
+  .logique .dropdown-content {
+    left: 430px;
+  }
+  .logique .accordion {
+    width: 800px;
+  }
+  .logique .accordion .content {
+    width: 690px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

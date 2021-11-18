@@ -38,10 +38,6 @@ footer {
         justify-content: space-between;
         align-items: center;
     
-        #div-texte-footer{ 
-            
-           
-        }
 
         #div-texte-logo{
             display: flex;
@@ -129,6 +125,7 @@ footer {
 
                 }
 
+
             }
 
             
@@ -150,6 +147,11 @@ footer {
 
                 a{
                     color: #B7E8D7;
+                }
+
+                a:hover{
+                    color: rgb(233, 196, 31);
+                    
                 }
             }
 
