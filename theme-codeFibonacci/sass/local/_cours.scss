@@ -102,7 +102,7 @@
 
                     @include small_tablet {
                         width: 20%;
-                        margin-right: 55px;
+                        margin: 55px 55px 0 0;
                         text-align: left;
                     }
 
@@ -134,13 +134,13 @@
         position: relative;
 
         @include small_tablet {
-            padding: 1em 2em;
+            padding: 0.8em 2em;
         }
 
         .titre-cours {
             display: flex;
             align-items: center;
-
+/*
             &::before, &::after {
                 position: absolute;
                 content: '';
@@ -167,7 +167,7 @@
                 right: 40.5px;
                 width: 32px;
                 height: 9px;
-            }
+            }*/
 
             .logo-cours {
                 width: 2.5rem;
@@ -180,6 +180,29 @@
 
                 @include desktop {
                     margin-right: 5em;
+                }
+            }
+
+            .contenu-titre-cours {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .contenant-icone-cours {
+                    font-size: 3rem;
+                    line-height: 0;
+
+                    .fa-minus:nth-child(1) {
+                        transform: rotate(90deg);
+                        color: #9BC284;
+                        position: absolute;
+                        //animation-direction: reverse;
+                    }
+
+                    .fa-minus {
+                        color: #9BC284;
+                    }
                 }
             }
             
@@ -222,13 +245,57 @@
         &::before {
             background: none !important;
         }
-
+ 
         &::after {
             top: 16% !important;
+        }
+
+        .fa-minus:nth-child(1) {
+            animation-name: Croix;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            transition-timing-function: ease-in-out; 
         }
     }
 
     .description-cours {
         display: block !important;
+    }
+}
+
+
+/* Animation de la croix*/
+
+@keyframes Croix {
+
+    0% {
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+
+    70% {
+        transform: rotate(185deg);
+        // augmenter la rotation
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes CroixFerme {
+
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        transform: rotate(185deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+        opacity: 1;
     }
 }

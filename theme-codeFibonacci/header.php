@@ -21,7 +21,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;900&display=swap" rel="stylesheet">
-	
+	<script src="https://kit.fontawesome.com/fbd9ed4f7a.js" crossorigin="anonymous"></script>
 	<?php wp_head(); ?>
 </head>
 

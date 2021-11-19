@@ -35,7 +35,14 @@ get_header();
 							<div class="contenant-cours">
 								<div class="titre-cours">
 									<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-									<p>Mise en page Web</p>
+									<div class="contenu-titre-cours">
+										<p>Mise en page Web</p>
+										<div class="contenant-icone-cours">
+											<!-- <i class="fas fa-times"></i> -->
+											<i class="fas fa-minus"></i>
+											<i class="fas fa-minus"></i>
+										</div>
+									</div>
 								</div>
 								<div class="description-cours">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
@@ -50,7 +57,14 @@ get_header();
 							<div class="contenant-cours">
 								<div class="titre-cours">
 									<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-									<p>Animation et interactivité Web</p>
+									<div class="contenu-titre-cours">
+										<p>Animation et interactivité Web</p>
+										<div class="contenant-icone-cours">
+											<!-- <i class="fas fa-times"></i> -->
+											<i class="fas fa-minus"></i>
+											<i class="fas fa-minus"></i>
+										</div>
+									</div>
 								</div>
 								<div class="description-cours">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
@@ -65,7 +79,14 @@ get_header();
 							<div id="contenant-cours" class="contenant-cours actif-cours">
 								<div class="titre-cours">
 									<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-									<p>Création de site Web dynamiques</p>
+									<div class="contenu-titre-cours">
+										<p>Création de site Web dynamiques</p>
+										<div class="contenant-icone-cours">
+											<!-- <i class="fas fa-times"></i> -->
+											<i class="fas fa-minus"></i>
+											<i class="fas fa-minus"></i>
+										</div>
+									</div>
 								</div>
 								<div class="description-cours">
 									<p>Dans ce cours, l’étudiant poursuit son apprentissage de l’intégration de sites Web dynamiques à l’aide d’un gestionnaire de contenu. L’étudiant apprend à développer par programmation des thèmes personnalisés pour répondre aux besoins spécifiques du design d’interfaces des sites Web. L’étudiant apprend aussi les fonctionnalités avancées du gestionnaire de contenu, lui permettant entre autres de programmer des extensions servant les fonctionnalités des sites Web à développer. De plus, l’étudiant est initié à l’utilisation et à l’intégration par programmation des bases de données. Ce cours couvre également l’intégration et l'interface entre le langage utilisé du côté du serveur et les technologies utilisées du côté client. Enfin, l’étudiant poursuit son apprentissage des techniques de test pour contrôler la qualité d’un site Web et valider sa conformité en regard des normes et des standards en vigueur.
@@ -80,7 +101,14 @@ get_header();
 							<div class="contenant-cours">
 								<div class="titre-cours">
 									<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/database.svg';?>';>
-									<p>Conception d'interface et développement Web</p>
+									<div class="contenu-titre-cours">
+										<p>Conception d'interface et développement Web</p>
+										<div class="contenant-icone-cours">
+											<!-- <i class="fas fa-times"></i> -->
+											<i class="fas fa-minus"></i>
+											<i class="fas fa-minus"></i>
+										</div>
+									</div>
 								</div>
 								<div class="description-cours">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
@@ -95,7 +123,14 @@ get_header();
 							<div class="contenant-cours">
 								<div class="titre-cours">
 									<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-									<p>Projet Web en équipe</p>
+									<div class="contenu-titre-cours">
+										<p>Projet Web en équipe</p>
+										<div class="contenant-icone-cours">
+											<!-- <i class="fas fa-times"></i> -->
+											<i class="fas fa-minus"></i>
+											<i class="fas fa-minus"></i>
+										</div>
+									</div>
 								</div>
 								<div class="description-cours">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
@@ -105,7 +140,14 @@ get_header();
 							<div class="contenant-cours">
 								<div class="titre-cours">
 									<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-									<p>Bippidy Boppidy</p>
+									<div class="contenu-titre-cours">
+										<p>Bippidy Boppidy</p>
+										<div class="contenant-icone-cours">
+											<!-- <i class="fas fa-times"></i> -->
+											<i class="fas fa-minus"></i>
+											<i class="fas fa-minus"></i>
+										</div>
+									</div>
 								</div>
 								<div class="description-cours">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
@@ -120,7 +162,14 @@ get_header();
 							<div class="contenant-cours">
 								<div class="titre-cours">
 									<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-									<p>Aucun cours prévu</p>
+									<div class="contenu-titre-cours">
+										<p>Aucun cours prévu</p>
+										<div class="contenant-icone-cours">
+											<!-- <i class="fas fa-times"></i> -->
+											<i class="fas fa-minus"></i>
+											<i class="fas fa-minus"></i>
+										</div>
+									</div>
 								</div>
 								<div class="description-cours">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
@@ -130,7 +179,14 @@ get_header();
 							<div class="contenant-cours">
 								<div class="titre-cours">
 									<img class="logo-cours" src='<?php echo site_url().'/wp-content/uploads/2021/10/sphere.svg';?>';>
-									<p>Omelette du fromage</p>
+									<div class="contenu-titre-cours">
+										<p>Omelette du fromage</p>
+										<div class="contenant-icone-cours">
+											<!-- <i class="fas fa-times"></i> -->
+											<i class="fas fa-minus"></i>
+											<i class="fas fa-minus"></i>
+										</div>
+									</div>
 								</div>
 								<div class="description-cours">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid expedita ipsum aspernatur consectetur, nesciunt eius quo architecto sunt maiores, eos amet, rem voluptatum voluptas voluptatem laboriosam illo? Fuga, quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe, omnis delectus error esse vitae tempora expedita eveniet ipsam eum laudantium doloribus illo, dolorum minima doloremque, numquam dignissimos nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta distinctio exercitationem voluptatem aliquam saepe soluta reprehenderit, odit expedita, perspiciatis, mollitia facere nihil. Aliquid veniam fuga adipisci hic eligendi voluptas.
@@ -159,67 +215,7 @@ get_footer();
 ?>
 
 <script>
-	document.querySelector(".contenant-cours").addEventListener("click", function() {
-		console.log('ca fonctionne avec querySelector');
-		document.querySelector(".contenant-cours").classList.toggle("actif-cours");
-		
-	});
-	document.querySelectorAll(".contenant-cours").addEventListener("click", function() {
-		console.log('ca fonctionne avec querySelectorAll');
-	});
-	document.getElementsByClassName("contenant-cours").addEventListener("click", function() {
-		console.log('ca fonctionne avec getElementsByClassName');
-	});
-	/*
-	document.querySelectorAll(".item-cours").addEventListener("click", function() {
-		console.log("beep");
-		element.classList.add("cours-actif");
-	})*/
 
-
-	/*(function() {
-		let contenant = document.querySelectorAll(".contenant-cours");
-
-		for (var i = 0; i < contenant.length; i++) {
-			contenant[i].addEventListener("click", function() {	
-				contenant.classList.add("actif-cours");
-				console.log("ca a écouté");
-			});
-
-		};
-	});*/
-	
-	/*const parentCours = document.querySelectorAll("#item-cours")
-	const cours = parentCours.querySelectorAll("#contenant-cours")
-	for (const button of cours) {
-		button.addEventListener('click', function(event) {
-			cours.classList.add("actif-cours");
-			console.log("ca a écouté");
-		})
-	}*/
-
-	const cours = document.querySelectorAll('#contenant-cours');
-		for (var i = 0; i < cours.length; i++) {
-	    cours[i].addEventListener('click', function() {
-			cours.classList.add("actif-cours");
-			console.log("ca a écouté");
-		});
-	}
-
-	document.addEventListener("click", fonctionAjoutClasseCours);
-
-	function fonctionAjoutClasseCours() {
-		//document.getElementById("item-cours").classList.add("actif-cours");
-		console.log("ca a écouté");
-	};
-
-	document.getElementById("contenant-cours").addEventListener("click", displayDate);
-
-
-	const element = document.querySelector(".contenant-cours");
-	element.addEventListener("click", () => {
-		console.log("clicked element");
-	});
 	
 </script>
 

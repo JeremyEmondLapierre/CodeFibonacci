@@ -50,6 +50,10 @@
     img {
         width: 80%;
         margin: 0 auto;
+        animation-name: Banniere;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        //animation: banniere 1s ease-in-out delay infinite forwards;
     }
     
     h1 {
@@ -76,6 +80,8 @@
         z-index: -1;
         width: 40vh;
         top: 15%;
+        
+
 
         @include desktop {
             width: 80vh;
@@ -83,4 +89,28 @@
             top: 10%;
         }
     }
+}
+
+
+/* Animate Background*/
+
+@keyframes Banniere {
+
+    0% {
+      filter: hue-rotate(0deg) saturate(100%) contrast(100%);
+      transform: scale(100%);
+    }
+
+    50% {
+      //background-position: 100% 50%;
+      filter: hue-rotate(10deg) saturate(150%) contrast(120%);
+      transform: scale(101%);
+
+    }
+
+    100% {
+        filter: hue-rotate(0deg) saturate(100%) contrast(100%);
+        transform: scale(100%);
+    }
+
 }
