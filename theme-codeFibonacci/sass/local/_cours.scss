@@ -193,13 +193,14 @@
                     font-size: 3rem;
                     line-height: 0;
 
-                    .fa-times {
-                        transform: rotate(45deg);
+                    .fa-minus:nth-child(1) {
+                        transform: rotate(90deg);
                         color: #9BC284;
+                        position: absolute;
+                        //animation-direction: reverse;
                     }
 
                     .fa-minus {
-                        display: none;
                         color: #9BC284;
                     }
                 }
@@ -249,14 +250,12 @@
             top: 16% !important;
         }
 
-        .fa-minus {
-            display: block !important;
-        }
-
-        .fa-times {
+        .fa-minus:nth-child(1) {
             animation-name: Croix;
             animation-duration: 0.5s;
             animation-fill-mode: forwards;
+            animation-direction: alternate;
+            transition-timing-function: ease-in-out; 
         }
     }
 
@@ -271,14 +270,32 @@
 @keyframes Croix {
 
     0% {
-      transform: rotate(45deg);
-      opacity: 1;
-      display: block;
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+
+    70% {
+        transform: rotate(185deg);
+        // augmenter la rotation
     }
 
     100% {
-        transform: rotate(135deg);
         opacity: 0;
-        display: none;
+    }
+}
+
+@keyframes CroixFerme {
+
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        transform: rotate(185deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+        opacity: 1;
     }
 }

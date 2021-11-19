@@ -2272,13 +2272,13 @@ footer #logo-FiboFooter {
   line-height: 0;
 }
 
-.contenant-liste-cours .contenant-cours .titre-cours .contenu-titre-cours .contenant-icone-cours .fa-times {
-  transform: rotate(45deg);
+.contenant-liste-cours .contenant-cours .titre-cours .contenu-titre-cours .contenant-icone-cours .fa-minus:nth-child(1) {
+  transform: rotate(90deg);
   color: #9BC284;
+  position: absolute;
 }
 
 .contenant-liste-cours .contenant-cours .titre-cours .contenu-titre-cours .contenant-icone-cours .fa-minus {
-  display: none;
   color: #9BC284;
 }
 
@@ -2321,14 +2321,12 @@ footer #logo-FiboFooter {
   top: 16% !important;
 }
 
-.actif-cours .titre-cours .fa-minus {
-  display: block !important;
-}
-
-.actif-cours .titre-cours .fa-times {
+.actif-cours .titre-cours .fa-minus:nth-child(1) {
   animation-name: Croix;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+  animation-direction: alternate;
+  transition-timing-function: ease-in-out;
 }
 
 .actif-cours .description-cours {
@@ -2338,14 +2336,27 @@ footer #logo-FiboFooter {
 /* Animation de la croix*/
 @keyframes Croix {
   0% {
-    transform: rotate(45deg);
+    transform: rotate(90deg);
     opacity: 1;
-    display: block;
+  }
+  70% {
+    transform: rotate(185deg);
   }
   100% {
-    transform: rotate(135deg);
     opacity: 0;
-    display: none;
+  }
+}
+
+@keyframes CroixFerme {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    transform: rotate(185deg);
+  }
+  100% {
+    transform: rotate(90deg);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

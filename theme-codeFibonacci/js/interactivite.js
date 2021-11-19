@@ -14,5 +14,6 @@ for (var i = 0; i < cours.length; i++) {
         console.log("ca a écouté");
         console.log(cours.length);
         this.classList.toggle("actif-cours");
+        //this.style.animation = "Croix forwards reverse ease-in-out";
     });
 };
