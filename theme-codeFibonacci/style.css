@@ -2526,6 +2526,7 @@ footer #logo-FiboFooter {
   width: 60px;
   padding: 0px;
   margin: 0px;
+  border-radius: 7px;
 }
 
 .logique {
@@ -2584,6 +2585,10 @@ footer #logo-FiboFooter {
   font-style: italic;
 }
 
+.logique .dropdown button:hover {
+  background-color: #4E9291;
+}
+
 .logique .dropdown-content {
   display: none;
   position: absolute;
@@ -2594,14 +2599,16 @@ footer #logo-FiboFooter {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.logique .dropdown-content a {
+.logique .dropdown-content button {
   color: black;
   padding: 12px 20px;
+  border: none;
   text-decoration: none;
   display: block;
+  background-color: #A2CC8A;
 }
 
-.logique .dropdown-content a:hover {
+.logique .dropdown-content button:hover {
   background-color: #FFC857;
   color: white;
 }
@@ -2610,17 +2617,13 @@ footer #logo-FiboFooter {
   display: block;
 }
 
-.logique .dropdown:hover .dropbtn {
-  background-color: #73AF88;
-}
-
 .logique .accordion {
   margin: 90px auto;
   color: black;
   font-size: 1rem;
   line-height: 1.5;
   background-color: #A2CC8A;
-  border-radius: 10%;
+  border-radius: 25px;
   padding: 45px 45px;
   margin-top: 50px;
 }
@@ -2637,15 +2640,15 @@ footer #logo-FiboFooter {
 
 .logique .accordion .label {
   position: relative;
-  padding: 10px 10px;
+  padding: 20px 27px;
   line-height: 1.2;
   font-size: 30px;
   color: black;
   cursor: pointer;
   background-color: #C1E8AA;
   align-items: center;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+  border-radius: 25px;
+  display: flex;
 }
 
 .logique .accordion .label::before {
@@ -2663,16 +2666,19 @@ footer #logo-FiboFooter {
   background: #C1E8AA;
   color: #457B77;
   height: 0;
-  font-size: medium;
+  font-size: large;
   text-align: justify;
   overflow: hidden;
+  width: auto;
   border-radius: 2%;
   margin-top: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .logique .accordion .container.active .content {
   height: auto;
-  border-radius: 2%;
+  border-radius: 1%;
   margin-top: -15px;
 }
 
@@ -2680,7 +2686,7 @@ footer #logo-FiboFooter {
   content: '-';
   right: 20px;
   font-size: 100px;
-  border-radius: 2%;
+  border-radius: 1%;
 }
 
 @media (min-width: 800px) {
@@ -2692,16 +2698,21 @@ footer #logo-FiboFooter {
     font-size: 7em !important;
   }
   .logique .dropdown {
-    padding-left: 350px;
+    padding-left: 150px;
   }
   .logique .dropdown-content {
-    left: 430px;
+    left: 230px;
   }
   .logique .accordion {
-    width: 800px;
+    width: 80%;
   }
-  .logique .accordion .content {
-    width: 690px;
-  }
+}
+
+.accordion-body {
+  display: block;
+}
+
+.accordion-body-pasActif {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
