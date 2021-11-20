@@ -1,91 +1,112 @@
-  
-  .label{
-    img{
-      height: 80px;
-      width: 60px;
-      padding: 0px;
-      margin: 0px;
-      border-radius: 20px;
-      object-fit: contain;
-    }
+.label{
+  img{
+    height: 80px;
+    width: 60px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 20px;
+    object-fit: contain;
   }
 
-  .logique{
-    h1{
-      margin: 0 6rem;
-      padding: 0;
-      font-size: 3.5rem;
+  .contenu-titre-enseignant {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .contenant-icone-enseignant {
+      font-size: 3rem;
+      line-height: 0;
+
+      .fa-minus:nth-child(1) {
+        transform: rotate(90deg);
+        color: #9BC284;
+        position: absolute;
+      }
+
+      .fa-minus {
+        color: #9BC284;
+      }
     }
-    
-    h2{
-        font-weight: 500;
-        text-align: center;
-        color: #ECFEF8;
-        font-size: 3.4em;
-        margin: 0;
-        line-height: 1;
-        a{
-          color:#FFC857;
-        }
+  } 
+}
 
-        @include small_tablet {
-            font-size: 4.4em;
-        }
-
-        @include desktop {
-            font-size: 5.4em;
-        }
-    }
-
-    .dropbtn {
-      background-color: #9BC284;
-      color: white;
-      padding: 16px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      margin-top: 50px;
+.logique{
+  h1{
+    margin: 0 6rem;
+    padding: 0;
+    font-size: 3.5rem;
   }
   
-  .dropdown {
-      position: relative;
-      display: inline-block;
-     
-      color: white;
+  h2{
+      font-weight: 500;
+      text-align: center;
+      color: #ECFEF8;
+      font-size: 3.4em;
+      margin: 0;
+      line-height: 1;
       a{
-        color: #FBF057;
-        font-style: italic;
+        color:#FFC857;
       }
-      button:hover{
-        background-color: #4E9291
+
+      @include small_tablet {
+          font-size: 4.4em;
+      }
+
+      @include desktop {
+          font-size: 5.4em;
       }
   }
-  
-  .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #C1E8AA;
-      font-size: large;
-      min-width: 90px;
-      left: 80px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      
-  }
-  
-  .dropdown-content button {
-      color: black;
-      padding: 12px 20px;
-      border:none;
-      text-decoration: none;
-      display: block;
-      background-color: #A2CC8A;
-  }
-  
-  .dropdown-content button:hover {background-color: #FFC857; color: white; }
-  
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
+
+  .dropbtn {
+    background-color: #9BC284;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+    color: white;
+    a{
+      color: #FBF057;
+      font-style: italic;
+    }
+    button:hover{
+      background-color: #4E9291
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #C1E8AA;
+    font-size: large;
+    min-width: 90px;
+    left: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 20px;
+    border:none;
+    text-decoration: none;
+    display: block;
+    background-color: #A2CC8A;
+}
+
+.dropdown-content button:hover {background-color: #FFC857; color: white; }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
   
   
   
@@ -102,7 +123,6 @@
     margin-top: 50px;
     a{
       padding-left: 25px;
-      color: black;
     }
   }
   .accordion .container {
@@ -121,7 +141,7 @@
     border-radius: 25px;
     display: flex;
   }
-  .accordion .label::before {
+  /*.dropbtn .label::before {
     content: '+';
     color:#9BC284;
     position: absolute;
@@ -130,7 +150,7 @@
     font-size:90px;
     transform: translateY(-50%);
     
-  }
+  }*/
   .accordion .content {
     position: relative;
     background: #C1E8AA;
@@ -153,12 +173,12 @@
   margin-top: -15px;
   }
   
-  .accordion .container.active .label::before {
+  /*.accordion .container.active .label::before {
     content: '-';
     right: 20px;
     font-size: 100px;
     border-radius: 1%;
-  }
+  }*/
 }
 
 @media(min-width:800px){
@@ -185,4 +205,20 @@
 }
 .accordion-body-pasActif{
   display: none;
+}
+
+
+.active {
+
+  .fa-minus:nth-child(1) {
+    animation-name: Croix;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    transition-timing-function: ease-in-out; 
+  }
+
+  .description-enseignant {
+    display: block !important;
+  }
 }

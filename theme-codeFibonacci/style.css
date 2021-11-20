@@ -2544,8 +2544,46 @@ footer #logo-FiboFooter {
   object-fit: contain;
 }
 
+.label .contenu-titre-enseignant {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label .contenu-titre-enseignant .contenant-icone-enseignant {
+  font-size: 3rem;
+  line-height: 0;
+}
+
+.label .contenu-titre-enseignant .contenant-icone-enseignant .fa-minus:nth-child(1) {
+  transform: rotate(90deg);
+  color: #9BC284;
+  position: absolute;
+}
+
+.label .contenu-titre-enseignant .contenant-icone-enseignant .fa-minus {
+  color: #9BC284;
+}
+
 .logique {
   /*prof*/
+  /*.dropbtn .label::before {
+    content: '+';
+    color:#9BC284;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size:90px;
+    transform: translateY(-50%);
+    
+  }*/
+  /*.accordion .container.active .label::before {
+    content: '-';
+    right: 20px;
+    font-size: 100px;
+    border-radius: 1%;
+  }*/
 }
 
 .logique h1 {
@@ -2645,7 +2683,6 @@ footer #logo-FiboFooter {
 
 .logique .accordion a {
   padding-left: 25px;
-  color: black;
 }
 
 .logique .accordion .container {
@@ -2664,16 +2701,6 @@ footer #logo-FiboFooter {
   align-items: center;
   border-radius: 25px;
   display: flex;
-}
-
-.logique .accordion .label::before {
-  content: '+';
-  color: #9BC284;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  font-size: 90px;
-  transform: translateY(-50%);
 }
 
 .logique .accordion .content {
@@ -2695,13 +2722,6 @@ footer #logo-FiboFooter {
   height: auto;
   border-radius: 1%;
   margin-top: -15px;
-}
-
-.logique .accordion .container.active .label::before {
-  content: '-';
-  right: 20px;
-  font-size: 100px;
-  border-radius: 1%;
 }
 
 @media (min-width: 800px) {
@@ -2729,5 +2749,17 @@ footer #logo-FiboFooter {
 
 .accordion-body-pasActif {
   display: none;
+}
+
+.active .fa-minus:nth-child(1) {
+  animation-name: Croix;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  transition-timing-function: ease-in-out;
+}
+
+.active .description-enseignant {
+  display: block !important;
 }
 /*# sourceMappingURL=style.css.map */
