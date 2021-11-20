@@ -9,19 +9,21 @@
 
 ?>
 
-<div class="container">
-    <div class="label">
-        <?php the_post_thumbnail( 'medium' ); ?>
-        <div class="contenu-titre-enseignant">
-            <a><?php the_title() ?></a>
-            <div class="contenant-icone-enseignant">
-                <!-- <i class="fas fa-times"></i> -->
-                <i class="fas fa-minus"></i>
-                <i class="fas fa-minus"></i>
+<div class="item-enseignant">
+    <div class="container">
+        <div class="label">
+            <?php the_post_thumbnail( 'medium' ); ?>
+            <div class="contenu-titre-enseignant">
+                <a><?php the_title() ?></a>
+                <div class="contenant-icone-enseignant">
+                    <!-- <i class="fas fa-times"></i> -->
+                    <i class="fas fa-minus"></i>
+                    <i class="fas fa-minus"></i>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="content">
-        <?php the_content(); ?>
+        <div class="description-enseignant">
+            <?php the_content(); ?>
+        </div>
     </div>
 </div>

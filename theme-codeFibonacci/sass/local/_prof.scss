@@ -1,11 +1,38 @@
+.item-enseignant {
+  padding: 0.5em 2em;
+
+  &:hover {
+    background-color: #ADD795;
+  }
+
+  .container {
+    background-color: #C1E8AA;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    //flex-grow: 1;
+    padding: 1em;
+    margin: 1em 0;
+    position: relative;
+
+    @include small_tablet {
+        padding: 0.8em 2em;
+    }
+  }
+}
+
+
 .label{
   img{
-    height: 80px;
-    width: 60px;
+    /*height: 80px;
+    border-radius: 20px;
+    width: 60px;*/
+    width: auto;
+    height: 9vh;
+    border-radius: 8px;
     padding: 0px;
     margin: 0px;
-    border-radius: 20px;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .contenu-titre-enseignant {
@@ -28,7 +55,20 @@
         color: #9BC284;
       }
     }
+
+    
   } 
+}
+
+.description-enseignant {
+  display: none;
+  transition: 0.3s all ease;
+
+  p {
+      color: #457B77;
+      line-height: 1.4;
+      font-weight: 400;
+  }
 }
 
 .logique{
@@ -119,7 +159,7 @@
     line-height: 1.5;
     background-color:#A2CC8A ;
     border-radius: 25px;
-    padding: 45px 45px;
+    padding: 2em 0;
     margin-top: 50px;
     a{
       padding-left: 25px;
@@ -127,18 +167,14 @@
   }
   .accordion .container {
     position: relative;
-    margin: 10px 10px;
   }
   .accordion .label {
     position: relative;
-    padding: 20px 27px;
     line-height: 1.2;
     font-size: 30px;
     color: black;
     cursor: pointer;
-    background-color: #C1E8AA;
     align-items: center;
-    border-radius: 25px;
     display: flex;
   }
   /*.dropbtn .label::before {
@@ -195,7 +231,7 @@
     }
     /*prof*/
     .accordion{
-      width: 80%;
+      width: 85vw;
     }
   }
 }
