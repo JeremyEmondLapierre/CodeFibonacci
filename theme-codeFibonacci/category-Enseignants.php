@@ -12,7 +12,7 @@ get_header();
 	<main id="primary" class="site-main integre">
 
 <div class="logique">
-<h1>ENSEIGNANTS</h1>	
+<h1>Enseignants</h1>	
 
 
 <div class="accordion-body" id="logique">

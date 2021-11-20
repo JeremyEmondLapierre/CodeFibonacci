@@ -69,31 +69,3 @@ get_header();
 get_sidebar();
 get_footer();
 ?>
-
-<script>
-
-	document.getElementById("boutonATE").addEventListener("click", function() {
-		console.log("Stage ATE");
-		//Gestion des boutons
-		document.getElementById("boutonATE").classList.add("btnActif");
-		document.getElementById("boutonFin").classList.remove("btnActif");
-		//Gestion des éléments
-		document.getElementById("ATE").classList.add("Actif");
-		document.getElementById("ATE").classList.remove("PasActif");
-		document.getElementById("FIN").classList.add("PasActif");
-		document.getElementById("FIN").classList.remove("Actif");
-
-	});
-
-	document.getElementById("boutonFin").addEventListener("click", function() {
-		console.log("Fin d'étude");
-		//Gestion des boutons
-		document.getElementById("boutonFin").classList.add("btnActif");
-		document.getElementById("boutonATE").classList.remove("btnActif");
-		//Gestion des éléments
-		document.getElementById("ATE").classList.add("PasActif");
-		document.getElementById("ATE").classList.remove("Actif");
-		document.getElementById("FIN").classList.add("Actif");
-		document.getElementById("FIN").classList.remove("PasActif");
-	});
-</script>
