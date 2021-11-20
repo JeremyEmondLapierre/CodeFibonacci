@@ -183,7 +183,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 
-//Fonction pour extraire les cours de la page d'accueil
+/*Query pour la page d'accueil */
 function extraire_article_accueil($query) {
 
     if(!is_admin() && $query->is_front_page() && $query->is_main_query()) {
@@ -192,8 +192,9 @@ function extraire_article_accueil($query) {
    
     }  
 }
+add_action( 'pre_get_posts', 'extraire_article_accueil' );
 
-
+/*Query pour la page de stage */
 function extraire_article_stage($query) {
 
     if(!is_admin() && $query->is_main_query() && is_category('Stage')) {
@@ -201,9 +202,16 @@ function extraire_article_stage($query) {
 		$query->set('post_per_page', -1);
     }  
 }
-
-
 add_action( 'pre_get_posts', 'extraire_article_stage' );
-add_action( 'pre_get_posts', 'extraire_article_accueil' );
+
+/*Query pour la page des enseignants*/
+function extraire_article_prof($query) {
+
+    if(!is_admin() && $query->is_main_query() && is_category('Enseignants')) {
+		$query->set('category_name', 'Enseignants');
+		$query->set('post_per_page', -1);
+    }  
+}
+add_action( 'pre_get_posts', 'extraire_article_prof' );
 
 

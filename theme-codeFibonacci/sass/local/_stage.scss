@@ -136,6 +136,7 @@
             background-color: #D9F2CA;
             padding: 2rem;
             color:#0B132B ;
+            animation: floatText 6s ease-in-out infinite;
         }
         
     }
@@ -179,6 +180,19 @@
 	}
 	100% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+/* Animate float h3 */
+@keyframes floatText {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-4px);
+	}
+	100% {
 		transform: translatey(0px);
 	}
 }

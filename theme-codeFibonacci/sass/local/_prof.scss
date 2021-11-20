@@ -1,11 +1,14 @@
   
-  .img-prof{
-    height: 80px;
-    width: 60px;
-    padding: 0px;
-    margin: 0px;
-    border-radius: 7px;
-  } 
+  .label{
+    img{
+      height: 80px;
+      width: 60px;
+      padding: 0px;
+      margin: 0px;
+      border-radius: 20px;
+      object-fit: contain;
+    }
+  }
 
   .logique{
     h1{
