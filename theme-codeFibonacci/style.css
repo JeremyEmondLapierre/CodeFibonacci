@@ -2535,17 +2535,93 @@ footer #logo-FiboFooter {
 
 /* Local/prof
 --------------------------------------------- */
+.item-enseignant {
+  padding: 0.5em 2em;
+}
+
+.item-enseignant:hover {
+  background-color: #ADD795;
+}
+
+.item-enseignant .container {
+  background-color: #C1E8AA;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em 0;
+  position: relative;
+}
+
+@media (min-width: 700px) {
+  .item-enseignant .container {
+    padding: 0.8em 2em;
+  }
+}
+
 .label img {
-  height: 80px;
-  width: 60px;
+  /*height: 80px;
+    border-radius: 20px;
+    width: 60px;*/
+  width: auto;
+  height: 9vh;
+  border-radius: 8px;
   padding: 0px;
   margin: 0px;
-  border-radius: 20px;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.label .contenu-titre-enseignant {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label .contenu-titre-enseignant .contenant-icone-enseignant {
+  font-size: 3rem;
+  line-height: 0;
+}
+
+.label .contenu-titre-enseignant .contenant-icone-enseignant .fa-minus:nth-child(1) {
+  transform: rotate(90deg);
+  color: #9BC284;
+  position: absolute;
+}
+
+.label .contenu-titre-enseignant .contenant-icone-enseignant .fa-minus {
+  color: #9BC284;
+}
+
+.description-enseignant {
+  display: none;
+  transition: 0.3s all ease;
+}
+
+.description-enseignant p {
+  color: #457B77;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 .logique {
   /*prof*/
+  /*.dropbtn .label::before {
+    content: '+';
+    color:#9BC284;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size:90px;
+    transform: translateY(-50%);
+    
+  }*/
+  /*.accordion .container.active .label::before {
+    content: '-';
+    right: 20px;
+    font-size: 100px;
+    border-radius: 1%;
+  }*/
 }
 
 .logique h1 {
@@ -2639,41 +2715,26 @@ footer #logo-FiboFooter {
   line-height: 1.5;
   background-color: #A2CC8A;
   border-radius: 25px;
-  padding: 45px 45px;
+  padding: 2em 0;
   margin-top: 50px;
 }
 
 .logique .accordion a {
   padding-left: 25px;
-  color: black;
 }
 
 .logique .accordion .container {
   position: relative;
-  margin: 10px 10px;
 }
 
 .logique .accordion .label {
   position: relative;
-  padding: 20px 27px;
   line-height: 1.2;
   font-size: 30px;
   color: black;
   cursor: pointer;
-  background-color: #C1E8AA;
   align-items: center;
-  border-radius: 25px;
   display: flex;
-}
-
-.logique .accordion .label::before {
-  content: '+';
-  color: #9BC284;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  font-size: 90px;
-  transform: translateY(-50%);
 }
 
 .logique .accordion .content {
@@ -2697,13 +2758,6 @@ footer #logo-FiboFooter {
   margin-top: -15px;
 }
 
-.logique .accordion .container.active .label::before {
-  content: '-';
-  right: 20px;
-  font-size: 100px;
-  border-radius: 1%;
-}
-
 @media (min-width: 800px) {
   .logique {
     /*prof*/
@@ -2719,7 +2773,7 @@ footer #logo-FiboFooter {
     left: 230px;
   }
   .logique .accordion {
-    width: 80%;
+    width: 85vw;
   }
 }
 
@@ -2729,5 +2783,17 @@ footer #logo-FiboFooter {
 
 .accordion-body-pasActif {
   display: none;
+}
+
+.active .fa-minus:nth-child(1) {
+  animation-name: Croix;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  transition-timing-function: ease-in-out;
+}
+
+.active .description-enseignant {
+  display: block !important;
 }
 /*# sourceMappingURL=style.css.map */
