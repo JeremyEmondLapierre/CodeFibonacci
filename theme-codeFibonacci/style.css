@@ -49,7 +49,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   flex-direction: column;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 700px) {
   .premierViewport {
     flex-direction: row;
   }
@@ -92,49 +92,85 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 }
 
-.conteneur-logo img {
+.conteneur-logo {
+  position: relative;
   width: 80%;
+  height: 788px;
+  margin: 0 auto;
+  /*.fond-logo {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;        
+
+        /*@include desktop {
+            width: 80vh;
+            right: 5%;
+            top: 10%;
+        }
+    }*/
+}
+
+@media (min-width: 700px) {
+  .conteneur-logo {
+    margin: 0;
+    width: 788px;
+  }
+}
+
+.conteneur-logo img {
   margin: 0 auto;
   animation-name: Banniere;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+  top: 5vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+@media (min-width: 800px) {
+  .conteneur-logo img {
+    top: 15vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .conteneur-logo img {
+    top: 0vw;
+  }
 }
 
 .conteneur-logo h1 {
+  position: absolute;
   font-weight: 400;
   color: #0B132B;
-  width: 90%;
-  margin-top: 13em;
   text-align: right;
-  font-size: 1.4em;
+  font-size: 2em;
+  top: 54vw;
+  bottom: 0;
+  left: -10vw;
+  right: 0;
+  width: 100%;
+  height: 30px;
+  /* @include desktop {
+            width: 100%;
+            margin-top: 20em;
+        }*/
 }
 
 @media (min-width: 800px) {
   .conteneur-logo h1 {
-    font-size: 2em;
+    top: 45vw;
   }
 }
 
 @media (min-width: 1200px) {
   .conteneur-logo h1 {
-    width: 100%;
-    margin-top: 20em;
-  }
-}
-
-.conteneur-logo .fond-logo {
-  position: absolute;
-  right: 7%;
-  z-index: -1;
-  width: 40vh;
-  top: 15%;
-}
-
-@media (min-width: 1200px) {
-  .conteneur-logo .fond-logo {
-    width: 80vh;
-    right: 5%;
-    top: 10%;
+    top: 32vw;
   }
 }
 
@@ -1257,7 +1293,6 @@ textarea {
   }
   .main-navigation ul {
     display: flex;
-    flex-direction: column;
   }
 }
 
@@ -1522,7 +1557,7 @@ textarea {
     }*/
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 700px) {
   .nav-menu {
     flex-direction: column;
   }
