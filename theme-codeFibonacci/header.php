@@ -76,20 +76,24 @@
 		
 			</nav><!-- #site-navigation -->
 
+			<?php
+				if ( is_home() && is_front_page() ) :
+			?>
+
 			<div class="conteneur-logo">
 				<img class="fond-logo" src="wp-content/uploads/logo-et-fond.svg" alt="">
 				
 				<!-- <img class="fond-logo" src="wp-content/uploads/2021/09/background-logo.svg" alt=""> -->
 				<!-- <img src="wp-content/uploads/2021/09/logo-tim-2.svg" alt=""> -->
-				<?php
-					if ( is_home() && is_front_page() ) :
-				?>
+				
 					<h1>Techniques d'intégration multimédia</h1>
-				<?php
-					endif;
-				?>
+				
 					
 			</div>
+
+			<?php
+				endif;
+			?>
 
 			<!-- <svg class="background">
 			<use href="wp-content/uploads/2021/09/background-1.svg"> </use>
