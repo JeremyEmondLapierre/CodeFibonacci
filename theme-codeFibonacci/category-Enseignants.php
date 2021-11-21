@@ -44,12 +44,12 @@ get_header();
   </div>
 
 
-  <div class="accordion-body-pasActif" id="creatif">
+  <div class="accordion-body-pasActif2" id="creatif">
   <h2>Aspect <a>creatif</a></h2>
   <div class="dropdown">
-  <button class="dropbtn" id="boutonCreatif">Filtrer par : <a>Créatif</a></button>
+  <button class="dropbtn" id="boutonCreatif2">Filtrer par : <a>Créatif</a></button>
   <div class="dropdown-content">
-    <button id="boutonLogique" class="">Logique</button>  
+    <button id="boutonLogique2" class="">Logique</button>  
   </div>
 </div>
   
@@ -93,10 +93,12 @@ document.getElementById("boutonLogique").addEventListener("click", function() {
 		document.getElementById("boutonLogique").classList.add("dropbtn");
 		document.getElementById("boutonCreatif").classList.remove("dropbtn");
 		//Gestion des éléments
-		document.getElementById("logique").classList.add("accordion-body");
-		document.getElementById("logique").classList.remove("accordion-body-pasActif");
-		document.getElementById("creatif").classList.add("accordion-body-pasActif");
-		document.getElementById("creatif").classList.remove("accordion-body");
+		//document.getElementById("logique").classList.add("accordion-body");
+		//document.getElementById("logique").classList.remove("accordion-body-pasActif");
+		//document.getElementById("creatif").classList.add("accordion-body-pasActif");
+		//document.getElementById("creatif").classList.remove("accordion-body");
+		document.getElementById("logique").toggle("accordion-body");
+		document.getElementById("creatif").toggle("accordion-body-pasActif");
 
 	});
 
@@ -110,5 +112,44 @@ document.getElementById("boutonLogique").addEventListener("click", function() {
 		document.getElementById("logique").classList.remove("accordion-body");
 		document.getElementById("creatif").classList.add("accordion-body");
 		document.getElementById("creatif").classList.remove("accordion-body-pasActif");
+		//document.getElementById("logique").toggle("accordion-body-pasActif");
+		//document.getElementById("creatif").toggle("accordion-body");
 	});
+
+
+/*-----------------------*/
+
+
+	document.getElementById("boutonCreatif2").addEventListener("click", function() {
+		console.log("creatif");
+		//Gestion des boutons
+		document.getElementById("boutonCreatif2").classList.add("dropbtn");
+		document.getElementById("boutonLogique2").classList.remove("dropbtn");
+		//Gestion des éléments
+		document.getElementById("creatif").classList.add("accordion-body-pasActif2");
+		document.getElementById("creatif").classList.remove("accordion-body");
+		document.getElementById("logique").classList.add("accordion-body");
+		document.getElementById("logique").classList.remove("accordion-body-pasActif2");
+		//document.getElementById("creatif").toggle("accordion-body-pasActif2");
+		//document.getElementById("logique").toggle("accordion-body");
+
+	});
+
+	document.getElementById("boutonLogique2").addEventListener("click", function() {
+		console.log("logique");
+		//Gestion des boutons
+		document.getElementById("boutonLogique").classList.add("dropbtn");
+		document.getElementById("boutonCreatif").classList.remove("dropbtn");
+		//Gestion des éléments
+		document.getElementById("creatif").classList.add("accordion-body");
+		document.getElementById("creatif").classList.remove("accordion-body-pasActif2");
+		document.getElementById("logique").classList.add("accordion-body-pasActif2");
+		document.getElementById("logique").classList.remove("accordion-body");
+		document.getElementById("creatif").toggle("accordion-body");
+		//document.getElementById("logique").toggle("accordion-body-pasActif2");
+	});
+
+
+
+	
 </script>

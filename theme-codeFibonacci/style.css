@@ -1638,7 +1638,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1669,7 +1669,7 @@ textarea {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
@@ -2801,6 +2801,10 @@ footer #logo-FiboFooter {
 
 .accordion-body-pasActif {
   display: none;
+}
+
+.accordion-body-pasActif2 {
+  display: block;
 }
 
 .active .fa-minus:nth-child(1) {
