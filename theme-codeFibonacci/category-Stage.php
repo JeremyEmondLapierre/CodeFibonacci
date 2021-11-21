@@ -35,7 +35,7 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
 				if(get_field('type_de_stage') == "ATE"):
-					get_template_part( 'template-parts/content', 'Stage' );
+					get_template_part( 'template-parts/content', 'stage' );
 				endif;
 			endwhile;
 		?>
@@ -53,7 +53,7 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
 				if(get_field('type_de_stage') == "Fin"):
-					get_template_part( 'template-parts/content', 'Stage' );
+					get_template_part( 'template-parts/content', 'stage' );
 				endif;
 			endwhile;
 		?>
