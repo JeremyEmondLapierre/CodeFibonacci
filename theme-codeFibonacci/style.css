@@ -1709,7 +1709,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1740,7 +1740,7 @@ textarea {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
@@ -2752,6 +2752,7 @@ footer #logo-FiboFooter {
   border: none;
   cursor: pointer;
   margin-top: 50px;
+  width: 176px;
 }
 
 .logique .dropdown {
