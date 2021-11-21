@@ -1,40 +1,63 @@
-#primary-menu{
+.nav-menu  {
     padding: 0 !important;
     width: 100px;
     flex-direction: row;
+    display: flex;
 
     @include desktop {
         flex-direction: column;
     }
     
-    .sub-menu {
+    /*.sub-menu {
         flex-direction: column;
 
         li {
             margin: 0;
 
         }
-    }
+    }*/
 
     li{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
-        font-size: 1.5rem;
+        flex-direction: column;
+        padding: 0.5em 1em;
+        margin: 0;
+        font-size: 1rem;
+        height: 13vh;
+
+        @include small_tablet {
+            margin: -0.6em 0;
+            padding: 2.5em 3em;
+            font-size: 1.8rem;
+            height: 23vh;
+        }
 
         @include tablet {
-            margin: 10px;
-            padding: 30px;
+            padding: 2.5em 3em;
         }
 
         @include desktop {
-            margin: 0;
-            padding: 70px;
+            margin: -0.7em 0;
+            padding: 2.5em 3em;
         }
 
+        &:nth-child(4){
+            padding: 0.5em 1em;
+
+            @include small_tablet {
+                padding: 4em;
+            }
+        }
+
+        a {
+            color: #457B77;
+            font-weight: 500;
+            font-style: normal;
+        }
         a:visited {
-            color: #527B88;
+            //color: $couleur-bleu-marin;
         }
 
         a:hover,
@@ -64,20 +87,29 @@
 
     li:nth-child(4) {
         background: rgb(162,204,138);
-    background: linear-gradient(190deg, rgba(162,204,138,1) 0%, rgba(215,238,230,1) 100%);
+        background: linear-gradient(190deg, rgba(162,204,138,1) 0%, rgba(215,238,230,1) 100%);
         border-radius: 31% 69% 48% 52% / 39% 32% 68% 61%;
     }
 } 
 
 .sub-menu{
     padding: 0px !important;
+    flex-direction: column;
+    display: none;
+
+    @include small_tablet {
+        display: flex;
+    }
+
     li{
         display: block;
         background: none !important;
         border-radius: 0px !important;
         padding: 0px !important;
-        margin: 0px;
+        margin: 0;
         width: 10px;
+        height: auto;
+        align-items: center;
     }
     
 }
@@ -97,10 +129,10 @@
     Navigation des pages intègres
 ------------------------------------*/
 
-// En effet le nom de classe est étrange, mais unique.
 
 .site-header {
 
+// En effet le nom de classe est étrange, mais unique.
     .menu-menu-site-container {
 
         .menu {
