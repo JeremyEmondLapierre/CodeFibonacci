@@ -21,7 +21,7 @@ get_header();
 	<div class="dropdown">
 	<button class="dropbtn" id="boutonLogique">Filtrer par : <a>Logique</a></button>
 		<div class="dropdown-content">
-			<button id="boutonCreatif" class="">Créatif</button>  
+			<button id="boutonCreatif" class="" value="ovo" onclick="f();">Créatif</button>  
 		</div>
 	</div>
 
@@ -49,7 +49,7 @@ get_header();
   <div class="dropdown">
   <button class="dropbtn" id="boutonCreatif">Filtrer par : <a>Créatif</a></button>
   <div class="dropdown-content">
-    <button id="boutonLogique" class="">Logique</button>  
+    <button id="boutonLogique" class="" value="oxo" onclick="c();">Logique</button>  
   </div>
 </div>
   
@@ -93,10 +93,12 @@ document.getElementById("boutonLogique").addEventListener("click", function() {
 		document.getElementById("boutonLogique").classList.add("dropbtn");
 		document.getElementById("boutonCreatif").classList.remove("dropbtn");
 		//Gestion des éléments
-		document.getElementById("logique").classList.add("accordion-body");
-		document.getElementById("logique").classList.remove("accordion-body-pasActif");
-		document.getElementById("creatif").classList.add("accordion-body-pasActif");
-		document.getElementById("creatif").classList.remove("accordion-body");
+		//document.getElementById("logique").classList.add("accordion-body");
+		//document.getElementById("logique").classList.remove("accordion-body-pasActif");
+		//document.getElementById("creatif").classList.add("accordion-body-pasActif");
+		//document.getElementById("creatif").classList.remove("accordion-body");
+		document.getElementById("logique").toggle("accordion-body");
+		document.getElementById("creatif").toggle("accordion-body-pasActif");
 
 	});
 
@@ -110,5 +112,54 @@ document.getElementById("boutonLogique").addEventListener("click", function() {
 		document.getElementById("logique").classList.remove("accordion-body");
 		document.getElementById("creatif").classList.add("accordion-body");
 		document.getElementById("creatif").classList.remove("accordion-body-pasActif");
+		//document.getElementById("logique").toggle("accordion-body-pasActif");
+		//document.getElementById("creatif").toggle("accordion-body");
 	});
+
+
+/*-----------------------*/
+
+
+	//document.getElementById("boutonCreatif").addEventListener("click", function() {
+		//console.log("creatif");
+		//Gestion des boutons
+		//document.getElementById("boutonCreatif").classList.add("dropbtn");
+		//document.getElementById("boutonLogique2").classList.remove("dropbtn");
+		//Gestion des éléments
+		//document.getElementById("creatif").classList.add("accordion-body-pasActif");
+		//document.getElementById("creatif").classList.remove("accordion-body");
+		//document.getElementById("logique").classList.add("accordion-body");
+		//document.getElementById("logique").classList.remove("accordion-body-pasActif");
+		//document.getElementById("creatif").toggle("accordion-body-pasActif2");
+		//document.getElementById("logique").toggle("accordion-body");
+
+	//});
+
+	//document.getElementById("boutonLogique").addEventListener("click", function() {
+		//console.log("logique");
+		//Gestion des boutons
+		//document.getElementById("boutonLogique").classList.add("dropbtn");
+		//document.getElementById("boutonCreatif").classList.remove("dropbtn");
+		//Gestion des éléments
+		//document.getElementById("creatif").classList.add("accordion-body");
+		//document.getElementById("creatif").classList.remove("accordion-body-pasActif");
+		//document.getElementById("logique").classList.add("accordion-body-pasActif");
+		//document.getElementById("logique").classList.remove("accordion-body");
+		//document.getElementById("creatif").toggle("accordion-body");
+		//document.getElementById("logique").toggle("accordion-body-pasActif2");
+	//});
+	
+	function c(){
+		console.log("logique");
+		
+		document.getElementById("creatif").style.display = ((document.getElementById("creatif").style.display == "block") ? "none" : "block");
+		document.getElementById('logique').style.display='block';
+}
+
+function f(){
+		console.log("creatif2");
+		
+		document.getElementById("logique").style.display = ((document.getElementById("logique").style.display == "block") ? "none" : "block");
+		document.getElementById('creatif').style.display='block';
+}
 </script>
