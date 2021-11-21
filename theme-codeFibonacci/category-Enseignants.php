@@ -34,7 +34,7 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
 				if(get_field('aspect') == "Logique"):
-					get_template_part( 'template-parts/content', 'Enseignants' );
+					get_template_part( 'template-parts/content', 'enseignants' );
 				endif;
 				endwhile;
 		?>	
