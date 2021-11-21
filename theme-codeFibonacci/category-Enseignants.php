@@ -45,7 +45,7 @@ get_header();
 
 
   <div class="accordion-body-pasActif" id="creatif">
-  <h2>Aspect <a>creatif</a></h2>
+  <h2>Aspect <a>créatif</a></h2>
   <div class="dropdown">
   <button class="dropbtn" id="boutonCreatif">Filtrer par : <a> Créatif</a></button>
   <div class="dropdown-content">
@@ -61,7 +61,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 			if(get_field('aspect') == "Creatif"):
-				get_template_part( 'template-parts/content', 'Enseignants' );
+				get_template_part( 'template-parts/content', 'enseignants' );
 			endif;
 			endwhile;
 	?>
