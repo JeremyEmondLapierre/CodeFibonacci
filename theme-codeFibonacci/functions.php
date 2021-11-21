@@ -214,4 +214,27 @@ function extraire_article_prof($query) {
 }
 add_action( 'pre_get_posts', 'extraire_article_prof' );
 
+/*Query pour la page vie étudiante*/
+function extraire_article_vie($query) {
+
+    if(!is_admin() && $query->is_main_query() && is_category('vie')) {
+		$query->set('category_name', 'vie');
+		$query->set('post_per_page', -1);
+    }  
+}
+add_action( 'pre_get_posts', 'extraire_article_vie' );
+
+/*Query pour la page vie cours*/
+function extraire_article_cours($query) {
+
+    if(!is_admin() && $query->is_main_query() && is_category('cours')) {
+		$query->set('category_name', 'cours');
+		$query->set('meta_key', 'session');
+		$query->set('orderby', array('meta_value' => "ASC"));
+		$query->set('post_per_page', -1);
+		
+    }  
+}
+add_action( 'pre_get_posts', 'extraire_article_cours' );
+
 

@@ -17,3 +17,31 @@ for (var i = 0; i < cours.length; i++) {
         //this.style.animation = "Croix forwards reverse ease-in-out";
     });
 };
+
+/* ----------------
+    Page Stage
+------------------- */    
+document.getElementById("boutonATE").addEventListener("click", function() {
+    //Gestion des boutons
+    document.getElementById("boutonATE").classList.add("btnActif");
+    document.getElementById("boutonFin").classList.remove("btnActif");
+    //Gestion des éléments
+    document.getElementById("ATE").classList.add("Actif");
+    document.getElementById("ATE").classList.remove("PasActif");
+    document.getElementById("FIN").classList.add("PasActif");
+    document.getElementById("FIN").classList.remove("Actif");
+
+});
+
+document.getElementById("boutonFin").addEventListener("click", function() {
+    //Gestion des boutons
+    document.getElementById("boutonFin").classList.add("btnActif");
+    document.getElementById("boutonATE").classList.remove("btnActif");
+    //Gestion des éléments
+    document.getElementById("ATE").classList.add("PasActif");
+    document.getElementById("ATE").classList.remove("Actif");
+    document.getElementById("FIN").classList.add("Actif");
+    document.getElementById("FIN").classList.remove("PasActif");
+});
+
+

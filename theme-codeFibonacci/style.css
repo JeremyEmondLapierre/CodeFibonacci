@@ -1654,6 +1654,16 @@ textarea {
   border-radius: 20px;
 }
 
+.gallerie-projets .lesProjets .normal {
+  height: 37vh;
+}
+
+.gallerie-projets .lesProjets .normal img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 @media (min-width: 1200px) {
   .gallerie-projets .lesProjets {
     display: grid;
@@ -1668,8 +1678,8 @@ textarea {
 
 .gallerie-projets .lesProjets .top-midle {
   display: none;
+  background-color: #252525;
   grid-area: top-midle;
-  background-color: #FFC857;
 }
 
 @media (min-width: 1200px) {
@@ -1680,8 +1690,8 @@ textarea {
 
 .gallerie-projets .lesProjets .midle {
   display: none;
+  background-color: #b3b3b3;
   grid-area: midle;
-  background-color: #57caff;
 }
 
 @media (min-width: 1200px) {
@@ -1692,8 +1702,8 @@ textarea {
 
 .gallerie-projets .lesProjets .bottom {
   display: none;
+  background-color: #080808;
   grid-area: bottom;
-  background-color: #dd57ff;
 }
 
 @media (min-width: 1200px) {
@@ -1744,7 +1754,7 @@ textarea {
   margin: 0 auto;
   height: auto;
   display: flex;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(248, 255, 215, 0.219);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -1761,7 +1771,7 @@ textarea {
   }
 }
 
-.concours .lesConcours .gameJam, .concours .lesConcours .jour {
+.concours .lesConcours .concour {
   flex-direction: column;
   margin: 5% auto;
   padding: 50px;
@@ -1769,35 +1779,37 @@ textarea {
   height: auto;
   border-radius: 10px;
   border: none;
-  background: rgba(255, 255, 255, 0.15);
+  background: linear-gradient(132deg, #c3ebd0, #dcebc3, #aaf1c2);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
   backdrop-filter: blur(0px);
 }
 
 @media (min-width: 1200px) {
-  .concours .lesConcours .gameJam, .concours .lesConcours .jour {
+  .concours .lesConcours .concour {
     width: 450px;
     margin: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
 }
 
-.concours .lesConcours .gameJam .suite, .concours .lesConcours .jour .suite {
+.concours .lesConcours .concour .suite {
   display: none;
 }
 
 @media (min-width: 1200px) {
-  .concours .lesConcours .gameJam .suite, .concours .lesConcours .jour .suite {
+  .concours .lesConcours .concour .suite {
     display: block;
   }
 }
 
-.concours .lesConcours .gameJam h4, .concours .lesConcours .jour h4 {
+.concours .lesConcours .concour h4 {
   font-weight: 500;
   font-size: 20px;
   margin: 0;
 }
 
-.concours .lesConcours .gameJam p, .concours .lesConcours .jour p {
+.concours .lesConcours .concour p {
   padding-top: 30px;
   margin: 0 auto;
   width: 80%;
@@ -1805,18 +1817,24 @@ textarea {
   text-align: center;
 }
 
-.concours .lesConcours .gameJam .logo-concours {
+.concours .lesConcours .concour img {
   margin: 10px;
   color: black;
   filter: saturate(200%) brightness(70%);
   width: 70px;
 }
 
-.concours .lesConcours .jour .logo-concours {
-  margin: 10px;
-  color: black;
-  filter: saturate(200%) brightness(70%);
-  width: 65px;
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Local/footer
@@ -2418,20 +2436,20 @@ footer #logo-FiboFooter {
             }*/
 }
 
-.contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
+.contenant-liste-cours .contenant-cours .titre-cours img {
   width: 2.5rem;
   margin-right: 1em;
   filter: saturate(200%) brightness(70%);
 }
 
 @media (min-width: 700px) {
-  .contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
+  .contenant-liste-cours .contenant-cours .titre-cours img {
     margin-right: 2em;
   }
 }
 
 @media (min-width: 1200px) {
-  .contenant-liste-cours .contenant-cours .titre-cours .logo-cours {
+  .contenant-liste-cours .contenant-cours .titre-cours img {
     margin-right: 5em;
   }
 }
