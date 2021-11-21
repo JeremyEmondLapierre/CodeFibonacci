@@ -2803,10 +2803,6 @@ footer #logo-FiboFooter {
   display: none;
 }
 
-.accordion-body-pasActif2 {
-  display: block;
-}
-
 .active .fa-minus:nth-child(1) {
   animation-name: Croix;
   animation-duration: 0.5s;
