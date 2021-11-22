@@ -1702,6 +1702,10 @@ textarea {
 /* Local/vie 
 --------------------------------------------- */
 /*-------Style section projets GRID desktop ------*/
+.gallerie-projets {
+  /*-------Style filtre section gallerie projets ------*/
+}
+
 .gallerie-projets .lesProjets {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1709,7 +1713,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1740,7 +1744,7 @@ textarea {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
@@ -1780,6 +1784,57 @@ textarea {
   }
 }
 
+.gallerie-projets form {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #ECFEF8;
+  padding: 1em 0;
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .gallerie-projets form {
+    margin-left: 4rem;
+  }
+}
+
+.gallerie-projets form .filtre-cours {
+  background: none;
+  border: none;
+  color: #FBF057;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.gallerie-projets form .filtre-cours option {
+  background-color: #D7EEE6;
+  color: #0B132B;
+}
+
+.gallerie-projets form .filtre-cours option:hover {
+  background-color: #9BC284;
+}
+
+.gallerie-projets form input {
+  border: 3px solid #FBF057;
+  border-radius: 10px;
+  background-color: #FBF057;
+  color: #0B132B;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  transition: 0.3s all ease;
+}
+
+.gallerie-projets form input:hover {
+  background-color: #FFC857;
+  border: 3px solid #FFC857;
+}
+
+.gallerie-projets form input:active {
+  border-color: #0B132B;
+}
+
 /*-------Style global titre section gallerie et concours------*/
 .gallerie-projets, .concours {
   text-align: center;
@@ -1793,11 +1848,20 @@ textarea {
   }
 }
 
+.gallerie-projets h2, .concours h2 {
+  font-weight: 500;
+  text-align: center;
+  color: #ECFEF8;
+  margin: 2rem auto;
+  line-height: 1;
+  font-size: clamp(3em, 7.458vw, 5.4em);
+}
+
 .gallerie-projets h3, .concours h3 {
   margin-bottom: 2rem;
   align-items: center;
   color: #ECFEF8;
-  font-size: clamp(1rem, 7.458vw, 3rem);
+  font-size: clamp(3em, 7.458vw, 5.4em);
   font-weight: 500;
 }
 
@@ -1839,7 +1903,7 @@ textarea {
   }
 }
 
-.concours .lesConcours .concour {
+.concours .lesConcours .concours {
   flex-direction: column;
   margin: 5% auto;
   padding: 50px;
@@ -1854,38 +1918,38 @@ textarea {
 }
 
 @media (min-width: 1200px) {
-  .concours .lesConcours .concour {
+  .concours .lesConcours .concours {
     width: 450px;
     margin: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
 }
 
-.concours .lesConcours .concour .suite {
+.concours .lesConcours .concours .suite {
   display: none;
 }
 
 @media (min-width: 1200px) {
-  .concours .lesConcours .concour .suite {
+  .concours .lesConcours .concours .suite {
     display: block;
   }
 }
 
-.concours .lesConcours .concour h4 {
+.concours .lesConcours .concours h4 {
   font-weight: 500;
   font-size: 20px;
   margin: 0;
 }
 
-.concours .lesConcours .concour p {
-  padding-top: 30px;
+.concours .lesConcours .concours p {
+  padding-top: 0.3em;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   align-items: center;
   text-align: center;
 }
 
-.concours .lesConcours .concour img {
+.concours .lesConcours .concours img {
   margin: 10px;
   color: black;
   filter: saturate(200%) brightness(70%);
@@ -1915,6 +1979,7 @@ footer {
   align-items: center;
   padding: 18vh 0 1.5vh 0;
   background-size: cover;
+  font-weight: 400;
   /*--------------------------------- style du background footer svg -----------------------------*/
   /*----------------------------- parti au bas du footer ----------------*/
   /*------------style div conteneur global du footer  --------------*/
@@ -1947,10 +2012,11 @@ footer #footer-tag {
   border-top: 1px solid #D7EEE6;
   padding-top: 20px;
   color: #D7EEE6;
-  font-size: 13px;
+  font-size: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 300;
 }
 
 footer #footer-tag #div-texte-logo {
@@ -1993,6 +2059,7 @@ footer .global-footer .site-info {
 footer .global-footer .site-info #site-info-titre {
   color: #A2CC8A;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 footer .global-footer .site-info p {
@@ -2041,6 +2108,7 @@ footer .global-footer .liens-rapides .menu {
 footer .global-footer .liens-rapides h3 {
   color: #A2CC8A;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 footer .global-footer .liens-rapides .footer-navigation ul {
@@ -2067,9 +2135,10 @@ footer .global-footer .google-map {
   }
   footer .global-footer .google-map iframe {
     margin: 0 auto;
-    border-radius: 15px;
     width: 80%;
-    opacity: 60%;
+    opacity: 70%;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
 }
 
