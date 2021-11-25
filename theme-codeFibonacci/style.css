@@ -1709,7 +1709,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1740,7 +1740,7 @@ textarea {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
@@ -2573,6 +2573,12 @@ footer #logo-FiboFooter {
   color: #457B77;
   line-height: 1.4;
   font-weight: 400;
+}
+
+.contenant-liste-cours .contenant-cours .description-cours p:nth-child(2), .contenant-liste-cours .contenant-cours .description-cours p:nth-child(3) {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1% 0;
 }
 
 .actif-cours .titre-cours::before {
