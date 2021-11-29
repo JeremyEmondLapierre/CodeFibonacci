@@ -119,17 +119,19 @@ form {
     }
 
     input {
-        border: 3px solid #FBF057;
+        //border: 3px solid #FBF057;
         border-radius: 10px;
-        background-color: #FBF057;
+        background-color: #f0ecb2;
         color: $couleur-bleu-marin;
-        font-family: futura-pt, sans-serif;
-        font-weight: 400;
+        font-weight: 600;
+        font-size: 17px;
         transition: 0.3s all ease;
+        
 
         &:hover {
             background-color: $couleur2;
-            border: 3px solid $couleur2;
+            //color:#D7EEE6;
+            //border: 3px solid $couleur2;
         }
 
         &:active {
@@ -255,26 +257,28 @@ h3{
             .suite{
                 display: none; 
 
-            border-radius: 5px;
-            border: none;
-            background-color:#9BC284 ;
-            width: 50%;
             align-items: center;
-            
-
-           
-
+            width: 40%;
+            border: 3px solid #FFFAB2;
+            border-radius: 5px;
+            background-color: #FFFAB2;;
+            color: $couleur-bleu-marin;
+            font-family: futura-pt, sans-serif;
             font-weight: 400;
             font-size: 21px;
-            margin: 0.4em auto;
-            line-height: 31px;
-
-            opacity: 90%;
+            transition: 0.3s all ease;
+    
+            &:hover {
+                background-color: $couleur2;
+                border: 3px solid $couleur2;
+            }
+    
+            &:active {
+                border-color: $couleur-bleu-marin;
+            }
 
                 @include desktop {
                     display: block;
-                    //font-size: 1.5rem;
-                    color: black;
                 }
             }
             
@@ -288,10 +292,7 @@ h3{
         } 
 
         p{
-
-            padding-top: 0.3em;
-            
-            margin: 0 auto;
+            margin: 1rem auto;
             width: 90%;
             align-items: center;
             text-align: center;
@@ -299,7 +300,6 @@ h3{
             font-weight: 400;
             font-size: 17px;
             line-height: 27px;
-
         }
 
         }

@@ -31,7 +31,7 @@ get_header();
 					<option value="jeu-video">Jeu-Vidéo</option>
 					<option value="Design">Design</option>
 				</select>
-				<input type="submit">
+				<input type="submit" value="Soumettre">
 			</form>
 
 			  <div class="lesProjets">
