@@ -232,6 +232,12 @@
                 color: #457B77;
                 line-height: 1.4;
                 font-weight: 400;
+
+                &:nth-child(2), &:nth-child(3) {
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin: 1% 0;
+                }
             }
         }
     }

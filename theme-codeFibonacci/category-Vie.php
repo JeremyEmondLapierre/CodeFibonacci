@@ -20,11 +20,22 @@ get_header();
 
 			<section class="gallerie-projets">
 
-			<h3>Projets Étudiants</h3> 
+			<h2>Projets Étudiants</h2> 
 
-			  
+			   <!-- Filtre statique pour le sprint 3 -->
+			<form>
+				<label for="filtre-cours">Filtrer par : </label>
+				<select class="filtre-cours" name="filtre-cours">
+					<option value="web">Web</option>
+					<option value="3d">3D</option>
+					<option value="jeu-video">Jeu-Vidéo</option>
+					<option value="Design">Design</option>
+				</select>
+				<input type="submit">
+			</form>
 
 			  <div class="lesProjets">
+
 			  	<?php
 				/* Start the Loop */
 					while ( have_posts() ) :
@@ -42,7 +53,7 @@ get_header();
 				    </div>
 
 					<div class="midle" >
-						
+						 
 					        <!--img ici-->
 							<!--img ici-->
 				    </div>
@@ -72,6 +83,7 @@ get_header();
 				<div class="lesConcours">
 					
 				<?php
+				
 				/* Start the Loop */
 					while ( have_posts() ) :
 						the_post();
