@@ -12,5 +12,6 @@
 <div >
     <div class="normal">
         <?php the_post_thumbnail( 'large' ); ?>
+        <?php $content = get_the_content(); $content;?>
     </div>
 </div>
