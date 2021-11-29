@@ -427,6 +427,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .accueil-vie .swiper-wrapper .swiper-slide-prev {
   justify-content: flex-end;
+  opacity: 75%;
 }
 
 .accueil-vie .swiper-wrapper .swiper-slide-active img {
@@ -437,6 +438,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .accueil-vie .swiper-wrapper .swiper-slide-next {
   justify-content: flex-start;
+  opacity: 75%;
 }
 
 .accueil-vie .swiper-wrapper .swiper-slide img {
