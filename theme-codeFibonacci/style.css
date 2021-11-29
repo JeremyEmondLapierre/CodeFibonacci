@@ -3066,4 +3066,66 @@ footer .up #flecheHaut:hover {
   line-height: 1.4;
   font-weight: 410;
 }
+
+/* Local/prof
+--------------------------------------------- */
+/*--------------------------------------------
+  La page 404
+----------------------------------------------*/
+.page-404-contenu {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .page-404-contenu {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-404-contenu {
+    font-size: 1.8rem;
+  }
+}
+
+.page-404-contenu h2 {
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #ECFEF8;
+}
+
+@media (min-width: 700px) {
+  .page-404-contenu h2 {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-404-contenu h2 {
+    font-size: 4rem;
+  }
+}
+
+.page-404-contenu p {
+  font-weight: 400;
+}
+
+@media (min-width: 700px) {
+  .page-404-contenu .page-404-img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-404-contenu .page-404-img {
+    width: 100%;
+  }
+}
+
+.page-404-contenu a {
+  display: inherit;
+  color: #FFFAB2;
+}
 /*# sourceMappingURL=style.css.map */
