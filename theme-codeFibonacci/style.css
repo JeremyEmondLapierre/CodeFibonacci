@@ -2153,15 +2153,46 @@ footer .logos-footers {
   justify-content: space-between;
 }
 
-footer #footer-logo {
+footer .logoEtReseau {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .logoEtReseau #footer-logo {
   width: 150px;
   margin: 0 auto;
 }
 
 @media (min-width: 1200px) {
-  footer #footer-logo {
+  footer .logoEtReseau #footer-logo {
     margin: 0 0;
   }
+}
+
+footer .logoEtReseau .Reseau {
+  margin-left: 104px;
+}
+
+footer .logoEtReseau .Reseau h4 {
+  color: #A2CC8A;
+  margin-bottom: 5px;
+}
+
+footer .logoEtReseau .Reseau ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+footer .logoEtReseau .Reseau ul li {
+  display: inline;
+  margin: 0px 10px 0px 10px;
+}
+
+footer .logoEtReseau .Reseau ul li:first-child {
+  margin: 0px 10px 0px 0px;
 }
 
 footer #logo-FiboFooter {

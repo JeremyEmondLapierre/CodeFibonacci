@@ -18,14 +18,25 @@ style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11
  <div class="global-footer" >
 
 	 
-
-     <img id="footer-logo" src='<?php echo site_url().'/wp-content/uploads/2021/11/footer-LogoVert.svg';?>';>
+	<div class="logoEtReseau">
+		<img id="footer-logo" src='<?php echo site_url().'/wp-content/uploads/2021/11/footer-LogoVert.svg';?>';>
+		<div class="Reseau">
+			<h4>Suivez-nous</h4>
+			<ul>
+				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Facebook.svg';?>" alt=""></li>
+				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Instagram.svg';?>" alt=""></li>
+				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Linkedin.svg';?>" alt=""></li>
+				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Youtube.svg';?>" alt=""></li>
+			</ul>
+		</div>
+	</div>
+     
 
 
 
 	 <div class="site-info">
 
-     <h3 id="site-info-titre">Site Info</h3>
+     <h3 id="site-info-titre">Infos du collège</h3>
 
 	    <p>Campus principal</p>
 	    <p>3800, rue Sherbrooke Est</p>
