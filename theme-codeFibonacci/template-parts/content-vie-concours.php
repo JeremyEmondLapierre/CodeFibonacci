@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="concour">
+<div class="concours">
 
     <?php the_post_thumbnail( 'medium' ); ?>
 
