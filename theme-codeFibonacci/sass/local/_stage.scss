@@ -22,7 +22,8 @@
     
     .btnActif{
         h2{
-            color: rgb(233, 196, 31);;
+            color: rgb(233, 196, 31);
+            text-decoration: underline;
             animation: texteCouleur 1s ease-in-out;
         }
     }
@@ -36,6 +37,7 @@
 
     .texteResume{
         padding: 2rem;
+        
         @include desktop {
             text-align: justify;
             width: 60%;
@@ -223,8 +225,10 @@
 @keyframes texteCouleur{
     from  {
 		color: #0B132B;
+        text-decoration: none; 
 	}
     to  {
         color: rgb(233, 196, 31);
+        text-decoration: underline; 
 	}
 }

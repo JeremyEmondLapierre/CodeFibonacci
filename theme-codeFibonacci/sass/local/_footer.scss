@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 footer {
     margin-top: 15vh;
     display: flex;
@@ -193,7 +197,6 @@ footer {
 
     #footer-logo{
         width: 150px;
-        opacity: 45%;
         margin: 0 auto;
         
         @include desktop {
@@ -206,5 +209,31 @@ footer {
         opacity: 45%;
         
     }
+
+    /* Flèche pour retourner vers le haut de la page */
+
+    //Division contenant l'image
+    .up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        @include tablet{
+            margin-left: -70px;
+        }
+        
+
+        //Image de la flèche
+        #flecheHaut{
+            height: 50px;
+            width: 50px;
+            &:hover{
+                filter: invert(15%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    
     
 }

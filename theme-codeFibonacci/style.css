@@ -1971,6 +1971,10 @@ textarea {
 
 /* Local/footer
 --------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
 footer {
   margin-top: 15vh;
   display: flex;
@@ -1984,6 +1988,7 @@ footer {
   /*----------------------------- parti au bas du footer ----------------*/
   /*------------style div conteneur global du footer  --------------*/
   /*------------style logo footer --------------*/
+  /* Flèche pour retourner vers le haut de la page */
 }
 
 footer .bg-footer {
@@ -2150,7 +2155,6 @@ footer .logos-footers {
 
 footer #footer-logo {
   width: 150px;
-  opacity: 45%;
   margin: 0 auto;
 }
 
@@ -2163,6 +2167,29 @@ footer #footer-logo {
 footer #logo-FiboFooter {
   width: 50px;
   opacity: 45%;
+}
+
+footer .up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+@media (min-width: 800px) {
+  footer .up {
+    margin-left: -70px;
+  }
+}
+
+footer .up #flecheHaut {
+  height: 50px;
+  width: 50px;
+}
+
+footer .up #flecheHaut:hover {
+  filter: invert(15%);
+  cursor: pointer;
 }
 
 /* Local/stage
@@ -2191,6 +2218,7 @@ footer #logo-FiboFooter {
 
 .pageStage .btnActif h2 {
   color: #e9c41f;
+  text-decoration: underline;
   animation: texteCouleur 1s ease-in-out;
 }
 
@@ -2410,9 +2438,11 @@ footer #logo-FiboFooter {
 @keyframes texteCouleur {
   from {
     color: #0B132B;
+    text-decoration: none;
   }
   to {
     color: #e9c41f;
+    text-decoration: underline;
   }
 }
 
