@@ -7,9 +7,10 @@
         color: rgb(255, 251, 245);
         display: flex;
         justify-content: center;
+        text-align: center;
     }
     .filtre{
-        display: flex;
+        display: flex; 
         justify-content: center;
         align-items: center;
     }
@@ -37,9 +38,10 @@
         padding: 2rem;
         @include desktop {
             text-align: justify;
+            width: 60%;
         }
         border-radius: 10px;
-        width: 60%;
+        width: 90%;
         margin: auto;
         font-size: clamp(0.2rem, -0.875vw + 8.333vw, 1.2rem);
         //background-color: #bce99b;
@@ -58,7 +60,7 @@
 
 //Section d'un témoignage complet (Image, titre et texte...)
 .Exp{
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     //Pour les éléments pairs, mettre l'éléments à droite
     &:nth-child(even){
         .signetExp{
@@ -74,8 +76,11 @@
             margin-left: -25px;
         }
         .texteExp{
-            margin-left: auto; 
-            margin-right: 0;
+            @include desktop{
+                margin-left: auto; 
+                margin-right: 0;
+            }
+            
         }
     }
     //Pour les éléments impairs, les mettre à droite
@@ -94,8 +99,11 @@
             
         }
         .texteExp{
-            margin-left: 0; 
-            margin-right: auto;
+            @include desktop{
+                margin-left: 0; 
+                margin-right: auto;
+            }
+            
         }
     }
     //Style généraux
@@ -108,7 +116,7 @@
         
         img{
             background-color: #D9F2CA;
-            padding: 2rem;
+            padding: 1rem;
             border-radius: 60%;
             height: 20vw;
             width: 20vw;
@@ -121,6 +129,7 @@
             @include desktop{
                 height: 15em;
                 width: 15em;
+                padding: 2rem;
             }
             object-fit: scale-down;
         }
@@ -129,7 +138,7 @@
             @include desktop{
                 font-size: 1.8rem;
             }
-            font-size: 1.5rem;
+            font-size: 1rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -144,13 +153,26 @@
         width: 100%;
     }
     .texteExp{
-        width: 70%;
+        width: 90%;
+        margin: 0px auto;
+        @include tablet{
+            width: 70%;
+            margin:0px;
+        }
         padding: 1rem;
         border-radius: 10px;
         background-color: #D9F2CA;
         color: #0B132B;
+        
+        @include desktop{
+            margin-top: -50px;
+        }
         p{
-            font-weight:500;
+            font-weight:400;
+            @include desktop{
+                font-size: 20px;   
+            }
+            font-size: 15px;
         }
     }
 }   

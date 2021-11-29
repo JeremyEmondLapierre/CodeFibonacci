@@ -2175,6 +2175,7 @@ footer #logo-FiboFooter {
   color: #fffbf5;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .pageStage .filtre {
@@ -2204,7 +2205,7 @@ footer #logo-FiboFooter {
 .pageStage .texteResume {
   padding: 2rem;
   border-radius: 10px;
-  width: 60%;
+  width: 90%;
   margin: auto;
   font-size: clamp(0.2rem, 7.458vw, 1.2rem);
   background: linear-gradient(132deg, #c3ebd0, #dcebc3, #aaf1c2);
@@ -2215,6 +2216,7 @@ footer #logo-FiboFooter {
 @media (min-width: 1200px) {
   .pageStage .texteResume {
     text-align: justify;
+    width: 60%;
   }
 }
 
@@ -2224,7 +2226,7 @@ footer #logo-FiboFooter {
 }
 
 .Exp {
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 1200px) {
@@ -2243,9 +2245,11 @@ footer #logo-FiboFooter {
   }
 }
 
-.Exp:nth-child(even) .texteExp {
-  margin-left: auto;
-  margin-right: 0;
+@media (min-width: 1200px) {
+  .Exp:nth-child(even) .texteExp {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 
 .Exp:nth-child(odd) .signetExp {
@@ -2268,9 +2272,11 @@ footer #logo-FiboFooter {
   }
 }
 
-.Exp:nth-child(odd) .texteExp {
-  margin-left: 0;
-  margin-right: auto;
+@media (min-width: 1200px) {
+  .Exp:nth-child(odd) .texteExp {
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
 
 .Exp .signetExp {
@@ -2282,7 +2288,7 @@ footer #logo-FiboFooter {
 
 .Exp .signetExp img {
   background-color: #D9F2CA;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 60%;
   height: 20vw;
   width: 20vw;
@@ -2299,12 +2305,13 @@ footer #logo-FiboFooter {
   .Exp .signetExp img {
     height: 15em;
     width: 15em;
+    padding: 2rem;
   }
 }
 
 .Exp .signetExp h3 {
   flex-grow: 4;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2325,15 +2332,36 @@ footer #logo-FiboFooter {
 }
 
 .Exp .texteExp {
-  width: 70%;
+  width: 90%;
+  margin: 0px auto;
   padding: 1rem;
   border-radius: 10px;
   background-color: #D9F2CA;
   color: #0B132B;
 }
 
+@media (min-width: 800px) {
+  .Exp .texteExp {
+    width: 70%;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Exp .texteExp {
+    margin-top: -50px;
+  }
+}
+
 .Exp .texteExp p {
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  .Exp .texteExp p {
+    font-size: 20px;
+  }
 }
 
 /* Animate Background*/
@@ -2965,5 +2993,12 @@ footer #logo-FiboFooter {
 
 .active .description-enseignant {
   display: block !important;
+}
+
+.active .description-enseignant ul {
+  color: #457B77;
+  font-size: large;
+  line-height: 1.4;
+  font-weight: 410;
 }
 /*# sourceMappingURL=style.css.map */

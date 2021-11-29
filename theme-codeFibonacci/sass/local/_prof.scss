@@ -222,6 +222,7 @@
   }*/
 }
 
+
 @media(min-width:800px){
   .logique{
     h1{
@@ -261,5 +262,11 @@
 
   .description-enseignant {
     display: block !important;
+    ul{
+      color: #457B77;
+      font-size: large;
+      line-height: 1.4;
+      font-weight: 410;
+    }
   }
 }
