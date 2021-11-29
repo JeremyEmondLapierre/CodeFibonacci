@@ -17,7 +17,7 @@ get_header();
 			<!--h4>Vie Étudiante</h4-->
 		</div>
 			
-
+		
 			<section class="gallerie-projets">
 
 			<h2>Projets Étudiants</h2> 

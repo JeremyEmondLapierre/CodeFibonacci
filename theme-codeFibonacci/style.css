@@ -1713,7 +1713,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1744,7 +1744,7 @@ textarea {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
@@ -1876,6 +1876,7 @@ textarea {
   color: #FFC857;
 }
 
+/*--------------------Style card Concours------------------------*/
 .concours h3 {
   font-style: italic;
 }
@@ -1892,7 +1893,6 @@ textarea {
   -webkit-backdrop-filter: blur(5px);
   border-radius: 45px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  /*--------------------Style card Concours------------------------*/
 }
 
 @media (min-width: 1200px) {
@@ -1927,26 +1927,42 @@ textarea {
 
 .concours .lesConcours .concours .suite {
   display: none;
+  border-radius: 5px;
+  border: none;
+  background-color: #9BC284;
+  width: 50%;
+  align-items: center;
+  font-weight: 400;
+  font-size: 21px;
+  margin: 0.4em auto;
+  line-height: 31px;
+  opacity: 90%;
 }
 
 @media (min-width: 1200px) {
   .concours .lesConcours .concours .suite {
     display: block;
+    color: black;
   }
 }
 
 .concours .lesConcours .concours h4 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 27px;
+  line-height: 42px;
   margin: 0;
 }
 
 .concours .lesConcours .concours p {
-  padding-top: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.5em;
   margin: 0 auto;
   width: 90%;
   align-items: center;
   text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
 }
 
 .concours .lesConcours .concours img {

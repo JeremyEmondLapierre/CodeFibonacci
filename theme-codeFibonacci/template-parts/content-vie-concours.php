@@ -11,7 +11,8 @@
 
 <div class="concours">
 
-    <?php the_post_thumbnail( 'medium' ); ?>
+    <a href="<?php the_permalink() ?>">
+    <?php  the_post_thumbnail( 'medium' ); ?>
 
     <h4><?php the_title() ?></h4>
 
