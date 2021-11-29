@@ -423,39 +423,25 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .accueil-vie .swiper-wrapper .swiper-slide img {
   border-radius: 30px;
-  width: 70%;
-}
-
-.accueil-vie .swiper-wrapper .swiper-slide-active img {
-  box-shadow: 0px 0px 24px 9px #fff;
-  width: 100%;
-  height: 20em;
-  object-fit: cover;
-}
-
-@media (min-width: 1200px) {
-  .accueil-vie .swiper-wrapper .swiper-slide-active img {
-    height: 50em;
-  }
 }
 
 .accueil-vie .swiper-wrapper .swiper-slide-prev {
   justify-content: flex-end;
 }
 
+.accueil-vie .swiper-wrapper .swiper-slide-active img {
+  box-shadow: 0px 0px 24px 9px #fff;
+  width: 100%;
+  object-fit: cover;
+}
+
 .accueil-vie .swiper-wrapper .swiper-slide-next {
   justify-content: flex-start;
 }
 
-.accueil-vie .swiper-wrapper .swiper-slide-prev img, .accueil-vie .swiper-wrapper .swiper-slide-next img {
-  height: 10em;
+.accueil-vie .swiper-wrapper .swiper-slide img {
+  height: 18em;
   object-fit: cover;
-}
-
-@media (min-width: 1200px) {
-  .accueil-vie .swiper-wrapper .swiper-slide-prev img, .accueil-vie .swiper-wrapper .swiper-slide-next img {
-    height: 30em;
-  }
 }
 
 .accueil-vie .swiper-pagination-bullet {
@@ -1709,7 +1695,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1740,7 +1726,7 @@ textarea {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
