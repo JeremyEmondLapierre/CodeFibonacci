@@ -1713,7 +1713,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1744,7 +1744,7 @@ textarea {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
@@ -2742,6 +2742,10 @@ footer #logo-FiboFooter {
   align-items: center;
 }
 
+.label .contenu-titre-enseignant a:hover {
+  color: #FBF057;
+}
+
 .label .contenu-titre-enseignant .contenant-icone-enseignant {
   font-size: 3rem;
   line-height: 0;
@@ -2765,7 +2769,8 @@ footer #logo-FiboFooter {
 .description-enseignant p {
   color: #457B77;
   line-height: 1.4;
-  font-weight: 400;
+  font-weight: 410;
+  font-size: large;
 }
 
 .logique {
