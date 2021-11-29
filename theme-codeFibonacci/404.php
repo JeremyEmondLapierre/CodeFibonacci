@@ -20,7 +20,7 @@ get_header();
 			<div class="page-content">
 				<h3>Cette page est malheureusement indisponible</h3>
 				<p>Le lien que vous tentez de suivre est probablement rompu, supprimé ou inexistant.</p>
-				<img src="<?php echo site_url().'/wp-content/uploads/2021/11/icone-404;?>" alt="">
+				<img src="<?php echo site_url().'/wp-content/uploads/2021/11/accueil-bg-3.png';?>" alt="">
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->
 
