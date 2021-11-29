@@ -2756,7 +2756,7 @@ footer #logo-FiboFooter {
     border-radius: 20px;
     width: 60px;*/
   width: auto;
-  height: 9vh;
+  height: 13vh;
   border-radius: 8px;
   padding: 0px;
   margin: 0px;
@@ -2797,8 +2797,8 @@ footer #logo-FiboFooter {
 .description-enseignant p {
   color: #457B77;
   line-height: 1.4;
-  font-weight: 410;
-  font-size: large;
+  font-weight: 300;
+  font-size: 1.8rem;
 }
 
 .logique {
@@ -2860,7 +2860,7 @@ footer #logo-FiboFooter {
   border: none;
   cursor: pointer;
   margin-top: 50px;
-  width: 176px;
+  width: 235px;
 }
 
 .logique .dropdown {
@@ -2884,7 +2884,7 @@ footer #logo-FiboFooter {
   background-color: #C1E8AA;
   font-size: large;
   min-width: 90px;
-  left: 80px;
+  left: 105px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -2919,6 +2919,7 @@ footer #logo-FiboFooter {
 
 .logique .accordion a {
   padding-left: 25px;
+  font-size: 2.8rem;
 }
 
 .logique .accordion .container {
@@ -2968,7 +2969,7 @@ footer #logo-FiboFooter {
     padding-left: 150px;
   }
   .logique .dropdown-content {
-    left: 230px;
+    left: 250px;
   }
   .logique .accordion {
     width: 85vw;
@@ -2997,8 +2998,8 @@ footer #logo-FiboFooter {
 
 .active .description-enseignant ul {
   color: #457B77;
-  font-size: large;
   line-height: 1.4;
-  font-weight: 410;
+  font-weight: 300;
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */
