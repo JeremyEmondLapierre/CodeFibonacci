@@ -14,7 +14,7 @@
     <div class="cours-contenu">
         <div class="accueil-cours-texte">
             <h2>
-                <a href="<?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo "http://";} else {echo "https://";}?><?php echo $_SERVER['HTTP_HOST']; ?><?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo $_SERVER['REQUEST_URI'];}?>/cours/">
+                <a href="<?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo "http://";} else {echo "https://";}?><?php echo $_SERVER['HTTP_HOST']; ?><?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo $_SERVER['REQUEST_URI'];}?>/category/cours/">
                 <?php the_title() ?>
                 </a>
             </h2>
@@ -23,7 +23,7 @@
         <div class="accueil-cours-icon">
             <!-- Selon si on est en ligne ou en local, on change la pathing pour qu'on se fasse bien envoyer
             sur la page de cours -->
-            <a href="<?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo "http://";} else {echo "https://";}?><?php echo $_SERVER['HTTP_HOST']; ?><?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo $_SERVER['REQUEST_URI'];}?>category/cours/">
+            <a href="<?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo "http://";} else {echo "https://";}?><?php echo $_SERVER['HTTP_HOST']; ?><?php if($_SERVER['SERVER_NAME'] == "localhost"){ echo $_SERVER['REQUEST_URI'];}?>/category/cours/">
         
             <?php  ?>
                 <?php the_post_thumbnail( 'thumbnail' ); ?>
