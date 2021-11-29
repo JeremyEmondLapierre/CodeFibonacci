@@ -1876,6 +1876,7 @@ textarea {
   color: #FFC857;
 }
 
+/*--------------------Style card Concours------------------------*/
 .concours h3 {
   font-style: italic;
 }
@@ -1892,7 +1893,6 @@ textarea {
   -webkit-backdrop-filter: blur(5px);
   border-radius: 45px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  /*--------------------Style card Concours------------------------*/
 }
 
 @media (min-width: 1200px) {
@@ -1927,17 +1927,29 @@ textarea {
 
 .concours .lesConcours .concours .suite {
   display: none;
+  border-radius: 5px;
+  border: none;
+  background-color: #9BC284;
+  width: 50%;
+  align-items: center;
+  font-weight: 400;
+  font-size: 21px;
+  margin: 0.4em auto;
+  line-height: 31px;
+  opacity: 90%;
 }
 
 @media (min-width: 1200px) {
   .concours .lesConcours .concours .suite {
     display: block;
+    color: black;
   }
 }
 
 .concours .lesConcours .concours h4 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 27px;
+  line-height: 42px;
   margin: 0;
 }
 
@@ -1947,6 +1959,9 @@ textarea {
   width: 90%;
   align-items: center;
   text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
 }
 
 .concours .lesConcours .concours img {
@@ -2770,6 +2785,10 @@ footer #logo-FiboFooter {
   align-items: center;
 }
 
+.label .contenu-titre-enseignant a:hover {
+  color: #FBF057;
+}
+
 .label .contenu-titre-enseignant .contenant-icone-enseignant {
   font-size: 3rem;
   line-height: 0;
@@ -2793,7 +2812,8 @@ footer #logo-FiboFooter {
 .description-enseignant p {
   color: #457B77;
   line-height: 1.4;
-  font-weight: 400;
+  font-weight: 410;
+  font-size: large;
 }
 
 .logique {
@@ -2988,5 +3008,12 @@ footer #logo-FiboFooter {
 
 .active .description-enseignant {
   display: block !important;
+}
+
+.active .description-enseignant ul {
+  color: #457B77;
+  font-size: large;
+  line-height: 1.4;
+  font-weight: 410;
 }
 /*# sourceMappingURL=style.css.map */
