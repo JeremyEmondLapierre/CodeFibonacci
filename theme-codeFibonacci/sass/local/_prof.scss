@@ -41,6 +41,10 @@
     justify-content: space-between;
     align-items: center;
 
+    a:hover{
+      color:#FBF057;
+    }
+
     .contenant-icone-enseignant {
       font-size: 3rem;
       line-height: 0;
@@ -67,7 +71,8 @@
   p {
       color: #457B77;
       line-height: 1.4;
-      font-weight: 400;
+      font-weight: 410;
+      font-size: large;
   }
 }
 
@@ -111,8 +116,7 @@
 
 .dropdown {
     position: relative;
-    display: inline-block;
-    
+    display: inline-block;  
     color: white;
     a{
       color: #FBF057;
@@ -218,6 +222,7 @@
   }*/
 }
 
+
 @media(min-width:800px){
   .logique{
     h1{
@@ -257,5 +262,11 @@
 
   .description-enseignant {
     display: block !important;
+    ul{
+      color: #457B77;
+      font-size: large;
+      line-height: 1.4;
+      font-weight: 410;
+    }
   }
 }
