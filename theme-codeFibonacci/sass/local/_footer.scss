@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 footer {
     margin-top: 15vh;
     display: flex;
@@ -190,21 +194,73 @@ footer {
         display: flex;
         justify-content: space-between;
     }
-
-    #footer-logo{
-        width: 150px;
-        opacity: 45%;
-        margin: 0 auto;
-        
-        @include desktop {
-            margin: 0 0;
+    .logoEtReseau{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        #footer-logo{
+            width: 150px; 
+            margin: 0 auto;
+            
+            @include desktop {
+                margin: 0 0;
+            }
         }
+    .Reseau{
+        margin-left: 104px;
+        h4{
+            color: #A2CC8A;
+            margin-bottom: 5px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            padding: 0;
+            li{
+                display: inline;
+                margin: 0px 10px 0px 10px;
+                &:first-child{
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+        }
+
     }
+    
+    }
+    
 
     #logo-FiboFooter{
         width: 50px;
         opacity: 45%;
         
     }
+
+    /* Flèche pour retourner vers le haut de la page */
+
+    //Division contenant l'image
+    .up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        @include tablet{
+            margin-left: -70px;
+        }
+        
+
+        //Image de la flèche
+        #flecheHaut{
+            height: 50px;
+            width: 50px;
+            &:hover{
+                filter: invert(15%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    
     
 }
