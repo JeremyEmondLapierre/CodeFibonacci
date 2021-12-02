@@ -1,0 +1,60 @@
+
+.entry-title{    
+    font-size: 3em !important;
+    margin: 0 6rem;
+    padding: 0;    
+}
+
+.imageTexte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.imageArticle{
+    justify-self: center;
+    align-self: center;
+    img{
+        width: auto;
+        height: 35vh;
+        z-index: 1;
+        margin-top: 10vh;   
+    }
+
+    }
+    .entry-content{
+        p{
+            color: #D7EEE6;
+            line-height: 1.4; 
+            font-size: 1.6rem;
+            font-weight: 30;
+            margin: 2em;
+        }
+    
+}    
+
+
+@include desktop{
+
+    .entry-title{
+        font-size: 7em !important;
+        text-align: left !important;
+    }
+
+    .imageArticle{
+        img{
+            height: 40vh;
+            padding-right: 55vw;
+        }
+    }
+    .entry-content{
+        p{
+            display: flex;
+            float: left;
+            padding-left: 40vw;
+            padding-right: 10vw;
+            margin-top: -35vh;
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+    }
+}

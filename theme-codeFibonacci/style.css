@@ -1706,7 +1706,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1737,7 +1737,7 @@ textarea {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
@@ -3081,7 +3081,7 @@ footer .up #flecheHaut:hover {
   margin-top: -15px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .label img {
     height: 13vh;
   }
@@ -3149,7 +3149,7 @@ footer .up #flecheHaut:hover {
   font-size: 1.8rem;
 }
 
-/* Local/prof
+/* Local/404
 --------------------------------------------- */
 /*--------------------------------------------
   La page 404
@@ -3209,5 +3209,59 @@ footer .up #flecheHaut:hover {
 .page-404-contenu a {
   display: inherit;
   color: #FFFAB2;
+}
+
+/* Local/terre
+--------------------------------------------- */
+.entry-title {
+  font-size: 3em !important;
+  margin: 0 6rem;
+  padding: 0;
+}
+
+.imageTexte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imageArticle {
+  justify-self: center;
+  align-self: center;
+}
+
+.imageArticle img {
+  width: auto;
+  height: 35vh;
+  z-index: 1;
+  margin-top: 10vh;
+}
+
+.entry-content p {
+  color: #D7EEE6;
+  line-height: 1.4;
+  font-size: 1.6rem;
+  font-weight: 30;
+  margin: 2em;
+}
+
+@media (min-width: 1200px) {
+  .entry-title {
+    font-size: 7em !important;
+    text-align: left !important;
+  }
+  .imageArticle img {
+    height: 40vh;
+    padding-right: 55vw;
+  }
+  .entry-content p {
+    display: flex;
+    float: left;
+    padding-left: 40vw;
+    padding-right: 10vw;
+    margin-top: -35vh;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 }
 /*# sourceMappingURL=style.css.map */
