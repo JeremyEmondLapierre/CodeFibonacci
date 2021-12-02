@@ -2234,10 +2234,13 @@ footer .up #flecheHaut:hover {
 }
 
 .pageStage .benef {
-  color: #fffbf5;
+  color: #D7EEE6;
   display: flex;
   justify-content: center;
   text-align: center;
+  font-weight: 500;
+  font-size: 5em;
+  margin: 0;
 }
 
 .pageStage .filtre {
@@ -2250,8 +2253,20 @@ footer .up #flecheHaut:hover {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   color: #ECFEF8;
-  font-size: 4.4em;
+  font-size: 2.4em;
   line-height: 0;
+}
+
+@media (min-width: 700px) {
+  .pageStage .filtre h2 {
+    font-size: 4.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pageStage .filtre h2 {
+    font-size: 4.4em;
+  }
 }
 
 .pageStage button {
