@@ -16,7 +16,7 @@ get_header();
 ?>
 
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/accueil-bg-2.png';?>');">
 
 		<?php
 		if ( have_posts() ) :
@@ -39,7 +39,7 @@ get_header();
 		
 		?>
 
-		<div id="accueil-prof">
+		<div id="accueil-prof" >
     		<h1>Qu'est ce que le <strong>TIM</strong> ?</h1>
     		<p>Suivez le courant du multimédia en vous inscrivant au TIM du Collège de Maisonneuve ! 
 			Ce diplôme d'études collégiales, DEC Techniques d'intégration multimédia, unique à Montréal, met l’accent sur le développement des habiletés reliées à la conception, la production Web et les jeux vidéos...
@@ -70,7 +70,7 @@ Vous développerez davantage les habiletés de programmation et d’intégration
 		</div>
 			
 		
-		<div class="accueil-cours" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/accueil-bg-2.png';?>');">
+		<div class="accueil-cours" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/accueil-bg-3.png';?>');">
 			<h1>Nos cours</h1>
 			<section class="accueil-cours-contenant">
 				<?php
@@ -86,7 +86,7 @@ Vous développerez davantage les habiletés de programmation et d’intégration
 		</div>
 
 		<!-- Le contant du swiper au complet -->
-		<div class="accueil-vie swiper" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/accueil-bg-3.png';?>');">
+		<div class="accueil-vie swiper" >
 			<h1>Vie étudiante</h1>
 			
 			<!-- Le contenant du carrousel des images UNIQUEMENT, pas de ses composantes -->

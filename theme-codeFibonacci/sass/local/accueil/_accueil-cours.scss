@@ -4,10 +4,11 @@
 ----------------------------------------------*/
 
 .accueil-cours {
-    background-repeat: no-repeat;
     width: 100%;
     position: relative;
     padding-bottom: 5em;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
 
     @include desktop {
         padding-bottom: 10em;
