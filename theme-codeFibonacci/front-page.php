@@ -41,7 +41,11 @@ get_header();
 
 		<div id="accueil-prof">
     		<h1>Qu'est ce que le <strong>TIM</strong> ?</h1>
-    		<p>Suivez le courant du multimédia en vous inscrivant au TIM du Collège de Maisonneuve ! Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+    		<p>Suivez le courant du multimédia en vous inscrivant au TIM du Collège de Maisonneuve ! 
+			Ce diplôme d'études collégiales, DEC Techniques d'intégration multimédia, unique à Montréal, met l’accent sur le développement des habiletés reliées à la conception, la production Web et les jeux vidéos...
+Vous développerez davantage les habiletés de programmation et d’intégration de différents types d’applications multimédias dans le respect des normes et des standards de l'industrie.
+		
+			</p>
 
 			<!-- Swiper -->
 			<div class="swiper mySwiper">

@@ -1701,7 +1701,7 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1732,7 +1732,7 @@ textarea {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
@@ -2821,7 +2821,7 @@ footer .up #flecheHaut:hover {
     border-radius: 20px;
     width: 60px;*/
   width: auto;
-  height: 9vh;
+  height: 10vh;
   border-radius: 8px;
   padding: 0px;
   margin: 0px;
@@ -2862,8 +2862,8 @@ footer .up #flecheHaut:hover {
 .description-enseignant p {
   color: #457B77;
   line-height: 1.4;
-  font-weight: 410;
-  font-size: large;
+  font-weight: 300;
+  font-size: 1.3rem;
 }
 
 .logique {
@@ -2896,7 +2896,7 @@ footer .up #flecheHaut:hover {
   font-weight: 500;
   text-align: center;
   color: #ECFEF8;
-  font-size: 3.4em;
+  font-size: 3.5em;
   margin: 0;
   line-height: 1;
 }
@@ -2925,7 +2925,7 @@ footer .up #flecheHaut:hover {
   border: none;
   cursor: pointer;
   margin-top: 50px;
-  width: 176px;
+  width: 235px;
 }
 
 .logique .dropdown {
@@ -2949,7 +2949,7 @@ footer .up #flecheHaut:hover {
   background-color: #C1E8AA;
   font-size: large;
   min-width: 90px;
-  left: 80px;
+  left: 105px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -2983,7 +2983,7 @@ footer .up #flecheHaut:hover {
 }
 
 .logique .accordion a {
-  padding-left: 25px;
+  padding-left: 2em;
 }
 
 .logique .accordion .container {
@@ -3022,6 +3022,9 @@ footer .up #flecheHaut:hover {
 }
 
 @media (min-width: 800px) {
+  .label img {
+    height: 13vh;
+  }
   .logique {
     /*prof*/
   }
@@ -3032,11 +3035,30 @@ footer .up #flecheHaut:hover {
   .logique .dropdown {
     padding-left: 150px;
   }
+  .logique .dropbtn {
+    font-size: 20px;
+    width: 300px;
+  }
   .logique .dropdown-content {
-    left: 230px;
+    left: 290px;
   }
   .logique .accordion {
     width: 85vw;
+  }
+  .logique .accordion a {
+    font-size: 2.8rem;
+  }
+  .description-enseignant p {
+    color: #457B77;
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+  #boutonCreatif {
+    font-size: 20px;
+  }
+  #boutonLogique {
+    font-size: 20px;
   }
 }
 
@@ -3062,9 +3084,9 @@ footer .up #flecheHaut:hover {
 
 .active .description-enseignant ul {
   color: #457B77;
-  font-size: large;
   line-height: 1.4;
-  font-weight: 410;
+  font-weight: 300;
+  font-size: 1.8rem;
 }
 
 /* Local/prof
