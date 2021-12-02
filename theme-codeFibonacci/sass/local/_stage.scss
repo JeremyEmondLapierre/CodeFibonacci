@@ -13,6 +13,14 @@
         display: flex; 
         justify-content: center;
         align-items: center;
+
+        h2 {
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            color: #ECFEF8;
+            font-size: 4.4em;
+            line-height: 0;
+        }
     }
     
     button{
@@ -63,6 +71,9 @@
 //Section d'un témoignage complet (Image, titre et texte...)
 .Exp{
     margin-bottom: 60px;
+    position: relative;
+    z-index: 10;
+
     //Pour les éléments pairs, mettre l'éléments à droite
     &:nth-child(even){
         .signetExp{
@@ -88,17 +99,19 @@
     //Pour les éléments impairs, les mettre à droite
     &:nth-child(odd){
         .signetExp{
-        flex-direction: row-reverse;
-        @include desktop{
-            margin-right: 12%;
+            flex-direction: row-reverse;
+
+            @include desktop{
+                margin-right: 12%;
+            }
         }
-        }
+
         h3{
+            margin-right: -40px;
+
             @include desktop{
                 margin-right: -15px;
             }
-            margin-right: -40px;
-            
         }
         .texteExp{
             @include desktop{
@@ -114,7 +127,8 @@
         align-items: center;
         justify-content: center;
         margin-top: 10px;
-    
+        position: relative;
+        z-index: 10;
         
         img{
             background-color: #D9F2CA;
@@ -126,15 +140,36 @@
             min-height: 150px;
             z-index: -10;
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	        transform: translatey(0px);
+	        transform: translateY(0px);
 	        animation: float 6s ease-in-out infinite;
+            object-fit: scale-down;
+
             @include desktop{
                 height: 15em;
                 width: 15em;
                 padding: 2rem;
             }
-            object-fit: scale-down;
+
+            
         }
+
+        /*.imageExp::after {
+            content: '';
+            background-color: #91B87B;
+            padding: 30px;
+            position: absolute;
+            top: -60px;
+            left: -60px;
+            right: -60px;
+            bottom: -60px;
+            z-index: -10;
+            border-radius: 50%;
+        }*/
+
+        .imageExp {
+            position: relative;
+        }
+
         h3{
             flex-grow: 4;
             @include desktop{
