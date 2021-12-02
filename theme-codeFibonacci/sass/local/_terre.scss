@@ -33,7 +33,7 @@
 }    
 
 
-@media(min-width:800px){
+@include desktop{
 
     .entry-title{
         font-size: 7em !important;

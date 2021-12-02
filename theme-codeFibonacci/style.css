@@ -3021,7 +3021,7 @@ footer .up #flecheHaut:hover {
   margin-top: -15px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .label img {
     height: 13vh;
   }
@@ -3185,7 +3185,7 @@ footer .up #flecheHaut:hover {
   margin: 2em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .entry-title {
     font-size: 7em !important;
     text-align: left !important;
