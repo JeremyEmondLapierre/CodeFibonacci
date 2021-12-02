@@ -30,12 +30,12 @@ get_header();
 			<div class="contenant-tableau-cheminement">
 				<div class="liste-cours">
 				<?php
-							/* Start the Loop */
-								while ( have_posts() ) :
-									the_post();
-										get_template_part( 'template-parts/content', 'cours' );
-								endwhile;
-							?>
+				/* Start the Loop */
+					while ( have_posts() ) :
+						the_post();
+							get_template_part( 'template-parts/content', 'cours' );
+					endwhile;
+				?>
 					
 				</div>
 			</div>

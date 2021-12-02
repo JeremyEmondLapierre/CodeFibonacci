@@ -91,15 +91,17 @@
 					
 			</div>
 
-			<?php
-				endif;
-			?>
+			
 
 			<!-- <svg class="background">
 			<use href="wp-content/uploads/2021/09/background-1.svg"> </use>
 			</svg> -->
 			<img class="banniere-avant-accueil" src="wp-content/uploads/2021/09/background-1.svg" alt="">
 			<img class="banniere-accueil" src="wp-content/uploads/banniere-accueil.svg" alt="">
+
+			<?php
+				endif;
+			?>
 		</div>
 			
 		

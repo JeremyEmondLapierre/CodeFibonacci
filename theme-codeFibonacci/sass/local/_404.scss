@@ -1,0 +1,51 @@
+/*--------------------------------------------
+  La page 404
+----------------------------------------------*/
+
+.page-404-contenu {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+
+    @include small_tablet {
+        font-size: 1.1rem;
+    }
+
+    @include desktop {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 1.1em;
+        color: $couleur-turquoise-2;
+
+        @include small_tablet {
+            font-size: 1.1em;
+        }
+
+        @include desktop {
+            font-size: 4rem;
+        }
+    }
+
+    p {
+        font-weight: 400;
+    }
+
+    .page-404-img {
+
+        @include small_tablet {
+            width: 60%;
+        }
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+
+    a {
+        display: inherit;
+        color: $couleur1;
+    }
+}
