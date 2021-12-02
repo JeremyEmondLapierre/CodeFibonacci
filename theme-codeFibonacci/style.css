@@ -1913,7 +1913,6 @@ textarea {
 
 .concours .lesConcours .concours .suite {
   display: none;
-<<<<<<< HEAD
   border: 3px solid #9BC284;
   border-radius: 5px;
   background-color: #9BC284;
@@ -1922,27 +1921,6 @@ textarea {
   font-size: 21px;
   margin: 0.5em auto;
   opacity: 90%;
-=======
-  align-items: center;
-  width: 40%;
-  border: 3px solid #FFFAB2;
-  border-radius: 5px;
-  background-color: #FFFAB2;
-  color: #0B132B;
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
-  font-size: 21px;
-  transition: 0.3s all ease;
-}
-
-.concours .lesConcours .concours .suite:hover {
-  background-color: #FFC857;
-  border: 3px solid #FFC857;
-}
-
-.concours .lesConcours .concours .suite:active {
-  border-color: #0B132B;
->>>>>>> c1608dda5e0fdb007c4768fba1bdb9159c85c0a5
 }
 
 @media (min-width: 1200px) {
@@ -3226,41 +3204,4 @@ footer .up #flecheHaut:hover {
   display: inherit;
   color: #FFFAB2;
 }
-
-/* Local/concours-articles
---------------------------------------------- */
-#post-315 > header > div {
-  display: none;
-}
-
-div.post-thumbnail {
-  display: flex;
-  justify-content: center;
-}
-
-#post-315 > div.entry-content > p {
-  margin: 1rem auto;
-  padding: 2em;
-  width: 90%;
-  align-items: center;
-  text-align: center;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 27px;
-  height: auto;
-  display: flex;
-  background: rgba(248, 255, 215, 0.219);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-#comments {
-  display: none;
-}
-
-/* Local/projets-articles
---------------------------------------------- */
 /*# sourceMappingURL=style.css.map */
