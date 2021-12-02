@@ -53,7 +53,6 @@
 		<div class="premierViewport">
 			<nav id="site-navigation" class="main-navigation">
 				
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
 				<?php
 				wp_nav_menu(
 					array(
@@ -73,7 +72,8 @@
 			)
 		);
 		endif; ?>
-		
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
+	
 			</nav><!-- #site-navigation -->
 
 			<?php
@@ -91,15 +91,17 @@
 					
 			</div>
 
-			<?php
-				endif;
-			?>
+			
 
 			<!-- <svg class="background">
 			<use href="wp-content/uploads/2021/09/background-1.svg"> </use>
 			</svg> -->
 			<img class="banniere-avant-accueil" src="wp-content/uploads/2021/09/background-1.svg" alt="">
 			<img class="banniere-accueil" src="wp-content/uploads/banniere-accueil.svg" alt="">
+
+			<?php
+				endif;
+			?>
 		</div>
 			
 		

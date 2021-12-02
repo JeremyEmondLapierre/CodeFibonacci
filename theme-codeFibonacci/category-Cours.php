@@ -39,6 +39,7 @@ get_header();
 				<div class="liste-cours">
 
 				<?php
+
 					/* Start the Loop */
 					while ( have_posts() ) :
 						the_post();
@@ -67,6 +68,7 @@ get_header();
 						elseif(get_field('type_de_cours') == "Autres" && $_SERVER['QUERY_STRING'] == "filtre-cours=autres"):
 							get_template_part( 'template-parts/content', 'cours' );
 						endif;
+
 					endwhile;
 				?>
 					

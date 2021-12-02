@@ -16,12 +16,12 @@ get_header();
 
 
 <div class="accordion-body" id="logique">
-<h2>Aspect <a>Logique</a></h2>
+<h2>Aspect <a>Programmation</a></h2>
 
 	<div class="dropdown">
-	<button class="dropbtn" id="boutonLogique">Filtrer par : <a>Logique</a></button>
+	<button class="dropbtn" id="boutonLogique">Filtrer par : <a>Programmation</a></button>
 		<div class="dropdown-content">
-			<button id="boutonCreatif" class="" value="ovo" onclick="f();">Créatif</button>  
+			<button id="boutonCreatif" class="" value="ovo" onclick="f();">Création</button>  
 		</div>
 	</div>
 
@@ -45,11 +45,11 @@ get_header();
 
 
   <div class="accordion-body-pasActif" id="creatif">
-  <h2>Aspect <a>créatif</a></h2>
+  <h2>Aspect <a>Création</a></h2>
   <div class="dropdown">
-  <button class="dropbtn" id="boutonCreatif">Filtrer par : <a> Créatif</a></button>
+  <button class="dropbtn" id="boutonCreatif">Filtrer par : <a> Création</a></button>
   <div class="dropdown-content">
-    <button id="boutonLogique" class="" value="oxo" onclick="c();">Logique</button>  
+    <button id="boutonLogique" class="" value="oxo" onclick="c();">Programmation</button>  
   </div>
 </div>
   
