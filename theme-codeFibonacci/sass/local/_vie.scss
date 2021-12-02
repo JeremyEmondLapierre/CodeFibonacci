@@ -253,22 +253,14 @@ h3{
             backdrop-filter: blur( 0px );
 
             .suite{
-                display: none; 
-
+            display: none; 
+            border: 3px solid #9BC284;
             border-radius: 5px;
-            border: none;
             background-color:#9BC284 ;
             width: 50%;
-            align-items: center;
-            
-
-           
-
             font-weight: 400;
             font-size: 21px;
-            margin: 0.4em auto;
-            line-height: 31px;
-
+            margin: 0.5em auto;
             opacity: 90%;
 
                 @include desktop {
@@ -276,6 +268,13 @@ h3{
                     //font-size: 1.5rem;
                     color: black;
                 }
+            }
+
+            .suite:hover{
+                background-color:#7BB8A1;
+                color: #D7EEE6;
+                border: 3px solid #7BB8A1;
+                
             }
             
         h4{
