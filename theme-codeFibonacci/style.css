@@ -196,10 +196,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   La section Cours
 ----------------------------------------------*/
 .accueil-cours {
-  background-repeat: no-repeat;
   width: 100%;
   position: relative;
   padding-bottom: 5em;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 
 @media (min-width: 1200px) {
@@ -524,6 +525,10 @@ a {
 
 p, h1, h2, h3, h4, h5, h6, a {
   color: #0B132B;
+}
+
+.site-main {
+  background-repeat: no-repeat;
 }
 
 .site-main h1 {
