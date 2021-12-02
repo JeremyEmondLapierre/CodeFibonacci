@@ -2239,8 +2239,20 @@ footer .up #flecheHaut:hover {
   justify-content: center;
   text-align: center;
   font-weight: 500;
-  font-size: 5em;
-  margin: 0;
+  font-size: 2em;
+  margin: 0 0.5em;
+}
+
+@media (min-width: 700px) {
+  .pageStage .benef {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pageStage .benef {
+    font-size: 5em;
+  }
 }
 
 .pageStage .filtre {
@@ -2254,7 +2266,7 @@ footer .up #flecheHaut:hover {
   font-weight: 500;
   color: #ECFEF8;
   font-size: 2.4em;
-  line-height: 0;
+  line-height: 1;
 }
 
 @media (min-width: 700px) {

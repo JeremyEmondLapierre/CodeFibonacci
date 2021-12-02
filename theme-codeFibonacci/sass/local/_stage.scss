@@ -1,7 +1,9 @@
 
 .pageStage{
+
     .stage{
-            margin: 0;
+        margin:
+         0;
     }
     .benef{
         color: #D7EEE6;
@@ -9,9 +11,18 @@
         justify-content: center;
         text-align: center;
         font-weight: 500;
-        font-size: 5em;
-        margin: 0;
+        font-size: 2em;
+        margin: 0 0.5em;
+
+        @include small_tablet {
+            font-size: 4em;
+        }
+
+        @include desktop {
+            font-size: 5em;
+        }
     }
+
     .filtre{
         display: flex; 
         justify-content: center;
@@ -22,7 +33,7 @@
             font-weight: 500;
             color: #ECFEF8;
             font-size: 2.4em;
-            line-height: 0;
+            line-height: 1;
 
             @include small_tablet {
                 font-size: 4.4em;
