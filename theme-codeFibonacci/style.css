@@ -2841,7 +2841,7 @@ footer .up #flecheHaut:hover {
     opacity: 0;
   }
   70% {
-    transform: rotate(185deg);
+    transform: rotate(285deg);
   }
   100% {
     transform: rotate(90deg);

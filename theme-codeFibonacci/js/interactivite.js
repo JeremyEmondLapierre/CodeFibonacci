@@ -15,7 +15,7 @@
         console.log(cours.length);
         this.classList.toggle("actif-cours");
    
-        //this.style.animation = "Croix forwards reverse ease-in-out";
+        this.style.animation = "Croix forwards reverse ease-in-out";
        
     });
 
