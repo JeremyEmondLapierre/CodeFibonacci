@@ -7,11 +7,14 @@
  * @package equipe-5
  */
 
+
+
 ?>
 
 <div >
     <div class="normal">
-        <?php the_post_thumbnail( 'large' ); ?>
-        <?php $content = get_the_content(); $content;?>
+        <a href="<?php the_permalink(); ?>";>
+            <?php the_post_thumbnail( 'large' ); ?>
+        </a>
     </div>
 </div>

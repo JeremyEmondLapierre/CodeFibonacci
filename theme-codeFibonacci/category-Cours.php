@@ -9,6 +9,9 @@
 
 get_header();
 ?>
+<?php
+	$precedent = "XXXXXX";
+?>
 	<main id="primary" class="site-main integre" >
 		<h1>Nos cours</h1>
 		
@@ -37,12 +40,26 @@ get_header();
 			</form>
 			<div class="contenant-tableau-cheminement">
 				<div class="liste-cours">
+				<!-- 
+		|| Print de la session ||
+		Logique:
+			À chaque fois qu'on instantiate un élément, on regarde si le field session est égal à précédent.
+			Si oui : On instantiate pas le get_field('session')
+			Si non : On instantiate le get_field('session') et on réassocie la variable précédent
+	 -->
+	
 
 				<?php
 
 					/* Start the Loop */
 					while ( have_posts() ) :
+						if(get_field('session') != $precedent):?>
+							<h6><?php echo get_field('session')?></h6>
+							<?php $precedent = get_field('session');
+						endif;
+							
 						the_post();
+						
 						/* Tous les cours */
 						if($_SERVER['QUERY_STRING'] == "filtre-cours=tous" || $_SERVER['QUERY_STRING'] == null):
 							get_template_part( 'template-parts/content', 'cours' );
