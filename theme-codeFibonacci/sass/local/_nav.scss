@@ -1,4 +1,4 @@
-.nav-menu  {
+#primary-menu {
     padding: 0 !important;
     width: 100px;
     flex-direction: row;
@@ -96,10 +96,6 @@
     padding: 0px !important;
     flex-direction: column;
     display: none;
-
-    @include small_tablet {
-        display: flex;
-    }
 
     li{
         display: block;

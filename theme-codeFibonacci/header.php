@@ -70,10 +70,11 @@
 				'theme_location' => 'menu-2',
 				
 			)
-		);
+		); ?>
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
+		<?php
 		endif; ?>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
-	
+			
 			</nav><!-- #site-navigation -->
 
 			<?php
