@@ -3194,15 +3194,19 @@ footer .up #flecheHaut:hover {
   font-weight: 400;
 }
 
+.page-404-contenu .page-404-img {
+  width: 30vw;
+}
+
 @media (min-width: 700px) {
   .page-404-contenu .page-404-img {
-    width: 60%;
+    width: 20vw;
   }
 }
 
 @media (min-width: 1200px) {
   .page-404-contenu .page-404-img {
-    width: 100%;
+    width: 20vw;
   }
 }
 

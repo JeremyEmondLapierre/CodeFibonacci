@@ -22,7 +22,7 @@ get_header();
 					<h2>Cette page est malheureusement indisponible</h3>
 					<p>Le lien que vous tentez de suivre est probablement rompu, supprimé ou inexistant.</p>
 					<img class="page-404-img" src="<?php echo site_url().'/wp-content/uploads/2021/11/icone-404.svg';?>" alt="Icone d'un visage à la bouche tordue.">
-					<a href="">Retourner à la page d'accueil</a>
+					<a href="<?php echo home_url(); ?>">Retourner à la page d'accueil</a>
 				</div>
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->

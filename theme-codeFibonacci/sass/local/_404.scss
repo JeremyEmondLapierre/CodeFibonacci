@@ -34,13 +34,14 @@
     }
 
     .page-404-img {
+        width: 30vw;
 
         @include small_tablet {
-            width: 60%;
+            width: 20vw;
         }
 
         @include desktop {
-            width: 100%;
+            width: 20vw;
         }
     }
 
