@@ -8,15 +8,35 @@
     Page Cours
 ------------------- */    
 
-const cours = document.querySelectorAll('.contenant-cours');
-for (var i = 0; i < cours.length; i++) {
+ const cours = document.querySelectorAll('.contenant-cours');
+  for (var i = 0; i < cours.length; i++) {
     cours[i].addEventListener('click', function() {
         console.log("ca a écouté");
         console.log(cours.length);
         this.classList.toggle("actif-cours");
+        $(' .fa-minus:nth-child(1)').addkeyframes ('Croix');    
         //this.style.animation = "Croix forwards reverse ease-in-out";
+       
     });
+
+    if(document.querySelectorAll('.contenant-cours')){
+        $(' .fa-minus:nth-child(1)').addkeyframes ('CroixFerme'); 
+    }
 };
+
+
+
+/*const cours = document.querySelectorAll('.contenant-cours');
+cours[i].addEventListener('click', function(){
+    this.classList.toggle("actif-cours");
+    if(this.classList.toggle("actif-cours")){
+        $(' .fa-minus:nth-child(1)').addkeyframes ('Croix');
+    }else{
+        $(' .fa-minus:nth-child(1)').removekeyframes ('Croix');
+        $(' .fa-minus:nth-child(1)').addkeyframes ('CroixFerme');
+    }
+}
+)*/
 
 /* ----------------
     Page Stage

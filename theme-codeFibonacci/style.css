@@ -2752,7 +2752,6 @@ footer .up #flecheHaut:hover {
 }
 
 .actif-cours .titre-cours .fa-minus:nth-child(1) {
-  animation-name: Croix;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
@@ -2779,14 +2778,12 @@ footer .up #flecheHaut:hover {
 
 @keyframes CroixFerme {
   0% {
-    opacity: 0;
+    color: red;
   }
   70% {
-    transform: rotate(185deg);
+    color: green;
   }
   100% {
-    transform: rotate(90deg);
-    opacity: 1;
   }
 }
 
