@@ -11,7 +11,9 @@
 
     <div class="Exp">
         <div class="signetExp">
-            <?php the_post_thumbnail( 'medium' ); ?>
+            <div class="imageExp">
+                <?php the_post_thumbnail( 'medium' ); ?>
+            </div>
             <h3><?php the_title() ?></h3>
             
         </div>

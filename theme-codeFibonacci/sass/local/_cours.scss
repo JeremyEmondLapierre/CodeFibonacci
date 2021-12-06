@@ -294,13 +294,14 @@
 @keyframes CroixFerme {
 
     0% {
-       color: red;
+        opacity: 0;
       }
     70% {
-        color: green;
+        transform: rotate(285deg);
    }
     100% {
-        
+        transform: rotate(90deg);
+        opacity: 1;
        }
 
 }

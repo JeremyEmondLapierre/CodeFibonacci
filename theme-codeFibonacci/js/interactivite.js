@@ -14,13 +14,15 @@
         console.log("ca a écouté");
         console.log(cours.length);
         this.classList.toggle("actif-cours");
-        $(' .fa-minus:nth-child(1)').addkeyframes ('Croix');    
+   
         //this.style.animation = "Croix forwards reverse ease-in-out";
        
     });
 
     if(document.querySelectorAll('.contenant-cours')){
         $(' .fa-minus:nth-child(1)').addkeyframes ('CroixFerme'); 
+    }else{
+        $(' .fa-minus:nth-child(1)').addkeyframes ('Croix'); 
     }
 };
 
@@ -50,7 +52,6 @@ document.getElementById("boutonATE").addEventListener("click", function() {
     document.getElementById("ATE").classList.remove("PasActif");
     document.getElementById("FIN").classList.add("PasActif");
     document.getElementById("FIN").classList.remove("Actif");
-
 });
 
 document.getElementById("boutonFin").addEventListener("click", function() {

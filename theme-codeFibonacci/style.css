@@ -196,10 +196,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   La section Cours
 ----------------------------------------------*/
 .accueil-cours {
-  background-repeat: no-repeat;
   width: 100%;
   position: relative;
   padding-bottom: 5em;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 
 @media (min-width: 1200px) {
@@ -524,6 +525,10 @@ a {
 
 p, h1, h2, h3, h4, h5, h6, a {
   color: #0B132B;
+}
+
+.site-main {
+  background-repeat: no-repeat;
 }
 
 .site-main h1 {
@@ -1271,15 +1276,15 @@ textarea {
 
 /* Small menu. */
 .menu-toggle,
-.main-navigation.toggled ul {
+.main-menu-site-container.toggled ul {
   display: none;
 }
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
-    display: none;
+    display: block;
   }
-  .main-navigation ul {
+  .main-menu-site-container ul {
     display: flex;
   }
 }
@@ -2234,16 +2239,51 @@ footer .up #flecheHaut:hover {
 }
 
 .pageStage .benef {
-  color: #fffbf5;
+  color: #D7EEE6;
   display: flex;
   justify-content: center;
   text-align: center;
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0 0.5em;
+}
+
+@media (min-width: 700px) {
+  .pageStage .benef {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pageStage .benef {
+    font-size: 5em;
+  }
 }
 
 .pageStage .filtre {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pageStage .filtre h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  color: #ECFEF8;
+  font-size: 2.4em;
+  line-height: 1;
+}
+
+@media (min-width: 700px) {
+  .pageStage .filtre h2 {
+    font-size: 4.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pageStage .filtre h2 {
+    font-size: 4.4em;
+  }
 }
 
 .pageStage button {
@@ -2290,6 +2330,8 @@ footer .up #flecheHaut:hover {
 
 .Exp {
   margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
 }
 
 @media (min-width: 1200px) {
@@ -2347,6 +2389,20 @@ footer .up #flecheHaut:hover {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  position: relative;
+  z-index: 10;
+  /*.imageExp::after {
+            content: '';
+            background-color: #91B87B;
+            padding: 30px;
+            position: absolute;
+            top: -60px;
+            left: -60px;
+            right: -60px;
+            bottom: -60px;
+            z-index: -10;
+            border-radius: 50%;
+        }*/
 }
 
 .Exp .signetExp img {
@@ -2359,7 +2415,7 @@ footer .up #flecheHaut:hover {
   min-height: 150px;
   z-index: -10;
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-  transform: translatey(0px);
+  transform: translateY(0px);
   animation: float 6s ease-in-out infinite;
   object-fit: scale-down;
 }
@@ -2370,6 +2426,10 @@ footer .up #flecheHaut:hover {
     width: 15em;
     padding: 2rem;
   }
+}
+
+.Exp .signetExp .imageExp {
+  position: relative;
 }
 
 .Exp .signetExp h3 {
@@ -2778,12 +2838,14 @@ footer .up #flecheHaut:hover {
 
 @keyframes CroixFerme {
   0% {
-    color: red;
+    opacity: 0;
   }
   70% {
-    color: green;
+    transform: rotate(185deg);
   }
   100% {
+    transform: rotate(90deg);
+    opacity: 1;
   }
 }
 
