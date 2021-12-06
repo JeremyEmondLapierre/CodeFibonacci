@@ -6,12 +6,17 @@
  *
  * @package equipe-5
  */
+?>
 
+<?php
+	$precedent = "XXXXXX";
 ?>
 
 <div class="item-cours">
 	<h6><?php echo get_field('session')?></h6>
 	<div class="contenant-liste-cours">
+
+		<!-- Single element à dupliquer -->
 		<div class="contenant-cours">
 			<div class="titre-cours">
                 <?php the_post_thumbnail( 'medium' ); ?>
@@ -28,5 +33,7 @@
 				<p><?php the_content(); ?> </p>
 			</div>
 		</div>
+		<!-- Fin du single à dupliquer -->
+		
 	</div>
 </div>

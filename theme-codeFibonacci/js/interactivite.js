@@ -30,7 +30,6 @@ document.getElementById("boutonATE").addEventListener("click", function() {
     document.getElementById("ATE").classList.remove("PasActif");
     document.getElementById("FIN").classList.add("PasActif");
     document.getElementById("FIN").classList.remove("Actif");
-
 });
 
 document.getElementById("boutonFin").addEventListener("click", function() {

@@ -1276,15 +1276,15 @@ textarea {
 
 /* Small menu. */
 .menu-toggle,
-.main-navigation.toggled ul {
+.main-menu-site-container.toggled ul {
   display: none;
 }
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
-    display: none;
+    display: block;
   }
-  .main-navigation ul {
+  .main-menu-site-container ul {
     display: flex;
   }
 }
@@ -2881,7 +2881,7 @@ footer .up #flecheHaut:hover {
     border-radius: 20px;
     width: 60px;*/
   width: auto;
-  height: 9vh;
+  height: 10vh;
   border-radius: 8px;
   padding: 0px;
   margin: 0px;
@@ -2922,8 +2922,8 @@ footer .up #flecheHaut:hover {
 .description-enseignant p {
   color: #457B77;
   line-height: 1.4;
-  font-weight: 410;
-  font-size: large;
+  font-weight: 300;
+  font-size: 1.3rem;
 }
 
 .logique {
@@ -2956,7 +2956,7 @@ footer .up #flecheHaut:hover {
   font-weight: 500;
   text-align: center;
   color: #ECFEF8;
-  font-size: 3.4em;
+  font-size: 3.5em;
   margin: 0;
   line-height: 1;
 }
@@ -2985,7 +2985,7 @@ footer .up #flecheHaut:hover {
   border: none;
   cursor: pointer;
   margin-top: 50px;
-  width: 176px;
+  width: 235px;
 }
 
 .logique .dropdown {
@@ -3009,7 +3009,7 @@ footer .up #flecheHaut:hover {
   background-color: #C1E8AA;
   font-size: large;
   min-width: 90px;
-  left: 80px;
+  left: 105px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -3043,7 +3043,7 @@ footer .up #flecheHaut:hover {
 }
 
 .logique .accordion a {
-  padding-left: 25px;
+  padding-left: 2em;
 }
 
 .logique .accordion .container {
@@ -3081,7 +3081,10 @@ footer .up #flecheHaut:hover {
   margin-top: -15px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
+  .label img {
+    height: 13vh;
+  }
   .logique {
     /*prof*/
   }
@@ -3092,11 +3095,30 @@ footer .up #flecheHaut:hover {
   .logique .dropdown {
     padding-left: 150px;
   }
+  .logique .dropbtn {
+    font-size: 20px;
+    width: 300px;
+  }
   .logique .dropdown-content {
-    left: 230px;
+    left: 290px;
   }
   .logique .accordion {
     width: 85vw;
+  }
+  .logique .accordion a {
+    font-size: 2.8rem;
+  }
+  .description-enseignant p {
+    color: #457B77;
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+  #boutonCreatif {
+    font-size: 20px;
+  }
+  #boutonLogique {
+    font-size: 20px;
   }
 }
 
@@ -3122,12 +3144,12 @@ footer .up #flecheHaut:hover {
 
 .active .description-enseignant ul {
   color: #457B77;
-  font-size: large;
   line-height: 1.4;
-  font-weight: 410;
+  font-weight: 300;
+  font-size: 1.8rem;
 }
 
-/* Local/prof
+/* Local/404
 --------------------------------------------- */
 /*--------------------------------------------
   La page 404
@@ -3187,5 +3209,59 @@ footer .up #flecheHaut:hover {
 .page-404-contenu a {
   display: inherit;
   color: #FFFAB2;
+}
+
+/* Local/terre
+--------------------------------------------- */
+.entry-title {
+  font-size: 3em !important;
+  margin: 0 6rem;
+  padding: 0;
+}
+
+.imageTexte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imageArticle {
+  justify-self: center;
+  align-self: center;
+}
+
+.imageArticle img {
+  width: auto;
+  height: 35vh;
+  z-index: 1;
+  margin-top: 10vh;
+}
+
+.entry-content p {
+  color: #D7EEE6;
+  line-height: 1.4;
+  font-size: 1.6rem;
+  font-weight: 30;
+  margin: 2em;
+}
+
+@media (min-width: 1200px) {
+  .entry-title {
+    font-size: 7em !important;
+    text-align: left !important;
+  }
+  .imageArticle img {
+    height: 40vh;
+    padding-right: 55vw;
+  }
+  .entry-content p {
+    display: flex;
+    float: left;
+    padding-left: 40vw;
+    padding-right: 10vw;
+    margin-top: -35vh;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 }
 /*# sourceMappingURL=style.css.map */
