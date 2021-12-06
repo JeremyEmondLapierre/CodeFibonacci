@@ -14,15 +14,14 @@
         console.log("ca a écouté");
         console.log(cours.length);
         this.classList.toggle("actif-cours");
-   
-        this.style.animation = "Croix forwards reverse ease-in-out";
-       
+        //this.style.animation = "Croix forwards reverse ease-in-out";     
     });
 
     if(document.querySelectorAll('.contenant-cours')){
+        
         $(' .fa-minus:nth-child(1)').addkeyframes ('CroixFerme'); 
-    }else{
-        $(' .fa-minus:nth-child(1)').addkeyframes ('Croix'); 
+    }else{  
+        $(' .fa-minus:nth-child(1)').addkeyframes ('Croix');
     }
 };
 
