@@ -3211,8 +3211,11 @@ footer .up #flecheHaut:hover {
   color: #FFFAB2;
 }
 
-/* Local/terre
+/* Local/article
 --------------------------------------------- */
+/*--------------------------------------------
+  La page des articles
+----------------------------------------------*/
 .entry-title {
   font-size: 3em !important;
   margin: 0 6rem;
@@ -3223,18 +3226,35 @@ footer .up #flecheHaut:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .imageTexte {
+    flex-direction: row;
+    width: 80%;
+  }
 }
 
 .imageArticle {
   justify-self: center;
   align-self: center;
+  width: 20vw;
+}
+
+@media (min-width: 1200px) {
+  .imageArticle {
+    width: 100vw;
+  }
 }
 
 .imageArticle img {
-  width: auto;
-  height: 35vh;
+  width: 100%;
   z-index: 1;
-  margin-top: 10vh;
+}
+
+.entry-content {
+  align-self: flex-start;
 }
 
 .entry-content p {
@@ -3242,26 +3262,6 @@ footer .up #flecheHaut:hover {
   line-height: 1.4;
   font-size: 1.6rem;
   font-weight: 30;
-  margin: 2em;
-}
-
-@media (min-width: 1200px) {
-  .entry-title {
-    font-size: 7em !important;
-    text-align: left !important;
-  }
-  .imageArticle img {
-    height: 40vh;
-    padding-right: 55vw;
-  }
-  .entry-content p {
-    display: flex;
-    float: left;
-    padding-left: 40vw;
-    padding-right: 10vw;
-    margin-top: -35vh;
-    font-size: 1.6rem;
-    font-weight: 300;
-  }
+  margin: 0 2em !important;
 }
 /*# sourceMappingURL=style.css.map */
