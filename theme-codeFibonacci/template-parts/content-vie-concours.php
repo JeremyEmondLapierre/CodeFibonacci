@@ -17,6 +17,6 @@
     <h4><?php the_title() ?></h4>
 
     <p><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 200, '...');?></p>
-    <p class="suite"><a href="<?php the_permalink() ?>">Lire la suite...</a></p>
+    <a class="suite" href="<?php the_permalink() ?>">Lire la suite...</a>
 
 </div>

@@ -21,7 +21,7 @@ style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11
 	<div class="logoEtReseau">
 		<img id="footer-logo" src='<?php echo site_url().'/wp-content/uploads/2021/11/footer-LogoVert.svg';?>';>
 		<div class="Reseau">
-			<h4>Suivez-nous</h4>
+			<h3>Suivez-nous</h3>
 			<ul>
 				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Facebook.svg';?>" alt=""></li>
 				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Instagram.svg';?>" alt=""></li>

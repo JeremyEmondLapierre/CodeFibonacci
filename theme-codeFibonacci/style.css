@@ -1810,18 +1810,16 @@ textarea {
 }
 
 .gallerie-projets form input {
-  border: 3px solid #FBF057;
   border-radius: 10px;
-  background-color: #FBF057;
+  background-color: #f0ecb2;
   color: #0B132B;
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 17px;
   transition: 0.3s all ease;
 }
 
 .gallerie-projets form input:hover {
   background-color: #FFC857;
-  border: 3px solid #FFC857;
 }
 
 .gallerie-projets form input:active {
@@ -1920,23 +1918,26 @@ textarea {
 
 .concours .lesConcours .concours .suite {
   display: none;
+  border: 3px solid #9BC284;
   border-radius: 5px;
-  border: none;
   background-color: #9BC284;
   width: 50%;
-  align-items: center;
   font-weight: 400;
   font-size: 21px;
-  margin: 0.4em auto;
-  line-height: 31px;
+  margin: 0.5em auto;
   opacity: 90%;
 }
 
 @media (min-width: 1200px) {
   .concours .lesConcours .concours .suite {
     display: block;
-    color: black;
   }
+}
+
+.concours .lesConcours .concours .suite:hover {
+  background-color: #7BB8A1;
+  color: #D7EEE6;
+  border: 3px solid #7BB8A1;
 }
 
 .concours .lesConcours .concours h4 {
@@ -1947,9 +1948,7 @@ textarea {
 }
 
 .concours .lesConcours .concours p {
-  padding-top: 0.2em;
-  padding-bottom: 0.5em;
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 90%;
   align-items: center;
   text-align: center;
@@ -2028,14 +2027,26 @@ footer #footer-tag {
   color: #D7EEE6;
   font-size: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-weight: 300;
 }
 
+@media (min-width: 1200px) {
+  footer #footer-tag {
+    justify-content: space-between;
+  }
+}
+
 footer #footer-tag #div-texte-logo {
-  display: flex;
   align-items: center;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  footer #footer-tag #div-texte-logo {
+    display: flex;
+  }
 }
 
 footer #footer-tag #div-texte-logo img {
@@ -2044,7 +2055,7 @@ footer #footer-tag #div-texte-logo img {
 
 footer .global-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 1.5rem;
   flex-direction: column;
   /*---------div site liens important ----------------*/
@@ -2055,6 +2066,12 @@ footer .global-footer {
   footer .global-footer {
     width: 90%;
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer .global-footer {
+    margin-left: -30px;
   }
 }
 
@@ -2071,6 +2088,7 @@ footer .global-footer .site-info {
 }
 
 footer .global-footer .site-info #site-info-titre {
+  margin: .5em;
   color: #A2CC8A;
   font-size: 1.5rem;
   font-weight: 500;
@@ -2083,7 +2101,7 @@ footer .global-footer .site-info p {
 }
 
 footer .global-footer .liens-rapides {
-  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -2120,6 +2138,7 @@ footer .global-footer .liens-rapides .menu {
 }
 
 footer .global-footer .liens-rapides h3 {
+  margin: .5em;
   color: #A2CC8A;
   font-size: 1.5rem;
   font-weight: 500;
@@ -2156,12 +2175,6 @@ footer .global-footer .google-map {
   }
 }
 
-footer .logos-footers {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-}
-
 footer .logoEtReseau {
   display: flex;
   flex-direction: column;
@@ -2181,18 +2194,31 @@ footer .logoEtReseau #footer-logo {
 }
 
 footer .logoEtReseau .Reseau {
-  margin-left: 104px;
+  display: flex;
+  justify-content: center;
+  margin: .5em;
+  flex-direction: column;
 }
 
-footer .logoEtReseau .Reseau h4 {
+footer .logoEtReseau .Reseau h3 {
+  text-align: center;
+  align-items: center;
   color: #A2CC8A;
-  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 footer .logoEtReseau .Reseau ul {
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: 1200px) {
+  footer .logoEtReseau .Reseau ul {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 footer .logoEtReseau .Reseau ul li {
