@@ -53,7 +53,6 @@
 		<div class="premierViewport">
 			<nav id="site-navigation" class="main-navigation">
 				
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
 				<?php
 				wp_nav_menu(
 					array(
@@ -73,7 +72,8 @@
 			)
 		);
 		endif; ?>
-		
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
+	
 			</nav><!-- #site-navigation -->
 
 			<?php

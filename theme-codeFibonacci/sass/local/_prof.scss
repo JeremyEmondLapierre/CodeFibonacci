@@ -224,7 +224,7 @@
 }
 
 
-@media(min-width:800px){
+@include desktop{
   .label{
     img{
       height: 13vh;

@@ -18,7 +18,8 @@
         "sass/local/_stage.scss",
         "sass/local/_cours.scss",
         "sass/local/_prof.scss",
-        "sass/local/_404.scss"
+        "sass/local/_404.scss",
+        "sass/local/_terre.scss"
     ],
     "names": [],
     "file": "style.css"

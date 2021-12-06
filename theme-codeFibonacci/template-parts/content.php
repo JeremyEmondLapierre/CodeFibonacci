@@ -22,14 +22,19 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				equipe_5_posted_on();
-				equipe_5_posted_by();
+				/*equipe_5_posted_on();
+				equipe_5_posted_by();*/
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+			
 
-	<?php equipe_5_post_thumbnail(); ?>
+	</header><!-- .entry-header -->
+	<div class="imageTexte">
+	<div class="imageArticle">
+		<?php equipe_5_post_thumbnail(); ?>
+	</div>
+	
 
 	<div class="entry-content">
 		<?php
@@ -56,8 +61,9 @@
 		);
 		?>
 	</div><!-- .entry-content -->
+	</div>
 
 	<footer class="entry-footer">
-		<?php equipe_5_entry_footer(); ?>
+		<?php /* equipe_5_entry_footer(); */?>
 	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post-<?/*:php the_ID();*/ ?> -->
