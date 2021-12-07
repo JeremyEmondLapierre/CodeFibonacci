@@ -1,4 +1,4 @@
-.nav-menu  {
+#primary-menu {
     padding: 0 !important;
     width: 100px;
     flex-direction: row;
@@ -97,10 +97,6 @@
     flex-direction: column;
     display: none;
 
-    @include small_tablet {
-        display: flex;
-    }
-
     li{
         display: block;
         background: none !important;
@@ -141,7 +137,23 @@
             justify-content: flex-end;
             font-family: 'Titillium Web', sans-serif;
             font-size: 2rem;
-            padding-top: 1em;
+            padding: 1em 0;
+            flex-direction: column;
+            background-color: #527B88;
+            margin: 0;
+            position: relative;
+            -webkit-box-shadow: 5px 5px 36px 5px rgba(0,0,0,0.77); 
+            box-shadow: 5px 5px 36px 5px rgba(0,0,0,0.77);
+            transition: all .3s ease;
+
+            @include desktop {
+                flex-direction: row;
+                background-color: transparent;
+                margin: 0 3em 1.5em 0;
+                padding-top: 1em;
+                -webkit-box-shadow: 5px 5px 36px 5px rgba(0,0,0,0); 
+                box-shadow: 5px 5px 36px 5px rgba(0,0,0,0);
+            }
     
             li {
                 margin: 0 1em;
@@ -155,5 +167,176 @@
                 }
             }
         }
+    }
+}
+
+
+.menu-menu-site-container {
+
+    .menu {
+        display: none !important;
+
+        @include desktop {
+            display: flex;
+        }
+    }
+}
+
+.menu-menu-site-container {
+    height: 10vh;
+
+    .actif-btnMenu {
+        display: flex !important;
+    }
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 2em;
+    right: 3em;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+
+    /*@include desktop {
+        display: none;
+    }*/
+
+    span {
+        position: relative;
+        display: block;
+        width: 100%;
+        border-radius: 9px;
+        height: 9px;
+        background-color: $couleur1;
+        transition: all .3s;
+        margin: 8% 0;
+    }
+}
+
+span {
+    animation-timing-function: ease;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+.actif-btnMenuBurger span:nth-child(1) {
+    animation-name: top;
+}
+
+.pas-actif-btnMenuBurger span:nth-child(1) {
+    animation-name: top-2;
+}
+
+.actif-btnMenuBurger span:nth-child(2) {
+    animation-name: milieu;
+}
+
+.pas-actif-btnMenuBurger span:nth-child(2) {
+    animation-name: milieu-2;
+}
+
+.actif-btnMenuBurger span:nth-child(3) {
+    animation-name: bas;
+}
+
+.pas-actif-btnMenuBurger span:nth-child(3) {
+    animation-name: bas-2;
+}
+
+@keyframes top {
+    0% {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    50% {
+        top: 22px;
+        transform: rotate(0);
+    }
+
+    100% {
+        top: 26px;
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes top-2 {
+    0% {
+        top: 22px;
+        transform: rotate(135deg);
+    }
+
+    50% {
+        top: 22px;
+        transform: rotate(0);
+    }
+    100% {
+        top: 0;
+        transform: rotate(0);
+    }
+}
+
+@keyframes milieu {
+    0%  {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes milieu-2 {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bas {
+    0% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+
+    50% {
+        bottom: 22px;
+        transform: rotate(0);
+    }
+
+    100% {
+        bottom: 23px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes bas-2 {
+    0% {
+        bottom: 22px;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        bottom: 22px;
+        transform: rotate(0);
+    }
+
+    100% {
+        bottom: 0;
+        transform: rotate(0);
     }
 }
