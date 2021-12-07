@@ -71,7 +71,12 @@
 				
 			)
 		); ?>
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
+		<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button> -->
+		<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 		<?php
 		endif; ?>
 			
