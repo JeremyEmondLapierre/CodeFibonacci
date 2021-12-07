@@ -98,26 +98,6 @@
 	}
 }() );
 
-/*--------------------------------------------
-  Le bouton de menu des pages intègres
-----------------------------------------------*/
-const btnMenu = document.querySelector('.menu-toggle');
-const navIntegre = document.getElementById('menu-menu-site');
-btnMenu.addEventListener('click', function() {
-	console.log("ca a écouté");
-	navIntegre.classList.toggle("actif-btnMenu");
-});
-
-let btnMenuBurger = document.querySelector('.menu-toggle');
-btnMenuBurger.addEventListener('click', function() {
-	btnMenuBurger.classList.toggle("actif-btnMenuBurger");
-
-	if(!btnMenuBurger.classList.contains('actif-btnMenuBurger')){
-		btnMenuBurger.classList.toggle('pas-actif-btnMenuBurger')
-	}else{
-		btnMenuBurger.classList.remove('pas-actif-btnMenuBurger')
-	}
-});
 
 
 /*--------------------------------------------
@@ -152,5 +132,6 @@ var swiper = new Swiper(".mySwiper", {
 		},
 	},
 });
+
 
 
