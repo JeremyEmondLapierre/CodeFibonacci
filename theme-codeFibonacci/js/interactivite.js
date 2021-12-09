@@ -29,19 +29,6 @@
 };
 
 
-
-/*const cours = document.querySelectorAll('.contenant-cours');
-cours[i].addEventListener('click', function(){
-    this.classList.toggle("actif-cours");
-    if(this.classList.toggle("actif-cours")){
-        $(' .fa-minus:nth-child(1)').addkeyframes ('Croix');
-    }else{
-        $(' .fa-minus:nth-child(1)').removekeyframes ('Croix');
-        $(' .fa-minus:nth-child(1)').addkeyframes ('CroixFerme');
-    }
-}
-)*/
-
 /* ----------------
     Page Stage
 ------------------- */    
