@@ -64,14 +64,14 @@ get_header();
 						
 				-->
 
-					<div class="midle grosse" >
+					<div class="midle" >
 						 
 					        <!--img ici-->
 							<!--img ici-->
 				    </div>
 
 					
-					<div class="bottom grosse" >
+					<div class="bottom" >
 							<!--img ici-->
 							<!--img ici-->
 				    </div>
@@ -136,7 +136,7 @@ get_footer();
 	if(filtreRecherche == "?filtre-projet=Design"){
 		filtreRechercheId.selectedIndex = 4;
 	}
-	let petit = document.querySelectorAll(".normal");
+	/*let petit = document.querySelectorAll(".normal");
 	console.log("Petite section: " + petit.length);
 
 	let grosse = document.querySelectorAll(".grosse");
@@ -146,7 +146,22 @@ get_footer();
 
 	if(petit.length > 16){
 		premier.classList.add("top-midle");
-	}
+	}*///filtreRecherche
+	
+	const itemProjet = document.querySelectorAll('.normal');
+	for (var i = 0; i < itemProjet.length; i++) {
+		/*var topMiddle = itemProjet[i] = 7;
+		topMiddle.classList.add("top-midle");*/
+
+		if (itemProjet[i] == 2) {
+			this.classList.remove("normal");
+			//this.classList.add("top-midle");
+		} else if (itemProjet[i] == 9) {
+			this.classList.add("midle");
+		};
+		console.log(i);
+	};
+
 
 	
 </script>
