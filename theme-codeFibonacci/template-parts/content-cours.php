@@ -6,14 +6,20 @@
  *
  * @package equipe-5
  */
+
+ global $precedent;
 ?>
 
-<?php
-	$precedent = "XXXXXX";
-?>
 
 <div class="item-cours">
-	<h6><?php echo get_field('session')?></h6>
+<?php 
+if(get_field('session') != $precedent):?>
+	<h6><?php echo get_field('session') ?></h6>
+	<?php $precedent = get_field('session');
+endif;
+?>
+
+	
 	<div class="contenant-liste-cours">
 
 		<!-- Single element à dupliquer -->
