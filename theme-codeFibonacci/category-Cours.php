@@ -10,7 +10,7 @@
 get_header();
 ?>
 <?php
-	$precedent = "XXXXXX";
+	
 ?>
 	<main id="primary" class="site-main integre" >
 		<h1>Nos cours</h1>
@@ -50,16 +50,11 @@ get_header();
 	
 
 				<?php
-
+					global $precedent;
+					$precedent = "XXXXXX";
 					/* Start the Loop */
 					while ( have_posts() ) :
-						if(get_field('session') != $precedent):?>
-							<h6><?php echo get_field('session')?></h6>
-							<?php $precedent = get_field('session');
-						endif;
-							
 						the_post();
-						
 						/* Tous les cours */
 						if($_SERVER['QUERY_STRING'] == "filtre-cours=tous" || $_SERVER['QUERY_STRING'] == null):
 							get_template_part( 'template-parts/content', 'cours' );
@@ -85,6 +80,9 @@ get_header();
 						elseif(get_field('type_de_cours') == "Autres" && $_SERVER['QUERY_STRING'] == "filtre-cours=autres"):
 							get_template_part( 'template-parts/content', 'cours' );
 						endif;
+
+
+					
 
 					endwhile;
 				?>
