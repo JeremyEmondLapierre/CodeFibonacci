@@ -1688,7 +1688,7 @@ textarea {
     margin: 0 3em 1.5em 0;
     padding-top: 1em;
     box-shadow: 5px 5px 36px 5px rgba(0, 0, 0, 0);
-    z-index: -1;
+    z-index: 1;
     width: 90%;
     top: 0.5em;
   }
@@ -1711,6 +1711,7 @@ textarea {
   left: 1em;
   position: absolute;
   height: 6em;
+  z-index: 1;
 }
 
 @media (min-width: 700px) {
