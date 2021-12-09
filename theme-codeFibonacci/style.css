@@ -3131,16 +3131,6 @@ footer .up #flecheHaut:hover {
 
 .logique {
   /*prof*/
-  /*.dropbtn .label::before {
-    content: '+';
-    color:#9BC284;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    font-size:90px;
-    transform: translateY(-50%);
-    
-  }*/
   /*.accordion .container.active .label::before {
     content: '-';
     right: 20px;
@@ -3181,7 +3171,7 @@ footer .up #flecheHaut:hover {
 }
 
 .logique .dropbtn {
-  background-color: #9BC284;
+  background-color: transparent;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -3203,13 +3193,13 @@ footer .up #flecheHaut:hover {
 }
 
 .logique .dropdown button:hover {
-  background-color: #4E9291;
+  background-color: transparent;
 }
 
 .logique .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #C1E8AA;
+  background-color: transparent;
   font-size: large;
   min-width: 90px;
   left: 105px;
@@ -3222,7 +3212,7 @@ footer .up #flecheHaut:hover {
   border: none;
   text-decoration: none;
   display: block;
-  background-color: #A2CC8A;
+  background-color: transparent;
 }
 
 .logique .dropdown-content button:hover {
@@ -3296,14 +3286,14 @@ footer .up #flecheHaut:hover {
     font-size: 7em !important;
   }
   .logique .dropdown {
-    padding-left: 150px;
+    margin-left: 65px;
   }
   .logique .dropbtn {
     font-size: 20px;
     width: 300px;
   }
   .logique .dropdown-content {
-    left: 290px;
+    left: 140px;
   }
   .logique .accordion {
     width: 85vw;
