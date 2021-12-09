@@ -77,6 +77,11 @@
 			<span></span>
 			<span></span>
 		</div>
+
+		<a class="contenant-logo-integre" href="<?php echo home_url(); ?>">
+			<img src="<?php echo site_url().'/wp-content/uploads/2021/12/logo-tim-3.2.png';?>" alt="">
+		</a>
+		
 		<?php
 		endif; ?>
 			
@@ -103,7 +108,7 @@
 			<use href="wp-content/uploads/2021/09/background-1.svg"> </use>
 			</svg> -->
 			<img class="banniere-avant-accueil" src="wp-content/uploads/2021/09/background-1.svg" alt="">
-			<img class="banniere-accueil" src="wp-content/uploads/banniere-accueil.svg" alt="">
+			<img class="banniere-accueil" src="wp-content/uploads/2021/12/accueil-bg-3.1.png" alt="">
 
 			<?php
 				endif;

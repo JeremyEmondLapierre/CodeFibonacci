@@ -52,6 +52,7 @@ if ( ! function_exists( 'equipe_5_setup' ) ) :
 			array(
 				'menu-1' => esc_html__( 'Primary', 'equipe-5' ),
 				'menu-2' => esc_html__('DeuxiemeMenu'),
+				'menu-3' => esc_html__('FooterMenu'),
 			)
 		);
 
