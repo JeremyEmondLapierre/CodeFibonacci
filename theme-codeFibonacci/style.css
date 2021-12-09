@@ -81,7 +81,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   position: absolute;
   height: 107vh;
   width: 100%;
-  top: -190px;
   object-fit: cover;
   z-index: -7;
 }
