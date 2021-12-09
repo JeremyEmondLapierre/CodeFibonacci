@@ -145,6 +145,7 @@
             -webkit-box-shadow: 5px 5px 36px 5px rgba(0,0,0,0.77); 
             box-shadow: 5px 5px 36px 5px rgba(0,0,0,0.77);
             transition: all .3s ease;
+            z-index: 1;
 
             @include desktop {
                 flex-direction: row;
@@ -153,6 +154,7 @@
                 padding-top: 1em;
                 -webkit-box-shadow: 5px 5px 36px 5px rgba(0,0,0,0); 
                 box-shadow: 5px 5px 36px 5px rgba(0,0,0,0);
+                z-index: -1;
             }
     
             li {
@@ -170,6 +172,22 @@
     }
 }
 
+.contenant-logo-integre {
+    top: 0;
+    left: 1em;
+    position: absolute;
+    height: 6em;
+
+    @include small_tablet {
+        height: 8em;
+        left: 3em;
+    }
+
+    img {
+        height: 100%;
+        z-index: -2;
+    }
+}
 
 .menu-menu-site-container {
 
@@ -183,7 +201,7 @@
 }
 
 .menu-menu-site-container {
-    height: 10vh;
+    height: 16vh;
 
     .actif-btnMenu {
         display: flex !important;
@@ -200,6 +218,7 @@
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+    z-index: 2;
 
     /*@include desktop {
         display: none;

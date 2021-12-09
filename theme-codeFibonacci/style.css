@@ -1678,6 +1678,7 @@ textarea {
   position: relative;
   box-shadow: 5px 5px 36px 5px rgba(0, 0, 0, 0.77);
   transition: all .3s ease;
+  z-index: 1;
 }
 
 @media (min-width: 1200px) {
@@ -1687,6 +1688,7 @@ textarea {
     margin: 0 3em 1.5em 0;
     padding-top: 1em;
     box-shadow: 5px 5px 36px 5px rgba(0, 0, 0, 0);
+    z-index: -1;
   }
 }
 
@@ -1702,6 +1704,25 @@ textarea {
   color: #B7E8D7;
 }
 
+.contenant-logo-integre {
+  top: 0;
+  left: 1em;
+  position: absolute;
+  height: 6em;
+}
+
+@media (min-width: 700px) {
+  .contenant-logo-integre {
+    height: 8em;
+    left: 3em;
+  }
+}
+
+.contenant-logo-integre img {
+  height: 100%;
+  z-index: -2;
+}
+
 .menu-menu-site-container .menu {
   display: none !important;
 }
@@ -1713,7 +1734,7 @@ textarea {
 }
 
 .menu-menu-site-container {
-  height: 10vh;
+  height: 16vh;
 }
 
 .menu-menu-site-container .actif-btnMenu {
@@ -1730,6 +1751,7 @@ textarea {
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
+  z-index: 2;
   /*@include desktop {
         display: none;
     }*/

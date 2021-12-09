@@ -77,6 +77,11 @@
 			<span></span>
 			<span></span>
 		</div>
+
+		<a class="contenant-logo-integre" href="<?php echo home_url(); ?>">
+			<img src="<?php echo site_url().'/wp-content/uploads/2021/12/logo-tim-3.2.png';?>" alt="">
+		</a>
+		
 		<?php
 		endif; ?>
 			
