@@ -8,14 +8,24 @@
     Page Cours
 ------------------- */    
 
-const cours = document.querySelectorAll('.contenant-cours');
-for (var i = 0; i < cours.length; i++) {
+ const cours = document.querySelectorAll('.contenant-cours');
+  for (var i = 0; i < cours.length; i++) {
     cours[i].addEventListener('click', function() {
         console.log("ca a écouté");
         console.log(cours.length);
-        this.classList.toggle("actif-cours");
+        //this.classList.toggle("actif-cours");
         //this.style.animation = "Croix forwards reverse ease-in-out";
+        if(this.classList.contains("actif-cours")){
+            this.classList.remove("actif-cours"); 
+            document.querySelector(".fa-minus:nth-child(1)").classList.add("actif-cours-anim"); 
+
+        } else{
+            this.classList.add("actif-cours");
+            document.querySelector(".fa-minus:nth-child(1)").classList.remove("actif-cours-anim"); 
+
+        }    
     });
+    
 };
 
 

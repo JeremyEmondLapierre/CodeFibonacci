@@ -17,14 +17,14 @@ get_header();
 
 <div class="accordion-body" id="logique">
 <h2>Aspect <a>Programmation</a></h2>
-
+	<div class="dropdown-bout">
 	<div class="dropdown">
 	<button class="dropbtn" id="boutonLogique">Filtrer par : <a>Programmation</a></button>
 		<div class="dropdown-content">
 			<button id="boutonCreatif" class="" value="ovo" onclick="f();">Création</button>  
 		</div>
 	</div>
-
+	</div>
 
   <div class="accordion">
   	
