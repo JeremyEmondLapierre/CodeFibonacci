@@ -13,16 +13,19 @@
     cours[i].addEventListener('click', function() {
         console.log("ca a écouté");
         console.log(cours.length);
-        this.classList.toggle("actif-cours");
-        //this.style.animation = "Croix forwards reverse ease-in-out";     
-    });
+        //this.classList.toggle("actif-cours");
+        //this.style.animation = "Croix forwards reverse ease-in-out";
+        if(this.classList.contains("actif-cours")){
+            this.classList.remove("actif-cours"); 
+            document.querySelector(".fa-minus:nth-child(1)").classList.add("actif-cours-anim"); 
 
-    if(document.querySelectorAll('.contenant-cours')){
-        
-        $(' .fa-minus:nth-child(1)').addkeyframes ('CroixFerme'); 
-    }else{  
-        $(' .fa-minus:nth-child(1)').addkeyframes ('Croix');
-    }
+        } else{
+            this.classList.add("actif-cours");
+            document.querySelector(".fa-minus:nth-child(1)").classList.remove("actif-cours-anim"); 
+
+        }    
+    });
+    
 };
 
 
