@@ -691,22 +691,25 @@ textarea {
 	text-decoration: none;
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+/* Menu des pages intègres */
+/*.menu-toggle,
+.main-menu-site-container.toggled ul {
 	display: none;
 }
 
 @media screen and (min-width: 37.5em) {
 
 	.menu-toggle {
-		display: none;
+		display: block;
 	}
 
-	.main-navigation ul {
+	.main-menu-site-container ul {
 		display: flex;
 	}
-}
+}*/
+
+
+
 
 .site-main .comment-navigation,
 .site-main

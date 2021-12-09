@@ -53,7 +53,6 @@
 		<div class="premierViewport">
 			<nav id="site-navigation" class="main-navigation">
 				
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button>
 				<?php
 				wp_nav_menu(
 					array(
@@ -71,9 +70,16 @@
 				'theme_location' => 'menu-2',
 				
 			)
-		);
+		); ?>
+		<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'equipe-5' ); ?></button> -->
+		<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<?php
 		endif; ?>
-		
+			
 			</nav><!-- #site-navigation -->
 
 			<?php
@@ -109,3 +115,26 @@
 		
 		
 	</header><!-- #masthead -->
+
+	<script>
+		/*--------------------------------------------
+			Le bouton de menu des pages intègres
+		----------------------------------------------*/
+		const btnMenu = document.querySelector('.menu-toggle');
+		const navIntegre = document.getElementById('menu-menu-site');
+		btnMenu.addEventListener('click', function() {
+			console.log("ca a écouté");
+			navIntegre.classList.toggle("actif-btnMenu");
+		});
+
+		let btnMenuBurger = document.querySelector('.menu-toggle');
+		btnMenuBurger.addEventListener('click', function() {
+			btnMenuBurger.classList.toggle("actif-btnMenuBurger");
+
+			if(!btnMenuBurger.classList.contains('actif-btnMenuBurger')){
+				btnMenuBurger.classList.toggle('pas-actif-btnMenuBurger')
+			}else{
+				btnMenuBurger.classList.remove('pas-actif-btnMenuBurger')
+			}
+		});
+	</script>
