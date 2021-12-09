@@ -1733,7 +1733,7 @@ textarea {
   .gallerie-projets .lesProjets {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
