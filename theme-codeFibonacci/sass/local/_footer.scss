@@ -40,18 +40,30 @@ footer {
         color:#D7EEE6;
         font-size: 15px;
         display: flex;
-        justify-content: space-between;
+        @include desktop{
+            justify-content: space-between;
+        }
+        justify-content: center;
         align-items: center;
         font-weight: 300;
+        
     
 
         #div-texte-logo{
-            display: flex;
+            
             align-items: center;
-           
+
+            display: none;
+
+            @include desktop {
+                display: flex;
+            }
+
            img{
                margin-right: 20px;
             }
+
+            
 
         
         }
@@ -62,16 +74,20 @@ footer {
 
     /*------------style div conteneur global du footer  --------------*/
     .global-footer{
-        display: flex;
-       justify-content: space-around;
+       display: flex;
+       justify-content: space-between;
        padding-bottom: 1.5rem;
-       
-        
-        flex-direction: column; 
+       flex-direction: column; 
 
         @include tablet {
             width: 90%;
             flex-direction: row;
+            
+        }
+
+        @include desktop {
+            
+            margin-left: -30px;
         }
 
         
@@ -86,6 +102,8 @@ footer {
             }
 
             #site-info-titre{
+                
+                margin: .5em;
                 color: #A2CC8A;
                 font-size: 1.5rem;
                 font-weight: 500;
@@ -103,10 +121,13 @@ footer {
         .liens-rapides{
 
             //align-items: center;
-            margin: 0 auto;
+            //margin: 0 auto;
+            text-align: center;
+            
 
             @include desktop{
                 margin: 1px;
+               // margin: 0 auto;
             }
 
             ul{
@@ -137,6 +158,7 @@ footer {
             }
 
             h3{
+                margin: .5em;
                 color: #A2CC8A;
                 font-size: 1.5rem;
                 font-weight: 500;
@@ -189,11 +211,7 @@ footer {
 
     /*------------style logo footer --------------*/
 
-    .logos-footers{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-    }
+    
     .logoEtReseau{
         display: flex;
         flex-direction: column;
@@ -208,15 +226,33 @@ footer {
             }
         }
     .Reseau{
-        margin-left: 104px;
-        h4{
+        display: flex;
+        justify-content: center;
+        margin: .5em;
+        flex-direction: column;
+        @include desktop{
+            //margin-left: 104px;
+        }
+        
+        h3{
+            text-align: center;
+            align-items: center;
             color: #A2CC8A;
-            margin-bottom: 5px;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
         ul{
-            display: flex;
-            align-items: center;
-            padding: 0;
+                margin: 0 auto;
+                padding: 0;
+
+            @include desktop{
+                justify-content: center;
+                align-items: center;
+                
+                
+            }
+            
             li{
                 display: inline;
                 margin: 0px 10px 0px 10px;

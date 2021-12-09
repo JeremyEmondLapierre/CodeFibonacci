@@ -1,0 +1,51 @@
+/*--------------------------------------------
+  La page des articles
+----------------------------------------------*/
+
+.entry-title{    
+    font-size: 3em !important;
+    margin: 0 6rem;
+    padding: 0;    
+}
+
+.imageTexte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 0 auto;
+    
+    @include desktop {
+        flex-direction: row;
+        width: 80%;
+    }
+}
+
+.imageArticle{
+    justify-self: center;
+    align-self: center;
+    width: 20vw;
+
+    @include desktop {
+        width: 100vw;
+    }
+
+    img{
+        width: 100%;
+        z-index: 1;
+    }
+
+}
+
+.entry-content{
+    align-self: flex-start;
+
+    p{
+        color: #D7EEE6;
+        line-height: 1.4; 
+        font-size: 1.6rem;
+        font-weight: 30;
+        margin: 0 2em !important;
+    }
+}    
+
+
