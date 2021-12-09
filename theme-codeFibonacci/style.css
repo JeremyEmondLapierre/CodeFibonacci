@@ -3130,16 +3130,6 @@ footer .up #flecheHaut:hover {
 
 .logique {
   /*prof*/
-  /*.dropbtn .label::before {
-    content: '+';
-    color:#9BC284;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    font-size:90px;
-    transform: translateY(-50%);
-    
-  }*/
   /*.accordion .container.active .label::before {
     content: '-';
     right: 20px;
@@ -3149,7 +3139,7 @@ footer .up #flecheHaut:hover {
 }
 
 .logique h1 {
-  margin: 0 6rem;
+  margin: 0;
   padding: 0;
   font-size: 3.5rem;
 }
@@ -3180,7 +3170,7 @@ footer .up #flecheHaut:hover {
 }
 
 .logique .dropbtn {
-  background-color: #9BC284;
+  background-color: transparent;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -3202,13 +3192,13 @@ footer .up #flecheHaut:hover {
 }
 
 .logique .dropdown button:hover {
-  background-color: #4E9291;
+  background-color: transparent;
 }
 
 .logique .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #C1E8AA;
+  background-color: transparent;
   font-size: large;
   min-width: 90px;
   left: 105px;
@@ -3221,7 +3211,7 @@ footer .up #flecheHaut:hover {
   border: none;
   text-decoration: none;
   display: block;
-  background-color: #A2CC8A;
+  background-color: transparent;
 }
 
 .logique .dropdown-content button:hover {
@@ -3242,6 +3232,8 @@ footer .up #flecheHaut:hover {
   border-radius: 25px;
   padding: 2em 0;
   margin-top: 50px;
+  margin: 15px;
+  margin-top: 10%;
 }
 
 .logique .accordion a {
@@ -3283,6 +3275,12 @@ footer .up #flecheHaut:hover {
   margin-top: -15px;
 }
 
+@media (min-width: 700px) {
+  .accordion {
+    margin-top: 5% !important;
+  }
+}
+
 @media (min-width: 1200px) {
   .label img {
     height: 13vh;
@@ -3293,19 +3291,22 @@ footer .up #flecheHaut:hover {
   .logique h1 {
     text-align: left !important;
     font-size: 7em !important;
+    margin: 0 6rem;
   }
   .logique .dropdown {
-    padding-left: 150px;
+    margin-left: 65px;
   }
   .logique .dropbtn {
     font-size: 20px;
     width: 300px;
   }
   .logique .dropdown-content {
-    left: 290px;
+    left: 130px;
   }
   .logique .accordion {
     width: 85vw;
+    margin: auto;
+    margin-top: 4%;
   }
   .logique .accordion a {
     font-size: 2.8rem;

@@ -79,7 +79,8 @@
 
 .logique{
   h1{
-    margin: 0 6rem;
+   // margin: 0 6rem;
+    margin: 0;
     padding: 0;
     font-size: 3.5rem;
   }
@@ -105,7 +106,7 @@
   }
 
   .dropbtn {
-    background-color: #9BC284;
+    background-color:transparent;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -124,27 +125,29 @@
       font-style: italic;
     }
     button:hover{
-      background-color: #4E9291
+      background-color:transparent;
     }
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #C1E8AA;
+    background-color: transparent;
     font-size: large;
     min-width: 90px;
     left: 105px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    
 }
 
 .dropdown-content button {
     color: black;
     padding: 12px 20px;
-    border:none;
+    border: none;
     text-decoration: none;
     display: block;
-    background-color: #A2CC8A;
+    background-color: transparent;
+    //border-radius: 20%;
 }
 
 .dropdown-content button:hover {background-color: #FFC857; color: white; }
@@ -153,8 +156,7 @@
     display: block;
 }
   
-  
-  
+
 /*prof*/
 
   .accordion {
@@ -166,6 +168,9 @@
     border-radius: 25px;
     padding: 2em 0;
     margin-top: 50px;
+    margin: 15px;
+    margin-top: 10%;
+
     a{
       padding-left: 2em;
       //font-size: 2.8rem;
@@ -183,16 +188,7 @@
     align-items: center;
     display: flex;
   }
-  /*.dropbtn .label::before {
-    content: '+';
-    color:#9BC284;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    font-size:90px;
-    transform: translateY(-50%);
-    
-  }*/
+
   .accordion .content {
     position: relative;
     background: #C1E8AA;
@@ -223,6 +219,12 @@
   }*/
 }
 
+@include small_tablet{
+  .accordion{
+    margin-top: 5% !important;
+   
+  }
+}
 
 @include desktop{
   .label{
@@ -234,20 +236,23 @@
     h1{
       text-align: left !important;
       font-size: 7em !important;
+      margin: 0 6rem;
     }
     .dropdown{
-      padding-left: 150px;       
+     margin-left: 65px;       
     }
     .dropbtn{
       font-size: 20px;
       width: 300px;
     }
     .dropdown-content {
-      left: 290px;
+      left: 130px;
     }
     /*prof*/
     .accordion{
       width: 85vw;
+      margin: auto;
+      margin-top: 4%;
       a{
           font-size: 2.8rem;
        }
