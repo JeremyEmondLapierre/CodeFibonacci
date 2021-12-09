@@ -1988,6 +1988,7 @@ span {
 .gallerie-projets form input {
   border-radius: 10px;
   background-color: #f0ecb2;
+  font-family: futura-pt, sans-serif;
   color: #0B132B;
   font-weight: 600;
   font-size: 17px;
@@ -2094,14 +2095,15 @@ span {
 
 .concours .lesConcours .concours .suite {
   display: none;
-  border: 3px solid #9BC284;
   border-radius: 5px;
-  background-color: #9BC284;
   width: 50%;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 21px;
   margin: 0.5em auto;
   opacity: 90%;
+  background-color: #7BB8A1;
+  color: #FFFAB2;
+  border: 3px solid #7BB8A1;
 }
 
 @media (min-width: 1200px) {
@@ -2111,9 +2113,9 @@ span {
 }
 
 .concours .lesConcours .concours .suite:hover {
-  background-color: #7BB8A1;
-  color: #D7EEE6;
-  border: 3px solid #7BB8A1;
+  border: 3px solid #FFFAB2;
+  background-color: #FFFAB2;
+  color: #4c7062;
 }
 
 .concours .lesConcours .concours h4 {
@@ -2125,12 +2127,12 @@ span {
 
 .concours .lesConcours .concours p {
   margin: 1rem auto;
-  width: 90%;
+  width: 95%;
   align-items: center;
   text-align: center;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .concours .lesConcours .concours img {
@@ -2416,12 +2418,6 @@ footer .up {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-}
-
-@media (min-width: 800px) {
-  footer .up {
-    margin-left: -70px;
-  }
 }
 
 footer .up #flecheHaut {

@@ -132,6 +132,7 @@ form {
         //border: 3px solid #FBF057;
         border-radius: 10px;
         background-color: #f0ecb2;
+        font-family: futura-pt, sans-serif;  
         color: $couleur-bleu-marin;
         font-weight: 600;
         font-size: 17px;
@@ -266,14 +267,17 @@ h3{
 
             .suite{
             display: none; 
-            border: 3px solid #9BC284;
             border-radius: 5px;
-            background-color:#9BC284 ;
+            
             width: 50%;
-            font-weight: 400;
+            font-weight: 500;
             font-size: 21px;
             margin: 0.5em auto;
             opacity: 90%;
+
+            background-color:#7BB8A1;
+                color: #FFFAB2;  //#D7EEE6//
+                border: 3px solid #7BB8A1;
 
                 @include desktop {
                     display: block;
@@ -281,9 +285,9 @@ h3{
             }
 
             .suite:hover{
-                background-color:#7BB8A1;
-                color: #D7EEE6;
-                border: 3px solid #7BB8A1;
+                border: 3px solid #FFFAB2;
+            background-color:#FFFAB2;
+            color:#4c7062;
                 
             }
             
@@ -298,13 +302,14 @@ h3{
 
         p{
             margin: 1rem auto;
-            width: 90%;
+            width: 95%;
             align-items: center;
             text-align: center;
+            //border-bottom: .5px solid black;
 
             font-weight: 400;
-            font-size: 17px;
-            line-height: 27px;
+            font-size: 18px;
+            line-height: 28px;
         }
 
         }
