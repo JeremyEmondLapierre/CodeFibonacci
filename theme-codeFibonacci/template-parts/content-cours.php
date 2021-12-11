@@ -10,18 +10,12 @@
  global $precedent;
 ?>
 
-
-<div class="item-cours">
 <?php 
 if(get_field('session') != $precedent):?>
 	<h6><?php echo get_field('session') ?></h6>
 	<?php $precedent = get_field('session');
 endif;
 ?>
-
-	
-	<div class="contenant-liste-cours">
-
 		<!-- Single element à dupliquer -->
 		<div class="contenant-cours">
 			<div class="titre-cours">
@@ -41,5 +35,4 @@ endif;
 		</div>
 		<!-- Fin du single à dupliquer -->
 		
-	</div>
-</div>
+	

@@ -92,22 +92,21 @@
                 }
 
                 h6 {
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 1.5em;
                     line-height: 0;
-                    align-self: flex-start;
                     width: 100%;
                     text-align: center;
                     margin: 1em 0;
 
                     @include small_tablet {
-                        width: 20%;
                         margin: 55px 55px 0 0;
-                        text-align: left;
+                        text-align: center;
                     }
 
                     @include desktop {
-                        width: 5em;
+                        text-align: center;
+                        margin-bottom: 30px;
                     }
                 }
             }
@@ -118,10 +117,7 @@
 .contenant-liste-cours {
     width: 100%;
 
-    @include small_tablet {
-        width: 90%;
 
-    }
                     
     .contenant-cours {
         background-color: #C1E8AA;
