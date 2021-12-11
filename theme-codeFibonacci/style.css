@@ -2873,10 +2873,9 @@ footer .up #flecheHaut:hover {
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5em;
   line-height: 0;
-  align-self: flex-start;
   width: 100%;
   text-align: center;
   margin: 1em 0;
@@ -2884,26 +2883,20 @@ footer .up #flecheHaut:hover {
 
 @media (min-width: 700px) {
   .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
-    width: 20%;
     margin: 55px 55px 0 0;
-    text-align: left;
+    text-align: center;
   }
 }
 
 @media (min-width: 1200px) {
   .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
-    width: 5em;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 
 .contenant-liste-cours {
   width: 100%;
-}
-
-@media (min-width: 700px) {
-  .contenant-liste-cours {
-    width: 90%;
-  }
 }
 
 .contenant-liste-cours .contenant-cours {
