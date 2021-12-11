@@ -79,7 +79,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .premierViewport .banniere-accueil {
   position: absolute;
-  height: 107vh;
+  height: 90%;
   width: 100%;
   object-fit: cover;
   z-index: -7;
@@ -96,20 +96,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   width: 80%;
   height: 788px;
   margin: 0 auto;
-  /*.fond-logo {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;        
-
-        /*@include desktop {
-            width: 80vh;
-            right: 5%;
-            top: 10%;
-        }
-    }*/
 }
 
 @media (min-width: 700px) {
@@ -147,23 +133,23 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   position: absolute;
   font-weight: 400;
   color: #0B132B;
-  text-align: right;
-  font-size: 2em;
-  top: 54vw;
+  text-align: center;
+  font-size: 1.5em;
+  top: 85vw;
   bottom: 0;
-  left: -10vw;
   right: 0;
   width: 100%;
   height: 30px;
-  /* @include desktop {
-            width: 100%;
-            margin-top: 20em;
-        }*/
+  line-height: 1;
 }
 
 @media (min-width: 800px) {
   .conteneur-logo h1 {
     top: 45vw;
+    left: -10vw;
+    text-align: right;
+    font-size: 2em;
+    line-height: 1.5;
   }
 }
 
@@ -260,7 +246,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .accueil-cours .accueil-cours-contenant .accueil-cours-item .cours-contenu .accueil-cours-icon {
-  width: 50vw;
+  width: 100%;
   margin: 5%;
   transition: .1s all;
 }
@@ -366,13 +352,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: #FFF;
   font-size: 2rem;
   font-weight: 100;
-  padding: 0 2em;
+  padding: 0 1em;
+  line-height: 1.3;
   text-align: justify;
 }
 
 @media (min-width: 1200px) {
   #accueil-prof p {
     padding: 0 7em;
+    line-height: 1.5;
   }
 }
 
@@ -1561,7 +1549,7 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.7em;
   margin: 0;
   font-size: 1rem;
   height: 13vh;
@@ -1655,11 +1643,6 @@ textarea {
 .menu-item-29 {
   display: flex;
   flex-direction: column;
-}
-
-.banniere-accueil {
-  position: absolute;
-  z-index: -10;
 }
 
 /*----------------------------------
