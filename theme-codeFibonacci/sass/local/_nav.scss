@@ -154,7 +154,6 @@
                 padding-top: 1em;
                 -webkit-box-shadow: 5px 5px 36px 5px rgba(0,0,0,0); 
                 box-shadow: 5px 5px 36px 5px rgba(0,0,0,0);
-                z-index: -1;
                 width: 90%;
                 top: 0.5em;
             }
@@ -179,10 +178,13 @@
     left: 1em;
     position: absolute;
     height: 6em;
+    z-index: 0;
 
-    @include small_tablet {
+    @include desktop {
         height: 8em;
         left: 3em;
+        z-index: 1;
+
     }
 
     img {
