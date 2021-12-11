@@ -76,7 +76,7 @@ style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11
 				<?php
 				wp_nav_menu(
 					array(
-						'theme_location' => 'menu-2',
+						'theme_location' => 'menu-3',
 						
 					)
 				);
