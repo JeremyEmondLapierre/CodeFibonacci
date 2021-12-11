@@ -2868,17 +2868,13 @@ footer .up #flecheHaut:hover {
   }
 }
 
-.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours:hover {
-  background-color: #ADD795;
-}
-
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
   font-weight: 600;
   font-size: 1.5em;
-  line-height: 0;
   width: 100%;
   text-align: center;
   margin: 1em 0;
+  overflow: hidden;
 }
 
 @media (min-width: 700px) {
@@ -2893,6 +2889,28 @@ footer .up #flecheHaut:hover {
     text-align: center;
     margin-bottom: 30px;
   }
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6:before,
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6:after {
+  background-color: #C1E8AA;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  position: relative;
+  vertical-align: middle;
+  width: 45%;
+  border-radius: 50px;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 .contenant-liste-cours {
@@ -2915,37 +2933,13 @@ footer .up #flecheHaut:hover {
   }
 }
 
+.contenant-liste-cours .contenant-cours:hover {
+  background-color: #cbecb8;
+}
+
 .contenant-liste-cours .contenant-cours .titre-cours {
   display: flex;
   align-items: center;
-  /*
-            &::before, &::after {
-                position: absolute;
-                content: '';
-                right: 0;
-                //left: 90%;
-                top: 0;
-                bottom: 0;
-                background-color: #9BC284;
-                border-radius: 2px;
-            } 
-
-            &::before {
-                width: 9px;
-                //left: 92%;
-                right: 52px;
-                top: 27%;
-                bottom: 27%;
-            }
-
-            &::after {
-                top: 44%;
-                bottom: 40%;
-                //right: 5%;
-                right: 40.5px;
-                width: 32px;
-                height: 9px;
-            }*/
 }
 
 .contenant-liste-cours .contenant-cours .titre-cours img {

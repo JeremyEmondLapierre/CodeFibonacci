@@ -87,17 +87,16 @@
 
                 }
 
-                &:hover {
-                    background-color: #ADD795;
-                }
+                
 
                 h6 {
                     font-weight: 600;
                     font-size: 1.5em;
-                    line-height: 0;
                     width: 100%;
                     text-align: center;
                     margin: 1em 0;
+                    overflow: hidden;
+
 
                     @include small_tablet {
                         margin: 55px 55px 0 0;
@@ -109,6 +108,28 @@
                         margin-bottom: 30px;
                     }
                 }
+
+                h6:before,
+                h6:after {
+                    background-color: #C1E8AA;
+                    content: "";
+                    display: inline-block;
+                    height: 5px;
+                    position: relative;
+                    vertical-align: middle;
+                    width: 45%;
+                    border-radius: 50px;
+                }
+
+                h6:before {
+                    right: 0.5em;
+                    margin-left: -50%;
+                }
+
+                h6:after {
+                    left: 0.5em;
+                    margin-right: -50%;
+                }
             }
         }
     }
@@ -116,8 +137,6 @@
 
 .contenant-liste-cours {
     width: 100%;
-
-
                     
     .contenant-cours {
         background-color: #C1E8AA;
@@ -133,37 +152,13 @@
             padding: 0.8em 2em;
         }
 
+        &:hover {
+            background-color: rgb(203, 236, 184);
+        }
+
         .titre-cours {
             display: flex;
             align-items: center;
-/*
-            &::before, &::after {
-                position: absolute;
-                content: '';
-                right: 0;
-                //left: 90%;
-                top: 0;
-                bottom: 0;
-                background-color: #9BC284;
-                border-radius: 2px;
-            } 
-
-            &::before {
-                width: 9px;
-                //left: 92%;
-                right: 52px;
-                top: 27%;
-                bottom: 27%;
-            }
-
-            &::after {
-                top: 44%;
-                bottom: 40%;
-                //right: 5%;
-                right: 40.5px;
-                width: 32px;
-                height: 9px;
-            }*/
 
             img {
                 width: 2.5rem;
