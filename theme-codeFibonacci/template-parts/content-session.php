@@ -40,3 +40,4 @@
 						endif;
     endwhile;
     ?>
+	</div>

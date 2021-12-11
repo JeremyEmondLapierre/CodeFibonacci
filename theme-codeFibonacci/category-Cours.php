@@ -41,16 +41,12 @@ get_header();
 			<div class="contenant-tableau-cheminement">
 				<div class="liste-cours">
 					<div class="item-cours">
-						<div class="contenant-liste-cours">
-	
-
-				<?php
-					global $precedent;
-					$precedent = "XXXXXX";
-					/* Start the Loop */
-					get_template_part( 'template-parts/content', 'session' );
-				?>
-						</div>
+						<?php
+							global $precedent;
+							$precedent = "XXXXXX";
+							/* Start the Loop */
+							get_template_part( 'template-parts/content', 'session' );
+						?>
 					</div>
 				</div>
 			</div>

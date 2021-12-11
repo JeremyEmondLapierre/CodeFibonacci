@@ -1688,7 +1688,6 @@ textarea {
     margin: 0 3em 1.5em 0;
     padding-top: 1em;
     box-shadow: 5px 5px 36px 5px rgba(0, 0, 0, 0);
-    z-index: -1;
     width: 90%;
     top: 0.5em;
   }
@@ -1713,10 +1712,11 @@ textarea {
   height: 6em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
   .contenant-logo-integre {
     height: 8em;
     left: 3em;
+    z-index: 1;
   }
 }
 
