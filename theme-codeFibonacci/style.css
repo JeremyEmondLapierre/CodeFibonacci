@@ -1710,6 +1710,7 @@ textarea {
   left: 1em;
   position: absolute;
   height: 6em;
+  z-index: 0;
 }
 
 @media (min-width: 1200px) {
@@ -2803,7 +2804,7 @@ footer .up #flecheHaut:hover {
 
 .contenant-cheminement form {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #ECFEF8;
   padding: 1em 0;
 }
@@ -2869,8 +2870,9 @@ footer .up #flecheHaut:hover {
 }
 
 .contenant-cheminement .contenant-tableau-cheminement .liste-cours .item-cours h6 {
-  font-weight: 600;
-  font-size: 1.5em;
+  font-weight: 500;
+  font-size: 2em;
+  align-self: flex-start;
   width: 100%;
   text-align: center;
   margin: 1em 0;
@@ -2992,7 +2994,7 @@ footer .up #flecheHaut:hover {
 @media (min-width: 700px) {
   .contenant-liste-cours .contenant-cours .titre-cours p {
     width: 62%;
-    font-size: 1.7em;
+    font-size: 2.2em;
   }
 }
 
@@ -3010,7 +3012,14 @@ footer .up #flecheHaut:hover {
 .contenant-liste-cours .contenant-cours .description-cours p {
   color: #457B77;
   line-height: 1.4;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 800px) {
+  .contenant-liste-cours .contenant-cours .description-cours p {
+    font-size: 1.8rem;
+  }
 }
 
 .contenant-liste-cours .contenant-cours .description-cours p:nth-child(2), .contenant-liste-cours .contenant-cours .description-cours p:nth-child(3) {

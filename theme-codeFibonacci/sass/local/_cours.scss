@@ -25,7 +25,7 @@
 
     form {
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #ECFEF8;
         padding: 1em 0;
 
@@ -90,8 +90,9 @@
                 
 
                 h6 {
-                    font-weight: 600;
-                    font-size: 1.5em;
+                    font-weight: 500;
+                    font-size: 2em;
+                    align-self: flex-start;
                     width: 100%;
                     text-align: center;
                     margin: 1em 0;
@@ -206,7 +207,7 @@
 
                 @include small_tablet {
                     width: 62%;
-                    font-size: 1.7em;
+                    font-size: 2.2em;
                 }
 
                 @include tablet {
@@ -222,7 +223,13 @@
             p {
                 color: #457B77;
                 line-height: 1.4;
-                font-weight: 400;
+                font-weight: 300;
+                font-size: 1.3rem;
+
+                @include tablet {
+                    font-size: 1.8rem;
+                }
+
 
                 &:nth-child(2), &:nth-child(3) {
                     font-weight: 500;

@@ -178,6 +178,7 @@
     left: 1em;
     position: absolute;
     height: 6em;
+    z-index: 0;
 
     @include desktop {
         height: 8em;
