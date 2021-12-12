@@ -2373,6 +2373,7 @@ footer .logoEtReseau {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: -50px;
 }
 
 footer .logoEtReseau #footer-logo {
@@ -2407,10 +2408,12 @@ footer .logoEtReseau .Reseau ul {
   padding: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   footer .logoEtReseau .Reseau ul {
     justify-content: center;
     align-items: center;
+    margin: 0;
+    margin-left: 69px;
   }
 }
 
