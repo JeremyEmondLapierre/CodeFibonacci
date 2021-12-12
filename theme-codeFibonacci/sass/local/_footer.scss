@@ -230,6 +230,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-left: -50px;
         #footer-logo{
             width: 150px; 
             margin: 0 auto;
@@ -258,11 +259,13 @@ footer {
         ul{
                 margin: 0 auto;
                 padding: 0;
+                
 
-            @include desktop{
+            @include tablet{
                 justify-content: center;
                 align-items: center;
-                
+                margin: 0;
+                margin-left: 69px;
                 
             }
             
