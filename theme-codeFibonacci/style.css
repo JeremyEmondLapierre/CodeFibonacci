@@ -3034,7 +3034,7 @@ footer .up #flecheHaut:hover {
   display: block !important;
 }
 
-.actif-cours-anim {
+.actif-cours-anim .fa-minus:nth-child(1) {
   animation-name: Croix2;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;

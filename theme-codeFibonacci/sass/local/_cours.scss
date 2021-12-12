@@ -71,7 +71,7 @@
     .contenant-tableau-cheminement {
         background-color: #A2CC8A;
         border-radius: 25px;
-
+ 
         .liste-cours {
             padding: 2rem 0;
 
@@ -243,9 +243,7 @@
 
 /// Note pour moi-même (Sami) : Trouver le moyen de réduire les !important.
 .actif-cours {
-
-  //  .titre-cours {
-        
+       
         .fa-minus:nth-child(1){
           animation-name: Croix;
           animation-duration: 0.5s;
@@ -254,19 +252,19 @@
           transition-timing-function: ease-in-out;
           animation-play-state: revert;      
         }
-  //  }
-
 
     .description-cours {
         display: block !important;
     }
 }
-.actif-cours-anim{
-    animation-name: Croix2;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    transition-timing-function: ease-in-out;
-  
+    
+    .actif-cours-anim{   
+        .fa-minus:nth-child(1){
+            animation-name: Croix2;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            transition-timing-function: ease-in-out;  
+        }  
 }
 
 /* Animation de la croix*/
