@@ -1882,7 +1882,7 @@ span {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . " ". . ";
+  grid-template-areas: ". . " ". . ";
 }
 
 @media (min-width: 1200px) {
@@ -1913,7 +1913,7 @@ span {
     grid-auto-rows: 1fr;
     gap: 20px 20px;
     grid-auto-flow: row;
-    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+    grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
   }
 }
 
@@ -1927,7 +1927,7 @@ span {
   grid-auto-rows: 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
+  grid-template-areas: ". . top-midle ." ". . top-midle ." ". midle midle ." "bottom bottom . .";
 }
 
 @media (min-width: 1200px) {
@@ -3032,7 +3032,7 @@ footer .up #flecheHaut:hover {
   display: block !important;
 }
 
-.actif-cours-anim {
+.actif-cours-anim .fa-minus:nth-child(1) {
   animation-name: Croix2;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;

@@ -17,11 +17,13 @@
         //this.style.animation = "Croix forwards reverse ease-in-out";
         if(this.classList.contains("actif-cours")){
             this.classList.remove("actif-cours"); 
-            document.querySelector(".fa-minus:nth-child(1)").classList.add("actif-cours-anim"); 
+            this.classList.add("actif-cours-anim");
+            //document.querySelector(".fa-minus:nth-child(1)").classList.add("actif-cours-anim"); 
 
         } else{
             this.classList.add("actif-cours");
-            document.querySelector(".fa-minus:nth-child(1)").classList.remove("actif-cours-anim"); 
+            this.classList.remove("actif-cours-anim");
+            //document.querySelector(".fa-minus:nth-child(1)").classList.remove("actif-cours-anim"); 
 
         }    
     });
