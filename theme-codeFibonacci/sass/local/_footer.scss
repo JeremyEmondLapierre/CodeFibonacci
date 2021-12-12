@@ -85,13 +85,6 @@ footer {
             
         }
 
-        @include desktop {
-            
-            margin-left: -30px;
-        }
-
-        
-
         .site-info{
             text-align: center;
             display: flex;
@@ -114,6 +107,14 @@ footer {
                 padding: 5px;
                 color:#B7E8D7;
             }
+
+            @include desktop{
+
+                #site-info-titre{
+                    margin-left: 4px ;
+                }
+                
+            }
         }
 
 
@@ -123,11 +124,14 @@ footer {
             //align-items: center;
             //margin: 0 auto;
             text-align: center;
+            display: none;
+
             
 
             @include desktop{
                 margin: 1px;
                // margin: 0 auto;
+               display: block;
             }
 
             ul{
@@ -159,9 +163,18 @@ footer {
 
             h3{
                 margin: .5em;
+                
                 color: #A2CC8A;
                 font-size: 1.5rem;
                 font-weight: 500;
+            }
+
+            @include desktop{
+
+                h3{
+                    margin-left: -2px ;
+                }
+                
             }
 
             .footer-navigation{

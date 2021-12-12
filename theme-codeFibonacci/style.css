@@ -2254,12 +2254,6 @@ footer .global-footer {
   }
 }
 
-@media (min-width: 1200px) {
-  footer .global-footer {
-    margin-left: -30px;
-  }
-}
-
 footer .global-footer .site-info {
   text-align: center;
   display: flex;
@@ -2285,13 +2279,21 @@ footer .global-footer .site-info p {
   color: #B7E8D7;
 }
 
+@media (min-width: 1200px) {
+  footer .global-footer .site-info #site-info-titre {
+    margin-left: 4px;
+  }
+}
+
 footer .global-footer .liens-rapides {
   text-align: center;
+  display: none;
 }
 
 @media (min-width: 1200px) {
   footer .global-footer .liens-rapides {
     margin: 1px;
+    display: block;
   }
 }
 
@@ -2327,6 +2329,12 @@ footer .global-footer .liens-rapides h3 {
   color: #A2CC8A;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  footer .global-footer .liens-rapides h3 {
+    margin-left: -2px;
+  }
 }
 
 footer .global-footer .liens-rapides .footer-navigation ul {
