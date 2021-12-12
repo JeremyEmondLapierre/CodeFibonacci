@@ -35,8 +35,7 @@
         position: absolute;
         height: 107vh;
         width: 100%;
-        object-fit: cover;
-        z-index: -7;
+        z-index: -5;
 
         @include desktop {
             top: 0;

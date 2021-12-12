@@ -36,29 +36,22 @@ get_header();
 			</form>
 
 			  <div class="lesProjets">
-
 			  	<?php
 				/* Start the Loop */
 					while ( have_posts() ) :
 						the_post();
 						if(($_SERVER['QUERY_STRING'] == "filtre-projet=tous" || $_SERVER['QUERY_STRING'] == null) && get_field('type') == "Projet"):
 							get_template_part( 'template-parts/content', 'vie-projet' ); ?>
-							<div class="top-midle" >
-								<img src="wp-content/uploads/2021/11/Capture2.png">
-								<!--img ici-->
-								<!--img ici-->		
+							
+							<div class="top-midle" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/12/EmondLapierreJeremy_TP2_Affiche-scaled.jpg';?>'); background-position: 70% 30%; background-repeat: no-repeat; ">
 				    		</div>
 
 
-							<div class="midle" >
-								<!--img ici-->
-								<!--img ici-->
+							<div class="midle" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/Projet-13.jpg';?>'); background-position: center;" >
 							</div>
 
 					
-							<div class="bottom" >
-								<!--img ici-->
-								<!--img ici-->
+							<div class="bottom" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/12/statue-3D-KevinLaRue.jpg';?>'); background-position: center;">
 							</div>
 
 					<?php

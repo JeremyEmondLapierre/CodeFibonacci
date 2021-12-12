@@ -81,8 +81,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   position: absolute;
   height: 107vh;
   width: 100%;
-  object-fit: cover;
-  z-index: -7;
+  z-index: -5;
 }
 
 @media (min-width: 1200px) {
@@ -359,6 +358,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 #accueil-prof h1 {
   font-weight: 500;
+  margin-top: 50px;
 }
 
 #accueil-prof p {
@@ -2668,7 +2668,6 @@ footer .up #flecheHaut:hover {
   padding: 1rem;
   color: #27532A;
   animation: floatText 6s ease-in-out infinite;
-  font-size: 2rem;
 }
 
 @media (min-width: 1200px) {
