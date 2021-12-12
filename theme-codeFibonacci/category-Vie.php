@@ -36,15 +36,27 @@ get_header();
 			</form>
 
 			  <div class="lesProjets">
-
 			  	<?php
 				/* Start the Loop */
 					while ( have_posts() ) :
 						the_post();
 						if(($_SERVER['QUERY_STRING'] == "filtre-projet=tous" || $_SERVER['QUERY_STRING'] == null) && get_field('type') == "Projet"):
-							get_template_part( 'template-parts/content', 'vie-projet' );
+							get_template_part( 'template-parts/content', 'vie-projet' ); ?>
+							
+							<div class="top-midle" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/12/EmondLapierreJeremy_TP2_Affiche-scaled.jpg';?>'); background-position: 70% 30%; background-repeat: no-repeat; ">
+				    		</div>
+
+
+							<div class="midle" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/Projet-13.jpg';?>'); background-position: center;" >
+							</div>
+
+					
+							<div class="bottom" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/12/statue-3D-KevinLaRue.jpg';?>'); background-position: center;">
+							</div>
+
+					<?php
 						/* Projet Web */
-						elseif(get_field('type_de_projets') == "Web" && $_SERVER['QUERY_STRING'] == "filtre-projet=web"):
+						elseif((get_field('type_de_projets') == "Web" ) && $_SERVER['QUERY_STRING'] == "filtre-projet=web"):
 							get_template_part( 'template-parts/content', 'vie-projet' );
 						/* Projet 3D */
 						elseif(get_field('type_de_projets') == "3D" && $_SERVER['QUERY_STRING'] == "filtre-projet=3d"):
@@ -58,27 +70,6 @@ get_header();
 						endif;
 					endwhile;
 				?> 
-				<!-- 
-				|| Trois grosses sections ||
-					Logique:
-						
-				-->
-
-					<div class="midle" >
-						 
-					        <!--img ici-->
-							<!--img ici-->
-				    </div>
-
-					
-					<div class="bottom" >
-							<!--img ici-->
-							<!--img ici-->
-				    </div>
-					
-					
-					
-					
 			  </div>
 
 
