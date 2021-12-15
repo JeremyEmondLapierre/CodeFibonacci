@@ -1,9 +1,9 @@
 .item-enseignant {
   padding: 0.5em 2em;
 
-  &:hover {
-    background-color: #ADD795;
-  }
+  // &:hover {
+  //   background-color: #ADD795;
+  // }
 
   .container {
     background-color: #C1E8AA;
@@ -18,6 +18,10 @@
     @include small_tablet {
         padding: 0.8em 2em;
     }
+
+    &:hover {
+      background-color: rgb(203, 236, 184);
+  }
   }
 }
 
@@ -42,7 +46,7 @@
     align-items: center;
 
     a:hover{
-      color:#FBF057;
+      color:$couleur-bleu-marin;
     }
 
     .contenant-icone-enseignant {
@@ -65,8 +69,10 @@
 }
 
 .description-enseignant {
-  display: none;
   transition: 0.3s all ease;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
 
   p {
       color: #457B77;
@@ -193,7 +199,8 @@
     position: relative;
     background: #C1E8AA;
     color: #457B77;
-    height:0;
+    transition: 0.3s all ease-in-out;
+    
     font-size: large;
     text-align: justify; 
     overflow: hidden;
@@ -206,7 +213,7 @@
   }
   
   .accordion .container.active .content {
-  height: auto;
+ 
   border-radius: 1%;
   margin-top: -15px;
   }
@@ -262,6 +269,7 @@
 
     .description-enseignant {
      
+     
       p {
           color: #457B77;
           line-height: 1.4;
@@ -298,7 +306,9 @@
   }
 
   .description-enseignant {
-    display: block !important;
+    max-height: 300vh;
+    opacity: 1;
+
     ul{
       color: #457B77;
       line-height: 1.4;
@@ -306,4 +316,13 @@
       font-size: 1.8rem;
     }
   }
+}
+
+.active-prof-anim{   
+  .fa-minus:nth-child(1){
+      animation-name: Croix2;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      transition-timing-function: ease-in-out;  
+  }  
 }

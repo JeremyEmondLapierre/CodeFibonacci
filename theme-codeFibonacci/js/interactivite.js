@@ -2,13 +2,13 @@
  * Fichier navigation.js.
  *
  * Gère l'interactivité de tout le site
- */
+**/
 
 /* ----------------
     Page Cours
 ------------------- */    
 
- const cours = document.querySelectorAll('.contenant-cours');
+const cours = document.querySelectorAll('.contenant-cours');
   for (var i = 0; i < cours.length; i++) {
     cours[i].addEventListener('click', function() {
         console.log("ca a écouté");
@@ -24,11 +24,30 @@
             this.classList.add("actif-cours");
             this.classList.remove("actif-cours-anim");
             //document.querySelector(".fa-minus:nth-child(1)").classList.remove("actif-cours-anim"); 
-
         }    
     });
     
 };
+
+/* ----------------
+    Page Enseignants
+------------------- */   
+
+const accordion = document.getElementsByClassName('container');
+for (i=0; i<accordion.length; i++) {
+    accordion[i].addEventListener('click', function () {
+        //this.classList.toggle('active');
+
+        if(this.classList.contains("active")){
+            this.classList.remove("active"); 
+            this.classList.add("active-prof-anim");
+
+        } else{
+            this.classList.add("active");
+            this.classList.remove("active-prof-anim");
+        }    
+    })
+}
 
 
 /* ----------------
