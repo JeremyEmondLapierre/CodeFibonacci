@@ -24,7 +24,8 @@ const cours = document.querySelectorAll('.contenant-cours');
             this.classList.add("actif-cours");
             this.classList.remove("actif-cours-anim");
             //document.querySelector(".fa-minus:nth-child(1)").classList.remove("actif-cours-anim"); 
-        }    
+        };
+     
     });
     
 };

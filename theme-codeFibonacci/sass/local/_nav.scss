@@ -1,31 +1,31 @@
+.menu-menu-accueil-container {
+    width: 100%;
+}
+
 #primary-menu {
     padding: 0 !important;
-    width: 100px;
-    flex-direction: row;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     @include small_tablet {
         flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: left;
+        width: 100px;
     }
     
-    /*.sub-menu {
-        flex-direction: column;
-
-        li {
-            margin: 0;
-
-        }
-    }*/
-
     li{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 0.5em 0.7em;
+        padding: 1em;
         margin: 0;
         font-size: 1rem;
-        height: 13vh;
+        height: 10vh;
 
         @include small_tablet {
             margin: -0.6em 0;

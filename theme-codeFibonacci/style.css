@@ -56,7 +56,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .premierViewport .main-navigation {
-  width: 30%;
+  width: 100%;
 }
 
 @media (min-width: 800px) {
@@ -79,9 +79,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .premierViewport .banniere-accueil {
   position: absolute;
+  object-fit: cover;
   height: 90%;
   width: 100%;
   z-index: -5;
+}
+
+@media (min-width: 700px) {
+  .premierViewport .banniere-accueil {
+    object-fit: initial;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1523,24 +1530,25 @@ textarea {
 
 /* Local/nav
 --------------------------------------------- */
+.menu-menu-accueil-container {
+  width: 100%;
+}
+
 #primary-menu {
   padding: 0 !important;
-  width: 100px;
-  flex-direction: row;
+  width: 100%;
   display: flex;
-  /*.sub-menu {
-        flex-direction: column;
-
-        li {
-            margin: 0;
-
-        }
-    }*/
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 700px) {
   #primary-menu {
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    width: 100px;
   }
 }
 
@@ -1549,10 +1557,10 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0.5em 0.7em;
+  padding: 1em;
   margin: 0;
   font-size: 1rem;
-  height: 13vh;
+  height: 10vh;
 }
 
 @media (min-width: 700px) {

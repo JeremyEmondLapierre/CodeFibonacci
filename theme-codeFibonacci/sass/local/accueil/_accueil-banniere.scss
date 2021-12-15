@@ -13,7 +13,7 @@
     }
 
     .main-navigation {
-        width: 30%;
+        width: 100%;
 
         @include tablet {
             width: 53em;
@@ -33,9 +33,14 @@
 
     .banniere-accueil {
         position: absolute;
+        object-fit: cover;
         height: 90%;
         width: 100%;
         z-index: -5;
+
+        @include small_tablet {
+            object-fit: initial;
+        }
 
         @include desktop {
             top: 0;
