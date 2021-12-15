@@ -17,7 +17,7 @@ if(get_field('session') != $precedent):?>
 endif;
 ?>
 		<!-- Single element à dupliquer -->
-		<div class="contenant-cours">
+		<div class="contenant-cours" >
 			<div class="titre-cours">
                 <?php the_post_thumbnail( 'medium' ); ?>
 				<div class="contenu-titre-cours">

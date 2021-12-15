@@ -181,6 +181,10 @@
                 justify-content: space-between;
                 align-items: center;
 
+                &:hover {
+                    cursor: pointer;
+                }
+
                 .contenant-icone-cours {
                     font-size: 3rem;
                     line-height: 0;
@@ -217,8 +221,10 @@
         }
 
         .description-cours {
-            display: none;
-            transition: 0.3s all ease;
+            transition: 0.3s all ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
 
             p {
                 color: #457B77;
@@ -229,7 +235,6 @@
                 @include tablet {
                     font-size: 1.8rem;
                 }
-
 
                 &:nth-child(2), &:nth-child(3) {
                     font-weight: 500;
@@ -253,18 +258,25 @@
           animation-play-state: revert;      
         }
 
-    .description-cours {
+    /*.description-cours {
         display: block !important;
+    }*/
+    .description-cours  {
+        max-height: 300vh !important;
+        opacity: 1 !important;
+
     }
 }
     
-    .actif-cours-anim{   
-        .fa-minus:nth-child(1){
-            animation-name: Croix2;
-            animation-duration: 0.5s;
-            animation-fill-mode: forwards;
-            transition-timing-function: ease-in-out;  
-        }  
+.actif-cours-anim{   
+    .fa-minus:nth-child(1){
+        animation-name: Croix2;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        transition-timing-function: ease-in-out;  
+    }  
+
+   
 }
 
 /* Animation de la croix*/

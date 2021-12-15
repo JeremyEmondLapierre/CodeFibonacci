@@ -2962,6 +2962,10 @@ footer .up #flecheHaut:hover {
   align-items: center;
 }
 
+.contenant-liste-cours .contenant-cours .titre-cours .contenu-titre-cours:hover {
+  cursor: pointer;
+}
+
 .contenant-liste-cours .contenant-cours .titre-cours .contenu-titre-cours .contenant-icone-cours {
   font-size: 3rem;
   line-height: 0;
@@ -2998,8 +3002,10 @@ footer .up #flecheHaut:hover {
 }
 
 .contenant-liste-cours .contenant-cours .description-cours {
-  display: none;
-  transition: 0.3s all ease;
+  transition: 0.3s all ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .contenant-liste-cours .contenant-cours .description-cours p {
@@ -3021,6 +3027,12 @@ footer .up #flecheHaut:hover {
   margin: 1% 0;
 }
 
+.actif-cours {
+  /*.description-cours {
+        display: block !important;
+    }*/
+}
+
 .actif-cours .fa-minus:nth-child(1) {
   animation-name: Croix;
   animation-duration: 0.5s;
@@ -3031,7 +3043,8 @@ footer .up #flecheHaut:hover {
 }
 
 .actif-cours .description-cours {
-  display: block !important;
+  max-height: 300vh !important;
+  opacity: 1 !important;
 }
 
 .actif-cours-anim .fa-minus:nth-child(1) {
@@ -3074,10 +3087,6 @@ footer .up #flecheHaut:hover {
   padding: 0.5em 2em;
 }
 
-.item-enseignant:hover {
-  background-color: #ADD795;
-}
-
 .item-enseignant .container {
   background-color: #C1E8AA;
   border-radius: 25px;
@@ -3092,6 +3101,10 @@ footer .up #flecheHaut:hover {
   .item-enseignant .container {
     padding: 0.8em 2em;
   }
+}
+
+.item-enseignant .container:hover {
+  background-color: #cbecb8;
 }
 
 .label img {
@@ -3114,7 +3127,7 @@ footer .up #flecheHaut:hover {
 }
 
 .label .contenu-titre-enseignant a:hover {
-  color: #FBF057;
+  color: #0B132B;
 }
 
 .label .contenu-titre-enseignant .contenant-icone-enseignant {
@@ -3133,8 +3146,10 @@ footer .up #flecheHaut:hover {
 }
 
 .description-enseignant {
-  display: none;
   transition: 0.3s all ease;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .description-enseignant p {
@@ -3274,7 +3289,7 @@ footer .up #flecheHaut:hover {
   position: relative;
   background: #C1E8AA;
   color: #457B77;
-  height: 0;
+  transition: 0.3s all ease-in-out;
   font-size: large;
   text-align: justify;
   overflow: hidden;
@@ -3286,7 +3301,6 @@ footer .up #flecheHaut:hover {
 }
 
 .logique .accordion .container.active .content {
-  height: auto;
   border-radius: 1%;
   margin-top: -15px;
 }
@@ -3358,7 +3372,8 @@ footer .up #flecheHaut:hover {
 }
 
 .active .description-enseignant {
-  display: block !important;
+  max-height: 300vh;
+  opacity: 1;
 }
 
 .active .description-enseignant ul {
@@ -3366,6 +3381,13 @@ footer .up #flecheHaut:hover {
   line-height: 1.4;
   font-weight: 300;
   font-size: 1.8rem;
+}
+
+.active-prof-anim .fa-minus:nth-child(1) {
+  animation-name: Croix2;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out;
 }
 
 /* Local/404

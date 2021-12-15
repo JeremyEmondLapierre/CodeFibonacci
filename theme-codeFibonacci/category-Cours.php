@@ -36,7 +36,7 @@ get_header();
 					<option value="video" >Vidéo</option>
 					<option value="autres" >Autres</option>
 				</select>
-				<input type="submit" value="Envoyer">
+				<input type="submit" value="Filtrer">
 				
 			</form>
 			<div class="contenant-tableau-cheminement">
