@@ -10,17 +10,18 @@
 
     @include small_tablet {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .main-navigation {
-        width: 30%;
+        width: 100%;
 
         @include tablet {
-            width: 53em;
+            width: 60%;
         }
 
         @include desktop {
-            width: 60%;
+            width: 20%;
         }
     }
 
@@ -33,12 +34,57 @@
 
     .banniere-accueil {
         position: absolute;
+        object-fit: cover;
         height: 90%;
         width: 100%;
         z-index: -5;
 
+        @include small_tablet {
+            object-fit: initial;
+        }
+
         @include desktop {
             top: 0;
+        }
+    }
+}
+
+.annees {
+    align-self: center;
+
+    h1 {
+        font-size: 3em;
+        line-height: 0.7;
+        letter-spacing: -7px;
+        margin-bottom: 0;
+        overflow: visible;
+        background: -webkit-linear-gradient(-90deg, rgba(183,232,214,1) 0%, rgba(253,249,178,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(-1px 0px 5px rgba(0, 0, 0, 0.42));
+
+        @include small_tablet {
+            height: 150px;
+        }
+
+        @include tablet {
+            font-size: 4em;
+        }
+
+        @include desktop {
+            font-size: 5em;
+        }
+
+        strong {
+            font-size: 1.2em;
+            text-transform: uppercase;
+
+            &::after {
+                content: '+';
+                background: -webkit-linear-gradient(-90deg, #FFC857 0%, #FFC857  100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 }
@@ -52,8 +98,9 @@
     @include small_tablet {
         margin: 0;
         width: 788px;
+        align-self: center;
     }
-    
+ 
     img {
         margin: 0 auto;
         animation-name: Banniere;

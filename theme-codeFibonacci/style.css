@@ -52,22 +52,23 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @media (min-width: 700px) {
   .premierViewport {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .premierViewport .main-navigation {
-  width: 30%;
+  width: 100%;
 }
 
 @media (min-width: 800px) {
   .premierViewport .main-navigation {
-    width: 53em;
+    width: 60%;
   }
 }
 
 @media (min-width: 1200px) {
   .premierViewport .main-navigation {
-    width: 60%;
+    width: 20%;
   }
 }
 
@@ -79,15 +80,68 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .premierViewport .banniere-accueil {
   position: absolute;
+  object-fit: cover;
   height: 90%;
   width: 100%;
   z-index: -5;
+}
+
+@media (min-width: 700px) {
+  .premierViewport .banniere-accueil {
+    object-fit: initial;
+  }
 }
 
 @media (min-width: 1200px) {
   .premierViewport .banniere-accueil {
     top: 0;
   }
+}
+
+.annees {
+  align-self: center;
+}
+
+.annees h1 {
+  font-size: 3em;
+  line-height: 0.7;
+  letter-spacing: -7px;
+  margin-bottom: 0;
+  overflow: visible;
+  background: -webkit-linear-gradient(-90deg, #b7e8d6 0%, #fdf9b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(-1px 0px 5px rgba(0, 0, 0, 0.42));
+}
+
+@media (min-width: 700px) {
+  .annees h1 {
+    height: 150px;
+  }
+}
+
+@media (min-width: 800px) {
+  .annees h1 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .annees h1 {
+    font-size: 5em;
+  }
+}
+
+.annees h1 strong {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.annees h1 strong::after {
+  content: '+';
+  background: -webkit-linear-gradient(-90deg, #FFC857 0%, #FFC857 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .conteneur-logo {
@@ -101,6 +155,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .conteneur-logo {
     margin: 0;
     width: 788px;
+    align-self: center;
   }
 }
 
@@ -1523,24 +1578,25 @@ textarea {
 
 /* Local/nav
 --------------------------------------------- */
+.menu-menu-accueil-container {
+  width: 100%;
+}
+
 #primary-menu {
   padding: 0 !important;
-  width: 100px;
-  flex-direction: row;
+  width: 100%;
   display: flex;
-  /*.sub-menu {
-        flex-direction: column;
-
-        li {
-            margin: 0;
-
-        }
-    }*/
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 700px) {
   #primary-menu {
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    width: 100px;
   }
 }
 
@@ -1549,10 +1605,10 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0.5em 0.7em;
+  padding: 1em;
   margin: 0;
   font-size: 1rem;
-  height: 13vh;
+  height: 10vh;
 }
 
 @media (min-width: 700px) {
