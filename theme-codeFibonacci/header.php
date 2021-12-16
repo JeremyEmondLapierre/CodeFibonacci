@@ -51,7 +51,8 @@
 		</div><!-- .site-branding -->
 		<?php if(is_home() && is_front_page()) :?>
 		<div class="premierViewport">
-		<img class="banniere-accueil" src="wp-content/uploads/2021/12/BanniereAccueil_Final.png" alt="">
+			<img class="banniere-accueil" src="wp-content/uploads/2021/12/BanniereAccueil_Final.png" alt="">
+			
 			<nav id="site-navigation" class="main-navigation">
 				
 				<?php
@@ -62,8 +63,9 @@
 						
 					)
 				);
-		endif;
-		?>
+			endif;
+			?>
+			
 		<?php if(!is_front_page()) : ?>
 		<?php
 		wp_nav_menu(
@@ -92,6 +94,10 @@
 				if ( is_home() && is_front_page() ) :
 			?>
 
+			<div class="annees">
+				<h1><strong>20 Ans</strong> <br>
+				d'expérience</h1>
+			</div>
 			<div class="conteneur-logo">
 				<img class="fond-logo" src="wp-content/uploads/2021/12/LogoTim.png" alt="">	
 			</div>

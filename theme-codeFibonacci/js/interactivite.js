@@ -9,21 +9,21 @@
 ------------------- */    
 
 const cours = document.querySelectorAll('.contenant-cours');
+let coursPrecedent;
   for (var i = 0; i < cours.length; i++) {
     cours[i].addEventListener('click', function() {
-        console.log("ca a écouté");
-        console.log(cours.length);
-        //this.classList.toggle("actif-cours");
-        //this.style.animation = "Croix forwards reverse ease-in-out";
+        if(coursPrecedent) {
+            // on enregistre le cours cliqué dans coursPrecedent. Si elle existe déjà, on enlève actif-cours
+            coursPrecedent.classList.remove('actif-cours');
+        }
+        coursPrecedent = this;
         if(this.classList.contains("actif-cours")){
             this.classList.remove("actif-cours"); 
             this.classList.add("actif-cours-anim");
-            //document.querySelector(".fa-minus:nth-child(1)").classList.add("actif-cours-anim"); 
 
         } else{
             this.classList.add("actif-cours");
             this.classList.remove("actif-cours-anim");
-            //document.querySelector(".fa-minus:nth-child(1)").classList.remove("actif-cours-anim"); 
         };
      
     });
@@ -35,9 +35,15 @@ const cours = document.querySelectorAll('.contenant-cours');
 ------------------- */   
 
 const accordion = document.getElementsByClassName('container');
+let profPrecedent;
 for (i=0; i<accordion.length; i++) {
     accordion[i].addEventListener('click', function () {
         //this.classList.toggle('active');
+        if(profPrecedent) {
+            // on enregistre le cours cliqué dans profPrecedent. Si elle existe déjà, on enlève active
+            profPrecedent.classList.remove('active');
+        }
+        profPrecedent = this;
 
         if(this.classList.contains("active")){
             this.classList.remove("active"); 
