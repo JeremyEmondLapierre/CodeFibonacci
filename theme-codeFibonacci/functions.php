@@ -198,8 +198,8 @@ add_action( 'pre_get_posts', 'extraire_article_accueil' );
 /*Query pour la page de stage */
 function extraire_article_stage($query) {
 
-    if(!is_admin() && $query->is_main_query() && is_category('Stage')) {
-		$query->set('category_name', 'Stage');
+    if(!is_admin() && $query->is_main_query() && is_category('stage')) {
+		$query->set('category_name', 'stage');
 		$query->set('post_per_page', -1);
     }  
 }
@@ -208,8 +208,8 @@ add_action( 'pre_get_posts', 'extraire_article_stage' );
 /*Query pour la page des enseignants*/
 function extraire_article_prof($query) {
 
-    if(!is_admin() && $query->is_main_query() && is_category('Enseignants')) {
-		$query->set('category_name', 'Enseignants');
+    if(!is_admin() && $query->is_main_query() && is_category('enseignants')) {
+		$query->set('category_name', 'enseignants');
 		$query->set('post_per_page', -1);
     }  
 }
