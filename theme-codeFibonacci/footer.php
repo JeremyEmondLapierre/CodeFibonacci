@@ -23,10 +23,30 @@ style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/12
 		<div class="Reseau">
 			<h3>Suivez-nous</h3>
 			<ul>
-				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Facebook.svg';?>" alt=""></li>
-				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Instagram.svg';?>" alt=""></li>
-				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Linkedin.svg';?>" alt=""></li>
-				<li><img src="<?php echo site_url().'/wp-content/uploads/2021/11/Youtube.svg';?>" alt=""></li>
+				<li>
+				<a href="https://www.facebook.com/maisonneuvetim/">
+					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/facebook.svg';?>" alt="">
+				</a>
+			    </li>
+
+				<li>
+			
+				<a href="https://www.instagram.com/maisonneuvetim/">
+					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/instagram.svg';?>" alt="">
+				</a>
+				</li>
+
+				<li>
+				<a href="https://ca.linkedin.com/in/tim-maisonneuve-b7a609b3">
+					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/linkedin.svg';?>" alt="">
+				</a>
+				</li>
+
+				<li>
+				<a href="https://www.youtube.com/user/TIMaisonneuve">	
+					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/youtube.svg';?>" alt="">
+				</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -56,7 +76,7 @@ style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/12
 				<?php
 				wp_nav_menu(
 					array(
-						'theme_location' => 'menu-2',
+						'theme_location' => 'menu-3',
 						
 					)
 				);

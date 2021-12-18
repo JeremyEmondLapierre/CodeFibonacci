@@ -1,13 +1,13 @@
 .item-enseignant {
   padding: 0.5em 2em;
 
-  &:hover {
-    background-color: #ADD795;
-  }
+  // &:hover {
+  //   background-color: #ADD795;
+  // }
 
   .container {
     background-color: #C1E8AA;
-    border-radius: 25px;
+    border-radius: 35px;
     display: flex;
     flex-direction: column;
     //flex-grow: 1;
@@ -18,6 +18,10 @@
     @include small_tablet {
         padding: 0.8em 2em;
     }
+
+    &:hover {
+      background-color: rgb(203, 236, 184);
+  }
   }
 }
 
@@ -29,7 +33,7 @@
     width: 60px;*/
     width: auto;
     height: 10vh;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 0px;
     margin: 0px;
     object-fit: cover;
@@ -41,8 +45,17 @@
     justify-content: space-between;
     align-items: center;
 
+    a {
+      padding-left: 1em;
+
+      @include desktop {
+        padding-left: 2em;
+        font-size: 2.8rem;
+      }
+    }
+
     a:hover{
-      color:#FBF057;
+      color:$couleur-bleu-marin;
     }
 
     .contenant-icone-enseignant {
@@ -65,8 +78,10 @@
 }
 
 .description-enseignant {
-  display: none;
   transition: 0.3s all ease;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
 
   p {
       color: #457B77;
@@ -79,7 +94,8 @@
 
 .logique{
   h1{
-    margin: 0 6rem;
+   // margin: 0 6rem;
+    margin: 0;
     padding: 0;
     font-size: 3.5rem;
   }
@@ -105,7 +121,7 @@
   }
 
   .dropbtn {
-    background-color: #9BC284;
+    background-color:transparent;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -124,27 +140,29 @@
       font-style: italic;
     }
     button:hover{
-      background-color: #4E9291
+      background-color:transparent;
     }
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #C1E8AA;
+    background-color: transparent;
     font-size: large;
     min-width: 90px;
     left: 105px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    
 }
 
 .dropdown-content button {
     color: black;
     padding: 12px 20px;
-    border:none;
+    border: none;
     text-decoration: none;
     display: block;
-    background-color: #A2CC8A;
+    background-color: transparent;
+    //border-radius: 20%;
 }
 
 .dropdown-content button:hover {background-color: #FFC857; color: white; }
@@ -153,24 +171,20 @@
     display: block;
 }
   
-  
-  
+
 /*prof*/
 
   .accordion {
-    margin: 90px auto;
     color: black;
     font-size: 1rem;
     line-height: 1.5;
     background-color:#A2CC8A ;
     border-radius: 25px;
     padding: 2em 0;
-    margin-top: 50px;
-    a{
-      padding-left: 2em;
-      //font-size: 2.8rem;
-    }
+    width: 93vw;
+    margin: 0 auto;
   }
+
   .accordion .container {
     position: relative;
   }
@@ -183,21 +197,13 @@
     align-items: center;
     display: flex;
   }
-  /*.dropbtn .label::before {
-    content: '+';
-    color:#9BC284;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    font-size:90px;
-    transform: translateY(-50%);
-    
-  }*/
+
   .accordion .content {
     position: relative;
     background: #C1E8AA;
     color: #457B77;
-    height:0;
+    transition: 0.3s all ease-in-out;
+    
     font-size: large;
     text-align: justify; 
     overflow: hidden;
@@ -210,9 +216,8 @@
   }
   
   .accordion .container.active .content {
-  height: auto;
-  border-radius: 1%;
-  margin-top: -15px;
+    border-radius: 1%;
+    margin-top: -15px;
   }
   
   /*.accordion .container.active .label::before {
@@ -223,6 +228,12 @@
   }*/
 }
 
+@include small_tablet{
+  .accordion{
+    margin-top: 5% !important;
+   
+  }
+}
 
 @include desktop{
   .label{
@@ -234,28 +245,26 @@
     h1{
       text-align: left !important;
       font-size: 7em !important;
+      margin: 0 6rem;
     }
     .dropdown{
-      padding-left: 150px;       
+     margin-left: 65px;       
     }
     .dropbtn{
       font-size: 20px;
       width: 300px;
     }
     .dropdown-content {
-      left: 290px;
+      left: 130px;
     }
     /*prof*/
     .accordion{
-      width: 85vw;
-      a{
-          font-size: 2.8rem;
-       }
-        
+      margin-top: 4%;
       }
     }
 
     .description-enseignant {
+     
      
       p {
           color: #457B77;
@@ -293,7 +302,9 @@
   }
 
   .description-enseignant {
-    display: block !important;
+    max-height: 300vh;
+    opacity: 1;
+
     ul{
       color: #457B77;
       line-height: 1.4;
@@ -301,4 +312,13 @@
       font-size: 1.8rem;
     }
   }
+}
+
+.active-prof-anim{   
+  .fa-minus:nth-child(1){
+      animation-name: Croix2;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      transition-timing-function: ease-in-out;  
+  }  
 }

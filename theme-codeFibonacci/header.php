@@ -50,6 +50,8 @@
 		</div><!-- .site-branding -->
 		<?php if(is_home() && is_front_page()) :?>
 		<div class="premierViewport">
+			<img class="banniere-accueil" src="wp-content/uploads/2021/12/BanniereAccueil_Final.png" alt="">
+			
 			<nav id="site-navigation" class="main-navigation">
 				
 				<?php
@@ -60,8 +62,9 @@
 						
 					)
 				);
-		endif;
-		?>
+			endif;
+			?>
+			
 		<?php if(!is_front_page()) : ?>
 		<?php
 		wp_nav_menu(
@@ -76,6 +79,11 @@
 			<span></span>
 			<span></span>
 		</div>
+
+		<a class="contenant-logo-integre" href="<?php echo home_url(); ?>">
+			<img src="<?php echo site_url().'/wp-content/uploads/2021/12/logo-tim-3.2.png';?>" alt="">
+		</a>
+		
 		<?php
 		endif; ?>
 			
@@ -85,15 +93,12 @@
 				if ( is_home() && is_front_page() ) :
 			?>
 
+			<div class="annees">
+				<h1><strong>20 Ans</strong> <br>
+				d'expérience</h1>
+			</div>
 			<div class="conteneur-logo">
-				<img class="fond-logo" src="wp-content/uploads/logo-et-fond.svg" alt="">
-				
-				<!-- <img class="fond-logo" src="wp-content/uploads/2021/09/background-logo.svg" alt=""> -->
-				<!-- <img src="wp-content/uploads/2021/09/logo-tim-2.svg" alt=""> -->
-				
-					<h1>Techniques d'intégration multimédia</h1>
-				
-					
+				<img class="fond-logo" src="wp-content/uploads/2021/12/LogoTim.png" alt="">	
 			</div>
 
 			
@@ -101,8 +106,7 @@
 			<!-- <svg class="background">
 			<use href="wp-content/uploads/2021/09/background-1.svg"> </use>
 			</svg> -->
-			<img class="banniere-avant-accueil" src="wp-content/uploads/2021/09/background-1.svg" alt="">
-			<img class="banniere-accueil" src="wp-content/uploads/2021/12/accueil-bg-3.1.png" alt="">
+			
 
 			<?php
 				endif;

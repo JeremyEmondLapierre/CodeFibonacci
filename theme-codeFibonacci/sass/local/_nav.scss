@@ -1,31 +1,31 @@
+.menu-menu-accueil-container {
+    width: 100%;
+}
+
 #primary-menu {
     padding: 0 !important;
-    width: 100px;
-    flex-direction: row;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     @include small_tablet {
         flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: left;
+        width: 100px;
     }
     
-    /*.sub-menu {
-        flex-direction: column;
-
-        li {
-            margin: 0;
-
-        }
-    }*/
-
     li{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 0.5em 1em;
+        padding: 1em;
         margin: 0;
         font-size: 1rem;
-        height: 13vh;
+        height: 10vh;
 
         @include small_tablet {
             margin: -0.6em 0;
@@ -115,11 +115,6 @@
     flex-direction: column;
 }
 
-.banniere-accueil {
-    position: absolute;
-    z-index: -10;
-}
-
 
 /*----------------------------------
     Navigation des pages intègres
@@ -144,7 +139,8 @@
             position: relative;
             -webkit-box-shadow: 5px 5px 36px 5px rgba(0,0,0,0.77); 
             box-shadow: 5px 5px 36px 5px rgba(0,0,0,0.77);
-            transition: all .3s ease;
+            transition: all 1s ease-in-out;
+            z-index: 1;
 
             @include desktop {
                 flex-direction: row;
@@ -153,10 +149,13 @@
                 padding-top: 1em;
                 -webkit-box-shadow: 5px 5px 36px 5px rgba(0,0,0,0); 
                 box-shadow: 5px 5px 36px 5px rgba(0,0,0,0);
+                width: 90%;
+                top: 0.5em;
             }
     
             li {
                 margin: 0 1em;
+
     
                 a {
                     color: $couleur1;
@@ -170,11 +169,32 @@
     }
 }
 
+.contenant-logo-integre {
+    top: 0;
+    left: 1em;
+    position: absolute;
+    height: 6em;
+    z-index: 0;
+
+    @include desktop {
+        height: 8em;
+        left: 3em;
+        z-index: 1;
+
+    }
+
+    img {
+        height: 100%;
+        z-index: -2;
+    }
+}
 
 .menu-menu-site-container {
 
     .menu {
-        display: none !important;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
 
         @include desktop {
             display: flex;
@@ -183,10 +203,11 @@
 }
 
 .menu-menu-site-container {
-    height: 10vh;
+    height: 20vh;
 
     .actif-btnMenu {
-        display: flex !important;
+        max-height: 100vh;
+        opacity: 1;
     }
 }
 
@@ -200,6 +221,7 @@
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+    z-index: 2;
 
     /*@include desktop {
         display: none;
