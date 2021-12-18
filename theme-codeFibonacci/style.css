@@ -105,7 +105,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .annees h1 {
   font-size: 3em;
   line-height: 0.7;
-  letter-spacing: -7px;
+  height: 100px;
+  letter-spacing: -4px;
   margin-bottom: 0;
   overflow: visible;
   background: -webkit-linear-gradient(-90deg, #b7e8d6 0%, #fdf9b2 100%);
@@ -117,6 +118,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @media (min-width: 700px) {
   .annees h1 {
     height: 150px;
+    letter-spacing: -7px;
   }
 }
 
@@ -405,17 +407,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 #accueil-prof p {
   text-align: center;
   color: #FFF;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 100;
   padding: 0 1em;
   line-height: 1.3;
-  text-align: justify;
+  text-align: left;
 }
 
 @media (min-width: 1200px) {
   #accueil-prof p {
     padding: 0 7em;
     line-height: 1.5;
+    font-size: 2rem;
+    text-align: justify;
   }
 }
 
@@ -1716,7 +1720,7 @@ textarea {
   margin: 0;
   position: relative;
   box-shadow: 5px 5px 36px 5px rgba(0, 0, 0, 0.77);
-  transition: all .3s ease;
+  transition: all 1s ease-in-out;
   z-index: 1;
 }
 
@@ -1766,7 +1770,9 @@ textarea {
 }
 
 .menu-menu-site-container .menu {
-  display: none !important;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -1780,7 +1786,8 @@ textarea {
 }
 
 .menu-menu-site-container .actif-btnMenu {
-  display: flex !important;
+  max-height: 100vh;
+  opacity: 1;
 }
 
 .menu-toggle {
@@ -2827,7 +2834,7 @@ footer .up #flecheHaut:hover {
 ----------------------------------------------*/
 .contenant-cheminement {
   margin: 0 auto;
-  width: 85vw;
+  width: 90vw;
 }
 
 .contenant-cheminement h2 {
@@ -3145,7 +3152,7 @@ footer .up #flecheHaut:hover {
 
 .item-enseignant .container {
   background-color: #C1E8AA;
-  border-radius: 25px;
+  border-radius: 35px;
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -3169,7 +3176,7 @@ footer .up #flecheHaut:hover {
     width: 60px;*/
   width: auto;
   height: 10vh;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 0px;
   margin: 0px;
   object-fit: cover;
@@ -3180,6 +3187,17 @@ footer .up #flecheHaut:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.label .contenu-titre-enseignant a {
+  padding-left: 1em;
+}
+
+@media (min-width: 1200px) {
+  .label .contenu-titre-enseignant a {
+    padding-left: 2em;
+    font-size: 2.8rem;
+  }
 }
 
 .label .contenu-titre-enseignant a:hover {
@@ -3311,20 +3329,14 @@ footer .up #flecheHaut:hover {
 }
 
 .logique .accordion {
-  margin: 90px auto;
   color: black;
   font-size: 1rem;
   line-height: 1.5;
   background-color: #A2CC8A;
   border-radius: 25px;
   padding: 2em 0;
-  margin-top: 50px;
-  margin: 15px;
-  margin-top: 10%;
-}
-
-.logique .accordion a {
-  padding-left: 2em;
+  width: 93vw;
+  margin: 0 auto;
 }
 
 .logique .accordion .container {
@@ -3390,12 +3402,7 @@ footer .up #flecheHaut:hover {
     left: 130px;
   }
   .logique .accordion {
-    width: 85vw;
-    margin: auto;
     margin-top: 4%;
-  }
-  .logique .accordion a {
-    font-size: 2.8rem;
   }
   .description-enseignant p {
     color: #457B77;
