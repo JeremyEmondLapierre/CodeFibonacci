@@ -55,7 +55,8 @@
     h1 {
         font-size: 3em;
         line-height: 0.7;
-        letter-spacing: -7px;
+        height: 100px;
+        letter-spacing: -4px;
         margin-bottom: 0;
         overflow: visible;
         background: -webkit-linear-gradient(-90deg, rgba(183,232,214,1) 0%, rgba(253,249,178,1) 100%);
@@ -65,6 +66,7 @@
 
         @include small_tablet {
             height: 150px;
+            letter-spacing: -7px;
         }
 
         @include tablet {
