@@ -139,7 +139,7 @@
             position: relative;
             -webkit-box-shadow: 5px 5px 36px 5px rgba(0,0,0,0.77); 
             box-shadow: 5px 5px 36px 5px rgba(0,0,0,0.77);
-            transition: all .3s ease;
+            transition: all 1s ease-in-out;
             z-index: 1;
 
             @include desktop {
@@ -155,6 +155,7 @@
     
             li {
                 margin: 0 1em;
+
     
                 a {
                     color: $couleur1;
@@ -191,7 +192,9 @@
 .menu-menu-site-container {
 
     .menu {
-        display: none !important;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
 
         @include desktop {
             display: flex;
@@ -203,7 +206,8 @@
     height: 20vh;
 
     .actif-btnMenu {
-        display: flex !important;
+        max-height: 100vh;
+        opacity: 1;
     }
 }
 

@@ -7,7 +7,7 @@
 
   .container {
     background-color: #C1E8AA;
-    border-radius: 25px;
+    border-radius: 35px;
     display: flex;
     flex-direction: column;
     //flex-grow: 1;
@@ -33,7 +33,7 @@
     width: 60px;*/
     width: auto;
     height: 10vh;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 0px;
     margin: 0px;
     object-fit: cover;
@@ -44,6 +44,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a {
+      padding-left: 1em;
+
+      @include desktop {
+        padding-left: 2em;
+        font-size: 2.8rem;
+      }
+    }
 
     a:hover{
       color:$couleur-bleu-marin;
@@ -166,22 +175,16 @@
 /*prof*/
 
   .accordion {
-    margin: 90px auto;
     color: black;
     font-size: 1rem;
     line-height: 1.5;
     background-color:#A2CC8A ;
     border-radius: 25px;
     padding: 2em 0;
-    margin-top: 50px;
-    margin: 15px;
-    margin-top: 10%;
-
-    a{
-      padding-left: 2em;
-      //font-size: 2.8rem;
-    }
+    width: 93vw;
+    margin: 0 auto;
   }
+
   .accordion .container {
     position: relative;
   }
@@ -213,9 +216,8 @@
   }
   
   .accordion .container.active .content {
- 
-  border-radius: 1%;
-  margin-top: -15px;
+    border-radius: 1%;
+    margin-top: -15px;
   }
   
   /*.accordion .container.active .label::before {
@@ -257,13 +259,7 @@
     }
     /*prof*/
     .accordion{
-      width: 85vw;
-      margin: auto;
       margin-top: 4%;
-      a{
-          font-size: 2.8rem;
-       }
-        
       }
     }
 
