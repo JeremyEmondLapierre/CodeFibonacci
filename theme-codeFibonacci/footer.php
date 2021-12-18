@@ -25,26 +25,26 @@ style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11
 			<ul>
 				<li>
 				<a href="https://www.facebook.com/maisonneuvetim/">
-					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/Facebook.svg';?>" alt="">
+					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/facebook.svg';?>" alt="">
 				</a>
 			    </li>
 
 				<li>
 			
 				<a href="https://www.instagram.com/maisonneuvetim/">
-					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/Instagram.svg';?>" alt="">
+					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/instagram.svg';?>" alt="">
 				</a>
 				</li>
 
 				<li>
 				<a href="https://ca.linkedin.com/in/tim-maisonneuve-b7a609b3">
-					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/Linkedin.svg';?>" alt="">
+					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/linkedin.svg';?>" alt="">
 				</a>
 				</li>
 
 				<li>
 				<a href="https://www.youtube.com/user/TIMaisonneuve">	
-					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/Youtube.svg';?>" alt="">
+					<img src="<?php echo site_url().'/wp-content/uploads/2021/11/youtube.svg';?>" alt="">
 				</a>
 				</li>
 			</ul>
