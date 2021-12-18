@@ -13,7 +13,7 @@
 ?>
 
 <footer id="colophon" class="site-footer" 
-style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/footer-bg.png';?>');">
+style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/12/footer-bg.svg';?>');">
 
  <div class="global-footer" >
 
