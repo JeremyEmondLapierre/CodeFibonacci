@@ -2430,12 +2430,12 @@ footer .logoEtReseau {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: -50px;
 }
 
 footer .logoEtReseau #footer-logo {
   width: 150px;
-  margin: 0 auto;
+  align-items: center;
+  padding-right: 15px;
 }
 
 @media (min-width: 1200px) {
@@ -2451,6 +2451,12 @@ footer .logoEtReseau .Reseau {
   flex-direction: column;
 }
 
+footer .logoEtReseau .Reseau ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 footer .logoEtReseau .Reseau h3 {
   text-align: center;
   align-items: center;
@@ -2458,6 +2464,7 @@ footer .logoEtReseau .Reseau h3 {
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 10px;
+  margin: 0.5em;
 }
 
 footer .logoEtReseau .Reseau ul {
@@ -2469,8 +2476,6 @@ footer .logoEtReseau .Reseau ul {
   footer .logoEtReseau .Reseau ul {
     justify-content: center;
     align-items: center;
-    margin: 0;
-    margin-left: 69px;
   }
 }
 
