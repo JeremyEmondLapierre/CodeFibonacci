@@ -2616,12 +2616,6 @@ footer .up #flecheHaut:hover {
   font-size: 1.5rem;
 }
 
-@media (min-width: 1200px) {
-  .pageStage .texteResume p {
-    font-weight: 700;
-  }
-}
-
 .Exp {
   margin-bottom: 60px;
   position: relative;
@@ -2771,7 +2765,7 @@ footer .up #flecheHaut:hover {
 }
 
 .Exp .texteExp p {
-  font-weight: 600;
+  font-weight: 500;
   line-height: 3rem;
   padding: 1em 1.2em;
   font-size: 20px;
