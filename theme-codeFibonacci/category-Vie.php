@@ -25,14 +25,13 @@ get_header();
 			   <!-- Filtre statique pour le sprint 3 -->
 			<form>
 				<label for="filtre-cours">Filtrer par : </label>
-				<select class="filtre-cours" name="filtre-projet" id="filtre-projet">
+				<select class="filtre-cours" name="filtre-projet" id="filtre-projet" onchange="this.form.submit()">
 					<option value="tous">Tous</option>
 					<option value="web">Web</option>
 					<option value="3d">3D</option>
 					<option value="jeu-video">Jeu-Vidéo</option>
 					<option value="Design">Design</option>
 				</select>
-				<input type="submit" value="Filtrer">
 			</form>
 
 			  <div class="lesProjets">
@@ -40,17 +39,18 @@ get_header();
 				/* Start the Loop */
 					while ( have_posts() ) :
 						the_post();
+						//Filtre pour afficher tous les cours
 						if(($_SERVER['QUERY_STRING'] == "filtre-projet=tous" || $_SERVER['QUERY_STRING'] == null) && get_field('type') == "Projet"):
 							get_template_part( 'template-parts/content', 'vie-projet' ); ?>
-							
+							<!-- Afficher la première grande section -->
 							<div class="top-midle" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/12/EmondLapierreJeremy_TP2_Affiche-scaled.jpg';?>'); background-position: 70% 30%; background-repeat: no-repeat; ">
 				    		</div>
 
-
+							<!-- Afficher la deuxième grande section -->
 							<div class="midle" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/11/Projet-13.jpg';?>'); background-position: center;" >
 							</div>
 
-					
+							<!-- Afficher la troisième grande section -->
 							<div class="bottom" style="background-image: url('<?php echo site_url().'/wp-content/uploads/2021/12/statue-3D-KevinLaRue.jpg';?>'); background-position: center;">
 							</div>
 
@@ -127,26 +127,12 @@ get_footer();
 	if(filtreRecherche == "?filtre-projet=Design"){
 		filtreRechercheId.selectedIndex = 4;
 	}
-	/*let petit = document.querySelectorAll(".normal");
-	console.log("Petite section: " + petit.length);
 
-	let grosse = document.querySelectorAll(".grosse");
-	console.log("Grosse section: " + grosse.length);
-
-	var premier = document.querySelector(".normal:nth-child(2)")
-
-	if(petit.length > 16){
-		premier.classList.add("top-midle");
-	}*///filtreRecherche
 	
 	const itemProjet = document.querySelectorAll('.normal');
 	for (var i = 0; i < itemProjet.length; i++) {
-		/*var topMiddle = itemProjet[i] = 7;
-		topMiddle.classList.add("top-midle");*/
-
 		if (itemProjet[i] == 2) {
 			this.classList.remove("normal");
-			//this.classList.add("top-midle");
 		} else if (itemProjet[i] == 9) {
 			this.classList.add("midle");
 		};
