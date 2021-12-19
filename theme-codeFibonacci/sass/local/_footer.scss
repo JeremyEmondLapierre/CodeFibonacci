@@ -230,10 +230,14 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: -50px;
+        
         #footer-logo{
             width: 150px; 
-            margin: 0 auto;
+            
+            align-items: center;
+            
+            padding-right: 15px;
+
             
             @include desktop {
                 margin: 0 0;
@@ -244,8 +248,16 @@ footer {
         justify-content: center;
         margin: .5em;
         flex-direction: column;
+
+        ul{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            
+        }
+        
         @include desktop{
-            //margin-left: 104px;
+           
         }
         
         h3{
@@ -255,6 +267,7 @@ footer {
             font-weight: 500;
             font-size: 1.5rem;
             margin-bottom: 10px;
+            margin: 0.5em;
         }
         ul{
                 margin: 0 auto;
@@ -264,8 +277,8 @@ footer {
             @include tablet{
                 justify-content: center;
                 align-items: center;
-                margin: 0;
-                margin-left: 69px;
+               // margin: 0;
+                //margin-left: 69px;
                 
             }
             
