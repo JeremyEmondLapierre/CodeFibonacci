@@ -14,6 +14,7 @@
     }
     .normal{
         height: 37vh;
+
         img{
             object-fit: cover;
             height: 100%;
@@ -41,7 +42,7 @@
 
 
         .top-midle {
-            display: none;
+            display: none !important;
 
             @include desktop{
                 display: block;

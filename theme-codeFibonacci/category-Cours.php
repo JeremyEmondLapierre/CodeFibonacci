@@ -24,10 +24,10 @@ get_header();
 		<div class="contenant-cheminement">
 			<h2>Grille de cheminement</h2>
 			<!-- Filtre statique pour le sprint 3 -->
-			<form id="fomr-cours" onclick="formSubmit()"> 
+			<form id="fomr-cours"> 
 				<label for="filtre-cours">Filtrer par : </label>
-				<select id="filtre-cours" class="filtre-cours" name="filtre-cours">
-					<option value="tous" >Tous</option>
+				<select id="filtre-cours" class="filtre-cours" name="filtre-cours" onchange="this.form.submit()">
+				<option value="tous" >Tous</option>
 					<option value="web" >Web</option>
 					<option value="3D" >3D</option>
 					<option value="monde-professionnel" >Monde Professionnel</option>
@@ -36,7 +36,6 @@ get_header();
 					<option value="video" >Vidéo</option>
 					<option value="autres" >Autres</option>
 				</select>
-				<input type="submit" value="Filtrer">
 				
 			</form>
 			<div class="contenant-tableau-cheminement">
@@ -60,6 +59,7 @@ get_header();
 ?>
 
 <script>
+
 	//Aller chercher la requête dans l'URL
 	let filtreRecherche = window.location.search;
 	//Aller sélectioner le select des filtres
@@ -94,15 +94,5 @@ get_header();
 		filtreRechercheId.selectedIndex = 7;
 	}
 	
-	const formCours = document.querySelectorAll("#form-cours option");
-	const formCoursId = document.getElementById("form-cours");
-	formCoursId.addEventListener('click', function() {
-		document.getElementById("form-cours").submit();
-		console.log("ca a ecoute")
-	});
-
-	function formSubmit()
-	{
-		document.getElementById("form-cours").submit();
-	}
+	
 </script>
