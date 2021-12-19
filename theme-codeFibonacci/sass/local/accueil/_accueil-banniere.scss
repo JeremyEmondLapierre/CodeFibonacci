@@ -25,13 +25,6 @@
         }
     }
 
-
-    .banniere-avant-accueil {
-        width: 100%;
-        position: absolute;
-        top: 80vh;
-    }
-
     .banniere-accueil {
         position: absolute;
         object-fit: cover;
@@ -106,7 +99,7 @@
     img {
         margin: 0 auto;
         animation-name: Banniere;
-        animation-duration: 5s;
+        animation-duration: 8s;
         animation-iteration-count: infinite;
         top: 5vw;
         bottom: 0;
@@ -157,19 +150,19 @@
 
     0% {
       filter: hue-rotate(0deg) saturate(100%) contrast(100%);
-      transform: scale(100%);
+      transform: scale(95%);
     }
 
     50% {
       //background-position: 100% 50%;
-      filter: hue-rotate(10deg) saturate(150%) contrast(120%);
-      transform: scale(101%);
+      filter: hue-rotate(10deg) saturate(160%) contrast(120%);
+      transform: scale(105%);
 
     }
 
     100% {
         filter: hue-rotate(0deg) saturate(100%) contrast(100%);
-        transform: scale(100%);
+        transform: scale(95%);
     }
 
 }
