@@ -15,6 +15,7 @@ let coursPrecedent;
         if(coursPrecedent) {
             // on enregistre le cours cliqué dans coursPrecedent. Si elle existe déjà, on enlève actif-cours
             coursPrecedent.classList.remove('actif-cours');
+            coursPrecedent.classList.add('actif-cours-anim');
         }
         coursPrecedent = this;
         if(this.classList.contains("actif-cours")){
@@ -42,6 +43,7 @@ for (i=0; i<accordion.length; i++) {
         if(profPrecedent) {
             // on enregistre le cours cliqué dans profPrecedent. Si elle existe déjà, on enlève active
             profPrecedent.classList.remove('active');
+            profPrecedent.classList.add("active-prof-anim");
         }
         profPrecedent = this;
 
